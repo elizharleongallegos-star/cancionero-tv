@@ -1,0 +1,1801 @@
+/* ==============================================================
+   CANCIONERO — LG C4 OLED 4K EDITION (TV STYLESHEET)
+   Optimizado para Pantallas OLED 16:9, True Black y Magic Remote
+   ============================================================== */
+
+:root {
+  --tv-bg: #000000;              /* OLED True Black: Píxeles completamente apagados */
+  --tv-panel-bg: #070a12;        /* Azul medianoche ultra oscuro */
+  --tv-card-bg: #0d1322;         /* Contenedores oscuros de alto contraste */
+  --tv-border: #1e293b;          /* Bordes sutiles */
+  --tv-border-glow: #00f0ff33;   /* Resplandor neón cian */
+  
+  --tv-cyan: #00f0ff;            /* Neón cian vibrante */
+  --tv-cyan-hover: #38bdf8;
+  --tv-ruby: #ff2a6d;            /* Rojo rubí / carmesí para acordes */
+  --tv-ruby-wine: #be123c;       /* Rojo vino clásico */
+  --tv-purple: #c084fc;          /* Violeta eléctrico para secciones */
+  --tv-emerald: #10b981;         /* Verde esmeralda para conectados */
+  --tv-amber: #f59e0b;           /* Ámbar */
+  
+  --tv-text: #f8fafc;            /* Blanco puro de alto contraste */
+  --tv-text-dim: #94a3b8;        /* Gris claro secundario */
+  --tv-text-muted: #64748b;
+  
+  --tv-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --tv-mono: 'JetBrains Mono', Consolas, "Courier New", monospace;
+  
+  --tv-header-height: 68px;
+  --tv-sidebar-width: 360px;
+  --tv-player-width: 440px;
+}
+
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--tv-bg);
+  color: var(--tv-text);
+  font-family: var(--tv-font);
+  font-size: 16px;
+  user-select: none;
+}
+
+/* Navegación por Magic Remote & D-pad: Resplandor visual en foco */
+:focus-visible {
+  outline: 3px solid var(--tv-cyan) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 16px var(--tv-cyan) !important;
+}
+
+/* 1. CONTENEDOR PRINCIPAL */
+.tv-app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: var(--tv-bg);
+  overflow: hidden;
+  transform: translate(var(--oled-shift-x, 0px), var(--oled-shift-y, 0px));
+  transition: transform 3s ease-in-out;
+}
+
+/* 2. BARRA SUPERIOR (HEADER TV) */
+.tv-header {
+  height: var(--tv-header-height);
+  background: #020408;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 16px;
+  z-index: 100;
+  flex-shrink: 0;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+}
+
+/* Ocultamiento Automático de Barra Superior y Protección OLED Carefree */
+body.tv-header-hidden .tv-header {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.tv-header-hidden .tv-main-layout {
+  height: 100vh;
+}
+
+.tv-header-left, .tv-header-center, .tv-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tv-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.tv-brand-title {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  background: linear-gradient(135deg, #38bdf8 0%, #00f0ff 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tv-brand-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #38bdf8;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+/* Botones universales TV */
+.tv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px;
+  background: #0d1526;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.tv-btn:hover {
+  background: #172554;
+  border-color: var(--tv-cyan);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.tv-btn:active {
+  transform: translateY(1px);
+}
+
+.tv-btn-sm {
+  width: 36px;
+  height: 36px;
+  background: #0d1526;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-btn-sm:hover {
+  background: #1e293b;
+  border-color: var(--tv-cyan);
+}
+
+.tv-btn-icon {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-btn-icon:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.tv-btn-fs {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.tv-btn-fs:hover {
+  background: linear-gradient(135deg, #0284c7 0%, #00f0ff 100%);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+/* Modos de visualización: PDF | Word | Karaoke */
+.tv-pill-group {
+  display: flex;
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 30px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.tv-pill-btn {
+  height: 38px;
+  padding: 0 18px;
+  background: transparent;
+  border: none;
+  border-radius: 24px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tv-pill-btn:hover {
+  color: #ffffff;
+}
+
+.tv-pill-btn.active {
+  background: linear-gradient(135deg, #0284c7 0%, #00d2ff 100%);
+  color: #040812;
+  font-weight: 800;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.4);
+}
+
+.tv-pill-btn.tv-pill-karaoke.active {
+  background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(236, 72, 153, 0.5);
+}
+
+/* Selector de Columnas Word */
+.tv-cols-group {
+  display: flex;
+  align-items: center;
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 2px 6px;
+  gap: 4px;
+}
+
+.cols-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  margin-right: 2px;
+}
+
+.tv-col-btn {
+  height: 32px;
+  padding: 0 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tv-col-btn:hover {
+  color: #ffffff;
+  background: #172554;
+}
+
+.tv-col-btn.active {
+  background: #0284c7;
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+/* Zoom Group */
+.tv-zoom-group {
+  display: flex;
+  align-items: center;
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 2px 6px;
+  gap: 4px;
+}
+
+.tv-zoom-badge {
+  font-size: 12px;
+  font-weight: 800;
+  color: #38bdf8;
+  min-width: 44px;
+  text-align: center;
+}
+
+/* 3. ESTRUCTURA WIDESCREEN 16:9 */
+.tv-main-layout {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - var(--tv-header-height));
+  overflow: hidden;
+  position: relative;
+  transition: height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 3.1 PANEL LATERAL IZQUIERDO (REPERTORIO) */
+.tv-sidebar {
+  width: var(--tv-sidebar-width);
+  min-width: 320px;
+  height: 100%;
+  background: #04070d;
+  border-right: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 50;
+}
+
+body.sidebar-collapsed .tv-sidebar {
+  margin-left: calc(-1 * var(--tv-sidebar-width));
+}
+
+/* Selector de Cancionero (Todos | Principal | Reggaetón) */
+.tv-book-switcher {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  padding: 10px;
+  gap: 6px;
+  background: #020408;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tv-book-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 4px;
+  background: #090f1d;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+
+.tv-book-btn:hover {
+  background: #13223f;
+  color: #ffffff;
+}
+
+.tv-book-btn.active {
+  background: #0f1d38;
+  border-color: var(--tv-cyan);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+}
+
+.tv-book-btn.tv-book-reg.active {
+  background: #3b0717;
+  border-color: #f43f5e;
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.35);
+}
+
+.book-name {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.book-count {
+  font-size: 11px;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-top: 2px;
+}
+
+.tv-book-btn.tv-book-reg .book-count {
+  color: #fb7185;
+}
+
+/* Buscador Lateral */
+.tv-search-box {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 10px 10px 6px;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.tv-search-box:focus-within {
+  border-color: var(--tv-cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.tv-search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.tv-clear-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Filtro Artista */
+.tv-filter-row {
+  padding: 0 10px 6px;
+}
+
+.tv-select {
+  width: 100%;
+  height: 36px;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 13px;
+  padding: 0 10px;
+  outline: none;
+}
+
+/* Tabs Todas / Conectadas / Sin Calce */
+.tv-filter-tabs {
+  display: flex;
+  padding: 0 10px 8px;
+  gap: 4px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tv-filter-tab {
+  flex: 1;
+  height: 30px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tv-filter-tab:hover {
+  color: #cbd5e1;
+}
+
+.tv-filter-tab.active {
+  background: #0f1d38;
+  border-color: #1e3a8a;
+  color: #38bdf8;
+}
+
+/* Lista de Canciones */
+.tv-song-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tv-song-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tv-song-list::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+/* Tarjeta de Canción en Lista */
+.tv-song-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  background: #080d19;
+  border: 1px solid #131d31;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  gap: 10px;
+}
+
+.tv-song-item:hover {
+  background: #101c36;
+  border-color: #1e3a8a;
+  transform: translateX(3px);
+}
+
+.tv-song-item.active {
+  background: linear-gradient(90deg, #0a1f44 0%, #08142c 100%);
+  border-color: var(--tv-cyan);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.25);
+}
+
+.tv-song-item.playing .song-idx {
+  color: var(--tv-cyan);
+  font-weight: 900;
+}
+
+.song-idx {
+  font-size: 13px;
+  font-weight: 800;
+  font-family: var(--tv-mono);
+  color: #38bdf8;
+  min-width: 38px;
+}
+
+.song-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.song-title-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-artist-text {
+  font-size: 12px;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.song-meta-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.song-meta-badge.unmatched {
+  background: #3f1822;
+  color: #fda4af;
+}
+
+/* 3.2 ESCENARIO CENTRAL (HOJA Y LETRA) */
+.tv-stage {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--tv-bg);
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Barra de Contexto de la Canción */
+.tv-song-context-bar {
+  min-height: 58px;
+  background: #03060c;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.tv-song-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tv-current-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+.tv-current-artist {
+  font-size: 17px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.tv-meta-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tv-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+}
+
+.tv-badge-pl {
+  background: #0c213d;
+  border-color: #0284c7;
+  color: #38bdf8;
+}
+
+.tv-badge-tone {
+  background: #4c0519;
+  border-color: #e11d48;
+  color: #fda4af;
+}
+
+.tv-versions-select {
+  height: 26px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #cbd5e1;
+  font-size: 11px;
+  padding: 0 6px;
+}
+
+/* Controles de Sincronización Karaoke */
+.tv-karaoke-sync-bar {
+  display: flex;
+  align-items: center;
+  background: #1e1136;
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  padding: 4px 10px;
+  gap: 8px;
+}
+
+.sync-tag {
+  font-size: 12px;
+  font-weight: 800;
+  color: #d8b4fe;
+}
+
+.tv-step-btn {
+  height: 28px;
+  padding: 0 10px;
+  background: #3b1d66;
+  border: 1px solid #a855f7;
+  border-radius: 6px;
+  color: #f5d0fe;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tv-step-btn:hover {
+  background: #581c87;
+}
+
+.tv-offset-display {
+  font-size: 13px;
+  font-weight: 800;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Paginador */
+.tv-page-nav {
+  display: flex;
+  align-items: center;
+  background: #090f1d;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 2px 8px;
+  gap: 8px;
+}
+
+.tv-page-btn {
+  height: 30px;
+  padding: 0 10px;
+  background: #13223f;
+  border: none;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tv-page-indicator {
+  font-size: 12px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+/* Contenedor del documento con scroll */
+.tv-sheet-scroller {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 28px;
+  display: flex;
+  justify-content: center;
+  background: var(--tv-bg);
+}
+
+.tv-sheet-scroller::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tv-sheet-scroller::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.tv-sheet-render-box {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Placeholder */
+.tv-sheet-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+.placeholder-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.tv-sheet-placeholder h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+
+.tv-sheet-placeholder p {
+  font-size: 16px;
+  color: #94a3b8;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.tv-hint-keys {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tv-hint-keys span {
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* ==============================================================
+   4. RENDERIZADO DE HOJA WORD (COLORES Y MULTICOLUMNA)
+   ============================================================== */
+
+/* TEMA OLED CINE (Negro Puro #000000) */
+body.theme-oled-dark .tv-word-sheet {
+  background: #000000;
+  border: 1px solid #141c2e;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+body.theme-oled-dark .sheet-title-header {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--tv-cyan);
+  border-bottom: 2px solid #0284c7;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+body.theme-oled-dark .word-line.chord-line,
+body.theme-oled-dark .chord-token {
+  color: var(--tv-ruby) !important;
+  font-weight: 800 !important;
+  font-family: var(--tv-mono);
+  letter-spacing: 0.5px;
+}
+
+body.theme-oled-dark .word-line.header-line {
+  color: var(--tv-purple) !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+body.theme-oled-dark .word-line.lyric-line {
+  color: #f8fafc !important;
+  font-weight: 500;
+}
+
+body.theme-oled-dark .word-line.note-line {
+  color: #2dd4bf !important;
+  font-style: italic;
+}
+
+/* TEMA PAPEL BLANCO CLÁSICO */
+body.theme-paper-white .tv-word-sheet {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.theme-paper-white .sheet-title-header {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0369a1;
+  border-bottom: 2px solid #00d2ff;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+body.theme-paper-white .word-line.chord-line,
+body.theme-paper-white .chord-token {
+  color: var(--tv-ruby-wine) !important;
+  font-weight: 800 !important;
+  font-family: var(--tv-mono);
+}
+
+body.theme-paper-white .word-line.header-line {
+  color: #7c3aed !important;
+  font-weight: 800 !important;
+}
+
+body.theme-paper-white .word-line.lyric-line {
+  color: #090d16 !important;
+  font-weight: 600;
+}
+
+body.theme-paper-white .word-line.note-line {
+  color: #0f766e !important;
+  font-style: italic;
+}
+
+/* Columnas Fluidas en 16:9 Widescreen */
+.tv-word-columns {
+  column-gap: 36px;
+  column-fill: balance;
+  width: 100%;
+}
+
+.tv-word-columns.cols-1 { column-count: 1; }
+.tv-word-columns.cols-2 { column-count: 2; }
+.tv-word-columns.cols-3 { column-count: 3; }
+.tv-word-columns.cols-4 { column-count: 4; }
+
+.word-line {
+  line-height: 1.38;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 1.0em;
+}
+
+.word-line.empty-line {
+  height: 0.8em;
+}
+
+.chord-lyric-group {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 3px;
+}
+
+/* ==============================================================
+   5. MODO KARAOKE EN PANTALLA GIGANTE
+   ============================================================== */
+.tv-karaoke-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px 20px;
+}
+
+.tv-karaoke-header {
+  text-align: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tv-karaoke-song-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.tv-karaoke-song-sub {
+  font-size: 16px;
+  color: #38bdf8;
+  margin-top: 4px;
+}
+
+.tv-karaoke-lines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tv-karaoke-line {
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: #050914;
+  border-left: 6px solid #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tv-karaoke-line:hover {
+  background: #0e172a;
+}
+
+.tv-karaoke-line.active {
+  background: linear-gradient(90deg, #1e1136 0%, #0d1a38 100%);
+  border-left-color: #ec4899;
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.35);
+  transform: scale(1.02);
+}
+
+.tv-karaoke-line.passed {
+  opacity: 0.5;
+}
+
+.tv-k-chords {
+  font-family: var(--tv-mono);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--tv-ruby);
+  margin-bottom: 4px;
+}
+
+.tv-k-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.tv-karaoke-line.active .tv-k-text {
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+
+/* ==============================================================
+   6. PANEL DERECHO: REPRODUCTOR YOUTUBE TV
+   ============================================================== */
+.tv-player-panel {
+  width: var(--tv-player-width);
+  height: 100%;
+  background: #03050a;
+  border-left: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 16px;
+  gap: 14px;
+  z-index: 40;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tv-player-panel::-webkit-scrollbar {
+  width: 6px;
+}
+.tv-player-panel::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+body.layout-solo .tv-player-panel {
+  display: none;
+}
+
+.tv-player-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #e2e8f0;
+}
+
+.player-track-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+/* Botón Conmutador de Modo Video / Modo Portada */
+.tv-btn-video-mode {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px;
+  background: #0f1d38;
+  border: 1px solid #0284c7;
+  border-radius: 6px;
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.tv-btn-video-mode:hover {
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(2, 132, 199, 0.4);
+}
+
+.tv-btn-video-mode.active {
+  background: linear-gradient(135deg, #ec4899 0%, #be123c 100%);
+  border-color: #f43f5e;
+  color: #ffffff;
+}
+
+/* Escenario de Video y Tarjeta de Audio 16:9 Universal (nunca se recorta ni se aplasta en ningún Smart TV) */
+.tv-video-stage {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  flex-shrink: 0;
+  background: #000000;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+#tv-yt-player-target,
+#tv-yt-iframe-mount,
+.tv-video-stage iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  display: block;
+}
+
+.tv-poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: none;
+}
+
+.tv-pdf-canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+
+/* Tarjeta de Audio Maestro con Portada HD */
+.tv-audio-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+
+.tv-audio-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(3, 5, 10, 0.75) 60%, rgba(0,0,0,0.95) 100%);
+  z-index: 1;
+}
+
+.tv-audio-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.tv-audio-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 80%;
+}
+
+.tv-audio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  background: #064e3b;
+  border: 1px solid #10b981;
+  border-radius: 4px;
+  color: #6ee7b7;
+  font-size: 11px;
+  font-weight: 800;
+  width: fit-content;
+}
+
+.tv-audio-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tv-audio-artist {
+  font-size: 13px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* Ecualizador animado neón */
+.tv-equalizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 28px;
+  padding-bottom: 2px;
+}
+
+.tv-eq-bar {
+  width: 4px;
+  background: var(--tv-cyan);
+  border-radius: 2px;
+  height: 6px;
+  transition: height 0.15s ease;
+}
+
+.tv-equalizer.playing .tv-eq-bar:nth-child(1) { animation: tvEq 0.7s infinite alternate ease-in-out; }
+.tv-equalizer.playing .tv-eq-bar:nth-child(2) { animation: tvEq 0.5s infinite alternate ease-in-out 0.12s; }
+.tv-equalizer.playing .tv-eq-bar:nth-child(3) { animation: tvEq 0.8s infinite alternate ease-in-out 0.24s; }
+.tv-equalizer.playing .tv-eq-bar:nth-child(4) { animation: tvEq 0.6s infinite alternate ease-in-out 0.18s; }
+.tv-equalizer.playing .tv-eq-bar:nth-child(5) { animation: tvEq 0.9s infinite alternate ease-in-out 0.08s; }
+
+@keyframes tvEq {
+  0% { height: 4px; background: var(--tv-cyan); }
+  50% { height: 26px; background: var(--tv-ruby); }
+  100% { height: 16px; background: #c084fc; }
+}
+
+/* Barra de Avance TV */
+.tv-seek-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tv-time-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--tv-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.tv-seek-slider {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  background: #1e293b;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.tv-seek-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--tv-cyan);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--tv-cyan);
+}
+
+/* Fila de Modos de Reproducción: Aleatorio y Repetir */
+.tv-playback-modes-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.tv-mode-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: #090e17;
+  border: 1px solid #1e293b;
+  border-radius: 9999px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tv-mode-btn:hover {
+  background: #111e38;
+  color: #e2e8f0;
+  border-color: #38bdf8;
+  transform: scale(1.04);
+}
+
+.tv-mode-btn.active {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.35) 0%, rgba(0, 240, 255, 0.25) 100%);
+  border-color: #00f0ff;
+  color: #00f0ff;
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.4);
+}
+
+/* Gran Botonera TV */
+.tv-transport-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.4fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 6px;
+}
+
+.tv-ctrl-btn {
+  height: 52px;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: all 0.15s ease;
+}
+
+.tv-ctrl-btn:hover {
+  background: #172554;
+  border-color: var(--tv-cyan);
+  color: #ffffff;
+  transform: scale(1.04);
+}
+
+.tv-btn-step {
+  font-family: var(--tv-mono);
+  font-size: 13px;
+}
+
+.tv-btn-main-play {
+  height: 60px;
+  background: linear-gradient(135deg, #0284c7 0%, #00d2ff 100%);
+  border-color: #38bdf8;
+  color: #030712;
+  box-shadow: 0 0 16px rgba(0, 210, 255, 0.4);
+}
+
+.tv-btn-main-play:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #38bdf8 100%);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(0, 210, 255, 0.6);
+  transform: scale(1.08);
+}
+
+.tv-external-link-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.tv-open-yt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.tv-open-yt-btn:hover {
+  background: #1f2937;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+/* 7. MODAL DE CONTROL REMOTO */
+.tv-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.tv-modal-content {
+  width: 90%;
+  max-width: 860px;
+  background: #090e1a;
+  border: 1px solid var(--tv-cyan);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tv-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #04070d;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tv-modal-header h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.tv-modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tv-remote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.remote-key-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.key-badge {
+  display: inline-block;
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.remote-key-card p {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.tv-remote-note {
+  background: #061c2e;
+  border: 1px solid #0284c7;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #7dd3fc;
+  line-height: 1.4;
+}
+
+/* 8. TOAST NOTIFICATIONS */
+.tv-toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 300;
+}
+
+.tv-toast {
+  background: #090f1d;
+  border: 1px solid var(--tv-cyan);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.tv-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media queries para pantallas 4K UHD nativas (3840x2160) */
+@media (min-width: 2500px) {
+  :root {
+    --tv-header-height: 84px;
+    --tv-sidebar-width: 480px;
+    --tv-player-width: 600px;
+  }
+  
+  html, body {
+    font-size: 20px;
+  }
+  
+  .tv-current-title { font-size: 32px; }
+  .tv-current-artist { font-size: 24px; }
+  .tv-btn { height: 56px; font-size: 17px; }
+  .tv-ctrl-btn { height: 68px; font-size: 16px; }
+  .tv-btn-main-play { height: 76px; }
+}
+
+/* Estilos para Conmutador de Idioma y Libro Faltantes en TV */
+.tv-pill-lang {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.3) 0%, rgba(147, 51, 234, 0.35) 100%) !important;
+  border: 1px solid rgba(236, 72, 153, 0.7) !important;
+  color: #fce7f3 !important;
+  font-weight: 800;
+}
+.tv-pill-lang.active {
+  background: linear-gradient(135deg, #059669 0%, #0891b2 100%) !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.6) !important;
+}
+
+.tv-book-fal.active {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #000000 !important;
+  font-weight: 900;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.6) !important;
+}
+
+/* ==============================================================
+   7. DIAGRAMAS DE ACORDES DE GUITARRA (SSoT)
+   ============================================================== */
+.tv-chords-panel {
+  display: flex;
+  flex-direction: column;
+  background: #050811;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 14px;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.tv-chords-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tv-chords-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tv-chords-badge {
+  font-size: 11px;
+  font-weight: 800;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.tv-chords-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.tv-chords-grid::-webkit-scrollbar {
+  width: 5px;
+}
+.tv-chords-grid::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+.tv-chord-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 8px 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.tv-chord-card:hover,
+.tv-chord-card:focus-visible {
+  border-color: #00f0ff;
+  background: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 240, 255, 0.3);
+}
+
+.tv-chord-svg {
+  width: 100%;
+  max-width: 105px;
+  height: auto;
+  display: block;
+}
+
+.tv-chord-card.tv-chord-blank-card {
+  opacity: 0.8;
+  border: 1px dashed #334155;
+  background: #060a14;
+}
+
+.tv-chord-card.tv-chord-blank-card:hover,
+.tv-chord-card.tv-chord-blank-card:focus {
+  border-color: #64748b;
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.2);
+}
+
+/* ==============================================================
+   NAVEGACIÓN UNIVERSAL PARA CONTROLES REMOTOS DE SMART TV (D-PAD)
+   ============================================================== */
+:focus {
+  outline: none;
+}
+
+:focus-visible,
+.tv-song-item:focus,
+.tv-btn:focus,
+.tv-pill-btn:focus,
+.tv-col-btn:focus,
+.tv-page-btn:focus,
+.tv-chord-card:focus,
+.tv-book-btn:focus,
+.tv-filter-tab:focus,
+.tv-step-btn:focus,
+.tv-audio-card:focus,
+.tv-remote-close:focus {
+  outline: 3px solid #00f0ff !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.75) !important;
+  z-index: 25 !important;
+}
+
+.tv-song-item:focus {
+  background: #112240 !important;
+  border-color: #00f0ff !important;
+  transform: translateX(4px);
+}
+
+.tv-chords-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px 12px;
+  color: #64748b;
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* ==============================================================
+   8. PROTECCIÓN AVANZADA OLED LG C4 (ANTI-BURN IN & CAREFREE)
+   ============================================================== */
+/* Botón Apagar Pantalla en Header */
+.tv-btn-oled-blackout {
+  background: #090e1a !important;
+  border: 1px solid #1e293b !important;
+  color: #cbd5e1 !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.tv-btn-oled-blackout:hover {
+  background: #111827 !important;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.4);
+}
+
+/* Modo Atenuado Desactivado: La protección OLED únicamente oculta los botones fijos sin oscurecer jamás la pantalla ni la letra */
+body.oled-dimmed .tv-header,
+body.oled-dimmed .tv-sidebar,
+body.oled-dimmed .tv-player-panel,
+body.oled-dimmed .tv-stage {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+body.oled-dimmed #tv-oled-dim-hint {
+  display: none !important;
+}
+
+@keyframes oledPulseHint {
+  from { opacity: 0.4; transform: translate(-50%, 0); }
+  to { opacity: 0.85; transform: translate(-50%, -4px); }
+}
+
+.tv-oled-dim-hint {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(3, 7, 18, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 22px;
+  border-radius: 9999px;
+  z-index: 9999;
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.85);
+}
+
+/* Capa Protectora Pantalla Apagada (0 Nits / True Black) */
+.tv-oled-blackout {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #475569;
+  cursor: pointer;
+  animation: oledFadeIn 0.3s ease-out;
+}
+
+@keyframes oledFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tv-oled-blackout-content {
+  max-width: 650px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+
+.tv-oled-blackout-content .oled-moon-icon {
+  font-size: 52px;
+  opacity: 0.25;
+  animation: oledMoonGlow 6s infinite alternate ease-in-out;
+}
+
+@keyframes oledMoonGlow {
+  0% { transform: scale(0.95); opacity: 0.2; }
+  100% { transform: scale(1.05); opacity: 0.4; }
+}
+
+.tv-oled-blackout-content h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: -0.5px;
+}
+
+.tv-oled-blackout-content .oled-subtitle {
+  font-size: 15px;
+  color: #475569;
+}
+
+.tv-oled-blackout-content .oled-now-playing {
+  font-size: 18px;
+  font-weight: 700;
+  color: #38bdf8;
+  padding: 10px 24px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid #1e293b;
+  border-radius: 9999px;
+  margin-top: 8px;
+}
+
+.tv-oled-blackout-content .oled-wake-hint {
+  font-size: 13px;
+  color: #334155;
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

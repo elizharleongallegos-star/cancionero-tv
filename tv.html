@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Cancionero — LG C4 OLED TV Edition</title>
+  
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tv.css?v=2.0.0">
+</head>
+<body class="theme-oled-dark layout-split">
+  <div id="tv-app" class="tv-app-container">
+
+    <!-- 1. BARRA SUPERIOR TV (10-FOOT UI / OLED C4) -->
+    <header class="tv-header">
+      <div class="tv-header-left">
+        <button id="btn-toggle-sidebar" class="tv-btn tv-btn-nav" title="Ocultar / Mostrar lista de canciones (Tecla M)" tabindex="0">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <span class="btn-text">Repertorio</span>
+        </button>
+        <div class="tv-brand">
+          <span class="tv-brand-title">CANCIONERO</span>
+          <span class="tv-brand-badge">LG C4 OLED · 4K</span>
+        </div>
+      </div>
+
+      <!-- Selector de Modos de Visualización (PDF | Word | Karaoke) -->
+      <div class="tv-header-center">
+        <div class="tv-pill-group" role="tablist">
+          <button id="tv-mode-pdf" class="tv-pill-btn" role="tab" title="Hoja PDF original (Tecla 1)" tabindex="0">📄 PDF</button>
+          <button id="tv-mode-word" class="tv-pill-btn active" role="tab" title="Hoja Word con acordes resaltados (Tecla 2)" tabindex="0">📝 Word</button>
+          <button id="tv-mode-karaoke" class="tv-pill-btn tv-pill-karaoke" role="tab" title="Modo Karaoke sincronizado en pantalla gigante (Tecla 3)" tabindex="0">🎤 Karaoke</button>
+        <button id="tv-btn-toggle-lang" class="tv-pill-btn tv-pill-lang" role="tab" title="Alternar entre versión original y traducida al español" style="display:none;" tabindex="0">🇯🇵 Original</button>
+        </div>
+      </div>
+
+      <div class="tv-header-right">
+        <!-- Selector de Tema de Hoja: OLED Negro Puro vs Papel Blanco -->
+        <button id="btn-toggle-theme" class="tv-btn tv-btn-toggle" title="Alternar entre OLED Negro y Papel Blanco (Tecla O)" tabindex="0">
+          <span id="theme-icon">🌙</span>
+          <span id="theme-label" class="btn-text">OLED Cine</span>
+        </button>
+
+        <!-- Selector de Columnas en Modo Word (1C, 2C, 3C, 4C) -->
+        <div id="tv-cols-selector" class="tv-cols-group" title="Número de columnas para aprovechar la pantalla ancha 16:9">
+          <span class="cols-title">Cols:</span>
+          <button type="button" class="tv-col-btn" data-cols="1" tabindex="0">1C</button>
+          <button type="button" class="tv-col-btn active" data-cols="2" tabindex="0">2C</button>
+          <button type="button" class="tv-col-btn" data-cols="3" tabindex="0">3C</button>
+          <button type="button" class="tv-col-btn" data-cols="4" tabindex="0">4C</button>
+        </div>
+
+        <!-- Alternador de Disposición: Split (Letra + Video) vs Solo Letra/Karaoke -->
+        <button id="btn-toggle-layout" class="tv-btn tv-btn-toggle" title="Alternar entre pantalla dividida (con video) o escenario completo" tabindex="0">
+          <span id="layout-icon">🗖</span>
+          <span id="layout-label" class="btn-text">Dividido</span>
+        </button>
+
+        <!-- Zoom TV -->
+        <div class="tv-zoom-group">
+          <button id="btn-zoom-out" class="tv-btn-sm" title="Reducir tamaño de letra" tabindex="0">➖</button>
+          <span id="tv-zoom-badge" class="tv-zoom-badge">100%</span>
+          <button id="btn-zoom-in" class="tv-btn-sm" title="Aumentar tamaño de letra" tabindex="0">➕</button>
+        </div>
+
+        <!-- Pantalla Completa TV -->
+        <button id="btn-fullscreen-tv" class="tv-btn tv-btn-fs" title="Pantalla completa TV (Tecla F)" tabindex="0">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          <span class="btn-text">Pantalla Completa</span>
+        </button>
+
+        <!-- Ayuda Control Remoto -->
+        <button id="btn-remote-help" class="tv-btn tv-btn-help" title="Ver atajos del control Magic Remote LG" tabindex="0">
+          <span>❓</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 2. CUERPO PRINCIPAL WIDESCREEN 16:9 -->
+    <div class="tv-main-layout">
+
+      <!-- 2.1 PANEL LATERAL: REPERTORIO Y LISTA DE CANCIONES (COLLAPSIBLE) -->
+      <aside id="tv-sidebar" class="tv-sidebar">
+        <!-- Selector de Libro / Repertorio (Todos | Principal | Reggaetón) -->
+        <div class="tv-book-switcher">
+          <button id="tv-book-all" class="tv-book-btn active" data-book="all" tabindex="0">
+            <span class="book-dot"></span>
+            <span class="book-name">🌐 Todos</span>
+            <span class="book-count" id="tv-count-all">740</span>
+          </button>
+          <button id="tv-book-principal" class="tv-book-btn" data-book="principal" tabindex="0">
+            <span class="book-dot"></span>
+            <span class="book-name">🎸 Principal</span>
+            <span class="book-count" id="tv-count-prin">562</span>
+          </button>
+          <button id="tv-book-reggaeton" class="tv-book-btn tv-book-reg" data-book="reggaeton" tabindex="0">
+            <span class="book-dot"></span>
+            <span class="book-name">🔥 Reggaetón</span>
+            <span class="book-count" id="tv-count-reg">178</span>
+          </button>
+          <button id="tv-book-faltantes" class="tv-book-btn tv-book-fal" data-book="faltantes" tabindex="0">
+            <span class="book-dot"></span>
+            <span class="book-name">⭐ Faltantes</span>
+            <span class="book-count" id="tv-count-fal">149</span>
+          </button>
+        </div>
+
+        <!-- Caja de Búsqueda Rápida TV -->
+        <div class="tv-search-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#38bdf8" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="tv-search-input" placeholder="Buscar artista, canción o #playlist..." autocomplete="off" tabindex="0">
+          <button id="btn-tv-clear-search" class="tv-clear-btn" style="display:none;" tabindex="0">✕</button>
+        </div>
+
+        <!-- Filtro por Artista -->
+        <div class="tv-filter-row">
+          <select id="tv-artist-select" class="tv-select" tabindex="0">
+            <option value="">🎤 Todos los artistas</option>
+          </select>
+        </div>
+
+        <!-- Tabs de Conexión -->
+        <div class="tv-filter-tabs">
+          <button class="tv-filter-tab active" data-filter="all" tabindex="0">Todas (<span id="count-tab-all">0</span>)</button>
+          <button class="tv-filter-tab" data-filter="matched" tabindex="0">Conectadas (<span id="count-tab-matched">0</span>)</button>
+          <button class="tv-filter-tab" data-filter="unmatched" tabindex="0">Sin Calce (<span id="count-tab-unmatched">0</span>)</button>
+        </div>
+
+        <!-- Lista Desplazable de Canciones -->
+        <div id="tv-song-list" class="tv-song-list" tabindex="0">
+          <div class="tv-loading-list">Cargando repertorio oficial...</div>
+        </div>
+      </aside>
+
+      <!-- 2.2 ESCENARIO CENTRAL: VISOR DE CANCIÓN (WORD / PDF / KARAOKE) -->
+      <section id="tv-stage" class="tv-stage">
+        
+        <!-- Barra de Contexto de la Canción Actual -->
+        <div class="tv-song-context-bar">
+          <div class="tv-context-left">
+            <div class="tv-song-title-row">
+              <span id="tv-song-title" class="tv-current-title">Selecciona una canción</span>
+              <span id="tv-song-artist" class="tv-current-artist"></span>
+            </div>
+            <div class="tv-meta-badges">
+              <span id="tv-badge-playlist" class="tv-badge tv-badge-pl">🎵 Playlist #—</span>
+              <span id="tv-badge-tone" class="tv-badge tv-badge-tone" style="display:none;"></span>
+              <span id="tv-badge-pages" class="tv-badge tv-badge-pages">1 Hoja</span>
+              <select id="tv-versions-select" class="tv-versions-select" style="display:none;" title="Cambiar versión de la playlist" tabindex="0">
+              </select>
+            </div>
+          </div>
+
+          <!-- Controles de Sincronización Karaoke (Solo visibles en modo Karaoke) -->
+          <div id="tv-karaoke-sync-controls" class="tv-karaoke-sync-bar" style="display:none;">
+            <span class="sync-tag">🧪 Sincronización Voz:</span>
+            <button id="btn-tv-k-minus" class="tv-step-btn" title="Retrasar letra 0.5s" tabindex="0">-0.5s</button>
+            <button id="btn-tv-k-reset" class="tv-offset-display" title="Reiniciar desfase" tabindex="0">0.0s</button>
+            <button id="btn-tv-k-plus" class="tv-step-btn" title="Adelantar letra 0.5s" tabindex="0">+0.5s</button>
+          </div>
+
+          <!-- Paginador Flotante (Para PDF o Word multipágina) -->
+          <div id="tv-page-nav" class="tv-page-nav" style="display:none;">
+            <button id="btn-tv-prev-page" class="tv-page-btn" tabindex="0">◀ Hoja Anterior</button>
+            <span id="tv-page-indicator" class="tv-page-indicator">Hoja 1 de 1</span>
+            <button id="btn-tv-next-page" class="tv-page-btn" tabindex="0">Hoja Siguiente ▶</button>
+          </div>
+        </div>
+
+        <!-- Contenedor del Documento / Hoja -->
+        <div id="tv-sheet-scroller" class="tv-sheet-scroller">
+          <div id="tv-sheet-render-box" class="tv-sheet-render-box">
+            <div class="tv-sheet-placeholder">
+              <div class="placeholder-icon">🎸</div>
+              <h2>Cancionero para LG C4 OLED</h2>
+              <p>Selecciona cualquier canción de la lista izquierda con tu control Magic Remote o pulsa <strong>OK</strong> para reproducir.</p>
+              <div class="tv-hint-keys">
+                <span><strong>Flechas ◄ / ►:</strong> Cambiar canción</span>
+                <span><strong>Espacio:</strong> Play / Pausa</span>
+                <span><strong>Tecla M:</strong> Ocultar menú</span>
+                <span><strong>Tecla F:</strong> Pantalla completa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2.3 PANEL DERECHO: REPRODUCTOR MULTIMEDIA Y VIDEO YOUTUBE TV -->
+      <section id="tv-player-panel" class="tv-player-panel">
+        <div class="tv-player-header">
+          <div class="player-header-title">
+            <span class="player-icon">🎬</span>
+            <span id="tv-player-track-info" class="player-track-text">YouTube Music Oficial</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <button id="btn-toggle-video-mode" class="tv-btn-video-mode active" title="Alternar entre Portada/Visualizer y Video de YouTube" tabindex="0">
+              <span id="video-mode-icon">📻</span>
+              <span id="video-mode-text">Ver Portada</span>
+            </button>
+            <button id="btn-collapse-video" class="tv-btn-icon" title="Ocultar video para pantalla completa" tabindex="0">
+              <span>✕</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Escenario de Video YouTube 16:9 -->
+        <div class="tv-video-stage" id="tv-video-stage">
+          <div id="tv-yt-player-target"></div>
+        </div>
+
+        <!-- Barra de Avance y Tiempo -->
+        <div class="tv-seek-container">
+          <div class="tv-time-row">
+            <span id="tv-time-current" class="tv-time-label">0:00</span>
+            <span id="tv-time-total" class="tv-time-label">0:00</span>
+          </div>
+          <input type="range" id="tv-seek-slider" class="tv-seek-slider" min="0" max="1000" value="0" step="1" tabindex="0" aria-label="Línea de tiempo de la canción">
+        </div>
+
+        <!-- Fila de Modos de Reproducción: Aleatorio (Shuffle) y Repetir Canción (Repeat) -->
+        <div class="tv-playback-modes-row">
+          <button id="btn-tv-shuffle" class="tv-mode-btn" title="Reproducción Aleatoria (Garantiza escuchar todas las canciones sin repetir - Tecla S)" tabindex="0">
+            <span class="mode-icon">🔀</span>
+            <span class="mode-label">Aleatorio</span>
+          </button>
+          <button id="btn-tv-repeat" class="tv-mode-btn" title="Repetir Canción Actual en bucle (Tecla R)" tabindex="0">
+            <span class="mode-icon">🔁</span>
+            <span class="mode-label">Repetir</span>
+          </button>
+        </div>
+
+        <!-- Gran Botonera de Control Magic Remote / TV -->
+        <div class="tv-transport-controls">
+          <button id="btn-tv-prev-song" class="tv-ctrl-btn" title="Canción anterior en la Playlist (Flecha Izq)" tabindex="0">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+            <span class="btn-subtext">Ant</span>
+          </button>
+
+          <button id="btn-tv-rew-10" class="tv-ctrl-btn tv-btn-step" title="Retroceder 10 segundos" tabindex="0">
+            <span>-10s</span>
+          </button>
+
+          <button id="btn-tv-rew-5" class="tv-ctrl-btn tv-btn-step" title="Retroceder 5 segundos" tabindex="0">
+            <span>-5s</span>
+          </button>
+
+          <!-- Gran Botón Play / Pause -->
+          <button id="btn-tv-play-pause" class="tv-ctrl-btn tv-btn-main-play" title="Reproducir / Pausar (Espacio u OK)" tabindex="0">
+            <svg id="tv-icon-play" viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg id="tv-icon-pause" viewBox="0 0 24 24" width="34" height="34" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+
+          <button id="btn-tv-fwd-5" class="tv-ctrl-btn tv-btn-step" title="Adelantar 5 segundos" tabindex="0">
+            <span>+5s</span>
+          </button>
+
+          <button id="btn-tv-fwd-10" class="tv-ctrl-btn tv-btn-step" title="Adelantar 10 segundos" tabindex="0">
+            <span>+10s</span>
+          </button>
+
+          <button id="btn-tv-next-song" class="tv-ctrl-btn" title="Siguiente canción en la Playlist (Flecha Der)" tabindex="0">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+            <span class="btn-subtext">Sig</span>
+          </button>
+        </div>
+
+        <!-- Enlace a YouTube Music App -->
+        <div class="tv-external-link-row">
+          <a id="btn-tv-open-yt" class="tv-open-yt-btn" href="#" target="_blank" tabindex="0">
+            <span>▶ Abrir en YouTube</span>
+          </a>
+        </div>
+
+        <!-- 2.3.1 DIAGRAMAS DE ACORDES DE GUITARRA (SSoT) -->
+        <div id="tv-chords-panel" class="tv-chords-panel">
+          <div class="tv-chords-header">
+            <div class="tv-chords-title">
+              <span class="chords-icon">🎸</span>
+              <span>Acordes Usados</span>
+            </div>
+            <span id="tv-chords-badge" class="tv-chords-badge">0 acordes</span>
+          </div>
+          <div id="tv-chords-grid" class="tv-chords-grid">
+            <div class="tv-chords-empty">Selecciona una canción para ver sus acordes</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 3. MODAL DE AYUDA / CONTROL REMOTO LG C4 -->
+    <div id="tv-remote-modal" class="tv-modal" style="display:none;">
+      <div class="tv-modal-content">
+        <div class="tv-modal-header">
+          <h3>🎮 Guía de Control Remoto — Universal Smart TV (LG, Samsung, Android, Sony, Hisense)</h3>
+          <button id="btn-close-remote-modal" class="tv-btn-icon" tabindex="0">✕</button>
+        </div>
+        <div class="tv-modal-body">
+          <div class="tv-remote-grid">
+            <div class="remote-key-card">
+              <span class="key-badge">Cruceta ▲ / ▼</span>
+              <p>Mueve el foco entre las canciones de la lista, o desplaza la partitura verticalmente.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Cruceta ◄ / ►</span>
+              <p>Cambia de canción previa/siguiente o salta entre la lista y la hoja de acordes.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Botón OK / Enter</span>
+              <p>Selecciona la canción resaltada o conmuta Play / Pausa inmediatamente.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Volver / Return / Back</span>
+              <p>Regresa a la lista de canciones o reactiva la pantalla si está apagada.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Botón Rojo (A)</span>
+              <p>Oculta o muestra el menú lateral para dejar la hoja en formato ultra amplio.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Botón Verde (B)</span>
+              <p>Cambia cíclicamente de modo: <strong>Word</strong> ↔ <strong>PDF</strong> ↔ <strong>Karaoke</strong>.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Botón Amarillo (C)</span>
+              <p>Alterna entre portada con ecualizador y el reproductor de video YouTube.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Botón Azul (D)</span>
+              <p><strong>Apagar Pantalla (0 Nits):</strong> Modo solo audio con subpíxeles apagados al 100%.</p>
+            </div>
+            <div class="remote-key-card">
+              <span class="key-badge">Canal + / - (PageUp/Down)</span>
+              <p>Cambia a la siguiente o anterior hoja en canciones multipágina o PDF.</p>
+            </div>
+          </div>
+          <div class="tv-remote-note">
+            🛡️ <strong>Protección OLED LG C4 Activa:</strong> La aplicación cuenta con <strong>Pixel Orbiter</strong> continuo (desplazamiento imperceptible de píxeles cada 60s), <strong>Atenuador Automático</strong> tras 2 min de inactividad, y el botón <strong>Apagar Pantalla</strong> que lleva el panel a 0 nits reales mientras la música continúa.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elemento de Audio Nativo de Alta Fidelidad (Streaming local del servidor 3010) -->
+    <audio id="tv-native-audio" style="display:none;" playsinline preload="auto"></audio>
+
+    <!-- 4. CAPA PROTECTORA OLED: PANTALLA APAGADA (0 NITS / TRUE BLACK) -->
+    <div id="tv-oled-blackout" class="tv-oled-blackout" style="display:none;" tabindex="0">
+      <div class="tv-oled-blackout-content">
+        <div class="oled-moon-icon">🌑</div>
+        <h2>Pantalla OLED Apagada (0 Nits)</h2>
+        <p class="oled-subtitle">Modo Solo Audio Activo — Subpíxeles apagados al 100%</p>
+        <div id="tv-oled-now-playing" class="oled-now-playing">Reproduciendo música...</div>
+        <div class="oled-wake-hint">Presiona cualquier tecla o mueve el Magic Remote para reactivar</div>
+      </div>
+    </div>
+
+    <!-- 5. NOTIFICACIÓN FLOTANTE DE ATENUACIÓN OLED POR INACTIVIDAD -->
+    <div id="tv-oled-dim-hint" class="tv-oled-dim-hint" style="display:none;">
+      <span>🛡️ Protección OLED Activa — Mueve el control para reactivar brillo pleno</span>
+    </div>
+
+    <!-- 6. TOAST NOTIFICATIONS TV -->
+    <div id="tv-toast-container" class="tv-toast-container"></div>
+
+  </div>
+
+  <!-- BUNDLES DE DATOS IDÉNTICOS AL CANCIONERO MÓVIL (SSOT) -->
+  <script src="cancionero_db.js?v=3.2.1"></script>
+  <script src="playlist_db.js?v=3.2.1"></script>
+  <script src="reggaeton_db.js?v=3.2.1"></script>
+  <script src="faltantes_db.js?v=3.2.1"></script>
+  <script src="karaoke_db.js?v=3.2.1"></script>
+  <script src="jszip.min.js"></script>
+  <script src="pdf.min.js?v=2.16.105"></script>
+  <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
+  <script src="tv.js?v=2.0.0"></script>
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api" async defer></script>
+</body>
+</html>
