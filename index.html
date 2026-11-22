@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=2.1.0">
+  <link rel="stylesheet" href="tv.css?v=2.2.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -24,6 +24,10 @@
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
           <span class="btn-text">Repertorio</span>
         </button>
+        <!-- Ayuda Control Remoto antes de Cancionero -->
+        <button id="btn-remote-help" class="tv-btn tv-btn-help" title="Ver atajos del control Magic Remote LG" tabindex="0">
+          <span>❓</span>
+        </button>
         <div class="tv-brand">
           <span class="tv-brand-title">CANCIONERO</span>
           <span class="tv-brand-badge">LG C4 OLED · 4K</span>
@@ -34,7 +38,7 @@
       <div class="tv-header-center">
         <div class="tv-pill-group" role="tablist">
           <button id="tv-mode-pdf" class="tv-pill-btn" role="tab" title="Hoja PDF original (Tecla 1)" tabindex="0">📄 PDF</button>
-          <button id="tv-mode-word" class="tv-pill-btn active" role="tab" title="Hoja Word con acordes resaltados (Tecla 2)" tabindex="0">📝 Word</button>
+          <button id="tv-mode-word" class="tv-pill-btn active" role="tab" title="Hoja Word continua con acordes resaltados (Tecla 2)" tabindex="0">📝 Word</button>
           <button id="tv-mode-karaoke" class="tv-pill-btn tv-pill-karaoke" role="tab" title="Modo Karaoke sincronizado en pantalla gigante (Tecla 3)" tabindex="0">🎤 Karaoke</button>
         <button id="tv-btn-toggle-lang" class="tv-pill-btn tv-pill-lang" role="tab" title="Alternar entre versión original y traducida al español" style="display:none;" tabindex="0">🇯🇵 Original</button>
         </div>
@@ -56,12 +60,6 @@
           <button type="button" class="tv-col-btn" data-cols="4" tabindex="0">4C</button>
         </div>
 
-        <!-- Alternador de Disposición: Split (Letra + Video) vs Solo Letra/Karaoke -->
-        <button id="btn-toggle-layout" class="tv-btn tv-btn-toggle" title="Alternar entre pantalla dividida (con video) o escenario completo" tabindex="0">
-          <span id="layout-icon">🗖</span>
-          <span id="layout-label" class="btn-text">Dividido</span>
-        </button>
-
         <!-- Zoom TV -->
         <div class="tv-zoom-group">
           <button id="btn-zoom-out" class="tv-btn-sm" title="Reducir tamaño de letra" tabindex="0">➖</button>
@@ -75,9 +73,10 @@
           <span class="btn-text">Pantalla Completa</span>
         </button>
 
-        <!-- Ayuda Control Remoto -->
-        <button id="btn-remote-help" class="tv-btn tv-btn-help" title="Ver atajos del control Magic Remote LG" tabindex="0">
-          <span>❓</span>
+        <!-- Botón Reproducción / Acordes en esquina superior derecha -->
+        <button id="btn-toggle-layout" class="tv-btn tv-btn-toggle tv-btn-player-toggle active" title="Mostrar u ocultar panel de Reproducción y Acordes sin detener la música" tabindex="0">
+          <span id="layout-icon">🎸</span>
+          <span id="layout-label" class="btn-text">Reproducción / Acordes</span>
         </button>
       </div>
     </header>
@@ -85,51 +84,49 @@
     <!-- 2. CUERPO PRINCIPAL WIDESCREEN 16:9 -->
     <div class="tv-main-layout">
 
-      <!-- 2.1 PANEL LATERAL: REPERTORIO Y LISTA DE CANCIONES (COLLAPSIBLE) -->
+      <!-- 2.1 PANEL LATERAL: REPERTORIO Y LISTA DE CANCIONES (REDIMENSIONABLE) -->
       <aside id="tv-sidebar" class="tv-sidebar">
-        <!-- Selector de Libro / Repertorio (Todos | Principal | Reggaetón) -->
-        <div class="tv-book-switcher">
-          <button id="tv-book-all" class="tv-book-btn active" data-book="all" tabindex="0">
-            <span class="book-dot"></span>
-            <span class="book-name">🌐 Todos</span>
-            <span class="book-count" id="tv-count-all">740</span>
-          </button>
-          <button id="tv-book-principal" class="tv-book-btn" data-book="principal" tabindex="0">
-            <span class="book-dot"></span>
-            <span class="book-name">🎸 Principal</span>
-            <span class="book-count" id="tv-count-prin">562</span>
-          </button>
-          <button id="tv-book-reggaeton" class="tv-book-btn tv-book-reg" data-book="reggaeton" tabindex="0">
-            <span class="book-dot"></span>
-            <span class="book-name">🔥 Reggaetón</span>
-            <span class="book-count" id="tv-count-reg">178</span>
-          </button>
-          <button id="tv-book-faltantes" class="tv-book-btn tv-book-fal" data-book="faltantes" tabindex="0">
-            <span class="book-dot"></span>
-            <span class="book-name">⭐ Faltantes</span>
-            <span class="book-count" id="tv-count-fal">149</span>
-          </button>
-        </div>
+        <div class="tv-sidebar-filters">
+          <!-- Selector de Cancionero en grilla simétrica 2x2 -->
+          <div class="tv-book-switcher">
+            <button id="tv-book-all" class="tv-book-btn active" data-book="all" tabindex="0">
+              <span class="book-name">🌐 Todos</span>
+              <span class="book-count" id="tv-count-all">889</span>
+            </button>
+            <button id="tv-book-principal" class="tv-book-btn" data-book="principal" tabindex="0">
+              <span class="book-name">🎸 Principal</span>
+              <span class="book-count" id="tv-count-prin">562</span>
+            </button>
+            <button id="tv-book-reggaeton" class="tv-book-btn tv-book-reg" data-book="reggaeton" tabindex="0">
+              <span class="book-name">🔥 Reggaetón</span>
+              <span class="book-count" id="tv-count-reg">178</span>
+            </button>
+            <button id="tv-book-faltantes" class="tv-book-btn tv-book-fal" data-book="faltantes" tabindex="0">
+              <span class="book-name">⭐ Faltantes</span>
+              <span class="book-count" id="tv-count-fal">149</span>
+            </button>
+          </div>
 
-        <!-- Caja de Búsqueda Rápida TV -->
-        <div class="tv-search-box">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#38bdf8" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="text" id="tv-search-input" placeholder="Buscar artista, canción o #playlist..." autocomplete="off" tabindex="0">
-          <button id="btn-tv-clear-search" class="tv-clear-btn" style="display:none;" tabindex="0">✕</button>
-        </div>
+          <!-- Caja de Búsqueda Rápida TV -->
+          <div class="tv-search-box">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="text" id="tv-search-input" placeholder="Buscar canción, artista o #playlist..." autocomplete="off" tabindex="0">
+            <button id="btn-tv-clear-search" class="tv-clear-btn" style="display:none;" tabindex="0">✕</button>
+          </div>
 
-        <!-- Filtro por Artista -->
-        <div class="tv-filter-row">
-          <select id="tv-artist-select" class="tv-select" tabindex="0">
-            <option value="">🎤 Todos los artistas</option>
-          </select>
-        </div>
+          <!-- Filtro por Artista -->
+          <div class="tv-filter-row">
+            <select id="tv-artist-select" class="tv-select" tabindex="0">
+              <option value="">🎤 Todos los artistas</option>
+            </select>
+          </div>
 
-        <!-- Tabs de Conexión -->
-        <div class="tv-filter-tabs">
-          <button class="tv-filter-tab active" data-filter="all" tabindex="0">Todas (<span id="count-tab-all">0</span>)</button>
-          <button class="tv-filter-tab" data-filter="matched" tabindex="0">Conectadas (<span id="count-tab-matched">0</span>)</button>
-          <button class="tv-filter-tab" data-filter="unmatched" tabindex="0">Sin Calce (<span id="count-tab-unmatched">0</span>)</button>
+          <!-- Tabs de Estado de Conexión -->
+          <div class="tv-filter-tabs">
+            <button class="tv-filter-tab active" data-filter="all" tabindex="0">Todas (<span id="count-tab-all">0</span>)</button>
+            <button class="tv-filter-tab" data-filter="matched" tabindex="0">Conectadas (<span id="count-tab-matched">0</span>)</button>
+            <button class="tv-filter-tab" data-filter="unmatched" tabindex="0">Sin Calce (<span id="count-tab-unmatched">0</span>)</button>
+          </div>
         </div>
 
         <!-- Lista Desplazable de Canciones -->
@@ -137,6 +134,11 @@
           <div class="tv-loading-list">Cargando repertorio oficial...</div>
         </div>
       </aside>
+
+      <!-- Separador Ajustable Izquierdo (Lista de canciones) -->
+      <div id="tv-resizer-left" class="tv-panel-resizer" role="separator" aria-orientation="vertical" aria-label="Ajustar ancho de la lista de canciones" title="Arrastra o usa flechas ◄/► para ajustar ancho de la lista (doble clic restablece)" tabindex="0">
+        <span class="resizer-grip"></span>
+      </div>
 
       <!-- 2.2 ESCENARIO CENTRAL: VISOR DE CANCIÓN (WORD / PDF / KARAOKE) -->
       <section id="tv-stage" class="tv-stage">
@@ -151,25 +153,17 @@
             <div class="tv-meta-badges">
               <span id="tv-badge-playlist" class="tv-badge tv-badge-pl">🎵 Playlist #—</span>
               <span id="tv-badge-tone" class="tv-badge tv-badge-tone" style="display:none;"></span>
-              <span id="tv-badge-pages" class="tv-badge tv-badge-pages">1 Hoja</span>
+              <span id="tv-badge-pages" class="tv-badge tv-badge-pages">Continuo</span>
               <select id="tv-versions-select" class="tv-versions-select" style="display:none;" title="Cambiar versión de la playlist" tabindex="0">
               </select>
             </div>
           </div>
 
-          <!-- Controles de Sincronización Karaoke (Solo visibles en modo Karaoke) -->
-          <div id="tv-karaoke-sync-controls" class="tv-karaoke-sync-bar" style="display:none;">
-            <span class="sync-tag">🧪 Sincronización Voz:</span>
-            <button id="btn-tv-k-minus" class="tv-step-btn" title="Retrasar letra 0.5s" tabindex="0">-0.5s</button>
-            <button id="btn-tv-k-reset" class="tv-offset-display" title="Reiniciar desfase" tabindex="0">0.0s</button>
-            <button id="btn-tv-k-plus" class="tv-step-btn" title="Adelantar letra 0.5s" tabindex="0">+0.5s</button>
-          </div>
-
-          <!-- Paginador Flotante (Para PDF o Word multipágina) -->
+          <!-- Paginador Flotante (Exclusivo para modo PDF; en Word es continuo sin páginas) -->
           <div id="tv-page-nav" class="tv-page-nav" style="display:none;">
-            <button id="btn-tv-prev-page" class="tv-page-btn" tabindex="0">◀ Hoja Anterior</button>
-            <span id="tv-page-indicator" class="tv-page-indicator">Hoja 1 de 1</span>
-            <button id="btn-tv-next-page" class="tv-page-btn" tabindex="0">Hoja Siguiente ▶</button>
+            <button id="btn-tv-prev-page" class="tv-page-btn" tabindex="0">◀ Pág. Anterior</button>
+            <span id="tv-page-indicator" class="tv-page-indicator">Pág. 1</span>
+            <button id="btn-tv-next-page" class="tv-page-btn" tabindex="0">Pág. Siguiente ▶</button>
           </div>
         </div>
 
@@ -190,6 +184,11 @@
           </div>
         </div>
       </section>
+
+      <!-- Separador Ajustable Derecho (Panel de Reproducción y Acordes) -->
+      <div id="tv-resizer-right" class="tv-panel-resizer" role="separator" aria-orientation="vertical" aria-label="Ajustar ancho del panel de reproducción y acordes" title="Arrastra o usa flechas ◄/► para ajustar ancho del reproductor (doble clic restablece)" tabindex="0">
+        <span class="resizer-grip"></span>
+      </div>
 
       <!-- 2.3 PANEL DERECHO: REPRODUCTOR MULTIMEDIA Y VIDEO YOUTUBE TV -->
       <section id="tv-player-panel" class="tv-player-panel">
@@ -376,13 +375,13 @@
   <script src="playlist_db.js?v=3.2.1"></script>
   <script src="reggaeton_db.js?v=3.2.1"></script>
   <script src="faltantes_db.js?v=3.2.1"></script>
-  <script src="karaoke_db.js?v=3.2.1"></script>
+  <script src="karaoke_db.js?v=5.0.0"></script>
   <script src="jszip.min.js"></script>
   <script src="pdf.min.js?v=2.16.105"></script>
   <!-- Motor Unificado de Sincronización Karaoke v4.0 (Palabra por palabra + Calibración) -->
   <script src="karaokeTapCalibrator.js?v=4.0.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=2.1.0"></script>
+  <script src="tv.js?v=2.2.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

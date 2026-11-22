@@ -399,9 +399,17 @@ function selectTvSong(songId, autoPlay = true) {
     }
   }
 
-  const pages = song.pages || [(song.raw_lines || [])];
   if (badgePages) {
-    badgePages.textContent = pages.length > 1 ? `🟢 ${pages.length} Hojas` : `1 Hoja`;
+    if (tvState.viewMode === 'word') {
+      badgePages.style.display = 'none';
+    } else if (tvState.viewMode === 'karaoke') {
+      badgePages.style.display = 'inline-block';
+      badgePages.textContent = '🎤 Karaoke';
+    } else {
+      const pages = song.pages || [(song.raw_lines || [])];
+      badgePages.style.display = 'inline-block';
+      badgePages.textContent = pages.length > 1 ? `📄 ${pages.length} Págs.` : '📄 1 Pág.';
+    }
   }
 
   // Selector de versiones alternativas
@@ -704,9 +712,8 @@ function startYtProgressPolling() {
           tvState.durationSec = dur;
           updateTvTimeUI();
           if (tvState.viewMode === 'karaoke') {
+            autoScaleKaraokeToLiveDuration(dur);
             syncTvKaraoke(cur);
-          } else if (tvState.viewMode === 'word') {
-            autoScrollWordForOled(cur, dur);
           }
         }
       }
@@ -714,19 +721,25 @@ function startYtProgressPolling() {
   }, 100);
 }
 
-var lastUserManualScrollTs = 0;
-function autoScrollWordForOled(curSec, durSec) {
-  // Desplazamiento suave automático en hojas largas para que el texto nunca quede fijo en los mismos píxeles OLED
-  if (Date.now() - lastUserManualScrollTs < 12000) return;
-  var scroller = document.getElementById('tv-sheet-scroller');
-  if (!scroller) return;
-  var maxScroll = scroller.scrollHeight - scroller.clientHeight;
-  if (maxScroll <= 30) return;
-  // Mantener un margen inicial (8%) y final (92%) para acompañar la lectura natural de la canción
-  var progress = Math.max(0, Math.min(1, (curSec - durSec * 0.06) / Math.max(1, durSec * 0.86)));
-  var targetTop = Math.round(maxScroll * progress);
-  if (Math.abs(scroller.scrollTop - targetTop) > 2) {
-    scroller.scrollTop = scroller.scrollTop + (targetTop - scroller.scrollTop) * 0.08;
+function autoScaleKaraokeToLiveDuration(liveDur) {
+  if (!tvState.karaokeSyncCtrl || !tvState.karaokeSyncCtrl.lines || !liveDur || liveDur < 30) return;
+  if (!tvState.karaokeIsEstimated || tvState.karaokeScaledToDur) return;
+  var baseDur = tvState.karaokeBaseDur || 185;
+  var ratio = liveDur / Math.max(30, baseDur);
+  if (Math.abs(1 - ratio) < 0.05) {
+    tvState.karaokeScaledToDur = true;
+    return;
+  }
+  tvState.karaokeScaledToDur = true;
+  var lines = tvState.karaokeSyncCtrl.lines;
+  for (var i = 0; i < lines.length; i++) {
+    lines[i].start = +(lines[i].start * ratio).toFixed(1);
+    lines[i].end = +(lines[i].end * ratio).toFixed(1);
+    if (Array.isArray(lines[i].words)) {
+      for (var w = 0; w < lines[i].words.length; w++) {
+        lines[i].words[w].start = +(lines[i].words[w].start * ratio).toFixed(1);
+      }
+    }
   }
 }
 
@@ -1150,17 +1163,39 @@ function renderTvWordSheet(song, renderBox) {
     ? song.spanishVersion.pages
     : ((song.pages && song.pages.length > 0) ? song.pages : [(song.raw_lines || [])]);
   const pages = activePages;
+
+  // En modo Word NO existen páginas ni paginador: siempre se muestra de forma continua y fija (sin movimiento)
   const pageNav = document.getElementById('tv-page-nav');
-  
-  if (pages.length > 1 && pageNav) {
-    pageNav.style.display = 'flex';
-    const indicator = document.getElementById('tv-page-indicator');
-    if (indicator) indicator.textContent = `Hoja ${tvState.currentPageIndex + 1} de ${pages.length}`;
-  } else if (pageNav) {
+  if (pageNav) {
     pageNav.style.display = 'none';
   }
+  const badgePages = document.getElementById('tv-badge-pages');
+  if (badgePages) {
+    badgePages.style.display = 'none';
+  }
 
-  const currentPageLines = pages[tvState.currentPageIndex] || pages[0] || [];
+  // Unir todas las hojas en un solo flujo continuo eliminando encabezados de título repetidos entre páginas
+  const continuousLines = [];
+  const normTitleKey = cleanTvPdfMatch((song.artist || '') + (song.title || ''));
+  for (let p = 0; p < pages.length; p++) {
+    const pageArr = pages[p] || [];
+    for (let li = 0; li < pageArr.length; li++) {
+      const item = pageArr[li];
+      const txt = typeof item === 'string' ? item : (item && item.text ? item.text : '');
+      if (p > 0 && li <= 2 && txt.trim()) {
+        const cleanLine = cleanTvPdfMatch(txt);
+        if (cleanLine && normTitleKey && (cleanLine === normTitleKey || normTitleKey.indexOf(cleanLine) !== -1 && cleanLine.length > 8)) {
+          continue; // Evitar repetir título en continuación de página
+        }
+      }
+      continuousLines.push(item);
+    }
+    if (p < pages.length - 1) {
+      continuousLines.push(''); // Separación natural entre bloques
+    }
+  }
+
+  const currentPageLines = continuousLines;
   const cols = tvState.wordCols || 2;
   const zoom = tvState.zoomScale || 1.0;
 
@@ -1289,23 +1324,28 @@ function buildTvKaraokeData(song) {
   }
 
   return {
-    sourceLabel: 'Estimación rítmica · Ajusta con -0.5s / +0.5s o toca cualquier verso',
+    sourceLabel: 'Sincronización Rítmica Calibrada',
     hasTimedSource: false,
-    rawK: fallbackTuples
+    rawK: fallbackTuples,
+    baseDur: estDuration
   };
-}
-
-function updateTvKaraokeOffsetUI(offsetSec) {
-  tvState.karaokeOffsetSec = Number((Number(offsetSec) || 0).toFixed(1));
-  var resetBtn = document.getElementById('btn-tv-k-reset');
-  if (resetBtn) {
-    resetBtn.textContent = (tvState.karaokeOffsetSec >= 0 ? '+' : '') + tvState.karaokeOffsetSec.toFixed(1) + 's';
-  }
 }
 
 function renderTvKaraokeSheet(song, renderBox) {
   var kBuilt = buildTvKaraokeData(song);
   var zoom = tvState.zoomScale || 1.0;
+
+  var pageNav = document.getElementById('tv-page-nav');
+  if (pageNav) pageNav.style.display = 'none';
+  var badgePages = document.getElementById('tv-badge-pages');
+  if (badgePages) {
+    badgePages.style.display = 'inline-block';
+    badgePages.textContent = '🎤 Karaoke';
+  }
+
+  tvState.karaokeIsEstimated = !kBuilt.hasTimedSource || (kBuilt.sourceLabel && kBuilt.sourceLabel.indexOf('Rítmica') !== -1);
+  tvState.karaokeBaseDur = (kBuilt.rawK && kBuilt.rawK.d) ? Number(kBuilt.rawK.d) : (kBuilt.baseDur || 185);
+  tvState.karaokeScaledToDur = false;
 
   var container = document.createElement('div');
   container.className = 'tv-karaoke-container';
@@ -1326,7 +1366,7 @@ function renderTvKaraokeSheet(song, renderBox) {
         if (!tvState.isPlaying) toggleTvPlayPause();
       },
       onSaveAnchors: function() {},
-      onOffsetChanged: function(nextOff) { updateTvKaraokeOffsetUI(nextOff); }
+      onOffsetChanged: function() {}
     });
   }
 
@@ -1338,12 +1378,11 @@ function renderTvKaraokeSheet(song, renderBox) {
       seekTvAbsolute(t);
       if (!tvState.isPlaying) toggleTvPlayPause();
     };
-    tvState.karaokeSyncCtrl.onOffsetChanged = function(nextOff) { updateTvKaraokeOffsetUI(nextOff); };
+    tvState.karaokeSyncCtrl.onOffsetChanged = function() {};
 
     var sId = song.karaokeLookupId || song.id || String(song.playlistIndex || 'default');
     var vid = tvState.currentVideoId || 'default';
     tvState.karaokeSyncCtrl.loadSongData(kBuilt.rawK, sId, vid, kBuilt.hasTimedSource);
-    updateTvKaraokeOffsetUI(tvState.karaokeSyncCtrl.globalOffsetSec || 0);
     tvState.karaokeSyncCtrl.updateActiveLine(tvState.currentTimeSec || 0, true);
   }
 }
@@ -1414,20 +1453,12 @@ function resolveSongPdfPage(song, isEsp, pageOffset) {
 }
 
 function navigateTvPage(delta) {
+  // Paginación exclusiva del modo PDF (en Word la vista siempre es continua)
   if (tvState.viewMode === 'pdf') {
     tvState.pdfPageOffset += delta;
     if (tvState.currentSong) {
       const renderBox = document.getElementById('tv-sheet-render-box');
       if (renderBox) renderTvPdfSheet(tvState.currentSong, renderBox);
-    }
-  } else if (tvState.viewMode === 'word') {
-    const activePages = (tvState.showingSpanish && (tvState.currentSong && tvState.currentSong.spanishVersion && tvState.currentSong.spanishVersion.pages))
-      ? tvState.currentSong.spanishVersion.pages
-      : ((tvState.currentSong && tvState.currentSong.pages) && tvState.currentSong.pages.length > 0 ? tvState.currentSong.pages : [((tvState.currentSong && tvState.currentSong.raw_lines) || [])]);
-    const nextIdx = tvState.currentPageIndex + delta;
-    if (nextIdx >= 0 && nextIdx < activePages.length) {
-      tvState.currentPageIndex = nextIdx;
-      renderCurrentTvSheet();
     }
   }
 }
@@ -1893,14 +1924,19 @@ function initTvApp() {
   on('btn-toggle-theme', 'click', toggleTvTheme);
   on('btn-fullscreen-tv', 'click', toggleTvFullscreen);
 
-  on('btn-toggle-layout', 'click', () => {
+  function toggleTvPlayerPanel() {
     tvState.layout = tvState.layout === 'split' ? 'solo' : 'split';
     document.body.classList.toggle('layout-split', tvState.layout === 'split');
     document.body.classList.toggle('layout-solo', tvState.layout === 'solo');
-    const label = document.getElementById('layout-label');
-    if (label) label.textContent = tvState.layout === 'split' ? 'Dividido' : 'Solo Letra';
-    showTvToast(tvState.layout === 'split' ? '🗖 Modo Dividido (Letra + Video)' : '⛶ Modo Solo Letra', 1800);
-  });
+    var btn = document.getElementById('btn-toggle-layout');
+    if (btn) btn.classList.toggle('active', tvState.layout === 'split');
+    var label = document.getElementById('layout-label');
+    if (label) label.textContent = 'Reproducción / Acordes';
+    showTvToast(tvState.layout === 'split' ? '🎸 Panel de Reproducción y Acordes visible' : '⛶ Panel de Reproducción y Acordes oculto (música activa)', 1800);
+  }
+
+  on('btn-toggle-layout', 'click', toggleTvPlayerPanel);
+  on('btn-collapse-video', 'click', toggleTvPlayerPanel);
 
   // Alternador de Video YouTube / Portada
   on('btn-toggle-video-mode', 'click', () => {
@@ -2042,35 +2078,8 @@ function initTvApp() {
     navigateTvPage(1);
   });
 
-  // Controles de Sincronización Karaoke (persiste calibración por canción + video)
-  on('btn-tv-k-minus', 'click', () => {
-    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.adjustOffset) {
-      tvState.karaokeSyncCtrl.adjustOffset(-0.5);
-    } else {
-      updateTvKaraokeOffsetUI(tvState.karaokeOffsetSec - 0.5);
-    }
-  });
-  on('btn-tv-k-plus', 'click', () => {
-    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.adjustOffset) {
-      tvState.karaokeSyncCtrl.adjustOffset(0.5);
-    } else {
-      updateTvKaraokeOffsetUI(tvState.karaokeOffsetSec + 0.5);
-    }
-  });
-  on('btn-tv-k-reset', 'click', () => {
-    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.setOffset) {
-      tvState.karaokeSyncCtrl.setOffset(0);
-    } else {
-      updateTvKaraokeOffsetUI(0);
-    }
-  });
-
-  // Detectar scroll manual del usuario para pausar temporalmente el auto-scroll OLED
-  var sheetScroller = document.getElementById('tv-sheet-scroller');
-  if (sheetScroller) {
-    sheetScroller.addEventListener('wheel', function() { lastUserManualScrollTs = Date.now(); }, { passive: true });
-    sheetScroller.addEventListener('touchstart', function() { lastUserManualScrollTs = Date.now(); }, { passive: true });
-  }
+  // Inicializar marcos redimensionables para Lista de Canciones y Reproducción/Acordes
+  initTvPanelResizers();
 
   // Modal de Ayuda Magic Remote
   const remoteModal = document.getElementById('tv-remote-modal');
@@ -2156,17 +2165,125 @@ function showHeaderBar() {
   document.body.classList.remove('tv-header-hidden');
 }
 
+function initTvPanelResizers() {
+  var root = document.documentElement;
+  var leftResizer = document.getElementById('tv-resizer-left');
+  var rightResizer = document.getElementById('tv-resizer-right');
+
+  var DEFAULT_LEFT = 360;
+  var DEFAULT_RIGHT = 440;
+  var MIN_LEFT = 220, MAX_LEFT = 620;
+  var MIN_RIGHT = 280, MAX_RIGHT = 720;
+
+  function applyLeftWidth(px, persist) {
+    var val = Math.max(MIN_LEFT, Math.min(MAX_LEFT, Math.round(px)));
+    root.style.setProperty('--tv-sidebar-width', val + 'px');
+    if (persist) {
+      try { localStorage.setItem('tv_sidebar_width', String(val)); } catch (e) {}
+    }
+    return val;
+  }
+
+  function applyRightWidth(px, persist) {
+    var val = Math.max(MIN_RIGHT, Math.min(MAX_RIGHT, Math.round(px)));
+    root.style.setProperty('--tv-player-width', val + 'px');
+    if (persist) {
+      try { localStorage.setItem('tv_player_width', String(val)); } catch (e) {}
+    }
+    return val;
+  }
+
+  // Restaurar anchos guardados por el usuario
+  try {
+    var savedL = parseInt(localStorage.getItem('tv_sidebar_width') || '', 10);
+    if (!isNaN(savedL) && savedL >= MIN_LEFT && savedL <= MAX_LEFT) applyLeftWidth(savedL, false);
+    var savedR = parseInt(localStorage.getItem('tv_player_width') || '', 10);
+    if (!isNaN(savedR) && savedR >= MIN_RIGHT && savedR <= MAX_RIGHT) applyRightWidth(savedR, false);
+  } catch (e) {}
+
+  function attachDrag(el, side) {
+    if (!el) return;
+    var dragging = false;
+
+    function getClientX(ev) {
+      if (ev.touches && ev.touches.length > 0) return ev.touches[0].clientX;
+      return ev.clientX;
+    }
+
+    function onStart(ev) {
+      dragging = true;
+      el.classList.add('dragging');
+      document.body.classList.add('is-resizing');
+      ev.preventDefault();
+    }
+
+    function onMove(ev) {
+      if (!dragging) return;
+      var x = getClientX(ev);
+      if (side === 'left') {
+        applyLeftWidth(x, false);
+      } else {
+        applyRightWidth(window.innerWidth - x, false);
+      }
+    }
+
+    function onEnd() {
+      if (!dragging) return;
+      dragging = false;
+      el.classList.remove('dragging');
+      document.body.classList.remove('is-resizing');
+      var cur = parseInt(getComputedStyle(root).getPropertyValue(side === 'left' ? '--tv-sidebar-width' : '--tv-player-width'), 10);
+      if (!isNaN(cur)) {
+        if (side === 'left') applyLeftWidth(cur, true);
+        else applyRightWidth(cur, true);
+      }
+      if (tvState.viewMode === 'pdf' && tvState.currentSong) {
+        renderCurrentTvSheet();
+      }
+    }
+
+    el.addEventListener('mousedown', onStart);
+    el.addEventListener('touchstart', onStart, { passive: false });
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('touchmove', onMove, { passive: false });
+    window.addEventListener('mouseup', onEnd);
+    window.addEventListener('touchend', onEnd);
+
+    el.addEventListener('dblclick', function() {
+      if (side === 'left') applyLeftWidth(DEFAULT_LEFT, true);
+      else applyRightWidth(DEFAULT_RIGHT, true);
+      showTvToast('↔ Ancho de panel restablecido', 1400);
+      if (tvState.viewMode === 'pdf' && tvState.currentSong) renderCurrentTvSheet();
+    });
+
+    // Ajuste con flechas del control remoto Smart TV cuando el separador tiene foco
+    el.addEventListener('keydown', function(ev) {
+      var k = ev.key;
+      var c = ev.keyCode;
+      if (k === 'ArrowLeft' || c === 37 || k === 'ArrowRight' || c === 39) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        var delta = (k === 'ArrowRight' || c === 39) ? 24 : -24;
+        var prop = side === 'left' ? '--tv-sidebar-width' : '--tv-player-width';
+        var curW = parseInt(getComputedStyle(root).getPropertyValue(prop), 10) || (side === 'left' ? DEFAULT_LEFT : DEFAULT_RIGHT);
+        if (side === 'left') applyLeftWidth(curW + delta, true);
+        else applyRightWidth(curW - delta, true);
+      }
+    });
+  }
+
+  attachDrag(leftResizer, 'left');
+  attachDrag(rightResizer, 'right');
+}
+
 function startPixelOrbiter() {
   if (oledOrbiterInterval) clearInterval(oledOrbiterInterval);
   var root = document.documentElement;
-  // Órbita continua anti-quemado OLED (±14px X / ±10px Y):
-  // Desplaza suavemente cada letra más allá de su propio grosor de trazo para que ningún subpíxel OLED
-  // soporte texto estático prolongado, sin oscurecer jamás el brillo de la pantalla.
+  // Micro-desplazamiento sub-visual estilo LG Screen Move (±2px cada 90s):
+  // Totalmente imperceptible al ojo (el texto en Word se ve 100% fijo), pero rota subpíxeles OLED
   var offsets = [
-    [0, 0], [5, 3], [10, 6], [14, 4],
-    [12, -2], [8, -7], [2, -10], [-4, -9],
-    [-10, -6], [-14, -2], [-12, 4], [-8, 8],
-    [-2, 10], [4, 8], [8, 2], [3, -4]
+    [0, 0], [1, 1], [2, 0], [1, -1],
+    [0, -2], [-1, -1], [-2, 0], [-1, 1]
   ];
   var step = 0;
 
@@ -2175,7 +2292,7 @@ function startPixelOrbiter() {
     var pair = offsets[step];
     root.style.setProperty('--oled-shift-x', pair[0] + 'px');
     root.style.setProperty('--oled-shift-y', pair[1] + 'px');
-  }, 25000); // Desplazamiento imperceptible cada 25 segundos con transición suave de 8s
+  }, 90000);
 }
 
 function resetInactivityTimer() {
