@@ -703,11 +703,31 @@ function startYtProgressPolling() {
           tvState.currentTimeSec = cur;
           tvState.durationSec = dur;
           updateTvTimeUI();
-          syncTvKaraoke(cur);
+          if (tvState.viewMode === 'karaoke') {
+            syncTvKaraoke(cur);
+          } else if (tvState.viewMode === 'word') {
+            autoScrollWordForOled(cur, dur);
+          }
         }
       }
     } catch (e) {}
-  }, 250);
+  }, 100);
+}
+
+var lastUserManualScrollTs = 0;
+function autoScrollWordForOled(curSec, durSec) {
+  // Desplazamiento suave automático en hojas largas para que el texto nunca quede fijo en los mismos píxeles OLED
+  if (Date.now() - lastUserManualScrollTs < 12000) return;
+  var scroller = document.getElementById('tv-sheet-scroller');
+  if (!scroller) return;
+  var maxScroll = scroller.scrollHeight - scroller.clientHeight;
+  if (maxScroll <= 30) return;
+  // Mantener un margen inicial (8%) y final (92%) para acompañar la lectura natural de la canción
+  var progress = Math.max(0, Math.min(1, (curSec - durSec * 0.06) / Math.max(1, durSec * 0.86)));
+  var targetTop = Math.round(maxScroll * progress);
+  if (Math.abs(scroller.scrollTop - targetTop) > 2) {
+    scroller.scrollTop = scroller.scrollTop + (targetTop - scroller.scrollTop) * 0.08;
+  }
 }
 
 function handleTvSongEnded() {
@@ -1059,30 +1079,12 @@ function updateTvTimeUI() {
   }
 }
 
-// Sincronización en tiempo real del Karaoke en TV
+// Sincronización en tiempo real del Karaoke en TV (Motor Unificado KaraokeSyncController v4.0)
 function syncTvKaraoke(sec) {
   if (tvState.viewMode !== 'karaoke') return;
-  const adjustedSec = sec + tvState.karaokeOffsetSec;
-
-  const lines = document.querySelectorAll('.tv-karaoke-line[data-start]');
-  lines.forEach(lineEl => {
-    const start = parseFloat(lineEl.dataset.start);
-    const end = parseFloat(lineEl.dataset.end);
-
-    if (adjustedSec >= start && adjustedSec <= end) {
-      if (!lineEl.classList.contains('active')) {
-        lines.forEach(l => l.classList.remove('active'));
-        lineEl.classList.add('active');
-        lineEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    } else if (adjustedSec > end) {
-      lineEl.classList.remove('active');
-      lineEl.classList.add('passed');
-    } else {
-      lineEl.classList.remove('active');
-      lineEl.classList.remove('passed');
-    }
-  });
+  if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.updateActiveLine) {
+    tvState.karaokeSyncCtrl.updateActiveLine(sec, false);
+  }
 }
 
 // ==============================================================
@@ -1217,74 +1219,133 @@ function renderTvWordSheet(song, renderBox) {
   renderBox.appendChild(sheet);
 }
 
+function buildTvKaraokeData(song) {
+  var useDbEntry = !(tvState.showingSpanish && song.spanishVersion && Array.isArray(song.spanishVersion.pages));
+  var activeVid = tvState.currentVideoId || '';
+  var dbEntry = null;
+  if (useDbEntry) {
+    if (activeVid && window.STANDALONE_KARAOKE_BY_VID && window.STANDALONE_KARAOKE_BY_VID[activeVid]) {
+      dbEntry = window.STANDALONE_KARAOKE_BY_VID[activeVid];
+    } else if (window.STANDALONE_KARAOKE) {
+      dbEntry = window.STANDALONE_KARAOKE[song.karaokeLookupId || song.id] ||
+                window.STANDALONE_KARAOKE[song.id] ||
+                (song.playlistIndex ? window.STANDALONE_KARAOKE[String(song.playlistIndex)] : null) ||
+                null;
+    }
+  }
+
+  var rawDbLines = (dbEntry && (dbEntry.l || dbEntry.lines)) || null;
+  if (dbEntry && Array.isArray(rawDbLines) && rawDbLines.length > 0) {
+    return {
+      sourceLabel: dbEntry.s ? ('Sincronizado (' + dbEntry.s + ')') : 'Sincronizado en vivo (Musixmatch/LRCLIB)',
+      hasTimedSource: true,
+      rawK: dbEntry
+    };
+  }
+
+  // Fallback cronometrado manteniendo acordes, secciones y versos en orden exacto del documento
+  var activePages = (tvState.showingSpanish && song.spanishVersion && Array.isArray(song.spanishVersion.pages) && song.spanishVersion.pages.length > 0)
+    ? song.spanishVersion.pages
+    : ((song.pages && song.pages.length > 0) ? song.pages : [(song.raw_lines || [])]);
+
+  var docSeq = [];
+  for (var p = 0; p < activePages.length; p++) {
+    var lines = activePages[p] || [];
+    for (var i = 0; i < lines.length; i++) {
+      var l = lines[i];
+      var txt = (typeof l === 'string' ? l : (l && l.text ? l.text : '')).trim();
+      if (!txt) continue;
+      var isChord = (typeof l === 'object' && l && (l.lineType === 'chords' || l.red)) || isLikelyChordLine(txt);
+      var isHeader = !isChord && ((typeof l === 'object' && l && l.lineType === 'header') || /^\[.*\]$/.test(txt));
+      docSeq.push({ type: isChord ? 'chord' : (isHeader ? 'header' : 'lyrics'), text: txt });
+    }
+  }
+
+  var estDuration = tvState.durationSec > 35 ? tvState.durationSec : 205;
+  var startOffset = 6;
+  var usableSpan = Math.max(40, estDuration - startOffset - 8);
+  var lyricCount = 0;
+  for (var c = 0; c < docSeq.length; c++) { if (docSeq[c].type === 'lyrics') lyricCount++; }
+  var step = usableSpan / Math.max(1, lyricCount);
+
+  var lyricIdx = 0;
+  var lastEnd = startOffset;
+  var fallbackTuples = [];
+  for (var j = 0; j < docSeq.length; j++) {
+    var item = docSeq[j];
+    if (item.type === 'chord' || item.type === 'header') {
+      var tVal = Math.max(0, +(lyricIdx < lyricCount ? (startOffset + lyricIdx * step) : lastEnd) - 0.1);
+      fallbackTuples.push([+tVal.toFixed(1), +tVal.toFixed(1), item.type === 'chord' ? 1 : 2, item.text]);
+    } else {
+      var s = +(startOffset + lyricIdx * step).toFixed(2);
+      var e = +(s + Math.max(2.2, step * 0.92)).toFixed(2);
+      lastEnd = e;
+      lyricIdx++;
+      var words = item.text.split(/\s+/).filter(Boolean);
+      var wDur = (e - s) / Math.max(1, words.length);
+      var wStarts = words.map(function(_, wIdx) { return +(s + wIdx * wDur).toFixed(2); });
+      fallbackTuples.push([s, e, 0, item.text, wStarts]);
+    }
+  }
+
+  return {
+    sourceLabel: 'Estimación rítmica · Ajusta con -0.5s / +0.5s o toca cualquier verso',
+    hasTimedSource: false,
+    rawK: fallbackTuples
+  };
+}
+
+function updateTvKaraokeOffsetUI(offsetSec) {
+  tvState.karaokeOffsetSec = Number((Number(offsetSec) || 0).toFixed(1));
+  var resetBtn = document.getElementById('btn-tv-k-reset');
+  if (resetBtn) {
+    resetBtn.textContent = (tvState.karaokeOffsetSec >= 0 ? '+' : '') + tvState.karaokeOffsetSec.toFixed(1) + 's';
+  }
+}
+
 function renderTvKaraokeSheet(song, renderBox) {
-  const karaokeDb = window.STANDALONE_KARAOKE || {};
-  const kData = karaokeDb[song.id];
+  var kBuilt = buildTvKaraokeData(song);
+  var zoom = tvState.zoomScale || 1.0;
 
-  const zoom = tvState.zoomScale || 1.0;
-  const container = document.createElement('div');
+  var container = document.createElement('div');
   container.className = 'tv-karaoke-container';
+  container.innerHTML =
+    '<div class="tv-karaoke-header">' +
+      '<div class="tv-karaoke-song-title">' + escapeHtml(song.artist) + ': ' + escapeHtml(song.title) + '</div>' +
+      '<div class="tv-karaoke-song-sub">🎤 ' + escapeHtml(kBuilt.sourceLabel) + ' · Toca cualquier verso para saltar</div>' +
+    '</div>' +
+    '<div class="karaoke-lines-list tv-karaoke-lines-list" id="tv-k-list" style="font-size:' + Math.round(24 * zoom) + 'px;"></div>';
 
-  let html = `
-    <div class="tv-karaoke-header">
-      <div class="tv-karaoke-song-title">${escapeHtml(song.artist)}: ${escapeHtml(song.title)}</div>
-      <div class="tv-karaoke-song-sub">
-        ${kData ? `🎤 Letra sincronizada en vivo · Toca cualquier verso para saltar` : `⚠️ Sin sincronización directa, mostrando letra estructurada`}
-      </div>
-    </div>
-    <div class="tv-karaoke-lines-list" id="tv-k-list">
-  `;
+  renderBox.appendChild(container);
 
-  if (kData && kData.l && Array.isArray(kData.l)) {
-    kData.l.forEach((item, idx) => {
-      const start = item[0] || 0;
-      const end = item[1] || 0;
-      const type = item[2];
-      const text = item[3] || '';
-
-      if (type === 2) {
-        html += `<div style="font-size:16px; font-weight:900; color:var(--tv-purple); text-transform:uppercase; margin-top:12px;">${escapeHtml(text)}</div>`;
-        return;
-      }
-
-      if (type === 1) {
-        html += `<div class="tv-k-chords" style="font-size:${Math.round(18 * zoom)}px;">${escapeHtml(text)}</div>`;
-        return;
-      }
-
-      html += `
-        <div class="tv-karaoke-line" data-k-idx="${idx}" data-start="${start}" data-end="${end}" tabindex="0">
-          <div class="tv-k-text" style="font-size:${Math.round(24 * zoom)}px;">${escapeHtml(text)}</div>
-        </div>
-      `;
-    });
-  } else {
-    const rawLines = song.raw_lines || (song.pages && song.pages.flat()) || [];
-    rawLines.forEach(l => {
-      const txt = typeof l === 'string' ? l : (l.text || '');
-      if (txt.trim()) {
-        const isChord = isLikelyChordLine(txt);
-        if (isChord) {
-          html += `<div class="tv-k-chords" style="font-size:${Math.round(18 * zoom)}px;">${escapeHtml(txt)}</div>`;
-        } else {
-          html += `<div class="tv-karaoke-line"><div class="tv-k-text" style="font-size:${Math.round(24 * zoom)}px;">${escapeHtml(txt)}</div></div>`;
-        }
-      }
+  if (!tvState.karaokeSyncCtrl && window.KaraokeSyncController) {
+    tvState.karaokeSyncCtrl = new window.KaraokeSyncController({
+      getCurrentTime: function() { return tvState.currentTimeSec || 0; },
+      seekToTime: function(t) {
+        seekTvAbsolute(t);
+        if (!tvState.isPlaying) toggleTvPlayPause();
+      },
+      onSaveAnchors: function() {},
+      onOffsetChanged: function(nextOff) { updateTvKaraokeOffsetUI(nextOff); }
     });
   }
 
-  html += `</div>`;
-  container.innerHTML = html;
-  renderBox.appendChild(container);
+  if (tvState.karaokeSyncCtrl) {
+    var listEl = document.getElementById('tv-k-list');
+    tvState.karaokeSyncCtrl.containerEl = listEl;
+    tvState.karaokeSyncCtrl.getCurrentTime = function() { return tvState.currentTimeSec || 0; };
+    tvState.karaokeSyncCtrl.seekToTime = function(t) {
+      seekTvAbsolute(t);
+      if (!tvState.isPlaying) toggleTvPlayPause();
+    };
+    tvState.karaokeSyncCtrl.onOffsetChanged = function(nextOff) { updateTvKaraokeOffsetUI(nextOff); };
 
-  container.querySelectorAll('.tv-karaoke-line[data-start]').forEach(lineEl => {
-    lineEl.addEventListener('click', () => {
-      const startSec = parseFloat(lineEl.dataset.start);
-      if (!isNaN(startSec)) {
-        seekTvAbsolute(startSec);
-      }
-    });
-  });
+    var sId = song.karaokeLookupId || song.id || String(song.playlistIndex || 'default');
+    var vid = tvState.currentVideoId || 'default';
+    tvState.karaokeSyncCtrl.loadSongData(kBuilt.rawK, sId, vid, kBuilt.hasTimedSource);
+    updateTvKaraokeOffsetUI(tvState.karaokeSyncCtrl.globalOffsetSec || 0);
+    tvState.karaokeSyncCtrl.updateActiveLine(tvState.currentTimeSec || 0, true);
+  }
 }
 
 function cleanTvPdfMatch(str) {
@@ -1981,19 +2042,35 @@ function initTvApp() {
     navigateTvPage(1);
   });
 
-  // Controles de Sincronización Karaoke
+  // Controles de Sincronización Karaoke (persiste calibración por canción + video)
   on('btn-tv-k-minus', 'click', () => {
-    tvState.karaokeOffsetSec -= 0.5;
-    document.getElementById('btn-tv-k-reset').textContent = `${tvState.karaokeOffsetSec >= 0 ? '+' : ''}${tvState.karaokeOffsetSec.toFixed(1)}s`;
+    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.adjustOffset) {
+      tvState.karaokeSyncCtrl.adjustOffset(-0.5);
+    } else {
+      updateTvKaraokeOffsetUI(tvState.karaokeOffsetSec - 0.5);
+    }
   });
   on('btn-tv-k-plus', 'click', () => {
-    tvState.karaokeOffsetSec += 0.5;
-    document.getElementById('btn-tv-k-reset').textContent = `${tvState.karaokeOffsetSec >= 0 ? '+' : ''}${tvState.karaokeOffsetSec.toFixed(1)}s`;
+    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.adjustOffset) {
+      tvState.karaokeSyncCtrl.adjustOffset(0.5);
+    } else {
+      updateTvKaraokeOffsetUI(tvState.karaokeOffsetSec + 0.5);
+    }
   });
   on('btn-tv-k-reset', 'click', () => {
-    tvState.karaokeOffsetSec = 0.0;
-    document.getElementById('btn-tv-k-reset').textContent = `0.0s`;
+    if (tvState.karaokeSyncCtrl && tvState.karaokeSyncCtrl.setOffset) {
+      tvState.karaokeSyncCtrl.setOffset(0);
+    } else {
+      updateTvKaraokeOffsetUI(0);
+    }
   });
+
+  // Detectar scroll manual del usuario para pausar temporalmente el auto-scroll OLED
+  var sheetScroller = document.getElementById('tv-sheet-scroller');
+  if (sheetScroller) {
+    sheetScroller.addEventListener('wheel', function() { lastUserManualScrollTs = Date.now(); }, { passive: true });
+    sheetScroller.addEventListener('touchstart', function() { lastUserManualScrollTs = Date.now(); }, { passive: true });
+  }
 
   // Modal de Ayuda Magic Remote
   const remoteModal = document.getElementById('tv-remote-modal');
@@ -2081,20 +2158,24 @@ function showHeaderBar() {
 
 function startPixelOrbiter() {
   if (oledOrbiterInterval) clearInterval(oledOrbiterInterval);
-  const root = document.documentElement;
-  // Ciclo de 8 posiciones imperceptibles (±1 a ±2 px) para rotar los subpíxeles continuamente
-  const offsets = [
-    [0, 0], [1, 1], [2, 0], [1, -1],
-    [0, -2], [-1, -1], [-2, 0], [-1, 1]
+  var root = document.documentElement;
+  // Órbita continua anti-quemado OLED (±14px X / ±10px Y):
+  // Desplaza suavemente cada letra más allá de su propio grosor de trazo para que ningún subpíxel OLED
+  // soporte texto estático prolongado, sin oscurecer jamás el brillo de la pantalla.
+  var offsets = [
+    [0, 0], [5, 3], [10, 6], [14, 4],
+    [12, -2], [8, -7], [2, -10], [-4, -9],
+    [-10, -6], [-14, -2], [-12, 4], [-8, 8],
+    [-2, 10], [4, 8], [8, 2], [3, -4]
   ];
-  let step = 0;
+  var step = 0;
 
-  oledOrbiterInterval = setInterval(() => {
+  oledOrbiterInterval = setInterval(function() {
     step = (step + 1) % offsets.length;
-    const [ox, oy] = offsets[step];
-    root.style.setProperty('--oled-shift-x', `${ox}px`);
-    root.style.setProperty('--oled-shift-y', `${oy}px`);
-  }, 60000); // Cada 60 segundos
+    var pair = offsets[step];
+    root.style.setProperty('--oled-shift-x', pair[0] + 'px');
+    root.style.setProperty('--oled-shift-y', pair[1] + 'px');
+  }, 25000); // Desplazamiento imperceptible cada 25 segundos con transición suave de 8s
 }
 
 function resetInactivityTimer() {

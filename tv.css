@@ -83,15 +83,69 @@ html, body {
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
 }
 
-/* Ocultamiento Automático de Barra Superior y Protección OLED Carefree */
+/* Ocultamiento Automático OLED Pantalla Completa (Oculta barra superior, lista izquierda y panel reproductor sin cortar el audio) */
 body.tv-header-hidden .tv-header {
-  transform: translateY(-100%);
-  opacity: 0;
-  pointer-events: none;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
 }
 
 body.tv-header-hidden .tv-main-layout {
-  height: 100vh;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+body.tv-header-hidden .tv-sidebar {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Mantener el reproductor montado fuera de vista (NO display:none) para que el audio de YouTube jamás se detenga */
+body.tv-header-hidden .tv-player-panel {
+  position: fixed !important;
+  left: -9999px !important;
+  top: 0 !important;
+  width: 320px !important;
+  height: 180px !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0.01 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+body.tv-header-hidden .tv-stage-topbar {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+body.tv-header-hidden .tv-sheet-scroller {
+  padding: 24px 40px !important;
+}
+
+body.tv-header-hidden .tv-sheet-render-box {
+  max-width: 96vw !important;
+}
+
+/* Órbita Continua Anti-Quemado OLED en textos: rotación imperceptible de subpíxeles sin oscurecer el brillo */
+.tv-sheet-render-box {
+  transform: translate3d(var(--oled-shift-x, 0px), var(--oled-shift-y, 0px), 0);
+  transition: transform 8s ease-in-out;
+  will-change: transform;
 }
 
 .tv-header-left, .tv-header-center, .tv-header-right {
@@ -1798,4 +1852,121 @@ body.oled-dimmed #tv-oled-dim-hint {
   margin-top: 16px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+
+/* ==============================================================
+   11. MOTOR UNIFICADO KARAOKE TV v4.0 (PALABRA POR PALABRA + OLED SAFE)
+   ============================================================== */
+.karaoke-lines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 24px 80px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.karaoke-section-tag {
+  font-size: 0.72em;
+  font-weight: 900;
+  color: var(--tv-purple);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 18px;
+  padding: 4px 10px;
+  border-left: 3px solid var(--tv-purple);
+}
+
+.karaoke-chord-row {
+  font-family: var(--tv-mono);
+  font-size: 0.78em;
+  font-weight: 800;
+  color: #fb7185;
+  margin-top: 8px;
+  margin-bottom: -4px;
+  padding-left: 14px;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.karaoke-chord-row.karaoke-chord-active {
+  color: #00f0ff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.55);
+  transform: translateX(4px);
+}
+
+.karaoke-line-item {
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: background 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.karaoke-line-item:hover {
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.karaoke-lyric-row-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.karaoke-lyric-text {
+  color: #cbd5e1;
+  font-weight: 600;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.karaoke-line-time {
+  font-family: var(--tv-mono);
+  font-size: 0.55em;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.karaoke-line-item.past .karaoke-lyric-text {
+  color: #64748b;
+}
+
+.karaoke-line-item.karaoke-active-line {
+  background: rgba(0, 240, 255, 0.10);
+  border-left-color: #00f0ff;
+  transform: scale(1.02);
+}
+
+.karaoke-line-item.karaoke-active-line .karaoke-lyric-text {
+  color: #e2e8f0;
+  font-weight: 800;
+}
+
+.karaoke-word {
+  transition: color 0.12s ease, text-shadow 0.12s ease;
+}
+
+.karaoke-word.past-word {
+  color: #38bdf8;
+}
+
+.karaoke-word.karaoke-word-active {
+  color: #00f0ff;
+  text-shadow: 0 0 14px rgba(0, 240, 255, 0.75);
+}
+
+body.theme-paper-white .karaoke-lyric-text {
+  color: #1e293b;
+}
+
+body.theme-paper-white .karaoke-line-item.karaoke-active-line {
+  background: rgba(2, 132, 199, 0.12);
+  border-left-color: #0284c7;
+}
+
+body.theme-paper-white .karaoke-word.karaoke-word-active {
+  color: #0369a1;
+  text-shadow: none;
 }
