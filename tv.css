@@ -2095,3 +2095,138 @@ body.theme-paper-white .karaoke-word.karaoke-word-active {
   color: #0369a1;
   text-shadow: none;
 }
+
+
+/* ==============================================================
+   12. FAVORITAS + REPORTES DE ERROR (ACORDES / LETRA) Y SUS FILTROS
+   ============================================================== */
+.tv-song-marks-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.tv-mark-btn {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid #1e293b;
+  background: #0b1120;
+  color: #cbd5e1;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.16s ease;
+}
+
+.tv-mark-btn:hover,
+.tv-mark-btn:focus {
+  border-color: #38bdf8;
+  color: #ffffff;
+  outline: none;
+}
+
+.tv-mark-btn.tv-mark-fav.active {
+  background: rgba(236, 72, 153, 0.18);
+  border-color: #ec4899;
+  color: #f9a8d4;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.35);
+}
+
+.tv-mark-btn.tv-mark-err.active {
+  background: rgba(244, 63, 94, 0.16);
+  border-color: #f43f5e;
+  color: #fda4af;
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.3);
+}
+
+.tv-filter-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tv-filter-divider::before,
+.tv-filter-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #1e293b;
+}
+
+.tv-mark-filters {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr;
+  gap: 3px;
+  padding: 3px;
+  background: #080d18;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+}
+
+.tv-mark-filter-btn {
+  height: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 4px;
+  transition: all 0.15s ease;
+}
+
+.tv-mark-filter-btn:hover,
+.tv-mark-filter-btn:focus {
+  color: #f8fafc;
+  outline: none;
+}
+
+.tv-mark-filter-btn.active {
+  background: #0f1d38;
+  border-color: #1e3a8a;
+  color: #38bdf8;
+}
+
+.tv-mark-filter-btn.tv-mf-fav.active {
+  background: rgba(236, 72, 153, 0.16);
+  border-color: #ec4899;
+  color: #f9a8d4;
+}
+
+.tv-mark-filter-btn.tv-mf-err.active {
+  background: rgba(244, 63, 94, 0.14);
+  border-color: #f43f5e;
+  color: #fda4af;
+}
+
+.tv-mark-tag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+.tv-mark-tag-fav {
+  color: #f472b6;
+}
+
+.tv-mark-tag-err {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fda4af;
+}

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=2.2.0">
+  <link rel="stylesheet" href="tv.css?v=2.3.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -127,6 +127,15 @@
             <button class="tv-filter-tab" data-filter="matched" tabindex="0">Conectadas (<span id="count-tab-matched">0</span>)</button>
             <button class="tv-filter-tab" data-filter="unmatched" tabindex="0">Sin Calce (<span id="count-tab-unmatched">0</span>)</button>
           </div>
+
+          <!-- Filtros de Favoritas y Reportes de Error -->
+          <div class="tv-filter-divider"><span>Favoritas y Reportes</span></div>
+          <div class="tv-mark-filters">
+            <button class="tv-mark-filter-btn active" type="button" data-mark-filter="all" tabindex="0">Todas</button>
+            <button class="tv-mark-filter-btn tv-mf-fav" type="button" data-mark-filter="fav" tabindex="0">♥ <span id="count-mark-fav">0</span></button>
+            <button class="tv-mark-filter-btn tv-mf-err" type="button" data-mark-filter="badChord" tabindex="0" title="Canciones con acordes con error">Acorde ✗ <span id="count-mark-bad-chord">0</span></button>
+            <button class="tv-mark-filter-btn tv-mf-err" type="button" data-mark-filter="badLyric" tabindex="0" title="Canciones con letra con error">Letra ✗ <span id="count-mark-bad-lyric">0</span></button>
+          </div>
         </div>
 
         <!-- Lista Desplazable de Canciones -->
@@ -157,6 +166,13 @@
               <select id="tv-versions-select" class="tv-versions-select" style="display:none;" title="Cambiar versión de la playlist" tabindex="0">
               </select>
             </div>
+          </div>
+
+          <!-- Marcas rápidas de la canción actual: Favorita + Error Acordes + Error Letra -->
+          <div class="tv-song-marks-bar">
+            <button id="btn-tv-mark-fav" class="tv-mark-btn tv-mark-fav" type="button" title="Marcar o quitar de Favoritas" tabindex="0">♡ Favorita</button>
+            <button id="btn-tv-mark-bad-chord" class="tv-mark-btn tv-mark-err" type="button" title="Reportar error en los acordes" tabindex="0">Acorde ✗</button>
+            <button id="btn-tv-mark-bad-lyric" class="tv-mark-btn tv-mark-err" type="button" title="Reportar error en la letra" tabindex="0">Letra ✗</button>
           </div>
 
           <!-- Paginador Flotante (Exclusivo para modo PDF; en Word es continuo sin páginas) -->
@@ -371,17 +387,17 @@
   </div>
 
   <!-- BUNDLES DE DATOS IDÉNTICOS AL CANCIONERO MÓVIL (SSOT) -->
-  <script src="cancionero_db.js?v=3.2.1"></script>
+  <script src="cancionero_db.js?v=3.4.4"></script>
   <script src="playlist_db.js?v=3.2.1"></script>
-  <script src="reggaeton_db.js?v=3.2.1"></script>
-  <script src="faltantes_db.js?v=3.2.1"></script>
-  <script src="karaoke_db.js?v=5.0.0"></script>
+  <script src="reggaeton_db.js?v=3.4.4"></script>
+  <script src="faltantes_db.js?v=3.4.4"></script>
+  <script src="karaoke_db.js?v=5.1.0"></script>
   <script src="jszip.min.js"></script>
   <script src="pdf.min.js?v=2.16.105"></script>
   <!-- Motor Unificado de Sincronización Karaoke v4.0 (Palabra por palabra + Calibración) -->
-  <script src="karaokeTapCalibrator.js?v=4.0.0"></script>
+  <script src="karaokeTapCalibrator.js?v=4.1.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=2.2.0"></script>
+  <script src="tv.js?v=2.3.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

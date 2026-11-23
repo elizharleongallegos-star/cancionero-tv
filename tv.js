@@ -271,15 +271,102 @@ function buildTvSongs(bookKey) {
   return sortSongsByMasterPlaylistOrder(combined);
 }
 
+// ==============================================================
+// MARCAS DE CANCIÓN: FAVORITAS + ERROR DE ACORDES + ERROR DE LETRA (misma clave que la app web)
+// ==============================================================
+var TV_MARKS_KEY = 'cancionero_song_marks_v1';
+tvState.songMarks = {};
+tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric'
+
+function loadTvSongMarks() {
+  try {
+    var raw = localStorage.getItem(TV_MARKS_KEY);
+    tvState.songMarks = raw ? (JSON.parse(raw) || {}) : {};
+  } catch (e) {
+    tvState.songMarks = {};
+  }
+}
+
+function saveTvSongMarks() {
+  try { localStorage.setItem(TV_MARKS_KEY, JSON.stringify(tvState.songMarks || {})); } catch (e) {}
+}
+
+function getTvSongMark(song) {
+  var empty = { fav: false, badChord: false, badLyric: false };
+  if (!song || !song.id) return empty;
+  return (tvState.songMarks && tvState.songMarks[song.id]) || empty;
+}
+
+function toggleTvSongMark(markKey) {
+  var song = tvState.currentSong;
+  if (!song || !song.id) return;
+  var prev = tvState.songMarks[song.id] || { fav: false, badChord: false, badLyric: false };
+  var next = { fav: !!prev.fav, badChord: !!prev.badChord, badLyric: !!prev.badLyric };
+  next[markKey] = !prev[markKey];
+  if (!next.fav && !next.badChord && !next.badLyric) {
+    delete tvState.songMarks[song.id];
+  } else {
+    tvState.songMarks[song.id] = next;
+  }
+  saveTvSongMarks();
+  updateTvMarkButtons(song);
+  filterTvSongs();
+
+  var labels = {
+    fav: next.fav ? '♥ Añadida a Favoritas' : '♡ Quitada de Favoritas',
+    badChord: next.badChord ? '⚠️ Marcada: Acordes con error' : '✓ Desmarcado: Acordes',
+    badLyric: next.badLyric ? '⚠️ Marcada: Letra con error' : '✓ Desmarcado: Letra'
+  };
+  showTvToast(labels[markKey] || 'Marca actualizada', 1600);
+  logTvAction('tv_song_mark_toggled', { mark: markKey, value: next[markKey] });
+}
+
+function updateTvMarkButtons(song) {
+  var mark = getTvSongMark(song);
+  var bFav = document.getElementById('btn-tv-mark-fav');
+  var bChord = document.getElementById('btn-tv-mark-bad-chord');
+  var bLyric = document.getElementById('btn-tv-mark-bad-lyric');
+  if (bFav) {
+    bFav.classList.toggle('active', !!mark.fav);
+    bFav.innerHTML = mark.fav ? '♥ Favorita' : '♡ Favorita';
+  }
+  if (bChord) bChord.classList.toggle('active', !!mark.badChord);
+  if (bLyric) bLyric.classList.toggle('active', !!mark.badLyric);
+}
+
+function updateTvMarkCounts() {
+  var favC = 0, chordC = 0, lyricC = 0;
+  for (var i = 0; i < tvState.songs.length; i++) {
+    var m = tvState.songMarks[tvState.songs[i].id];
+    if (!m) continue;
+    if (m.fav) favC++;
+    if (m.badChord) chordC++;
+    if (m.badLyric) lyricC++;
+  }
+  var e1 = document.getElementById('count-mark-fav');
+  var e2 = document.getElementById('count-mark-bad-chord');
+  var e3 = document.getElementById('count-mark-bad-lyric');
+  if (e1) e1.textContent = favC;
+  if (e2) e2.textContent = chordC;
+  if (e3) e3.textContent = lyricC;
+}
+
 function filterTvSongs() {
   const q = normalizeSearch(tvState.searchQuery);
   const artist = tvState.selectedArtist;
   const filter = tvState.currentFilter;
+  const markFilter = tvState.markFilter || 'all';
 
   tvState.filteredSongs = tvState.songs.filter(song => {
     // 1. Filtro por conexión
     if (filter === 'matched' && !song.matchedVideo) return false;
     if (filter === 'unmatched' && song.matchedVideo) return false;
+
+    // 1.b Filtro por Favoritas / Reportes de error
+    if (markFilter !== 'all') {
+      const m = tvState.songMarks[song.id];
+      if (!m || !m[markFilter]) return false;
+    }
 
     // 2. Filtro por artista
     if (artist && song.artist !== artist) return false;
@@ -304,6 +391,7 @@ function filterTvSongs() {
   if (tabAll) tabAll.textContent = tvState.songs.length;
   if (tabMat) tabMat.textContent = tvState.songs.filter(s => s.matchedVideo).length;
   if (tabUnm) tabUnm.textContent = tvState.songs.filter(s => !s.matchedVideo).length;
+  updateTvMarkCounts();
 
   renderTvSongList();
 }
@@ -326,6 +414,11 @@ function renderTvSongList() {
     const plIdx = song.playlistIndex ? `#${song.playlistIndex}` : `#${idx + 1}`;
     const badgeText = song.matchedVideo ? '🎵 Calzado' : 'Sin audio';
     const badgeCls = song.matchedVideo ? '' : 'unmatched';
+    const mark = getTvSongMark(song);
+    const markTags =
+      (mark.fav ? '<span class="tv-mark-tag tv-mark-tag-fav" title="Favorita">♥</span>' : '') +
+      (mark.badChord ? '<span class="tv-mark-tag tv-mark-tag-err" title="Acordes con error">Ac✗</span>' : '') +
+      (mark.badLyric ? '<span class="tv-mark-tag tv-mark-tag-err" title="Letra con error">Lt✗</span>' : '');
 
     html += `
       <div class="tv-song-item ${isActive ? 'active' : ''} ${isPlaying ? 'playing' : ''}" 
@@ -335,7 +428,7 @@ function renderTvSongList() {
         <span class="song-idx">${plIdx}</span>
         <div class="song-main">
           <div class="song-title-text">${escapeHtml(song.title)}</div>
-          <div class="song-artist-text">${escapeHtml(song.artist)}</div>
+          <div class="song-artist-text">${escapeHtml(song.artist)} ${markTags}</div>
         </div>
         <span class="song-meta-badge ${badgeCls}">${badgeText}</span>
       </div>
@@ -445,6 +538,9 @@ function selectTvSong(songId, autoPlay = true) {
 
   // Renderizar los diagramas de acordes de guitarra bajo el reproductor
   renderTvChords(song);
+
+  // Sincronizar botones de Favorita / Acorde ✗ / Letra ✗
+  updateTvMarkButtons(song);
 
   // Actualizar indicador en pantalla apagada si está activa
   const oledNowPlaying = document.getElementById('tv-oled-now-playing');
@@ -1914,7 +2010,8 @@ function initTvApp() {
       console.warn('[PDF Index] No se pudo cargar el índice de páginas PDF:', err.message);
     });
 
-  // 2. Cargar Canciones
+  // 2. Cargar Marcas (Favoritas / Reportes) y Canciones
+  loadTvSongMarks();
   tvState.songs = buildTvSongs(tvState.activeBook);
   populateArtistFilter();
   filterTvSongs();
@@ -2045,6 +2142,22 @@ function initTvApp() {
       document.querySelectorAll('.tv-filter-tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       tvState.currentFilter = tab.dataset.filter;
+      filterTvSongs();
+    });
+  });
+
+  // Botones de marca de la canción actual: Favorita / Acorde ✗ / Letra ✗
+  on('btn-tv-mark-fav', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('fav'); });
+  on('btn-tv-mark-bad-chord', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badChord'); });
+  on('btn-tv-mark-bad-lyric', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badLyric'); });
+
+  // Filtros de Favoritas y Reportes de error
+  document.querySelectorAll('.tv-mark-filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tv-mark-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      tvState.markFilter = btn.getAttribute('data-mark-filter') || 'all';
+      tvState.shuffleQueue = [];
       filterTvSongs();
     });
   });
