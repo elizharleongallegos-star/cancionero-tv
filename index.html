@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=2.4.0">
+  <link rel="stylesheet" href="tv.css?v=2.5.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -401,6 +401,9 @@
     <!-- Elemento de Audio Nativo de Alta Fidelidad (Streaming local del servidor 3010) -->
     <audio id="tv-native-audio" style="display:none;" playsinline preload="auto"></audio>
 
+    <!-- Video H.264 silencioso 2x2px dentro del viewport: impide que LG webOS / Samsung Tizen activen la suspensión del TV -->
+    <video id="tv-keepawake-video" muted loop playsinline preload="auto" aria-hidden="true"></video>
+
     <!-- 4. CAPA PROTECTORA OLED: PANTALLA APAGADA (0 NITS / TRUE BLACK) -->
     <div id="tv-oled-blackout" class="tv-oled-blackout" style="display:none;" tabindex="0">
       <div class="tv-oled-blackout-content">
@@ -431,11 +434,12 @@
   <script src="jszip.min.js"></script>
   <script src="pdf.min.js?v=2.16.105"></script>
   <script src="libs/tv-nosleep.min.js"></script>
+  <script src="libs/tv-keepawake-media.js"></script>
   <script src="libs/tv-qrcode.js"></script>
   <!-- Motor Unificado de Sincronización Karaoke v4.2 (Palabra por palabra + Anticipación -0.50s) -->
   <script src="karaokeTapCalibrator.js?v=4.2.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=2.4.0"></script>
+  <script src="tv.js?v=2.5.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

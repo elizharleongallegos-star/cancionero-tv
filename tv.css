@@ -109,18 +109,33 @@ body.tv-header-hidden .tv-sidebar {
   pointer-events: none !important;
 }
 
-/* Mantener el reproductor montado fuera de vista (NO display:none) para que el audio de YouTube jamás se detenga */
+/* Mantener el reproductor montado dentro de la esquina del viewport (2x2px invisible, NO left:-9999px ni display:none)
+   para que LG webOS / Samsung Tizen sigan detectando video activo y NO activen el protector/suspensión del televisor */
 body.tv-header-hidden .tv-player-panel {
   position: fixed !important;
-  left: -9999px !important;
-  top: 0 !important;
-  width: 320px !important;
-  height: 180px !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  width: 2px !important;
+  height: 2px !important;
   padding: 0 !important;
   border: none !important;
   opacity: 0.01 !important;
   pointer-events: none !important;
   overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+#tv-keepawake-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 2;
 }
 
 body.tv-header-hidden .tv-song-context-bar,
@@ -1192,18 +1207,21 @@ body.theme-paper-white .word-line.note-line {
   border-radius: 3px;
 }
 
-/* Mantener el reproductor vivo fuera de vista al ocultar "Reproducción / Acordes" para no detener el audio */
+/* Mantener el reproductor vivo en la esquina del viewport (2x2px) al ocultar "Reproducción / Acordes" para no detener audio ni activar suspensión TV */
 body.layout-solo .tv-player-panel {
   position: fixed !important;
-  left: -9999px !important;
-  top: 0 !important;
-  width: 320px !important;
-  height: 180px !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  width: 2px !important;
+  height: 2px !important;
   padding: 0 !important;
   border: none !important;
   opacity: 0.01 !important;
   pointer-events: none !important;
   overflow: hidden !important;
+  z-index: 1 !important;
 }
 
 .tv-player-header {

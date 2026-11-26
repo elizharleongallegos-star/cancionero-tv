@@ -2303,9 +2303,26 @@ var OLED_HEADER_AUTOHIDE_MS = 6000; // 6 segundos de reproducción para ocultar 
 var tvWakeLockSentinel = null;
 var tvNoSleepInstance = null;
 var tvNoSleepEnabled = false;
+var tvKeepAwakeVideoEl = null;
 var tvLastActivityTs = Date.now();
 var tvStaticGuardInterval = null;
-var OLED_STATIC_SUSPEND_MS = 8 * 60 * 1000; // 8 minutos con pantalla totalmente estática (nunca en Karaoke)
+var OLED_STATIC_SUSPEND_MS = 10 * 60 * 1000; // 10 minutos con pantalla totalmente estática (nunca en Karaoke)
+
+function initTvKeepAwakeVideo() {
+  if (tvKeepAwakeVideoEl) return tvKeepAwakeVideoEl;
+  var vid = document.getElementById('tv-keepawake-video');
+  if (!vid) return null;
+  vid.muted = true;
+  vid.loop = true;
+  vid.setAttribute('muted', '');
+  vid.setAttribute('playsinline', '');
+  vid.setAttribute('loop', '');
+  if (!vid.src && window.TV_KEEPAWAKE_MP4) {
+    vid.src = window.TV_KEEPAWAKE_MP4;
+  }
+  tvKeepAwakeVideoEl = vid;
+  return vid;
+}
 
 function tvTouchActivity() {
   tvLastActivityTs = Date.now();
@@ -2318,9 +2335,24 @@ function tvTouchActivity() {
 }
 
 function ensureTvAwake() {
-  // 1. API moderna Screen Wake Lock (Chrome/Edge/Android TV/webOS modernos)
+  if (document.visibilityState !== 'visible') return;
+
+  // CAPA 1 (PRINCIPAL PARA LG webOS / SAMSUNG TIZEN):
+  // Reproducir el video H.264 silencioso de 2x2px montado DENTRO del viewport visible.
+  // El compositor del televisor detecta decodificación de video activa en pantalla y bloquea el protector/suspensión del SO.
   try {
-    if (navigator.wakeLock && navigator.wakeLock.request && !tvWakeLockSentinel && document.visibilityState === 'visible') {
+    var vid = initTvKeepAwakeVideo();
+    if (vid && vid.src && vid.paused) {
+      var pVid = vid.play();
+      if (pVid && typeof pVid.catch === 'function') {
+        pVid.catch(function() {});
+      }
+    }
+  } catch (e) {}
+
+  // CAPA 2: Screen Wake Lock API nativa
+  try {
+    if (navigator.wakeLock && navigator.wakeLock.request && !tvWakeLockSentinel) {
       navigator.wakeLock.request('screen').then(function(sentinel) {
         tvWakeLockSentinel = sentinel;
         sentinel.addEventListener('release', function() {
@@ -2330,17 +2362,28 @@ function ensureTvAwake() {
     }
   } catch (e) {}
 
-  // 2. Respaldo NoSleep.js para Smart TVs antiguas (LG webOS / Samsung Tizen)
+  // CAPA 3: NoSleep.js (manejando su Promise correctamente para reintentar si faltó gesto previo)
   try {
     if (typeof window.NoSleep === 'function' && !tvNoSleepEnabled) {
       if (!tvNoSleepInstance) tvNoSleepInstance = new window.NoSleep();
-      tvNoSleepInstance.enable();
-      tvNoSleepEnabled = true;
+      var pNs = tvNoSleepInstance.enable();
+      if (pNs && typeof pNs.then === 'function') {
+        pNs.then(function() { tvNoSleepEnabled = true; }).catch(function() { tvNoSleepEnabled = false; });
+      } else {
+        tvNoSleepEnabled = true;
+      }
     }
-  } catch (e) {}
+  } catch (e) {
+    tvNoSleepEnabled = false;
+  }
 }
 
 function releaseTvAwake() {
+  try {
+    if (tvKeepAwakeVideoEl && !tvKeepAwakeVideoEl.paused) {
+      tvKeepAwakeVideoEl.pause();
+    }
+  } catch (e) {}
   try {
     if (tvWakeLockSentinel) {
       tvWakeLockSentinel.release().catch(function() {});
@@ -2358,8 +2401,8 @@ function releaseTvAwake() {
 function checkTvOledStaticSuspension() {
   // Regla estricta:
   // 1) En modo Karaoke NUNCA suspender (el texto se mueve continuamente con la música).
-  // 2) Mientras la app está funcionando activamente, mantener la TV despierta (anti-suspensión).
-  // 3) Solo activar protección OLED si el contenido queda estático en el mismo lugar > 8 minutos (Word/PDF/pausa sin cambios).
+  // 2) Mientras la app está funcionando activamente (reproduciendo o con uso reciente), mantener la TV siempre despierta.
+  // 3) Solo activar protección OLED si el contenido queda estático en el mismo lugar > 10 minutos (Word/PDF/pausa sin cambios).
   if (tvState.viewMode === 'karaoke') {
     tvLastActivityTs = Date.now();
     ensureTvAwake();
@@ -2385,14 +2428,24 @@ function checkTvOledStaticSuspension() {
 function initTvOledProtection() {
   startPixelOrbiter();
   resetInactivityTimer();
+  initTvKeepAwakeVideo();
   tvLastActivityTs = Date.now();
 
-  // Activar anti-suspensión en el primer gesto del usuario y al volver a la pestaña
+  // Intentar activar anti-suspensión al cargar y al volver a la pestaña
+  ensureTvAwake();
   document.addEventListener('visibilitychange', function() {
     if (document.visibilityState === 'visible') {
       tvTouchActivity();
     }
   });
+
+  // Gestos reales del usuario desbloquean siempre el video H.264 anti-suspensión y WakeLock en cualquier TV
+  var activationEvents = ['click', 'keydown', 'touchstart', 'pointerdown', 'mousedown'];
+  for (var a = 0; a < activationEvents.length; a++) {
+    window.addEventListener(activationEvents[a], function() {
+      ensureTvAwake();
+    }, { passive: true });
+  }
 
   // Detectar actividad de usuario para mantener despierta la TV y mostrar barra superior
   var activityEvents = ['mousemove', 'mousedown', 'keydown', 'wheel', 'touchstart', 'pointerdown', 'click'];
@@ -2413,9 +2466,9 @@ function initTvOledProtection() {
     }, { passive: true });
   }
 
-  // Monitor cada 15s para política anti-suspensión + protección solo ante estática real
+  // Monitor cada 10s para verificar que el video anti-suspensión siga corriendo + protección solo ante estática real
   if (tvStaticGuardInterval) clearInterval(tvStaticGuardInterval);
-  tvStaticGuardInterval = setInterval(checkTvOledStaticSuspension, 15000);
+  tvStaticGuardInterval = setInterval(checkTvOledStaticSuspension, 10000);
 
   // Despertar de blackout al mover el puntero
   var blackoutEl = document.getElementById('tv-oled-blackout');
@@ -2587,6 +2640,11 @@ function toggleTvOledBlackout(forceState) {
 
   const isCurrentOpen = blackoutEl.style.display !== 'none';
   const shouldOpen = (forceState !== undefined) ? forceState : !isCurrentOpen;
+
+  // En modo Karaoke JAMÁS activar pantalla negra / suspensión
+  if (shouldOpen && tvState.viewMode === 'karaoke') {
+    return;
+  }
 
   if (shouldOpen) {
     blackoutEl.style.display = 'flex';
