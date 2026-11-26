@@ -2379,3 +2379,52 @@ body.theme-paper-white .karaoke-word.karaoke-word-active {
   background: rgba(244, 63, 94, 0.16);
   color: #fda4af;
 }
+
+
+/* ==============================================================
+   13. SELECTOR DE IDIOMA (ORIGINAL / ESPAÑOL) EN BARRA DE CANCIÓN
+   ============================================================== */
+.tv-lang-segmented {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  background: #080d18;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.tv-lang-btn {
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.16s ease;
+}
+
+.tv-lang-btn:hover,
+.tv-lang-btn:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+#btn-tv-lang-orig.active {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.35) 0%, rgba(236, 72, 153, 0.35) 100%);
+  border-color: #c084fc;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.35);
+}
+
+#btn-tv-lang-es.active {
+  background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+  border-color: #10b981;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.35);
+}

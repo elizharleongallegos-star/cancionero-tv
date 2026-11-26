@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=2.5.0">
+  <link rel="stylesheet" href="tv.css?v=2.6.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -40,7 +40,6 @@
           <button id="tv-mode-pdf" class="tv-pill-btn" role="tab" title="Hoja PDF original (Tecla 1)" tabindex="0">📄 PDF</button>
           <button id="tv-mode-word" class="tv-pill-btn active" role="tab" title="Hoja Word continua con acordes resaltados (Tecla 2)" tabindex="0">📝 Word</button>
           <button id="tv-mode-karaoke" class="tv-pill-btn tv-pill-karaoke" role="tab" title="Modo Karaoke sincronizado en pantalla gigante (Tecla 3)" tabindex="0">🎤 Karaoke</button>
-        <button id="tv-btn-toggle-lang" class="tv-pill-btn tv-pill-lang" role="tab" title="Alternar entre versión original y traducida al español" style="display:none;" tabindex="0">🇯🇵 Original</button>
         </div>
       </div>
 
@@ -173,6 +172,12 @@
               <select id="tv-versions-select" class="tv-versions-select" style="display:none;" title="Cambiar versión de la playlist" tabindex="0">
               </select>
             </div>
+          </div>
+
+          <!-- Selector de Idioma (Visible solo en canciones con versión traducida al español) -->
+          <div id="tv-lang-toggle-group" class="tv-lang-segmented" style="display:none;" role="group" aria-label="Cambiar idioma de la canción">
+            <button id="btn-tv-lang-orig" class="tv-lang-btn active" type="button" title="Ver letra en idioma original (Tecla L)" tabindex="0">🌐 Original</button>
+            <button id="btn-tv-lang-es" class="tv-lang-btn" type="button" title="Ver versión traducida al español (Tecla L)" tabindex="0">🇪🇸 Español</button>
           </div>
 
           <!-- Marcas rápidas de la canción actual: Favorita + Error Acordes + Error Letra + Error Sincro -->
@@ -439,7 +444,7 @@
   <!-- Motor Unificado de Sincronización Karaoke v4.2 (Palabra por palabra + Anticipación -0.50s) -->
   <script src="karaokeTapCalibrator.js?v=4.2.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=2.5.0"></script>
+  <script src="tv.js?v=2.6.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

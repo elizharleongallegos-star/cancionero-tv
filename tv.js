@@ -484,6 +484,7 @@ function selectTvSong(songId, autoPlay = true) {
   tvState.currentSong = song;
   tvState.currentPageIndex = 0;
   tvState.pdfPageOffset = 0;
+  tvState.showingSpanish = false;
 
   // Cambio de canción = contenido nuevo: reinicia el control de estática OLED y vuelve al inicio de la hoja
   if (typeof tvTouchActivity === 'function') tvTouchActivity();
@@ -1272,18 +1273,8 @@ function renderCurrentTvSheet() {
 
   if (!song || !renderBox) return;
 
-  // Botón conmutador de idioma en TV
-  const btnLang = document.getElementById('tv-btn-toggle-lang');
-  if (btnLang) {
-    if (song.hasTranslation && song.spanishVersion) {
-      btnLang.style.display = 'inline-flex';
-      btnLang.textContent = tvState.showingSpanish ? '🇪🇸 Traducido' : '🇯🇵 Original';
-      btnLang.classList.toggle('active', !!tvState.showingSpanish);
-    } else {
-      btnLang.style.display = 'none';
-      tvState.showingSpanish = false;
-    }
-  }
+  // Selector segmentado de idioma (Original / Español) para canciones con traducción
+  updateTvLangToggleUI(song);
 
   renderBox.innerHTML = '';
 
@@ -1968,6 +1959,7 @@ function initTvRemoteNavigation() {
     else if (key === '3') setTvViewMode('karaoke');
     else if (key === 's' || key === 'S') { e.preventDefault(); toggleTvShuffle(); }
     else if (key === 'r' || key === 'R') { e.preventDefault(); toggleTvRepeat(); }
+    else if (key === 'l' || key === 'L') { e.preventDefault(); setTvSongLanguage(!tvState.showingSpanish); }
     else if (key === 'm' || key === 'M') { e.preventDefault(); toggleTvSidebar(); }
     else if (key === 'f' || key === 'F') { e.preventDefault(); toggleTvFullscreen(); }
     else if (key === 'o' || key === 'O') { e.preventDefault(); toggleTvTheme(); }
@@ -2133,18 +2125,9 @@ function initTvApp() {
     renderCurrentTvSheet();
   });
 
-  // Botón conmutador de versión en español en TV
-  const btnTvLang = document.getElementById('tv-btn-toggle-lang');
-  if (btnTvLang) {
-    btnTvLang.addEventListener('click', () => {
-      const song = tvState.currentSong;
-      if (!song || !song.hasTranslation || !song.spanishVersion) return;
-      tvState.showingSpanish = !tvState.showingSpanish;
-      btnTvLang.textContent = tvState.showingSpanish ? '🇪🇸 Traducido' : '🇯🇵 Original';
-      btnTvLang.classList.toggle('active', !!tvState.showingSpanish);
-      renderCurrentTvSheet();
-    });
-  }
+  // Selector segmentado de idioma (Original / Español)
+  on('btn-tv-lang-orig', 'click', function() { setTvSongLanguage(false); });
+  on('btn-tv-lang-es', 'click', function() { setTvSongLanguage(true); });
 
   // Switcher de Repertorio (Todos | Principal | Reggaetón)
   const bookBtns = [
@@ -3352,4 +3335,60 @@ function fallbackCopyTvText(textarea) {
       showTvToast('📋 Informe copiado al portapapeles', 2000);
     } catch (e) {}
   }
+}
+
+
+// ==============================================================
+// 10. SELECTOR DE IDIOMA (ORIGINAL / ESPAÑOL) EN CANCIONES CON TRADUCCIÓN
+// ==============================================================
+function detectTvOriginalLangBadge(song) {
+  if (!song) return '🌐 Original';
+  var sample = String(song.title || '') + ' ' + String(song.artist || '');
+  try {
+    var pages = song.pages || [];
+    if (pages[0] && Array.isArray(pages[0])) {
+      for (var i = 0; i < Math.min(12, pages[0].length); i++) {
+        var l = pages[0][i];
+        sample += ' ' + (typeof l === 'string' ? l : (l && l.text ? l.text : ''));
+      }
+    }
+  } catch (e) {}
+  if (/[\u3040-\u30ff\u4e00-\u9faf]/.test(sample)) return '🇯🇵 Original';
+  return '🌐 Original';
+}
+
+function updateTvLangToggleUI(song) {
+  var group = document.getElementById('tv-lang-toggle-group');
+  var btnOrig = document.getElementById('btn-tv-lang-orig');
+  var btnEs = document.getElementById('btn-tv-lang-es');
+  if (!group) return;
+
+  var hasTr = !!(song && song.hasTranslation && song.spanishVersion);
+  if (hasTr) {
+    group.style.display = 'inline-flex';
+    if (btnOrig) {
+      btnOrig.textContent = detectTvOriginalLangBadge(song);
+      btnOrig.classList.toggle('active', !tvState.showingSpanish);
+    }
+    if (btnEs) {
+      btnEs.classList.toggle('active', !!tvState.showingSpanish);
+    }
+  } else {
+    group.style.display = 'none';
+    tvState.showingSpanish = false;
+  }
+}
+
+function setTvSongLanguage(useSpanish) {
+  var song = tvState.currentSong;
+  if (!song || !song.hasTranslation || !song.spanishVersion) return;
+  var target = !!useSpanish;
+  if (tvState.showingSpanish === target) return;
+  tvState.showingSpanish = target;
+  tvState.pdfPageOffset = 0;
+  updateTvLangToggleUI(song);
+  renderCurrentTvSheet();
+  renderTvChords(song);
+  showTvToast(target ? '🇪🇸 Mostrando versión traducida al español' : '🌐 Mostrando versión en idioma original', 1600);
+  logTvAction('tv_language_toggled', { showingSpanish: target });
 }
