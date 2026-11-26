@@ -2428,3 +2428,190 @@ body.theme-paper-white .karaoke-word.karaoke-word-active {
   color: #ffffff;
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.35);
 }
+
+
+/* ==============================================================
+   14. TIRA HORIZONTAL DE TABS / PARTITURA 6 CUERDAS (ALPHATAB + SONGSTERR)
+   ============================================================== */
+.tv-pill-score {
+  border-color: rgba(34, 197, 94, 0.45) !important;
+  color: #86efac !important;
+}
+
+.tv-pill-score.active {
+  background: linear-gradient(135deg, #15803d 0%, #059669 100%) !important;
+  border-color: #22c55e !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.45);
+}
+
+.score-split-panel {
+  width: 100%;
+  height: 168px;
+  min-height: 140px;
+  max-height: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #141821;
+  border-top: 2px solid #22c55e;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.75);
+  z-index: 35;
+}
+
+.score-panel-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #0b0f18;
+  padding: 5px 12px;
+  min-height: 32px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  flex-shrink: 0;
+}
+
+body.tv-header-hidden .score-panel-toolbar {
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
+.score-tb-left,
+.score-tb-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.score-source-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  border-radius: 6px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.score-bar-readout {
+  font-family: var(--tv-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: #38bdf8;
+  padding: 2px 8px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.score-track-select {
+  height: 26px;
+  max-width: 220px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 0 8px;
+  outline: none;
+}
+
+.score-tb-btn {
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #cbd5e1;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.score-tb-btn:hover,
+.score-tb-btn:focus {
+  border-color: #22c55e;
+  color: #ffffff;
+  outline: none;
+}
+
+.score-tb-songsterr {
+  background: #0f1d38;
+  border-color: #0284c7;
+  color: #7dd3fc;
+}
+
+.score-tb-close {
+  color: #fda4af;
+  border-color: rgba(244, 63, 94, 0.4);
+}
+
+.score-status-banner {
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #93c5fd;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+}
+
+.score-scroll-container {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  background: #141821;
+}
+
+.score-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.score-scroll-container::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+.alphatab-surface {
+  display: inline-block;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  background: #141821;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.score-live-playhead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 92px;
+  background: #22c55e;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.95), 0 0 3px #86efac;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 20;
+  will-change: transform;
+}
+
+.score-live-beat-hl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 86px;
+  background: rgba(34, 197, 94, 0.16);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 15;
+  will-change: transform;
+}

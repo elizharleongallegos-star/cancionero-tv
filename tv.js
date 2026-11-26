@@ -559,8 +559,13 @@ function selectTvSong(songId, autoPlay = true) {
   // Renderizar los diagramas de acordes de guitarra bajo el reproductor
   renderTvChords(song);
 
-  // Sincronizar botones de Favorita / Acorde ✗ / Letra ✗
+  // Sincronizar botones de Favorita / Acorde ✗ / Letra ✗ / Sincro ✗
   updateTvMarkButtons(song);
+
+  // Actualizar disponibilidad y contenido del panel de Tabs / Partitura sincronizada
+  if (window.ScoreSplitManager && typeof window.ScoreSplitManager.onSongChanged === 'function') {
+    try { window.ScoreSplitManager.onSongChanged(song); } catch (eSc) {}
+  }
 
   // Actualizar indicador en pantalla apagada si está activa
   const oledNowPlaying = document.getElementById('tv-oled-now-playing');
@@ -870,6 +875,7 @@ function startYtProgressPolling() {
         if (dur > 0) {
           tvState.currentTimeSec = cur;
           tvState.durationSec = dur;
+          tvState.ytClockPerfMs = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
           updateTvTimeUI();
           if (tvState.viewMode === 'karaoke') {
             autoScaleKaraokeToLiveDuration(dur);
@@ -1960,6 +1966,12 @@ function initTvRemoteNavigation() {
     else if (key === 's' || key === 'S') { e.preventDefault(); toggleTvShuffle(); }
     else if (key === 'r' || key === 'R') { e.preventDefault(); toggleTvRepeat(); }
     else if (key === 'l' || key === 'L') { e.preventDefault(); setTvSongLanguage(!tvState.showingSpanish); }
+    else if (key === 't' || key === 'T') {
+      e.preventDefault();
+      if (window.ScoreSplitManager && typeof window.ScoreSplitManager.toggle === 'function') {
+        window.ScoreSplitManager.toggle();
+      }
+    }
     else if (key === 'm' || key === 'M') { e.preventDefault(); toggleTvSidebar(); }
     else if (key === 'f' || key === 'F') { e.preventDefault(); toggleTvFullscreen(); }
     else if (key === 'o' || key === 'O') { e.preventDefault(); toggleTvTheme(); }
@@ -2007,7 +2019,10 @@ function toggleTvTheme() {
 function setTvViewMode(mode) {
   tvState.viewMode = mode;
   if (typeof tvTouchActivity === 'function') tvTouchActivity();
-  document.querySelectorAll('.tv-pill-btn').forEach(btn => btn.classList.remove('active'));
+  ['tv-mode-pdf', 'tv-mode-word', 'tv-mode-karaoke'].forEach(function(id) {
+    var b = document.getElementById(id);
+    if (b) b.classList.remove('active');
+  });
   const activeBtn = document.getElementById(`tv-mode-${mode}`);
   if (activeBtn) activeBtn.classList.add('active');
 
@@ -2248,6 +2263,24 @@ function initTvApp() {
   // Inicializar marcos redimensionables para Lista de Canciones y Reproducción/Acordes
   initTvPanelResizers();
 
+  // Puentes globales e inicialización del Motor de Tabs / Partitura Horizontal (ScoreSplitManager)
+  window.state = tvState;
+  window.showToast = function(msg, type, dur) { showTvToast(msg, dur || 2000); };
+  window.seekToSeconds = function(sec) { seekTvAbsolute(sec); };
+  window.getSmoothAudioTimeSec = function() {
+    if (tvState.isPlaying && tvState.ytClockPerfMs > 0) {
+      var nowMs = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+      var delta = (nowMs - tvState.ytClockPerfMs) / 1000;
+      if (delta >= 0 && delta <= 1.2) {
+        return Math.max(0, (tvState.currentTimeSec || 0) + delta);
+      }
+    }
+    return Math.max(0, tvState.currentTimeSec || 0);
+  };
+  if (window.ScoreSplitManager && typeof window.ScoreSplitManager.init === 'function') {
+    try { window.ScoreSplitManager.init(); } catch (eScInit) {}
+  }
+
   // Modal de Ayuda Magic Remote
   const remoteModal = document.getElementById('tv-remote-modal');
   on('btn-remote-help', 'click', () => {
@@ -2383,10 +2416,11 @@ function releaseTvAwake() {
 
 function checkTvOledStaticSuspension() {
   // Regla estricta:
-  // 1) En modo Karaoke NUNCA suspender (el texto se mueve continuamente con la música).
+  // 1) En modo Karaoke (o con Tabs en movimiento durante reproducción) NUNCA suspender.
   // 2) Mientras la app está funcionando activamente (reproduciendo o con uso reciente), mantener la TV siempre despierta.
   // 3) Solo activar protección OLED si el contenido queda estático en el mismo lugar > 10 minutos (Word/PDF/pausa sin cambios).
-  if (tvState.viewMode === 'karaoke') {
+  var tabsMoving = !!(window.ScoreSplitManager && window.ScoreSplitManager.isPanelOpen && tvState.isPlaying);
+  if (tvState.viewMode === 'karaoke' || tabsMoving) {
     tvLastActivityTs = Date.now();
     ensureTvAwake();
     return;
