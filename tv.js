@@ -272,11 +272,17 @@ function buildTvSongs(bookKey) {
 }
 
 // ==============================================================
-// MARCAS DE CANCIÓN: FAVORITAS + ERROR DE ACORDES + ERROR DE LETRA (misma clave que la app web)
+// MARCAS DE CANCIÓN: FAVORITAS + ACORDES MALOS + LETRA MALA + SINCRO MALA
+// (misma clave de almacenamiento que la app web). En la TV NO se edita nada:
+// solo se marcan fallas y se deja un registro para compartirlo al final.
 // ==============================================================
 var TV_MARKS_KEY = 'cancionero_song_marks_v1';
 tvState.songMarks = {};
-tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric'
+tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync'
+
+function tvEmptyMark() {
+  return { fav: false, badChord: false, badLyric: false, badSync: false };
+}
 
 function loadTvSongMarks() {
   try {
@@ -292,18 +298,22 @@ function saveTvSongMarks() {
 }
 
 function getTvSongMark(song) {
-  var empty = { fav: false, badChord: false, badLyric: false };
-  if (!song || !song.id) return empty;
-  return (tvState.songMarks && tvState.songMarks[song.id]) || empty;
+  if (!song || !song.id) return tvEmptyMark();
+  return (tvState.songMarks && tvState.songMarks[song.id]) || tvEmptyMark();
 }
 
 function toggleTvSongMark(markKey) {
   var song = tvState.currentSong;
   if (!song || !song.id) return;
-  var prev = tvState.songMarks[song.id] || { fav: false, badChord: false, badLyric: false };
-  var next = { fav: !!prev.fav, badChord: !!prev.badChord, badLyric: !!prev.badLyric };
+  var prev = tvState.songMarks[song.id] || tvEmptyMark();
+  var next = {
+    fav: !!prev.fav,
+    badChord: !!prev.badChord,
+    badLyric: !!prev.badLyric,
+    badSync: !!prev.badSync
+  };
   next[markKey] = !prev[markKey];
-  if (!next.fav && !next.badChord && !next.badLyric) {
+  if (!next.fav && !next.badChord && !next.badLyric && !next.badSync) {
     delete tvState.songMarks[song.id];
   } else {
     tvState.songMarks[song.id] = next;
@@ -315,7 +325,8 @@ function toggleTvSongMark(markKey) {
   var labels = {
     fav: next.fav ? '♥ Añadida a Favoritas' : '♡ Quitada de Favoritas',
     badChord: next.badChord ? '⚠️ Marcada: Acordes con error' : '✓ Desmarcado: Acordes',
-    badLyric: next.badLyric ? '⚠️ Marcada: Letra con error' : '✓ Desmarcado: Letra'
+    badLyric: next.badLyric ? '⚠️ Marcada: Letra con error' : '✓ Desmarcado: Letra',
+    badSync: next.badSync ? '⚠️ Marcada: Sincronización mala' : '✓ Desmarcado: Sincronización'
   };
   showTvToast(labels[markKey] || 'Marca actualizada', 1600);
   logTvAction('tv_song_mark_toggled', { mark: markKey, value: next[markKey] });
@@ -326,31 +337,35 @@ function updateTvMarkButtons(song) {
   var bFav = document.getElementById('btn-tv-mark-fav');
   var bChord = document.getElementById('btn-tv-mark-bad-chord');
   var bLyric = document.getElementById('btn-tv-mark-bad-lyric');
+  var bSync = document.getElementById('btn-tv-mark-bad-sync');
   if (bFav) {
     bFav.classList.toggle('active', !!mark.fav);
     bFav.innerHTML = mark.fav ? '♥ Favorita' : '♡ Favorita';
   }
   if (bChord) bChord.classList.toggle('active', !!mark.badChord);
   if (bLyric) bLyric.classList.toggle('active', !!mark.badLyric);
+  if (bSync) bSync.classList.toggle('active', !!mark.badSync);
 }
 
 function updateTvMarkCounts() {
-  var favC = 0, chordC = 0, lyricC = 0;
+  var favC = 0, chordC = 0, lyricC = 0, syncC = 0;
   for (var i = 0; i < tvState.songs.length; i++) {
     var m = tvState.songMarks[tvState.songs[i].id];
     if (!m) continue;
     if (m.fav) favC++;
     if (m.badChord) chordC++;
     if (m.badLyric) lyricC++;
+    if (m.badSync) syncC++;
   }
   var e1 = document.getElementById('count-mark-fav');
   var e2 = document.getElementById('count-mark-bad-chord');
   var e3 = document.getElementById('count-mark-bad-lyric');
+  var e4 = document.getElementById('count-mark-bad-sync');
   if (e1) e1.textContent = favC;
   if (e2) e2.textContent = chordC;
   if (e3) e3.textContent = lyricC;
+  if (e4) e4.textContent = syncC;
 }
-
 function filterTvSongs() {
   const q = normalizeSearch(tvState.searchQuery);
   const artist = tvState.selectedArtist;
@@ -418,7 +433,8 @@ function renderTvSongList() {
     const markTags =
       (mark.fav ? '<span class="tv-mark-tag tv-mark-tag-fav" title="Favorita">♥</span>' : '') +
       (mark.badChord ? '<span class="tv-mark-tag tv-mark-tag-err" title="Acordes con error">Ac✗</span>' : '') +
-      (mark.badLyric ? '<span class="tv-mark-tag tv-mark-tag-err" title="Letra con error">Lt✗</span>' : '');
+      (mark.badLyric ? '<span class="tv-mark-tag tv-mark-tag-err" title="Letra con error">Lt✗</span>' : '') +
+      (mark.badSync ? '<span class="tv-mark-tag tv-mark-tag-err" title="Sincronización mala">Sn✗</span>' : '');
 
     html += `
       <div class="tv-song-item ${isActive ? 'active' : ''} ${isPlaying ? 'playing' : ''}" 
@@ -469,7 +485,10 @@ function selectTvSong(songId, autoPlay = true) {
   tvState.currentPageIndex = 0;
   tvState.pdfPageOffset = 0;
 
-  // Actualizar contexto en la barra
+  // Cambio de canción = contenido nuevo: reinicia el control de estática OLED y vuelve al inicio de la hoja
+  if (typeof tvTouchActivity === 'function') tvTouchActivity();
+  var sheetScrollerEl = document.getElementById('tv-sheet-scroller');
+  if (sheetScrollerEl) sheetScrollerEl.scrollTop = 0;
   const titleEl = document.getElementById('tv-song-title');
   const artistEl = document.getElementById('tv-song-artist');
   const badgePl = document.getElementById('tv-badge-playlist');
@@ -609,8 +628,20 @@ function fisherYatesShuffle(arr) {
   return arr;
 }
 
+function tvHasActiveSongFilter() {
+  return (tvState.currentFilter && tvState.currentFilter !== 'all') ||
+         (tvState.markFilter && tvState.markFilter !== 'all') ||
+         !!tvState.selectedArtist ||
+         !!(tvState.searchQuery && String(tvState.searchQuery).trim());
+}
+
 function getActivePlayableList() {
-  var source = (tvState.filteredSongs && tvState.filteredSongs.length > 0) ? tvState.filteredSongs : tvState.songs;
+  // La navegación (siguiente/anterior, automática y aleatoria) respeta SIEMPRE el filtro activo.
+  // Si hay un filtro activo y no tiene canciones, no se cae al repertorio completo.
+  var hasFilter = tvHasActiveSongFilter();
+  var source = (tvState.filteredSongs && tvState.filteredSongs.length > 0)
+    ? tvState.filteredSongs
+    : (hasFilter ? [] : tvState.songs);
   var playable = [];
   var seenIds = {};
   var seenVids = {};
@@ -645,17 +676,20 @@ function ensureTvShuffleQueue(forceRebuild) {
 
   var needsBuild = !!forceRebuild || !tvState.shuffleQueue || tvState.shuffleQueue.length === 0;
   if (!needsBuild) {
-    // Verificar que la cola corresponda al repertorio activo actual
-    var validCount = 0;
-    for (var c = 0; c < tvState.shuffleQueue.length; c++) {
-      if (playableIds.indexOf(tvState.shuffleQueue[c]) !== -1) validCount++;
+    // La cola debe corresponder EXACTAMENTE al repertorio/filtro activo (mismo tamaño y mismos elementos)
+    if (tvState.shuffleQueue.length !== playableIds.length) {
+      needsBuild = true;
+    } else {
+      for (var c = 0; c < tvState.shuffleQueue.length; c++) {
+        if (playableIds.indexOf(tvState.shuffleQueue[c]) === -1) { needsBuild = true; break; }
+      }
     }
-    if (validCount !== playableIds.length) needsBuild = true;
   }
 
   if (needsBuild) {
     var curId = tvState.currentSong ? tvState.currentSong.id : null;
-    if (curId) tvState.shufflePlayedIds.add(curId);
+    var curInPool = !!curId && playableIds.indexOf(curId) !== -1;
+    if (curInPool) tvState.shufflePlayedIds.add(curId);
 
     // Separar las canciones NO escuchadas aún de las ya escuchadas en esta sesión
     var unplayed = [];
@@ -673,7 +707,7 @@ function ensureTvShuffleQueue(forceRebuild) {
     // Si ya se escucharon todas las canciones de la lista, reiniciar ciclo evitando repetir la actual de inmediato
     if (unplayed.length === 0) {
       tvState.shufflePlayedIds.clear();
-      if (curId) tvState.shufflePlayedIds.add(curId);
+      if (curInPool) tvState.shufflePlayedIds.add(curId);
       unplayed = alreadyPlayed;
       alreadyPlayed = [];
     }
@@ -682,14 +716,15 @@ function ensureTvShuffleQueue(forceRebuild) {
     fisherYatesShuffle(alreadyPlayed);
 
     var finalQueue = [];
-    if (curId && playableIds.indexOf(curId) !== -1) {
+    if (curInPool) {
       finalQueue.push(curId);
     }
     for (var u = 0; u < unplayed.length; u++) finalQueue.push(unplayed[u]);
     for (var a = 0; a < alreadyPlayed.length; a++) finalQueue.push(alreadyPlayed[a]);
 
     tvState.shuffleQueue = finalQueue;
-    tvState.shufflePointer = 0;
+    // Si la canción actual no pertenece al filtro, el puntero queda antes del primero para que "siguiente" salga del filtro
+    tvState.shufflePointer = curInPool ? 0 : -1;
   }
 }
 
@@ -722,6 +757,8 @@ function updateTvPlaybackModesUI() {
   if (repeatBtn) repeatBtn.classList.toggle('active', !!tvState.isRepeat);
 }
 
+var tvLastManualNavTs = 0;
+
 function navigateTvSong(delta, isAutoEnded) {
   if (typeof isAutoEnded === 'undefined') isAutoEnded = false;
   if (tvState.songs.length === 0) return;
@@ -739,47 +776,73 @@ function navigateTvSong(delta, isAutoEnded) {
     return;
   }
 
-  // 1. Modo Aleatorio (Shuffle): Garantiza escuchar TODAS las canciones sin repetición
+  // Antirrebote de 380 ms en navegación manual (el control remoto repite teclas)
+  if (!isAutoEnded) {
+    var nowTs = Date.now();
+    if (nowTs - tvLastManualNavTs < 380) return;
+    tvLastManualNavTs = nowTs;
+  }
+
+  // La navegación siempre ocurre DENTRO del filtro activo
+  var navList = (tvState.filteredSongs && tvState.filteredSongs.length > 0)
+    ? tvState.filteredSongs
+    : (tvHasActiveSongFilter() ? [] : tvState.songs);
+  if (navList.length === 0) {
+    showTvToast('⚠️ El filtro activo no tiene canciones para navegar', 2200);
+    return;
+  }
+
+  // 1. Modo Aleatorio (Shuffle): Garantiza escuchar TODAS las canciones del filtro sin repetición
   if (tvState.isShuffle) {
     ensureTvShuffleQueue(false);
-    if (tvState.shuffleQueue.length > 0) {
-      var nextPtr = tvState.shufflePointer + (delta > 0 ? 1 : -1);
-      if (nextPtr >= tvState.shuffleQueue.length) {
+    var qLen = tvState.shuffleQueue.length;
+    if (qLen > 0) {
+      var nextPtr;
+      if (delta > 0) {
+        nextPtr = tvState.shufflePointer < 0 ? 0 : tvState.shufflePointer + 1;
+      } else {
+        nextPtr = tvState.shufflePointer <= 0 ? qLen - 1 : tvState.shufflePointer - 1;
+      }
+      if (nextPtr >= qLen) {
         // Se completó el 100% del ciclo: re-barajar limpiamente sin repetir la última canción
         tvState.shufflePlayedIds.clear();
         ensureTvShuffleQueue(true);
-        nextPtr = tvState.shuffleQueue.length > 1 ? 1 : 0;
-      } else if (nextPtr < 0) {
-        nextPtr = tvState.shuffleQueue.length - 1;
+        qLen = tvState.shuffleQueue.length;
+        nextPtr = qLen > 1 ? 1 : 0;
       }
       tvState.shufflePointer = nextPtr;
       var nextId = tvState.shuffleQueue[tvState.shufflePointer];
-      var nextShuffleSong = tvState.songs.find(function(s) { return s.id === nextId; });
+      var nextShuffleSong = null;
+      for (var si = 0; si < tvState.songs.length; si++) {
+        if (tvState.songs[si].id === nextId) { nextShuffleSong = tvState.songs[si]; break; }
+      }
       if (nextShuffleSong) {
         tvState.shufflePlayedIds.add(nextShuffleSong.id);
-        showTvToast('🔀 [' + (tvState.shufflePointer + 1) + '/' + tvState.shuffleQueue.length + '] ' + nextShuffleSong.artist + ' - ' + nextShuffleSong.title, 1800);
+        showTvToast('🔀 [' + (tvState.shufflePointer + 1) + '/' + qLen + '] ' + nextShuffleSong.artist + ' - ' + nextShuffleSong.title, 1800);
         selectTvSong(nextShuffleSong.id, true);
         return;
       }
     }
   }
 
-  // 2. Modo Secuencial Estricto (sobre la lista activa filtrada, saltando canciones sin pista si fue autoEnded)
-  var activeList = (tvState.filteredSongs && tvState.filteredSongs.length > 0) ? tvState.filteredSongs : tvState.songs;
-  var currentIdx = activeList.findIndex(function(s) {
-    return s.id === (tvState.currentSong && tvState.currentSong.id);
-  });
+  // 2. Modo Secuencial (sobre la lista activa filtrada, saltando canciones sin pista si terminó sola)
+  var curId = tvState.currentSong ? tvState.currentSong.id : null;
+  var currentIdx = -1;
+  for (var ci = 0; ci < navList.length; ci++) {
+    if (navList[ci].id === curId) { currentIdx = ci; break; }
+  }
   var step = delta >= 0 ? 1 : -1;
-  var nextIdx = currentIdx === -1 ? 0 : currentIdx;
-  for (var tries = 0; tries < activeList.length; tries++) {
-    nextIdx = (nextIdx + step + activeList.length) % activeList.length;
-    var cand = activeList[nextIdx];
+  // Si la canción actual no está en el filtro, "siguiente" entra por el primero y "anterior" por el último
+  var nextIdx = currentIdx === -1 ? (step > 0 ? -1 : 0) : currentIdx;
+  for (var tries = 0; tries < navList.length; tries++) {
+    nextIdx = (nextIdx + step + navList.length) % navList.length;
+    var cand = navList[nextIdx];
     if (!isAutoEnded || getSongVideoCandidates(cand).length > 0) {
       selectTvSong(cand.id, true);
       return;
     }
   }
-  selectTvSong(activeList[0].id, true);
+  selectTvSong(navList[0].id, true);
 }
 
 // ==============================================================
@@ -856,6 +919,8 @@ function handleYtPlaybackError(errCode) {
     tvState.currentVideoId = altVid;
     showTvToast('🔄 Probando versión alternativa de YouTube...', 2200);
     loadYouTubeVideoInPlayer(altVid, true);
+    // El calce del karaoke depende del video exacto: recargar la hoja con la sincronización de la nueva versión
+    if (tvState.viewMode === 'karaoke') renderCurrentTvSheet();
     return;
   }
 
@@ -1439,7 +1504,7 @@ function renderTvKaraokeSheet(song, renderBox) {
     badgePages.textContent = '🎤 Karaoke';
   }
 
-  tvState.karaokeIsEstimated = !kBuilt.hasTimedSource || (kBuilt.sourceLabel && kBuilt.sourceLabel.indexOf('Rítmica') !== -1);
+  tvState.karaokeIsEstimated = !kBuilt.hasTimedSource || (kBuilt.sourceLabel && (kBuilt.sourceLabel.indexOf('Rítmica') !== -1 || kBuilt.sourceLabel.indexOf('Estim') !== -1));
   tvState.karaokeBaseDur = (kBuilt.rawK && kBuilt.rawK.d) ? Number(kBuilt.rawK.d) : (kBuilt.baseDur || 185);
   tvState.karaokeScaledToDur = false;
 
@@ -1949,6 +2014,7 @@ function toggleTvTheme() {
 
 function setTvViewMode(mode) {
   tvState.viewMode = mode;
+  if (typeof tvTouchActivity === 'function') tvTouchActivity();
   document.querySelectorAll('.tv-pill-btn').forEach(btn => btn.classList.remove('active'));
   const activeBtn = document.getElementById(`tv-mode-${mode}`);
   if (activeBtn) activeBtn.classList.add('active');
@@ -2112,6 +2178,7 @@ function initTvApp() {
       updateTvPosterOverlay(tvState.currentSong, newVid);
       var openYtBtn = document.getElementById('btn-tv-open-yt');
       if (openYtBtn) openYtBtn.href = 'https://www.youtube.com/watch?v=' + newVid;
+      if (tvState.viewMode === 'karaoke') renderCurrentTvSheet();
       showTvToast('🎬 Cambiando a versión seleccionada...', 1500);
     }
   });
@@ -2146,10 +2213,14 @@ function initTvApp() {
     });
   });
 
-  // Botones de marca de la canción actual: Favorita / Acorde ✗ / Letra ✗
+  // Botones de marca de la canción actual: Favorita / Acorde ✗ / Letra ✗ / Sincro ✗
   on('btn-tv-mark-fav', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('fav'); });
   on('btn-tv-mark-bad-chord', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badChord'); });
   on('btn-tv-mark-bad-lyric', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badLyric'); });
+  on('btn-tv-mark-bad-sync', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badSync'); });
+
+  // Botón e interfaz de Compartir Informe (sin edición, solo registro de marcas/fallas)
+  initTvShareMarksModal();
 
   // Filtros de Favoritas y Reportes de error
   document.querySelectorAll('.tv-mark-filter-btn').forEach(function(btn) {
@@ -2229,17 +2300,109 @@ var oledHeaderHideTimer = null;
 var OLED_INACTIVITY_MS = 120000; // 2 minutos para activar atenuación profunda
 var OLED_HEADER_AUTOHIDE_MS = 6000; // 6 segundos de reproducción para ocultar barra fija
 
+var tvWakeLockSentinel = null;
+var tvNoSleepInstance = null;
+var tvNoSleepEnabled = false;
+var tvLastActivityTs = Date.now();
+var tvStaticGuardInterval = null;
+var OLED_STATIC_SUSPEND_MS = 8 * 60 * 1000; // 8 minutos con pantalla totalmente estática (nunca en Karaoke)
+
+function tvTouchActivity() {
+  tvLastActivityTs = Date.now();
+  // Si estaba en suspensión OLED protectora, despertar al instante
+  var blackoutEl = document.getElementById('tv-oled-blackout');
+  if (blackoutEl && blackoutEl.style.display !== 'none') {
+    toggleTvOledBlackout(false);
+  }
+  ensureTvAwake();
+}
+
+function ensureTvAwake() {
+  // 1. API moderna Screen Wake Lock (Chrome/Edge/Android TV/webOS modernos)
+  try {
+    if (navigator.wakeLock && navigator.wakeLock.request && !tvWakeLockSentinel && document.visibilityState === 'visible') {
+      navigator.wakeLock.request('screen').then(function(sentinel) {
+        tvWakeLockSentinel = sentinel;
+        sentinel.addEventListener('release', function() {
+          tvWakeLockSentinel = null;
+        });
+      }).catch(function() {});
+    }
+  } catch (e) {}
+
+  // 2. Respaldo NoSleep.js para Smart TVs antiguas (LG webOS / Samsung Tizen)
+  try {
+    if (typeof window.NoSleep === 'function' && !tvNoSleepEnabled) {
+      if (!tvNoSleepInstance) tvNoSleepInstance = new window.NoSleep();
+      tvNoSleepInstance.enable();
+      tvNoSleepEnabled = true;
+    }
+  } catch (e) {}
+}
+
+function releaseTvAwake() {
+  try {
+    if (tvWakeLockSentinel) {
+      tvWakeLockSentinel.release().catch(function() {});
+      tvWakeLockSentinel = null;
+    }
+  } catch (e) {}
+  try {
+    if (tvNoSleepInstance && tvNoSleepEnabled) {
+      tvNoSleepInstance.disable();
+      tvNoSleepEnabled = false;
+    }
+  } catch (e) {}
+}
+
+function checkTvOledStaticSuspension() {
+  // Regla estricta:
+  // 1) En modo Karaoke NUNCA suspender (el texto se mueve continuamente con la música).
+  // 2) Mientras la app está funcionando activamente, mantener la TV despierta (anti-suspensión).
+  // 3) Solo activar protección OLED si el contenido queda estático en el mismo lugar > 8 minutos (Word/PDF/pausa sin cambios).
+  if (tvState.viewMode === 'karaoke') {
+    tvLastActivityTs = Date.now();
+    ensureTvAwake();
+    return;
+  }
+
+  var blackoutEl = document.getElementById('tv-oled-blackout');
+  var alreadyBlackout = blackoutEl && blackoutEl.style.display !== 'none';
+  if (alreadyBlackout) return;
+
+  var idleMs = Date.now() - tvLastActivityTs;
+  if (idleMs >= OLED_STATIC_SUSPEND_MS) {
+    // Contenido estático prolongado en el mismo lugar -> proteger panel OLED sin cortar la música
+    toggleTvOledBlackout(true);
+    if (!tvState.isPlaying) {
+      releaseTvAwake();
+    }
+  } else {
+    ensureTvAwake();
+  }
+}
+
 function initTvOledProtection() {
   startPixelOrbiter();
   resetInactivityTimer();
+  tvLastActivityTs = Date.now();
 
-  // Detectar actividad de usuario para reiniciar atenuación y mostrar barra superior
-  var activityEvents = ['mousemove', 'mousedown', 'keydown', 'wheel', 'touchstart', 'pointerdown'];
+  // Activar anti-suspensión en el primer gesto del usuario y al volver a la pestaña
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      tvTouchActivity();
+    }
+  });
+
+  // Detectar actividad de usuario para mantener despierta la TV y mostrar barra superior
+  var activityEvents = ['mousemove', 'mousedown', 'keydown', 'wheel', 'touchstart', 'pointerdown', 'click'];
   for (var i = 0; i < activityEvents.length; i++) {
     window.addEventListener(activityEvents[i], function() {
       if (document.body.classList.contains('oled-dimmed')) {
         document.body.classList.remove('oled-dimmed');
       }
+      tvLastActivityTs = Date.now();
+      ensureTvAwake();
       resetInactivityTimer();
 
       // Al mover el control o pulsar teclas, mostrar barra superior temporalmente
@@ -2250,6 +2413,10 @@ function initTvOledProtection() {
     }, { passive: true });
   }
 
+  // Monitor cada 15s para política anti-suspensión + protección solo ante estática real
+  if (tvStaticGuardInterval) clearInterval(tvStaticGuardInterval);
+  tvStaticGuardInterval = setInterval(checkTvOledStaticSuspension, 15000);
+
   // Despertar de blackout al mover el puntero
   var blackoutEl = document.getElementById('tv-oled-blackout');
   if (blackoutEl) {
@@ -2259,6 +2426,7 @@ function initTvOledProtection() {
       if (now - lastMoveTime > 300) {
         lastMoveTime = now;
         toggleTvOledBlackout(false);
+        tvTouchActivity();
       }
     });
   }
@@ -2874,4 +3042,256 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initTvApp);
 } else {
   initTvApp();
+}
+
+
+// ==============================================================
+// 9. INFORME COMPLETO DE MARCAS Y FALLAS PARA COMPARTIR (SIN EDICIÓN EN TV)
+// ==============================================================
+var tvActiveShareFilter = 'all';
+
+function getTvUnifiedCatalogForReport() {
+  var byId = {};
+  var out = [];
+  function pushArr(arr, bookName) {
+    if (!Array.isArray(arr)) return;
+    for (var i = 0; i < arr.length; i++) {
+      var s = arr[i];
+      if (!s || !s.id || byId[s.id]) continue;
+      var copy = Object.assign({}, s, { book: s.book || bookName });
+      byId[s.id] = copy;
+      out.push(copy);
+    }
+  }
+  pushArr(window.STANDALONE_SONGS, 'principal');
+  pushArr(window.STANDALONE_REGGAETON, 'reggaeton');
+  pushArr(window.STANDALONE_FALTANTES, 'faltantes');
+  return out;
+}
+
+function getTvMarkedSongsCatalog() {
+  var allList = getTvUnifiedCatalogForReport();
+  var favs = [];
+  var badChords = [];
+  var badLyrics = [];
+  var badSyncs = [];
+  var uniqueMap = {};
+  var totalUnique = 0;
+
+  for (var i = 0; i < allList.length; i++) {
+    var s = allList[i];
+    var m = getTvSongMark(s);
+    var hasAny = false;
+    if (m.fav) { favs.push(s); hasAny = true; }
+    if (m.badChord) { badChords.push(s); hasAny = true; }
+    if (m.badLyric) { badLyrics.push(s); hasAny = true; }
+    if (m.badSync) { badSyncs.push(s); hasAny = true; }
+    if (hasAny && !uniqueMap[s.id]) {
+      uniqueMap[s.id] = true;
+      totalUnique++;
+    }
+  }
+  return {
+    favs: favs,
+    badChords: badChords,
+    badLyrics: badLyrics,
+    badSyncs: badSyncs,
+    totalUnique: totalUnique
+  };
+}
+
+function formatTvSongLineForShare(s, extraTag) {
+  var num = (s.playlistIndex || s.order) ? ('#' + (s.playlistIndex || s.order) + ' ') : '';
+  var tone = s.tone ? (' [' + s.tone + ']') : '';
+  var bookTag = s.book === 'reggaeton' ? ' (Reg)' : (s.book === 'faltantes' ? ' (Fal)' : '');
+  var extra = extraTag ? (' — ' + extraTag) : '';
+  return '• ' + num + (s.artist || 'Artista') + ' - ' + (s.title || 'Canción') + tone + bookTag + extra;
+}
+
+function buildTvMarksShareReport(filter) {
+  if (!filter) filter = 'all';
+  var cat = getTvMarkedSongsCatalog();
+
+  var elAll = document.getElementById('tv-share-count-all');
+  var elFav = document.getElementById('tv-share-count-fav');
+  var elChord = document.getElementById('tv-share-count-chord');
+  var elLyric = document.getElementById('tv-share-count-lyric');
+  var elSync = document.getElementById('tv-share-count-sync');
+  if (elAll) elAll.textContent = cat.totalUnique;
+  if (elFav) elFav.textContent = cat.favs.length;
+  if (elChord) elChord.textContent = cat.badChords.length;
+  if (elLyric) elLyric.textContent = cat.badLyrics.length;
+  if (elSync) elSync.textContent = cat.badSyncs.length;
+
+  var lines = [];
+  var dateStr = '';
+  try { dateStr = new Date().toLocaleDateString('es-CL'); } catch (e) { dateStr = new Date().toISOString().slice(0, 10); }
+  lines.push('📋 *INFORME DE FALLAS Y FAVORITAS — CANCIONERO TV* (' + dateStr + ')');
+  lines.push('Resumen: ' + cat.favs.length + ' favoritas · ' + cat.badChords.length + ' acordes malos · ' + cat.badLyrics.length + ' letras malas · ' + cat.badSyncs.length + ' sincro mala');
+
+  if (cat.totalUnique === 0) {
+    lines.push('');
+    lines.push('Aún no hay canciones marcadas en ninguno de los cancioneros (Principal, Reggaetón o Faltantes).');
+    lines.push('Usa ♥ Favorita, Acorde ✗, Letra ✗ o Sincro ✗ mientras escuchas canciones para registrar fallas y compartirlas al final.');
+    return lines.join('\n');
+  }
+
+  if (filter === 'all' || filter === 'fav') {
+    if (cat.favs.length > 0) {
+      lines.push('');
+      lines.push('❤️ *FAVORITAS (' + cat.favs.length + '):*');
+      for (var f = 0; f < cat.favs.length; f++) lines.push(formatTvSongLineForShare(cat.favs[f], ''));
+    } else if (filter === 'fav') {
+      lines.push('\nNo hay canciones marcadas como Favoritas.');
+    }
+  }
+
+  if (filter === 'all' || filter === 'badChord') {
+    if (cat.badChords.length > 0) {
+      lines.push('');
+      lines.push('🎸 *ACORDES MALOS A CORREGIR (' + cat.badChords.length + '):*');
+      for (var c = 0; c < cat.badChords.length; c++) lines.push(formatTvSongLineForShare(cat.badChords[c], 'Revisar acordes'));
+    } else if (filter === 'badChord') {
+      lines.push('\nNo hay canciones marcadas con Acordes malos.');
+    }
+  }
+
+  if (filter === 'all' || filter === 'badLyric') {
+    if (cat.badLyrics.length > 0) {
+      lines.push('');
+      lines.push('📝 *LETRA MALA A CORREGIR (' + cat.badLyrics.length + '):*');
+      for (var l = 0; l < cat.badLyrics.length; l++) lines.push(formatTvSongLineForShare(cat.badLyrics[l], 'Revisar letra'));
+    } else if (filter === 'badLyric') {
+      lines.push('\nNo hay canciones marcadas con Letra mala.');
+    }
+  }
+
+  if (filter === 'all' || filter === 'badSync') {
+    if (cat.badSyncs.length > 0) {
+      lines.push('');
+      lines.push('⏱️ *SINCRONIZACIÓN MALA A CORREGIR (' + cat.badSyncs.length + '):*');
+      for (var s = 0; s < cat.badSyncs.length; s++) lines.push(formatTvSongLineForShare(cat.badSyncs[s], 'Revisar sincronización'));
+    } else if (filter === 'badSync') {
+      lines.push('\nNo hay canciones marcadas con Sincronización mala.');
+    }
+  }
+
+  return lines.join('\n');
+}
+
+function renderTvShareQr(reportText) {
+  var qrBox = document.getElementById('tv-share-qr-box');
+  if (!qrBox) return;
+  if (typeof window.qrcode !== 'function') {
+    qrBox.style.display = 'none';
+    return;
+  }
+  try {
+    var payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(reportText);
+    if (payload.length > 1800) {
+      payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(reportText.slice(0, 900) + '\n... (usa Copiar para el informe completo)');
+    }
+    var qr = window.qrcode(0, 'L');
+    qr.addData(payload);
+    qr.make();
+    qrBox.style.display = 'flex';
+    qrBox.innerHTML =
+      '<img src="' + qr.createDataURL(4, 8) + '" alt="QR WhatsApp Informe" class="tv-share-qr-img">' +
+      '<span class="tv-share-qr-caption">📱 Escanea desde tu celular para abrir el informe en WhatsApp</span>';
+  } catch (e) {
+    qrBox.style.display = 'none';
+  }
+}
+
+function openTvShareMarksModal() {
+  var modal = document.getElementById('tv-share-marks-modal');
+  var textarea = document.getElementById('tv-share-marks-textarea');
+  if (!modal) return;
+  loadTvSongMarks();
+  var report = buildTvMarksShareReport(tvActiveShareFilter);
+  if (textarea) textarea.value = report;
+  renderTvShareQr(report);
+  modal.style.display = 'flex';
+  logTvAction('tv_share_marks_opened', { filter: tvActiveShareFilter });
+}
+
+function closeTvShareMarksModal() {
+  var modal = document.getElementById('tv-share-marks-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function initTvShareMarksModal() {
+  on('btn-tv-share-marks', 'click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    openTvShareMarksModal();
+  });
+
+  on('btn-close-tv-share-marks', 'click', closeTvShareMarksModal);
+
+  var modal = document.getElementById('tv-share-marks-modal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeTvShareMarksModal();
+    });
+  }
+
+  document.querySelectorAll('.tv-share-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tvActiveShareFilter = tab.getAttribute('data-share-filter') || 'all';
+      document.querySelectorAll('.tv-share-tab').forEach(function(t) {
+        t.classList.toggle('active', t === tab);
+      });
+      var report = buildTvMarksShareReport(tvActiveShareFilter);
+      var textarea = document.getElementById('tv-share-marks-textarea');
+      if (textarea) textarea.value = report;
+      renderTvShareQr(report);
+    });
+  });
+
+  on('btn-tv-share-wa', 'click', function() {
+    var textarea = document.getElementById('tv-share-marks-textarea');
+    var text = (textarea && textarea.value) || buildTvMarksShareReport(tvActiveShareFilter);
+    window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(text), '_blank');
+    logTvAction('tv_share_marks_whatsapp', { filter: tvActiveShareFilter });
+  });
+
+  on('btn-tv-share-native', 'click', function() {
+    var textarea = document.getElementById('tv-share-marks-textarea');
+    var text = (textarea && textarea.value) || buildTvMarksShareReport(tvActiveShareFilter);
+    if (navigator.share) {
+      navigator.share({ title: 'Informe Cancionero TV', text: text }).catch(function() {});
+      return;
+    }
+    copyTvTextToClipboard(text, textarea);
+  });
+
+  on('btn-tv-share-copy', 'click', function() {
+    var textarea = document.getElementById('tv-share-marks-textarea');
+    var text = (textarea && textarea.value) || buildTvMarksShareReport(tvActiveShareFilter);
+    copyTvTextToClipboard(text, textarea);
+  });
+}
+
+function copyTvTextToClipboard(text, textarea) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showTvToast('📋 Informe copiado al portapapeles', 2000);
+    }).catch(function() {
+      fallbackCopyTvText(textarea);
+    });
+  } else {
+    fallbackCopyTvText(textarea);
+  }
+}
+
+function fallbackCopyTvText(textarea) {
+  if (textarea) {
+    try {
+      textarea.focus();
+      textarea.select();
+      document.execCommand('copy');
+      showTvToast('📋 Informe copiado al portapapeles', 2000);
+    } catch (e) {}
+  }
 }

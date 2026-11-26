@@ -199,9 +199,9 @@ class KaraokeSyncController {
                 }
 
                 const isChordOrMeta = typeCode !== 0 ||
-                    /^[-=_*.\s…]+$/.test(text) ||
+                    /^[-=_*.\s…|\\\/]+$/.test(text) ||
                     /^\(?k?oro:?\)?$/i.test(text) ||
-                    /^(?:PM\s*=|Cejill?a|Capo|ESQUEMA|Intro|Solo|Estrofa|Estribillo|Cambio)/i.test(text);
+                    /^(?:PM\s*=|Cejill?a|Capo|ESQUEMA|Intro|Solo|Estrofa|Estribillo|Cambio|fill\s*\d|\(?la\s+segunda\s+vez\s+se\s+toca|la\s+intro\s+y\s+el\s+verso\s+se\s+tocan|m[aá]s\s+o\s+menos:|ultimo\s+jalarla|el\s+solo\s+se\s+acompa[nñ]a|hasta\s+el\s+final\s+en\s+orden)/i.test(text);
 
                 const wordsText = text.split(/\s+/).filter(Boolean);
                 const words = wordsText.map((w, wIdx) => {
@@ -278,6 +278,20 @@ class KaraokeSyncController {
                 }
                 if (lastCantableIdx !== -1) {
                     const prev = normalized[lastCantableIdx];
+                    if (cur.start < prev.start + 0.12) {
+                        const shift = Number((prev.start + 0.25 - cur.start).toFixed(2));
+                        cur.start = Number((cur.start + shift).toFixed(2));
+                        cur.end = Math.max(cur.start + 0.5, Number((cur.end + shift).toFixed(2)));
+                        if (Array.isArray(cur.words)) {
+                            const span = Math.max(0.5, cur.end - cur.start);
+                            cur.words.forEach((w, wi) => {
+                                const ws = Number((cur.start + (wi / Math.max(1, cur.words.length)) * span).toFixed(2));
+                                const we = Number((cur.start + ((wi + 1) / Math.max(1, cur.words.length)) * span).toFixed(2));
+                                w.start = ws;
+                                w.end = Math.max(ws + 0.1, we);
+                            });
+                        }
+                    }
                     if (prev.end >= cur.start) {
                         prev.end = Math.max(prev.start + 0.35, Number((cur.start - 0.05).toFixed(2)));
                     } else if (prev.end - prev.start > 8.5) {

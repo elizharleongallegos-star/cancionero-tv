@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=2.3.0">
+  <link rel="stylesheet" href="tv.css?v=2.4.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -71,6 +71,12 @@
         <button id="btn-fullscreen-tv" class="tv-btn tv-btn-fs" title="Pantalla completa TV (Tecla F)" tabindex="0">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
           <span class="btn-text">Pantalla Completa</span>
+        </button>
+
+        <!-- Botón Compartir Registro de Fallas y Favoritas (sin contador numérico ni edición) -->
+        <button id="btn-tv-share-marks" class="tv-btn tv-btn-share" title="Compartir registro de fallas y favoritas" tabindex="0">
+          <span>📤</span>
+          <span class="btn-text">Compartir</span>
         </button>
 
         <!-- Botón Reproducción / Acordes en esquina superior derecha -->
@@ -135,6 +141,7 @@
             <button class="tv-mark-filter-btn tv-mf-fav" type="button" data-mark-filter="fav" tabindex="0">♥ <span id="count-mark-fav">0</span></button>
             <button class="tv-mark-filter-btn tv-mf-err" type="button" data-mark-filter="badChord" tabindex="0" title="Canciones con acordes con error">Acorde ✗ <span id="count-mark-bad-chord">0</span></button>
             <button class="tv-mark-filter-btn tv-mf-err" type="button" data-mark-filter="badLyric" tabindex="0" title="Canciones con letra con error">Letra ✗ <span id="count-mark-bad-lyric">0</span></button>
+            <button class="tv-mark-filter-btn tv-mf-err" type="button" data-mark-filter="badSync" tabindex="0" title="Canciones con sincronización mala">Sincro ✗ <span id="count-mark-bad-sync">0</span></button>
           </div>
         </div>
 
@@ -168,11 +175,12 @@
             </div>
           </div>
 
-          <!-- Marcas rápidas de la canción actual: Favorita + Error Acordes + Error Letra -->
+          <!-- Marcas rápidas de la canción actual: Favorita + Error Acordes + Error Letra + Error Sincro -->
           <div class="tv-song-marks-bar">
             <button id="btn-tv-mark-fav" class="tv-mark-btn tv-mark-fav" type="button" title="Marcar o quitar de Favoritas" tabindex="0">♡ Favorita</button>
             <button id="btn-tv-mark-bad-chord" class="tv-mark-btn tv-mark-err" type="button" title="Reportar error en los acordes" tabindex="0">Acorde ✗</button>
             <button id="btn-tv-mark-bad-lyric" class="tv-mark-btn tv-mark-err" type="button" title="Reportar error en la letra" tabindex="0">Letra ✗</button>
+            <button id="btn-tv-mark-bad-sync" class="tv-mark-btn tv-mark-err" type="button" title="Reportar error de sincronización" tabindex="0">Sincro ✗</button>
           </div>
 
           <!-- Paginador Flotante (Exclusivo para modo PDF; en Word es continuo sin páginas) -->
@@ -362,6 +370,34 @@
       </div>
     </div>
 
+    <!-- 3.5 MODAL DE INFORME COMPLETO DE FALLAS Y FAVORITAS PARA COMPARTIR -->
+    <div id="tv-share-marks-modal" class="tv-modal" style="display:none;">
+      <div class="tv-modal-card tv-share-modal-card">
+        <div class="tv-modal-header">
+          <h3>📤 Registro de Fallas y Favoritas</h3>
+          <button id="btn-close-tv-share-marks" class="tv-btn-icon" tabindex="0">✕</button>
+        </div>
+        <div class="tv-modal-body tv-share-modal-body">
+          <div class="tv-share-tabs">
+            <button type="button" class="tv-share-tab active" data-share-filter="all" tabindex="0">Informe Completo (<span id="tv-share-count-all">0</span>)</button>
+            <button type="button" class="tv-share-tab" data-share-filter="fav" tabindex="0">♥ Favoritas (<span id="tv-share-count-fav">0</span>)</button>
+            <button type="button" class="tv-share-tab" data-share-filter="badChord" tabindex="0">Ac✗ Acordes (<span id="tv-share-count-chord">0</span>)</button>
+            <button type="button" class="tv-share-tab" data-share-filter="badLyric" tabindex="0">Lt✗ Letra (<span id="tv-share-count-lyric">0</span>)</button>
+            <button type="button" class="tv-share-tab" data-share-filter="badSync" tabindex="0">Sn✗ Sincro (<span id="tv-share-count-sync">0</span>)</button>
+          </div>
+          <div class="tv-share-content-grid">
+            <textarea id="tv-share-marks-textarea" class="tv-share-textarea" rows="11" readonly></textarea>
+            <div id="tv-share-qr-box" class="tv-share-qr-box" style="display:none;"></div>
+          </div>
+          <div class="tv-share-actions">
+            <button type="button" id="btn-tv-share-wa" class="tv-share-action-btn tv-share-wa" tabindex="0">💬 WhatsApp</button>
+            <button type="button" id="btn-tv-share-native" class="tv-share-action-btn tv-share-nat" tabindex="0">📤 Compartir</button>
+            <button type="button" id="btn-tv-share-copy" class="tv-share-action-btn tv-share-cp" tabindex="0">📋 Copiar texto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Elemento de Audio Nativo de Alta Fidelidad (Streaming local del servidor 3010) -->
     <audio id="tv-native-audio" style="display:none;" playsinline preload="auto"></audio>
 
@@ -387,17 +423,19 @@
   </div>
 
   <!-- BUNDLES DE DATOS IDÉNTICOS AL CANCIONERO MÓVIL (SSOT) -->
-  <script src="cancionero_db.js?v=3.4.4"></script>
+  <script src="cancionero_db.js?v=3.6.0"></script>
   <script src="playlist_db.js?v=3.2.1"></script>
-  <script src="reggaeton_db.js?v=3.4.4"></script>
-  <script src="faltantes_db.js?v=3.4.4"></script>
-  <script src="karaoke_db.js?v=5.1.0"></script>
+  <script src="reggaeton_db.js?v=3.6.0"></script>
+  <script src="faltantes_db.js?v=3.6.0"></script>
+  <script src="karaoke_db.js?v=5.2.0"></script>
   <script src="jszip.min.js"></script>
   <script src="pdf.min.js?v=2.16.105"></script>
-  <!-- Motor Unificado de Sincronización Karaoke v4.0 (Palabra por palabra + Calibración) -->
-  <script src="karaokeTapCalibrator.js?v=4.1.0"></script>
+  <script src="libs/tv-nosleep.min.js"></script>
+  <script src="libs/tv-qrcode.js"></script>
+  <!-- Motor Unificado de Sincronización Karaoke v4.2 (Palabra por palabra + Anticipación -0.50s) -->
+  <script src="karaokeTapCalibrator.js?v=4.2.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=2.3.0"></script>
+  <script src="tv.js?v=2.4.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

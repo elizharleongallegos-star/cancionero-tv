@@ -841,7 +841,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5  -  D5  -  E5  -  A5  (x4)",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "",
@@ -854,7 +855,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Encerrado en mi habitación,",
@@ -862,7 +864,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "fumando petardos a mogollón,",
@@ -870,7 +873,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "paso las horas trasegando alcohol,",
@@ -878,7 +882,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "entre risas y desesperación.",
@@ -895,7 +900,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Salgo a la calle sin rumbo fijo,",
@@ -903,7 +909,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "escupo en el suelo y echo a andar,",
@@ -911,7 +918,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "miro a la gente con desprecio,",
@@ -919,7 +927,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "mis ideas están claras ya.",
@@ -936,7 +945,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -944,7 +954,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     F#5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que tú quieres que yo no sea.",
@@ -952,7 +963,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -960,7 +972,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que quieres pero al revés!",
@@ -977,7 +990,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -985,7 +999,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     F#5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que tú quieres que yo no sea.",
@@ -993,7 +1008,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -1001,7 +1017,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que quieres pero al revés!",
@@ -1018,7 +1035,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Pasada media hora empiezo a naufragar,",
@@ -1026,7 +1044,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "entre clarete y pastillas en la barra de cualquier bar.",
@@ -1034,7 +1053,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Al día siguiente en mi habitación,",
@@ -1042,7 +1062,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "no me paro de preguntar,",
@@ -1050,7 +1071,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     D5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "qué coño fue lo que hice ayer,",
@@ -1058,7 +1080,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "E5                     A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "que no paro de vomitar!",
@@ -1075,7 +1098,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -1083,7 +1107,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     F#5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que tú quieres que yo no sea.",
@@ -1091,7 +1116,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "D5                     E5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¿Y es que qué le voy a hacer?",
@@ -1099,7 +1125,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Si soy todo lo que quieres pero al revés!",
@@ -1199,29 +1226,24 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "[Letra 1]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "G                    D",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Salgo a la calle y no puedo respirar,",
+          "text": "Salgo a la calle para no pensar",
           "lineType": "lyrics"
         },
         {
-          "text": "el humo de las fábricas me vuelve a ahogar.",
+          "text": "pocas cosas me hacen reaccionar",
           "lineType": "lyrics"
         },
         {
-          "text": "Miro a los lados y no veo libertad,",
+          "text": "porque me ahogo en esta realidad",
           "lineType": "lyrics"
         },
         {
-          "text": "solo policía vigilando la ciudad.",
+          "text": "porque me agobia la necesidad.",
           "lineType": "lyrics"
         },
         {
@@ -1229,29 +1251,32 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro]",
+          "text": "[Estrofa 2]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "C            D          Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "¡Salgo a la calle a protestar!",
+          "text": "Salgo a la calle para no pensar",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Contra su ley y su autoridad!",
+          "text": "pocas cosas me hacen reaccionar",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Salgo a la calle sin mirar atrás!",
+          "text": "porque me ahogo en esta realidad",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Nuestra respuesta nunca callará!",
+          "text": "porque me agobia la necesidad.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de saber que algo va a cambiar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que no todos los días",
           "lineType": "lyrics"
         },
         {
@@ -1259,29 +1284,28 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 2]",
+          "text": "[Estrofa 3]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "G                      D",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Cámaras y rejas en cada rincón,",
+          "text": "van a ser igual.",
           "lineType": "lyrics"
         },
         {
-          "text": "quieren que vivamos en la sumisión.",
+          "text": "No resisto esta rutina en",
           "lineType": "lyrics"
         },
         {
-          "text": "Pero no nos callan con su represión,",
+          "text": "esta mie de vida",
           "lineType": "lyrics"
         },
         {
-          "text": "arde en nuestras venas la revolución.",
+          "text": "necesito saber que algo va a explotar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Algo va a explotar.",
           "lineType": "lyrics"
         },
         {
@@ -1289,34 +1313,226 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "[Estrofa 4]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "C            D          Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "¡Salgo a la calle a protestar!",
+          "text": "Porque tengo la necesidad",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Contra su ley y su autoridad!",
+          "text": "necesito saber que algo voy a cambiar.",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Salgo a la calle sin mirar atrás!",
+          "text": "Voy viviendo sin sentido",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Nuestra respuesta nunca callará!",
+          "text": "este sistema no me deja avanzar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Recorriendo día a día esa ciudad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "intentando escapar del camino marcado.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No volveré a no pelear NO",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No volveré a no pelear NO",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Controladores por todos los lados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "defendiendiendo su norma social",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de esta falsa democracracia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de esta falsa democracia.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Porque tengo la necesidad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "necesito saber que algo voy a cambiar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Voy viviendo sin sentido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "este sistema no me deja avanzar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Recorriendo día a día B",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "esa ciudad intentando escapar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "del camino marcado.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No volveré a no pelear",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No volveré a no pelear",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "NO",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Machacados por el trabajo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Reducidos por el estado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Controladores por todos los lados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "defendiendiendo su norma social",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de esta falsa democracia,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de esta falsa democracia.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Salgo a la calle para no pensar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pocas cosas me hacen reaccionar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "porque me ahogo en esta realidad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "porque me agobia la necesidad.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de saber que algo va a cambiar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que no todos los días",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "van a ser igual.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No resisto esta rutina en",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "esta mie de vida",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "necesito saber que algo va a explotar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(En la oscuridad)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Algo va a explotar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Algo va a explotar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(En la oscuridad)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Algo va a explotar.",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -3544,7 +3760,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "Am C E x2",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "La inflación, malversación",
@@ -3771,7 +3988,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "C                                                   D# A#",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Agazapado entre las sombras busca el momento ideal",
@@ -3803,7 +4021,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "C                                                   D# A#",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Y Mientra Corro voy Pensando que podria pasar",
@@ -3815,7 +4034,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "C                       D# A#",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Nos diera por pensar",
@@ -3859,7 +4079,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "C                                                   D# A#",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Y Mientra Corro voy Pensando qu podria pasar",
@@ -3871,7 +4092,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "C                       D# A#",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Nos diera por pensar",
@@ -5554,54 +5776,19 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "C                      G",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Si tengo que partirme el pecho en dos,",
+          "text": "A veces dudas de mis buenas intenciones",
           "lineType": "lyrics"
         },
         {
-          "text": "para que veas lo que llevo dentro,",
+          "text": "Y haces bien para evitar los empujones",
           "lineType": "lyrics"
         },
         {
-          "text": "te dejaré las llaves de mi voz,",
+          "text": "De los abismos de la acera que me nutre",
           "lineType": "lyrics"
         },
         {
-          "text": "y el mapa de mis propios sufrimientos.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Am           C",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Corazón de barro y de cristal,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que se rompe al primer vendaval.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Corazón que no sabe fingir,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que se muere por verte reír.",
+          "text": "De tanta sanguijuela que chupa mis canciones",
           "lineType": "lyrics"
         },
         {
@@ -5614,24 +5801,19 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "C                      G",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Vengo de donde no sale la luna,",
+          "text": "No es que este lejos, es que estoy en una nube",
           "lineType": "lyrics"
         },
         {
-          "text": "de donde el frío cala los silencios,",
+          "text": "Que con levante o con poniente que se anude",
           "lineType": "lyrics"
         },
         {
-          "text": "buscando entre tus dedos mi fortuna,",
+          "text": "Baja a beber en los estanques que me subes",
           "lineType": "lyrics"
         },
         {
-          "text": "curando las heridas con tus besos.",
+          "text": "Y va ensamblando flores en tus latitudes",
           "lineType": "lyrics"
         },
         {
@@ -5639,34 +5821,375 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "[Verso 3]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Am           C",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Corazón de barro y de cristal,",
+          "text": "Tengo la piel como navaja de reyerta",
           "lineType": "lyrics"
         },
         {
-          "text": "que se rompe al primer vendaval.",
+          "text": "Tengo la espalda pa llevarte siempre a cuestas",
           "lineType": "lyrics"
         },
         {
-          "text": "Corazón que no sabe fingir,",
+          "text": "Y ahora administro mi desayuno de setas",
           "lineType": "lyrics"
         },
         {
-          "text": "que se muere por verte reír.",
+          "text": "Y ya tengo el agüita para hacer la fiesta",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Enciendo una hoguera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quemo mis ojeras",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me planto en una maceta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "A ver si me riega",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu llanto de arena",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y viene",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "La primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que no se me acomode el amor pa cuando estalle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que me tiendas al sol en plena calle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que el tiempo es la fragua que aprieta mis alambres",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que te calles, que te calles, que te calles",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "A veces tengo la cabeza como inerte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A veces tengo la certeza de tenerte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y me endulzaron las heridas con los peces",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y tengo una pecera sólo pa beberte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y alquilo vuelos sobre abismos apaisados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y me desvelo cuando huelo el rasurado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que es el otoño en esa luz de tu geranio",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Te cambio los miedos por unos bocados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Enciendo una hoguera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quemo mis ojeras",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me planto en una maceta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 11]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "A ver si me riega",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu llanto de arena",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y viene",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "La primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 12]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que no se me acomode el amor pa cuando estalle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que me tiendas al sol en plena calle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 13]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que el tiempo es la fragua que aprieta mis alambres",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que te calles, que te calles, que te calles",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 14]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Enciendo una hoguera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quemo mis ojeras",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me planto en una maceta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 15]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "A ver si me riega",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu llanto de arena",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y viene",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "La primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 16]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que no se me acomode el amor pa cuando estalle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que me tiendas al sol en plena calle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 17]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que el tiempo es la fragua que aprieta mis alambres",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Y tú qué dices, corazón?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que te calles, que te calles, que te calles",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -6308,29 +6831,24 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "[Letra 1]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "D                      C",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "El día que lluevan pianos del tejado,",
+          "text": "Adiós, decía el estampido y yo",
           "lineType": "lyrics"
         },
         {
-          "text": "me pillará en la calle bailando descalzo.",
+          "text": "Detrás de su reflejo fui",
           "lineType": "lyrics"
         },
         {
-          "text": "Buscando en tus ojos el sol apagado,",
+          "text": "\"Sujétame un rato este sol\"",
           "lineType": "lyrics"
         },
         {
-          "text": "que dejó la noche en el suelo tirado.",
+          "text": "Te dije, y ya jamás volví",
           "lineType": "lyrics"
         },
         {
@@ -6338,29 +6856,24 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro]",
+          "text": "[Estrofa 2]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Y si me caigo me vuelvo a levantar,",
+          "text": "Y con tanto rumiar las briznas, me olvidé",
           "lineType": "lyrics"
         },
         {
-          "text": "que no hay herida que no sepa curar.",
+          "text": "De echarle más pelusa al ombligo y, tal vez",
           "lineType": "lyrics"
         },
         {
-          "text": "Con un trago largo y ganas de volar,",
+          "text": "Debí mirar atrás y preguntar si ayer",
           "lineType": "lyrics"
         },
         {
-          "text": "hasta que las cuerdas vuelvan a sonar.",
+          "text": "La lontananza era limpia y la senda también",
           "lineType": "lyrics"
         },
         {
@@ -6368,29 +6881,24 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 2]",
+          "text": "[Estrofa 3]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "D                      C",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Vuelven los vencejos a su campanario,",
+          "text": "Será que mi cansino caminar",
           "lineType": "lyrics"
         },
         {
-          "text": "y yo sigo preso de mi calendario.",
+          "text": "No ronda por la puerta de",
           "lineType": "lyrics"
         },
         {
-          "text": "Rompiendo las horas de este solitario,",
+          "text": "Aquello que llaman amor",
           "lineType": "lyrics"
         },
         {
-          "text": "que escribe sus penas en el relicario.",
+          "text": "Y en el alféizar me quedé",
           "lineType": "lyrics"
         },
         {
@@ -6398,34 +6906,137 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "[Estrofa 4]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Y si me caigo me vuelvo a levantar,",
+          "text": "Mirándote al pasar, queriéndote ofrecer",
           "lineType": "lyrics"
         },
         {
-          "text": "que no hay herida que no sepa curar.",
+          "text": "El pienso de tan lejos que no pudo ser",
           "lineType": "lyrics"
         },
         {
-          "text": "Con un trago largo y ganas de volar,",
+          "text": "Y te quiero contar que nada me amparó",
           "lineType": "lyrics"
         },
         {
-          "text": "hasta que las cuerdas vuelvan a sonar.",
+          "text": "Así que, mal y tarde, te pido",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quédate hasta el día que lluevan pianos, quédate",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hasta que yo dé mi brazo a retorcer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y fóllame, como si esta noche me fuera a comer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Las estrellas una a una",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quédate, jugará tu corazón al esconder",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con el mío en la basura",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Contar las puntadas sin hilo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Lo que me queda por hacer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que dicen que tan necio soy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que no he sabido enloquecer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pero juré enlutar los tumbos que bordé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y levantarme cabal y maldito por ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y, al decirle al papel que sigo estando aquí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "El eco me devuelva el gemido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Fóllame, como si esta noche me fuera a comer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Las estrellas una a una",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quédate, jugará tu corazón al esconder",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con el mío en la basura",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Aah-aah",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -6743,62 +7354,19 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "D                 Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Sucede que me canso de ser hombre.",
+          "text": "El mundo ahora parece detenido",
           "lineType": "lyrics"
         },
         {
-          "text": "Sucede que me canso de mi piel y de mi cara.",
+          "text": "Y ya no gira como tiene que girar",
           "lineType": "lyrics"
         },
         {
-          "text": "Y sucede que se me ha alegrado el día, ¡coño!",
+          "text": "Y yo, para encontrar el norte, miro",
           "lineType": "lyrics"
         },
         {
-          "text": "al ver al sol secándose en tu ventana.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tú que estás tan lejos de mi cama,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "bájate a dar una vuelta y nos fumamos una rama.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "G                 Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Yo me quedo contigo aquí,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "hasta que se apague el candil.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y si nos vienen a buscar,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "les diremos que aquí no hay ná.",
+          "text": "En busca de una estrella fugaz",
           "lineType": "lyrics"
         },
         {
@@ -6811,29 +7379,108 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "D                 Em",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Sucede que me canso de esperarte,",
+          "text": "Y tú como si no fuera contigo",
           "lineType": "lyrics"
         },
         {
-          "text": "sucede que me canso de buscar en todas partes.",
+          "text": "Qué pena, qué pena",
           "lineType": "lyrics"
         },
         {
-          "text": "Y sucede que me alegro de tenerte,",
+          "text": "Qué penita que te tengas que marchar",
           "lineType": "lyrics"
         },
         {
-          "text": "cerquita de mi pecho para no perderte.",
+          "text": "Que no puedes llegar tarde a la cita",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Que tienes con la Estrella Polar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que el mundo gira y gira sin sentido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Descontrolados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Nos lleva en el espacio, fugitivos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "De lado a lado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y avanza lentamente al infinito",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y yo, yo me quedo contigo aquí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que el tiempo pasa siempre a nuestro lado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y, ay, ahí no se queda",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y ahora se ha convertido en pasado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y no nos espera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cabalga desbocado al infinito",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y yo, yo me quedo contigo aquí",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -8901,150 +9548,200 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "[Letra 1]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "D - A - Bm - F#m - G - D - A",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Rosa de los vientos dime porqué razón",
+          "text": "Si siembras una ilusión y la riegas con tu amor",
           "lineType": "lyrics"
         },
         {
-          "text": "Seguí sus huellas y el mar se las llevó",
+          "text": "Y el agua de la constancia",
           "lineType": "lyrics"
         },
         {
-          "text": "Su sombra me persigue",
+          "text": "Brotará en ti una flor y su aroma y su calor",
           "lineType": "lyrics"
         },
         {
-          "text": "Desde el día en que ella se marchó",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "El Norte es el reflejo de la estrella del Sur",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Oriente y Occidente romper el mar azul",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Vagando a la deriva las tormentas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Serán mi única luz",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Quiero navegar sin banderas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Hacia el rumbo ideal",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rosa de los vientos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Solo espero el momento de volverla a encontrar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y no descansaré",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rosa de los vientos testigo de un final",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En el horizonte la luna sale ya",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Muchos han partido",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pocos han podido regresar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rosa de los vientos dime si amanecerá",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Por los que nunca pudieron olvidar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Aunque mi alma esté vacía",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mis lágrimas pueden llenar el mar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Quiero navegar sin banderas hacia el rumbo ideal",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rosa de los vientos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Solo espero el momento de volverla a encontrar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Ahora estoy dormido pero despertaré",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Me arrastra la corriente hacia el amanecer",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si lo sueños crecen libres",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No tengo nada que perder",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Quiero navegar sin banderas hacia el rumbo ideal",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rosa de los vientos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Solo espero el momento de volver a aquel puerto",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Solo espero el momento de volverla a encontrar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y no descansaré",
+          "text": "Te arroparán cuando algo vaya mal",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 2]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Si siembras un ideal, en la tierra del quizás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y lo abonas con la envidia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Será difícil arrancar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "La maldad de tu alma, si echó raíz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y que mi luz te acompañe, pues la vida es un jardín",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Donde lo bueno y lo malo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Se confunden y es humano",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No siempre es saber elegir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y si te sientes perdido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con tus ojos, no has de ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hazlo con luz de tu alma y encontrarás la calma",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu rosa de los vientos, seré",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Si siembras una amistad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con mimo plántala y abónala con paciencia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pódala con la verdad y trasplántala con fe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pues necesita tiempo y crecer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Si te embriagas de pasión y no enfrías tu corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tartamudearán tus sentidos y quizás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hablará sólo el calor y no la razón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Es sabio contar hasta diez",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y que mi luz te acompañe, pues la vida es un jardín",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Donde lo bueno y lo malo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Se confunden y es humano",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No siempre es saber elegir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y si te sientes perdido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con tus ojos, no has de ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hazlo con luz de tu alma y encontrarás la calma",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu rosa de los vientos, seré",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -9409,179 +10106,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "intro guitarra (x2)",
           "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Am - F - C - G",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "El inquisidor afilando está",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "su guadaña de rencor y de soledad.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En nombre de su dios juzgará tu fe,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y en la hoguera purificarán tu piel.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No supliques clemencia, no te servirá,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "su justicia es de plomo y de falsedad.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Pre-Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "F - G - Am - F - G - Am",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Pero el pueblo despierta y ya no callará,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "la campana de sangre comenzará a doblar!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "F - G - Am - F - G - Am",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Van a rodar cabezas!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Por toda la ciudad!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Van a rodar cabezas!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No habrá dónde escapar!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que la espada del pueblo no tiene piedad,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "pagaréis con la vida vuestra crueldad!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Verso 2]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Am - F - C - G",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Falsos profetas de la salvación,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "habéis sembrado muerte y desolación.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Con sotanas manchadas de corrupción,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "hoy os llega el juicio de la rebelión.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "F - G - Am - F - G - Am",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Van a rodar cabezas!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Por toda la ciudad!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Van a rodar cabezas!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No habrá dónde escapar!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que la espada del pueblo no tiene piedad,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "pagaréis con la vida vuestra crueldad!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Solo de Guitarra y Violín Rápido]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Am - F - Dm - E (x4)",
-          "lineType": "chords",
           "bold": true
         },
         {
@@ -9589,30 +10115,1257 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--5-----7--------5--7--------8-----7-----5-------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------8--5--------8--5-----5-----5-----8--5-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--5-----7--------5--7--------------5--8--7--5----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------8--5--------8--5--4--7--------------7-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--5-----7--------5--7--------8-----7-----5-------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------8--5--------8--5-----5-----5-----8--5-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|---------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-7---------5---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--------8-----7--8--5--7-----5-7-8-5---------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--------------------------8----------7-4-5---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|---------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "(la segunda vez se toca esto)",
+          "lineType": "header"
+        },
+        {
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------5-----7--5--8--7-----------6----------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--5--8--7-----8-----------5-----------4----------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "verso (x2)",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "F - G - Am - F - G - Am",
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--2-----------2-----------------------------7----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--0-----------0-----------2----------2------5----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|---------------------(3)--0----------0-----------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "si he de morir sera luchando por ver crecer a mi pueblo aqui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y perdere en un suspiro lo que en una vida tarde en construir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "fill 1 (al terminar el verso)",
+          "lineType": "header"
+        },
+        {
+          "text": "e|-------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-2-3-5-3-2---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------5-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "verso especial (x2)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "e|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--------------4-----------5-----------4-----2----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--5-----------2-----2-----3-----------2-----0----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--3-----------------0--(3)-----------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "si he de vivir no sera mendigando por mi cultura y por lo que crei",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "si he de caer sera al menos luchando por que no secuestren mi libertaad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "fill 2 (al terminar el verso especial)",
+          "lineType": "header"
+        },
+        {
+          "text": "e|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "yeeeeeeeeeeee.....",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "flauta",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": " Em              D               A               B",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "Van a rodar cabezas!",
+          "text": "e|-7-----------7---5-----------5-----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------5---------------8-7-8---7-8-----5-----8---7-----5---5-7---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|---------------------------------------------------------8-----8-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": " Em              D               C               Bm",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|-----------------------------7h5-------5-----7---12----10----12--|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-8-----------8---7-----5---------8-------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------7---------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "-verso (x2) con fill 1",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "si he de callar lo hare dejando que hable por mi el viento de aqui",
           "lineType": "lyrics"
         },
         {
-          "text": "Por toda la ciudad!",
+          "text": "no quiero ver a mi pueblo adorando a un dios que no puede a el solo oir",
           "lineType": "lyrics"
         },
         {
-          "text": "Van a rodar cabezas!",
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "-verso especial (x2)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "si he de gritar mi odio ira levantando tal tempestad que mi ira os helara",
           "lineType": "lyrics"
         },
         {
-          "text": "Vuestra condena empieza!",
+          "text": "si he de matar no sera asesinando el hombre blanco lo hace no por sobrevivir",
           "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "-fill 2",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "coro (x2)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "\\primera parte (x1.5)",
+          "lineType": "header"
+        },
+        {
+          "text": "e|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-5-5-----7-7-----9-9-----9---7---5-5-----7-7-------------9-------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-3-3-----5-5-----7-7-----7---5---3-3-----5-5-----9-9---------9---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------7-7---7---7-----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "se que llegara el dia en que llueva libertad             ....... con harmónicos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y que escrito en la luna",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "\\segunda parte",
+          "lineType": "header"
+        },
+        {
+          "text": "e|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----2--3----4--7----9-------7-------2--5----2--5----4--7-------7-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-3-------5-------7-----7-5-----5-3-------3-------5-------5-------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "con la tinta de un clavel se lea mi verdad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "-se repite la segunda parte del coro, sin voz",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "-se repite flauta (x2)",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "interludio",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "(aquí, yo solo te voy dando las partes, tu ves cuanto las repites,",
+          "lineType": "header"
+        },
+        {
+          "text": "donde agregar palm muting y eso, escucha la canción para que te",
+          "lineType": "header"
+        },
+        {
+          "text": "hagas la idea)",
+          "lineType": "header"
+        },
+        {
+          "text": "e|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-2/4-4-4-4-4-4-4-7-4-4-4-4-4-4-4-5-4-4-4-4-4-4-4-2/4-4-4-4-4-4-4-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|--------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-12-0-0-0-0-0-0-0-10-0-0-0-0-0-0-0-8-0-0-0-0-0-0-0-10-0-0-0-0-0-0-0-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|--------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "esta parte a continuación es tocada a dos guitarras, la primera mitad",
+          "lineType": "header"
+        },
+        {
+          "text": "de cada compas la toca una guitarra, y la segunda mitad, la otra.",
+          "lineType": "header"
+        },
+        {
+          "text": "escucha la canción para que entiendas:",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Bm                      D",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|--7--5-------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------8--7--5----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|:----------------7--5--4--7--5--4----------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|:----------------------------------7--5--4-------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--------------------------------------------7--5-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   F#                      A",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|-14-12--------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------15-14-12-----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|----------------15-12-11-14-12-11----------------:| x2",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----------------------------------14-12-11-------:|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-------------------------------------------14-12--|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "parte con flauta y violín (todo con palm muting)",
+          "lineType": "header"
+        },
+        {
+          "text": "   Em      Em/B    Em      D       G       Am      G      D/F#",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-----------------------------------------------------------------| x2",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "D|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-7-7-7-7-2-2-2-2-7-7-7-7-5-5-5-5---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|---------------------------------3-3-3-3-5-5-5-5-3-3-3-3-2-2-2-2-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "teclado (la guitarra con palm muting)",
+          "lineType": "header"
+        },
+        {
+          "text": "   Dm              A/C#            Dm      G/B    A/C#",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-5-5-5-5-5-5-5-5-4-4-4-4-4-4-4-4-5-5-5-5-2-2-2-2-4-4-4-4-4-4-4-4-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "|                                                                 |",
+          "lineType": "tab"
+        },
+        {
+          "text": "e|-------------------------------------------------5-4-5-------5-9-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------6-5---5-------5-8-6-5-6-------6-8-------5---5-----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-7-6-7-6-----7-----7---7---6-----------7---6-------------6-------| <- teclado, transcrito",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-----------7-------------7---------------7-----------------------|    para guitarra",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|---------8-------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Gm        C       F       A#      Em      A/C#    Dm        A#",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-----------3-3-3-3---------1-1-1-1---------4-4-4-4--5-5--5-5-1-1-1-1-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--3-3--3-3---------1-1-1-1---------0-0-0-0---------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "|                                                                     |",
+          "lineType": "tab"
+        },
+        {
+          "text": "e|-10-6-10-6-------6-8-5-8-5-------5-6-3-6-3-------3-------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------8---8-----------6---6-----------5---5---10-6-10-6-------6-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------9---------------7---------------6---------------7---7---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|---------------------------------------------------------------7-----|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|---------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   E                               E/G#",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-----------------1------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-2---------------2---------------6--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-2---------------2---------------7--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-0-------------------------------4--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "|                                                                  |",
+          "lineType": "tab"
+        },
+        {
+          "text": "e|-----------------------------------------------4-----4-7-----7-10-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-----------------9-5-9-5-9-5-9-5---3-5-6---5-6---5-6-----6-9------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-9-4-9-4-9-4-9-4-------------------------4------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|---------------------------------6--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|------------------------------------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "t   t   t   t   t   t   t   t",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   A",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-2-----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-2-----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-0-----------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "|                                     |",
+          "lineType": "tab"
+        },
+        {
+          "text": "e|-10-----7-----------9--------------\\-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-10----10----------10--------------\\-|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-------------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "solo (base)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Am                                              C      D",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|----2-----2----2----2----2---2--|----2-----2-----5------7--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----2-----2----2----2----2---2--|----2-----2-----5------7--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-0--0---0-0--0-0--0-0--0-0---0--|-0--0---0-0--0--3------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Am                                              D      C",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|----2-----2----2----2----2---2--|----2-----2-----7------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----2-----2----2----2----2---2--|----2-----2-----7------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-0--0---0-0--0-0--0-0--0-0---0--|-0--0---0-0--0--5------3--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Em                                              G      A",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----2-----2----2----2----2---2--|----2-----2-----5------7--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|----2-----2----2----2----2---2--|----2-----2-----5------7--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-0--0---0-0--0-0--0-0--0-0---0--|-0--0---0-0--0--3------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Em                                              A      G",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|--------------------------------|--------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|----2-----2----2----2----2---2--|----2-----2-----7------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|----2-----2----2----2----2---2--|----2-----2-----7------5--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-0--0---0-0--0-0--0-0--0-0---0--|-0--0---0-0--0--5------3--------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "*se repite*",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "solo de guitarra (base)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Am                                                C     D     G",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-2-----------------------------2-|-----------------5-----7---------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-0---0-0-0-0-0-0-0-0-0-0-3-2---0-|---0-0-0-0-0-0-0-3-----5-----5---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------3---|-----------------------------3---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "   Am                                                D     C     G",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "e|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|---------------------------------|---------------------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|-2-----------------------------2-|-----------------7-----5---------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-0---0-0-0-0-0-0-0-0-0-0-3-2---0-|---0-0-0-0-0-0-0-5-----3-----5---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|-----------------------------3---|-----------------------------3---|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "despues del solo de guitarra, se repite la parte de teclado, y se",
+          "lineType": "header"
+        },
+        {
+          "text": "vuelve a los versos.",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "de aqui, se toca:",
+          "lineType": "header"
+        },
+        {
+          "text": "verso",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "verso especial",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "coro",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "coro (con palm muting, las notas son las mismas)",
+          "lineType": "header"
+        },
+        {
+          "text": "outro (que vendría siendo la intro, pero al final le agregas):",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|--------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|--------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|--------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|--8----7---5-----7--|",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|-------------8-4-5--|",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------------|",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "Y ahí está. Cualquier critica, queja, lo que sea, mi e-mail aparece",
+          "lineType": "header"
+        },
+        {
+          "text": "allá arriba. Suerte con el tema!",
+          "lineType": "header"
         },
         {
           "text": "",
@@ -14516,261 +16269,345 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Em - D - C - B7",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Feed",
+          "text": "He puesto a secar",
           "lineType": "lyrics"
         },
         {
-          "text": "Break my final hand",
+          "text": "Los recuerdos frente al sol",
           "lineType": "lyrics"
         },
         {
-          "text": "Killer's right is a right of being",
+          "text": "He puesto a tender",
           "lineType": "lyrics"
         },
         {
-          "text": "Kill my finest prototype",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "My eyes are wide",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Nipping slowly, tear the veins of innocence",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tie our brains, entitled",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Braid to remember",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Set fire to me",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Worry deep, do we?",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "From the rope, we're chained into the right, tight pit of sin",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pained to myself, I call for more",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Bury me swiftly",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Chain the chord that brings the filth to leave our life",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Blackened sin, take and pry to glaze my eyes",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Glazed, I can put your heart on mine",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Bleed into the ring",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Entomb what I'm consuming",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "What have I done right?",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I take the fragile bridge to weep",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Sharpen to cut into",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rub in the deepened wound",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Watching the rapture renew",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Take my body, rip it in two",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Now raise the banner high",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "To fair the fellow being",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Breed their wives, undo their hides into a shadow being",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Free the dead body",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "You fed your vice too deep",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Filet my heart in two",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Filet my heart",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tear my skin wide open",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "While the time leaves a winding seam",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pieced apart, casualty",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Fatal flaw fantasy",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tragedy",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Why defy the one, do we?",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "(Do we)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pry my sight",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Blood horizon",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Can't you",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I can't see what's around you",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pray for death",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Take me, turn into",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Rust, erase, consume",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Peel the skin from bone",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "And deepen the broth",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eat",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "We will thank you",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Prayer of encouragement",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Home of the beaten saint",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Call of culling",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Shackled deep",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Deep in me",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "God helping",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "End your fucking life",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Blood prison",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Give us a choice",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mangle your debt",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "My hands are deep",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "We've all earned what we all deserve",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Earned",
+          "text": "La nostalgia del ayer",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 2]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y no voy a llorar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pero no podré olvidar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Toda la desolación",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que los dioses trajeron del mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡ohh!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dies irae malleus maleficarum es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dies irae malleus",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dies irae malleus",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Dies irae malleus maleficarum es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuando llora el sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sus lágrimas son",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oro y dolor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Sed de sangre el hombre blanco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Se sació y gaia lloró",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Muere la tierra sudando terror",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "La codicia del blanco en nombre de dios",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "El cielo llora hace charcos y yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Siento que se me escapa la vida ante mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No te olvides de mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora voy hacia un lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "En donde no existe el miedo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Donde no vive el adiós",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me marcharé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Montado en la brisa del mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Yo viviré en tu memoria",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dormiré en tu corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora soy volcán, desastre natural",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Calentamiento global",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Ya nadie puede mis gritos ahogar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pues ayer aprendieron de rabia nadar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No te olvides de mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora voy hacia un lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "En donde no existe el miedo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Donde no vive el adiós",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me marcharé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Montado en la brisa del mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 11]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Yo viviré en tu memoria",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dormiré en tu corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y al amanecer, al morir la oscuridad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo regresaré, yo seré el huracán",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 12]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "He puesto a secar mi venganza frente al sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Llegará al fin la venganza final",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡oh!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No te olvides de mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 13]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Ahora voy hacia un lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "En donde no existe el miedo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Donde no vive el adiós",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me marcharé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 14]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Montado en la brisa del mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo viviré en tu memoria",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dormiré en tu corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dies irae malleus maleficarum es",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -14853,101 +16690,1116 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Dm - C - Bb - A7",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "\"...A las 5 de la tarde del martes 12 de Enero",
+          "text": "Memento Homo",
           "lineType": "lyrics"
         },
         {
-          "text": "\"...Haití sufre un violento terremoto de 7 grados en la escala de Richter\"",
+          "text": "Quia pulvis es",
           "lineType": "lyrics"
         },
         {
-          "text": "\"...De 2 aviones que se habrían estrellado contra esas 2 Torres Gemelas\"",
+          "text": "Et in pulverem reverteris.",
           "lineType": "lyrics"
         },
         {
-          "text": "\"...Un crimen horrendo que costó la vida a más de trescientos mil\"",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "\"...Catrina, convertido en huracán, azotó la costa Sur de Estados Unidos\"",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "\"...Españoles: Franco ha muerto\"",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Se calcula que las hormigas del planeta",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pesan lo mismo que la humanidad",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si desaparecieran, se produciría un fenómeno ligado a la extinción",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mucho más dramático que el meteorito que acabó con los dinosaurios",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En cambio, si se extinguiera la especie humana, en términos ecológicos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No pasaría nada",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Las personas no aportamos ya nada a los ecosistemas, solo gastamos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Somos los más grandes consumidores y, sin embargo, nadie nos consume",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¿O sí?",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Es el latido de la vida",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Es el latido de Gaia",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Allop al atsah sienet em",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Allop al atsah sienet em",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Allop al atsah sienet em",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Allop al atsah sienet em",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Allop al atsah sienet em",
+          "text": "Memento Homo",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 2]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quia pulvis es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Et in pulverem reverteris.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de naufragar en mi tormenta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "déjame nadar dentro de ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "todo lo que fui, se puso en venta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "todo lo que amé, lo que aprendí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me quiero morir en tu mirada",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "me quiero dormir en el que fui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "nos atrincharemos en tu almohada",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "siempre que el destino tenga a bien",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hoy la vida baja la persiana",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se venden sonrisas de ocasión",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "cerrará el mercado \"del mañana\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "\"cese de planeta por defunción\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Llora el río, soledad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se desangra de agua el mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "tose el cielo truenos y luz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "estornuda un alud",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "En la fe que Cristo nos ha de salvar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "en la fe de que él nos ama",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "nos tenemos que agarrar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "no al anticonceptivo, es mejor el sida que un condón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "ser gay es una enfermedad, violar a un crío no",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dios es amor, Dios es libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡Oh, Jesús! tú nos traes la paz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dios es la luz, tolerancia y fe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "es tu colega, un amigo de verdad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dios derribó la Torre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "de Babel por no creer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pidió a Abraham sacrificar a su hijo en prueba de su fe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "inundó la tierra, el diluvio de Dios",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "mandó a su hijo a morir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "y el infierno se inventó",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dios es amor, Dios es libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Oh, Jesús! tú nos traes la paz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dios es la luz, tolerancia y fe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 11]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "es tu colega, un amigo de verdad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bienaventurados los pobres",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurado el que es gay",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurado el que paga",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 12]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "bienaventurado el que cree",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bienaventurado el parado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y el que no llega a fin de mes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurada la esposa...",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 13]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bienaventurados los pobres",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurado el que es gay",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurado el que paga",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurado el que cree",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 14]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bienaventurado el parado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y el que no llega a fin de mes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "bienaventurada la esposa",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que soporta golpes de un cerdo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 15]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "que recibe mil puñaladas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "con una sonrisa y una oración...",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Silba una canción la despedida",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "recita poemas el adiós",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 16]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "se maquilla la melancolía",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "con nostalgia y polvos de dolor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Más allá del sol y las estrellas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "o entre las esquinas de tu amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 17]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "puede que encontremos otra tierra",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pues la profecía empieza hoy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "El infierno se enfrió",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y el cielo se cubrió",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 18]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "de una telaraña gris",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "de nubes y dolor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vomitaba un volcán",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "el bosque se quemó",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 19]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "desangrábase una flor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "herida por el sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Crucificarse decidió",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "al ver aquel horror",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 20]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Llora el río, soledad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se desangra de agua el mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "tose el cielo truenos y luz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "dibujando oscuridad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 21]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quiero morir en tu mirar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "quiero morir y despertar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y tenerte junto a mí, amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "sin ti no puedo estar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 22]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quiero poder recuperar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "todos los sueños que vendí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "por puñados de progreso amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "perdí mi libertad.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 23]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "El Dorado decidió",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "ir al monte de piedad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "a vender o empeñar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "todo el oro antes de huir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 24]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "La Pirámide del Sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se untó crema solar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "para proteger su piel",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "del fuego nuclear",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 25]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "El árbol de la noche triste",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "no deja de reír",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Grita el viento, ¿dónde estás?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "a la playa que se bebió el mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 26]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "se abrió el suelo, ataúd",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "\"Construcciones Fosa Común\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero morir en tu mirar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "quiero morir y despertar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 27]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "y tenerte junto a mí, amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "sin ti no puedo estar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero poder recuperar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "todos los sueños que vendí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 28]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "por puñados de progreso yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "perdí mi libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cierre del planeta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "almas en liquidación",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 29]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "cambio de negocio",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "fin de civilización",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Se ha inundado el Infierno",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se ha ahogado el Edén",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 30]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "se enquistó la Primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y a las flores que les den",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ya no queda ningún recuerdo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "fotogramas del ayer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 31]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "quién encarcelará tus besos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "en la celda de tu querer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ya no quedan sueños",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que difícil es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 32]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "dibujar sonrisas en el corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ya no queda nadie con quién naufragar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sólo queda el ayer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ánimas en comunión",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 33]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "reunión del más allá",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "convocados por Satán",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que no para de llorar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Jesucristo con Yahvé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 34]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "sin parar de discutir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "ya no hay nada \"pa' jugar\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "ni a quién manejar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "El Amazonas se ha casado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 35]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "con lava de un volcán",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Llora el río, soledad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se desangra de agua el mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "tose el cielo truenos y luz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 36]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "dibujando oscuridad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero morir en tu mirar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "quiero morir y despertar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y tenerte junto a mí, amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 37]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "sin ti no puedo estar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero poder recuperar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "todos los sueños que vendí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "por puñados de progreso yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 38]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "perdí mi libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hay veces que no sé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "si exprimir el sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "para sentir calor...",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 39]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Durante miles de años",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "los seres humanos hemos podido disfrutar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "del mejor regalo que los dioses dieran jamás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "a ningún ser vivo:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 40]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "la brisa, el viento, el hermano Sol y la hermana Luna",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "campos y praderas donde ver crecer a nuestros hijos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "amaneceres bañados con el perfume",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que estornudan las flores en primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 41]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "puestas de sol decoradas con los sueños aún por conseguir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y, aunque parezca mentira, inteligencia.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pero el hombre blanco despreció aquel tesoro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y a medida que la vida le sonreía",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 42]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "él le contestaba dando patadas al destino.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si alguién lee esta carta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "no olvide que el fin de esta civilización se debió",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "al egoísmo, codicia e incultura de la raza humana.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 43]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Los hombres ya no somos mamíferos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "el ser humano no se convirtió en depredador",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "la raza humana somos simplemente un virus",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "matamos, crecemos y nos multiplicamos.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 44]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Por eso nos extinguimos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "por eso las aguas se tragaron nuestra civilización:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "la verdadera Atlántida éramos nosotros.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y por eso dejo escrita esta nota",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 45]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "para formas de vida inteligentes venideras.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuando los hombres escupen al suelo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "se escupen a sí mismos.",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -15435,213 +18287,191 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Em - D - C - B7",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Here I am again",
+          "text": "Ella es la amante que vive de mis miedos",
           "lineType": "lyrics"
         },
         {
-          "text": "Three in the morning sitting in my fucking bed",
+          "text": "Es la princesa de mi oscuridad",
           "lineType": "lyrics"
         },
         {
-          "text": "Haunted by the demons living in my head",
+          "text": "Elige los trajes con telas de tus deseos",
           "lineType": "lyrics"
         },
         {
-          "text": "I'm stuck in this hell",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I'm a goddamn mess",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Here I am again",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Further from my path than I'd like to be",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Lost between the sorrow and my lack of will",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I can't find the strength",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "To redeem myself",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I'm not a victim",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I'm just a coward",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I gotta embrace my weakness and look forward",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "My fucking mission",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "But I'm a coward",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I gotta face my demons and move forward, now",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A veces dedo entender que tú",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Llevas la vida en un tattoo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Me pierdo soñando en lo que a pasado",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No a pasado",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Remo sin saber si llegare",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "La luz del sol vendrá después",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Demasiado para imaginar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Lo sé",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y yo aquí otra vez",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Sentado en esta cama hasta el amanecer",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Buscando perdóname de una buena vez",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que difícil es recobrar la fe",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Soy un idiota",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Soy un cobarde",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que en este infierno no me salva nadie",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Va mal la cosa",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que aún no es tarde",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que la salida es aprender a amarme",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Lo sé, Lo sé, Lo sé",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I know",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Lo sé, Lo sé, Lo sé",
+          "text": "Y se disfraza de calma y paz",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 2]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Si he de caer, será sin ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero atreverme a vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de luchar será por mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "He aprendido a sufrir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Ella es la dama que sacia mis demonios",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A cambio de jurarle mi lealtad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ella es la amante que siempre llega tarde",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ocaso, fracasos, debilidad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Si he de caer, será sin ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero atreverme a vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de luchar, será por mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "He aprendido a sufrir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y en sus labios duerme mi libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Su veneno duerme junto a mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "De ti quiero huir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de caer será sin ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quiero atreverme a vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de luchar será por mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "He aprendido a sufrir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de caer será sin ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Quiero atreverme a vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si he de luchar será por mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "He aprendido a sufrir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "He aprendido a sufrir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y a ahuyentar los fantasmas que viven en mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mis demonios se alejan cuando",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tú no estás en mí...",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -19514,162 +22344,65 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "INTRO:",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Em - D - C - B7",
-          "lineType": "chords",
-          "bold": true
+          "text": "e|---------------------------------------",
+          "lineType": "tab"
         },
         {
-          "text": "Hay un lugar donde la lluvia no moja la piel,",
-          "lineType": "lyrics"
+          "text": "B|---------------------------------------",
+          "lineType": "tab"
         },
         {
-          "text": "donde los besos saben a miel.",
-          "lineType": "lyrics"
+          "text": "G|---------------------------------------",
+          "lineType": "tab"
         },
         {
-          "text": "Guardo en secreto en un viejo rincón",
-          "lineType": "lyrics"
+          "text": "D|---------------------------------------",
+          "lineType": "tab"
         },
         {
-          "text": "las caricias que el tiempo borró.",
-          "lineType": "lyrics"
+          "text": "A|--7-7-7-7-7-7-5-7-----------------2-----",
+          "lineType": "tab"
         },
         {
-          "text": "Si cierras los ojos me puedes oír,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "en el viento que roza tu pelo al dormir.",
-          "lineType": "lyrics"
+          "text": "E|------------------7-5-5-5-5-3-5-3---3-",
+          "lineType": "tab"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "[Pre-Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "G - D - Em - C - D - Em",
+          "text": "------------------------------------------",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "Déjate llevar por la sensación,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que esta noche florece la pasión.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "G - D - Em - C - D - Em",
+          "text": "------------------------------------------",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "En el rincón de los sentidos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "te espero despierto, fundido en tu voz.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En el rincón de los sentidos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "no existen fronteras entre tú y yo!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Verso 2]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Em - D - C - B7",
+          "text": "------------------------------------------",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "Toca mi pecho y siente el latir,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "un río de fuego queriendo salir.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Bébete el aire, despierta el calor,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que el alba no robe este dulce temblor.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "G - D - Em - C - D - Em",
+          "text": "-------------7-9--------------------------",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "En el rincón de los sentidos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "te espero despierto, fundido en tu voz.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En el rincón de los sentidos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "no existen fronteras entre tú y yo!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Solo de Guitarra y Violín]",
-          "lineType": "header",
+          "text": "-7-7-7-7-7-7-----7-10-9-10-9-10-9-10-9-9--",
+          "lineType": "chords",
           "bold": true
         },
         {
-          "text": "Em - C - D - Em (x4)",
+          "text": "------------------------------------------",
           "lineType": "chords",
           "bold": true
         },
@@ -19678,30 +22411,567 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "G - D - Em - C - D - Em",
+          "text": "E5                        D5",
           "lineType": "chords",
           "bold": true
         },
         {
-          "text": "En el rincón de los sentidos",
+          "text": "Hace algún tiempo que yo naufragué",
           "lineType": "lyrics"
         },
         {
-          "text": "te espero despierto, fundido en tu voz.",
+          "text": " A5                  B5     G5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "entre la playa de su juventud",
           "lineType": "lyrics"
         },
         {
-          "text": "En el rincón de los sentidos",
+          "text": "  E5                 D5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "a la deriva se me hundió un amor",
           "lineType": "lyrics"
         },
         {
-          "text": "no existen fronteras entre tú y yo!",
+          "text": "     G5       E5 G5 A5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "y mi vida se encalló",
           "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "E5                    D5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Hace ya tiempo que emborraché",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "  A5                    B5     G5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "todos los versos que un día canté",
+          "lineType": "lyrics"
+        },
+        {
+          "text": " E5                     D5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "con el aliento que da una mujer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G5         E5 G5 A5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "que ya no volverá",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "  C5        D5          E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Hice inventario de lo que perdí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "  C5       D5            B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Eché las cuentas de lo que invertí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "  C5       D5         E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "años de lucha, noches sin dormir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C5           D5           B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "y ahora soy músico y te tengo a ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "         G5            E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Quiero cantar quiero gritar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        D5          B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero vivir en libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        G5            E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero morir cerca de ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        C5            D5    E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero encontrar lo que perdí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "G5, E5, D5, B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "G5, E5, C5, D5, E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "D|--0-2---0-2--------------------------0-2---0-2---5-4---",
+          "lineType": "tab"
+        },
+        {
+          "text": "A|--0-2---0-2--------------------------0-2---0-2---5-4---",
+          "lineType": "tab"
+        },
+        {
+          "text": "E|--------------X-X-X-X-X-X-X-X-X-X----------------3-2---",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": " E5                   D5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Por las esquinas de alguna canción",
+          "lineType": "lyrics"
+        },
+        {
+          "text": " A5                    B5      G5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "vende su alma a veces la ilusión",
+          "lineType": "lyrics"
+        },
+        {
+          "text": " E5                D5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "pero jamás la mía venderé",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G5       E5 A5 G5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "rockero moriré",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": " C5          D5              E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Abrigo derrotas y les doy calor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": " C5        D5               B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "con una rima que cosí a mi voz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C5         D5              E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "maquillo nostalgias y les doy color",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C5         D5          B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "con pentagramas que pinté",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "         G5            E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Quiero cantar quiero gritar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        D5          B5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero vivir en libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        G5            E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero morir cerca de ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        C5            D5    E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero encontrar lo que perdí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "Para hacer el efecto, mantenganse en E5 y con la palanca",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "empujenla poco a poco y sueltenla poco a poco para al",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "ultimo jalarla y empezar el solo",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "El solo se acompaña asi:",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "E5, C5, B5, A5, E5, G5, E5, C5, D5, E5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "DESPUES EN ORDEN DESCENDENTE:",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "E5 D5 C5 B5 A5 G5 E5 F#5 E5  X2",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "         G#5          F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Quiero cantar quiero gritar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        D#5          C5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero vivir en libertad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        G#5          F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero morir cerca de ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        C#5            D#5   F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "quiero encontrar lo que perdí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "         G#5            F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "Quiero cantar quiero gritar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        D#5          C5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "para que entiendas que yo fui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        G#5            F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "solo un juglar que se escondió",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "        C#5       D#5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "entre canciones y una voz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "SE ACOMPAÑA ASI EN LOS HOO O OOO Y",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "HASTA EL FINAL EN ORDEN DESCENDENTE:",
+          "lineType": "header"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "F5 D#5 C#5 C5 A#5 G#5 F5 G5 F5",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "este es el solo del final:",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "e|-13-13-13-13-16-16-16-16---------------------------",
+          "lineType": "tab"
+        },
+        {
+          "text": "B|-------------------------16-16-13-13---------------",
+          "lineType": "tab"
+        },
+        {
+          "text": "G|--------------------------------------13-13-13-13--",
+          "lineType": "tab"
+        },
+        {
+          "text": "D|---------------------------------------------------",
+          "lineType": "tab"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "  -------------13-13-13-13---------------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -14-14-14-14--------------13-13--------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -------------------------------13-13---------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -------------------------------------15-15-15-15---",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "  -------------------------------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -------------13-13-13-13-------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -15-15-15-15--------------13-13------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  --------------------------------17-17-15-15-",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "  ---------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  ---------------------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  -12-13-15-12---------",
+          "lineType": "chords",
+          "bold": true
+        },
+        {
+          "text": "  --------------13-15---",
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "",
@@ -21285,425 +24555,613 @@ window.STANDALONE_FALTANTES = [
     "pages": [
       [
         {
-          "text": "[Verso 1]",
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Letra 1]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Princeso, él es un princeso de amor",
+          "text": "Oh, oh ohohohoh",
           "lineType": "lyrics"
         },
         {
-          "text": "Vive en su propio cuento",
+          "text": "J-King y Maximan",
           "lineType": "lyrics"
         },
         {
-          "text": "Él es un princeso de amor para ti, de amor para ti",
+          "text": "Oh, oh ohohoh",
           "lineType": "lyrics"
         },
         {
-          "text": "Pendejo",
+          "text": "Dj Blass",
           "lineType": "lyrics"
         },
         {
-          "text": "J King y el Maximan",
+          "text": "Oh, oh ohohohoh",
           "lineType": "lyrics"
         },
         {
-          "text": "Los Sucesores",
+          "text": "El Artesano",
           "lineType": "lyrics"
         },
         {
-          "text": "'Chacho, ¿qué le pasa a este tipo?",
+          "text": "Oh, oh ohohoh",
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú lo pega' a la pared",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y te dice: Deja eso (¿qué es eso?)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si va escuchando a Luis Fonsi",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A 40 en el expreso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso, mami",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y si te pica y no te rasca",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y eso a ti te cansa, mami (olvídate de eso)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si tú le pides jamón y él a ti te ofrece queso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Poniendo status de Facebook que parecen de nena",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Siempre una llora'era, se queja de mil problemas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Haciendo cara de nene triste, en las fotos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Texteándote con imágenes de corazones rotos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Qué pendejo, digo, qué princeso, digo (what?)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Qué manilo, no te roba ni un beso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tú con ganas de jamón y el cabrón viene y te ofrece queso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¿Qué es eso? Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tú loca por chichártelo, el bregándose el pelo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pegao' siempre a un espejo, enchulao' de su reflejo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Ese hijueputa es más narciso que un modelo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y tú más bellaca que una perra en celo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Quieres mamárselo y no deja tocárselo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y yo loco por comerte ese toto de caramelo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tú bien suelta y él te trata como un parcero",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tú loca por bellaqueo y él no te da ni deo'",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si tú lo pega' a la pared",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y te dice: Deja eso (¿qué es eso?)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si va escuchando a Luis Fonsi",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A 40 en el expreso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso, mami",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y si te pica y no te rasca",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y eso a ti te cansa, mami (olvídate de eso)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si tú le pides jamón y él a ti te ofrece queso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si te pica y no te rasca",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Linda, yo te rasco el útero",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mami, vamo' a darte planta",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Dale, ponte pa' mi número",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que yo sé que ti te encanta",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "No te hagas la santa",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que tú quiere' que te ponga alguito en tu garganta",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mami, deja ese tipo y dale, vente pa'cá",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Súbete la faldita un poquito na' má'",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y ven y dame de eso, ponme como yeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que tú no estás en eso, deja ese princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mami, deja ese tipo y dale, vente pa'cá",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Súbete la faldita un poquito na' má'",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y ven y dame de eso, ponme como yeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que tú no estás en eso, deja ese princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Ay, mami, suelta eso, echa pa'cá y zapatea",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que si él no te perrea, yo sí te vo' a dar pelea",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Yo estoy ready pa' ti, dime to' lo que tú quiera'",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que la noche está buena pa' darte lo que desea' (wuh)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Yo sé que él no sabe de eso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y siempre se te quita en el proceso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y no te satisface tu princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Loca por tirártelo y él dizque dando besos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Tranquila, ma', que yo si vo' a chuparte hasta los hueso'",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Ay, vente, mami, vamos pa' la cama",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Yo sé que tu nene te deja con ganas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Vámono' a fuego baby, prender to' esto en llamas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Quemarno' a fuego lento, se vale si lo engañas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Total, no te entretiene",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si tú lo pega' a la pared",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y te dice: Deja eso (¿qué es eso?)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si va escuchando a Luis Fonsi",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A 40 en el expreso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso, mami",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y si te pica y no te rasca",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y eso a ti te cansa, mami (olvídate de eso)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Si tú le pides jamón y él a ti te ofrece queso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Eso es un princeso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Maximan (jaja)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "J King (ey)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Los Sucesores",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Luigi 21 Plus",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Oye",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Hi-flow",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Hi-flow",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "You know how we flow, oye",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Jumbo, El Que Produce Solo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Dile, Luigi",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¿Tú no te has dao' cuenta, mai",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que este tipo es un princeso? (Wuh)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Chica (jaja), olvídate de eso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "J King y el Maximan",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Flow Music, la Makinaria",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Los Sucesores coming soon",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mere Princeso, olvídate de eso",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Vacílate esta",
+          "text": "Los Superheroes",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 2]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y donde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y donde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 3]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' que muevas la cabeza y pa' que muevas los pies",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora, ahora, ahora, eh eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Dime donde tú estás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que yo te quiero pa' mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo será el día nena que yo te robe un beso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Te juro quiero de eso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No aguanto más",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Que te voy a enseñar que no soy igual",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Otro más del montón yo soy especial",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Te vo' a sacar de lo superficial",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y llevarte a un mundo real",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dónde ey, que ya me cansé de esperar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vuelve eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Déjate llevar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y donde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y donde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' que muevas la cabeza y pa' que muevas los pies",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora, ahora, ahora, eh eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Tú fuiste poco a poco, mamita me tiene' juquiau",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y me di de cuenta que cuando tú bailas no quieres a nadie a tú la'o",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "De ti yo quiero un poco, de besos acaramela'u",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y si tu me besas mami la cabeza otra vez me pongo colora'u",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "De ti yo quiero un poco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "De besos acaramela'u",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y si tú me besas mami la cabeza",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Otra vez me pongo colora'u",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 11]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Oh ohohoh, que ya me cansé de esperar (Oh ohohohoh)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y dónde te voy a buscar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 12]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 13]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' que muevas la cabeza y pa' que muevas los pies",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora, ahora, ahora, eh eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 14]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "To all my people around the world",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' arriba pa ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' abajo pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Derecha pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora en frente pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 15]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' arriba pa ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' abajo pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Derecha pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora en frente pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 16]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' arriba pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' abajo pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Derecha pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora en frente pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' arriba pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Pa' abajo pa' ve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 17]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 18]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' que muevas la cabeza y pa que muevas los pies",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora, ahora, ahora, eh eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 19]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ay, y dónde es, que yo te vo' a ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 20]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Pa' que muevas la cabeza y pa' que muevas los pies",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y cuándo, cuándo, cuándo es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ahora, ahora, ahora, eh eh eh eh ey",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 21]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Duro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Va oye Brasil",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Queridos fanaticos de nuestra musica (España)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(Colombia)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hey les advierto que se pongan el cinturon (Argentina)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(Venezuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Porque este nuevo viaje no está fácil (Filipinas)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(Chile)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dj-blass, el fin del mundo entero, el Artesano",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oye con quien más J-King y el Maximan",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Los super héroes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Blop blop blop blop",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Puerto Rico",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -31468,37 +34926,16 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "(Screams & Riff Pesado en Drop C#)",
-          "lineType": "lyrics"
-        },
-        {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "[Verso 1]",
+          "text": "[Letra 1]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "C#5 - A5 - B5 - G#5",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "I'm standing alone in this cold empty room,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "waiting for light in the shadow of doom!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Can you hear my voice calling out in the dark?",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Leaving on my skin another burning mark!",
+          "text": "Why can not answer",
           "lineType": "lyrics"
         },
         {
@@ -31506,29 +34943,24 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro 1]",
+          "text": "[Estrofa 2]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "A5 - B5 - C#5 - G#5",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "We cannot get out of here forever!",
+          "text": "永久に奏で願えば輪廻の中に潜む",
           "lineType": "lyrics"
         },
         {
-          "text": "Torn apart our lives in the storm!",
+          "text": "やがて可笑しや 悪戯を偲ぶ性",
           "lineType": "lyrics"
         },
         {
-          "text": "We cannot get out of here forever!",
+          "text": "笑え笑えや 慌て滅び行くまで",
           "lineType": "lyrics"
         },
         {
-          "text": "Broken dreams that will never transform!",
+          "text": "愛し なつかし やむごとなし心は",
           "lineType": "lyrics"
         },
         {
@@ -31536,29 +34968,20 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Verso 2]",
+          "text": "[Estrofa 3]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "C#5 - A5 - B5 - G#5",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Step by step through the endless decay,",
+          "text": "嘆きの渦に溢れた",
           "lineType": "lyrics"
         },
         {
-          "text": "watching the memories fading away!",
+          "text": "代わり狂い踊るだけ",
           "lineType": "lyrics"
         },
         {
-          "text": "Nothing is left of the promises made,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "under the crimson and silent cascade!",
+          "text": "悲しみの要らない",
           "lineType": "lyrics"
         },
         {
@@ -31566,34 +34989,143 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "[Estrofa 4]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "A5 - B5 - C#5 - G#5",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "We cannot get out of here forever!",
+          "text": "朝はまだ遠く遠く",
           "lineType": "lyrics"
         },
         {
-          "text": "Torn apart our lives in the storm!",
+          "text": "嗚呼",
           "lineType": "lyrics"
         },
         {
-          "text": "We cannot get out of here forever!",
+          "text": "求めれど変わらない終わりを見る日の",
           "lineType": "lyrics"
         },
         {
-          "text": "Lost in silence, forever alone!",
+          "text": "涙を",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "If be born again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's painful to think about",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "わびしい奏で唄えば 浮世の中にもがく",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "やがて可笑しや はかなし繰り返しぞ",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "笑え笑えや 慌て滅び行くまで",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "そこに覗くは 底なしのゆりかご",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "届かないなら忘れるのか",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "誰も彼も夢の見た 終わりの無い命を",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "果てなく回る回る 差し伸べた手の先を",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "無情に落ちてく 命は",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "朝はまだ遠く遠く",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "嗚呼",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "求めれど変わらない終わりを見る日の",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "涙を",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Estrofa 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "いつまでもいつまでも 尽きることの無い",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "涙を",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -35657,10 +39189,6 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "(Heavy Metalcore Riff)",
-          "lineType": "lyrics"
-        },
-        {
           "text": "",
           "lineType": "empty"
         },
@@ -35670,24 +39198,48 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Dm - Bb - C - F",
-          "lineType": "chords",
+          "text": "うさぎ、うさぎよ",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "うさぎ何を見て跳ねるの",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "私の手のひらで もっと",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "夢の続き溺れる この世奈落の底で",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "焼き尽くさんね",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 2]",
+          "lineType": "header",
           "bold": true
         },
         {
-          "text": "Flames of hell burning bright in the eternal night.",
+          "text": "静寂の果て十字を背負って赤く染まる雨に打たれ",
           "lineType": "lyrics"
         },
         {
-          "text": "Souls screaming out for redemption and light!",
+          "text": "誘ってあげる",
           "lineType": "lyrics"
         },
         {
-          "text": "The judge is sitting on the throne of bone,",
+          "text": "お月の明かり 翳る闇黄泉の国へと",
           "lineType": "lyrics"
         },
         {
-          "text": "you have to walk this burning path alone!",
+          "text": "二人 鎖で繋いで",
           "lineType": "lyrics"
         },
         {
@@ -35700,29 +39252,24 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Bb - C - Dm",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Hell's song roaring in the fire!",
+          "text": "今宵また麗しい十五夜",
           "lineType": "lyrics"
         },
         {
-          "text": "Burning with unholy desire!",
+          "text": "お月様掴まえて放さないわ",
           "lineType": "lyrics"
         },
         {
-          "text": "There is no escape from this domain,",
+          "text": "蜘蛛の糸に群がる輩",
           "lineType": "lyrics"
         },
         {
-          "text": "only the rhythm of eternal pain!",
+          "text": "絶望の花に魅せられて",
           "lineType": "lyrics"
         },
         {
-          "text": "",
-          "lineType": "empty"
+          "text": "静寂の果てで十字を背負った青く光る",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -45524,7 +49071,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5  -  F5  -  G5  -  C5  (x4)",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "",
@@ -45537,7 +49085,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5             F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Soy una lacra social,",
@@ -45545,7 +49094,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5             C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "un elemento a exterminar.",
@@ -45553,7 +49103,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5             F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Nunca hago nada bueno",
@@ -45561,7 +49112,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5             C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "pa' esta puerca sociedad.",
@@ -45569,7 +49121,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5             F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Nunca hago nada bueno",
@@ -45577,7 +49130,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5             C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "que tenga que demostrar.",
@@ -45594,7 +49148,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                    F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Porque a la policía exterminaría,",
@@ -45602,7 +49157,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5                         C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "porque los gobernantes son todos unos farsantes,",
@@ -45610,7 +49166,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "porque el puto clero se lleva todo el dinero,",
@@ -45618,7 +49175,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5                       C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "y porque me sale de los huevos,",
@@ -45626,7 +49184,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "¡de los huevos!",
@@ -45643,7 +49202,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5  -  F5  -  G5  -  C5  (x2)",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "",
@@ -45656,7 +49216,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                    F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "Porque a la policía exterminaría,",
@@ -45664,7 +49225,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5                         C5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "porque los gobernantes son todos unos farsantes,",
@@ -45672,7 +49234,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "A5                     F5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "porque el puto clero se lleva todo el dinero,",
@@ -45680,7 +49243,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "G5                       C5             A5",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "bold": true
         },
         {
           "text": "y porque me sale de los huevos: ¡¡LAKRA SOCIAL!!",
@@ -49356,62 +52920,19 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Bb                         A",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Evaporando el miedo te convertirás",
+          "text": "Cuando pienses que el amor",
           "lineType": "lyrics"
         },
         {
-          "text": "en una luz que viaja por la inmensidad.",
+          "text": "Se ha olvidado de que estas ahí",
           "lineType": "lyrics"
         },
         {
-          "text": "Deslízate en el viento, busca tu lugar,",
+          "text": "Vuela, vuela",
           "lineType": "lyrics"
         },
         {
-          "text": "abre las alas, siente la velocidad.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En el espacio no hay gravedad,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "el infinito te esperará...",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "Bb             A",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "¡Vuela, vuela! No te hace falta equipaje.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¡Vuela, vuela! Nadie controla tu imagen.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¡Vuela, vuela! Hacia un lugar donde no haya dolor.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "¡Vuela, vuela! Alrededor de este mundo de amor.",
+          "text": "Con tu imaginación",
           "lineType": "lyrics"
         },
         {
@@ -49424,32 +52945,19 @@ window.STANDALONE_FALTANTES = [
           "bold": true
         },
         {
-          "text": "Bb                         A",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Sobre las nubes blancas vas a navegar,",
+          "text": "Si no puedes ser feliz",
           "lineType": "lyrics"
         },
         {
-          "text": "un arcoíris mágico te guiará.",
+          "text": "No te rindas, puedes recurrir",
           "lineType": "lyrics"
         },
         {
-          "text": "Olvida los problemas de la realidad,",
+          "text": "Vuela, vuela",
           "lineType": "lyrics"
         },
         {
-          "text": "esta es la noche para comenzar a amar.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En el espacio no hay gravedad,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "el infinito te esperará...",
+          "text": "Con tu imaginación",
           "lineType": "lyrics"
         },
         {
@@ -49457,34 +52965,292 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro Final]",
+          "text": "[Verso 3]",
           "lineType": "header",
           "bold": true
         },
         {
-          "text": "Bb             A                       Dm",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "¡Vuela, vuela! No te hace falta equipaje.",
+          "text": "Volando encontrarás",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Vuela, vuela! Nadie controla tu imagen.",
+          "text": "Un mundo nuevo",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Vuela, vuela! Hacia un lugar donde no haya dolor.",
+          "text": "Solo déjate llevar",
           "lineType": "lyrics"
         },
         {
-          "text": "¡Vuela, vuela! Alrededor de este mundo de amor.",
+          "text": "¡Vuela, vuela!",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "[Verso 4]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "No te hace falta equipaje (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Nadie controla tu imagen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela, vuela!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 5]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Verás que todo es posible (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Despierta tu mente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si estás solo en un rincón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 6]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Y la tristeza entra en tu corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vuela, vuela",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con tu imaginación",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Si andas buscando un lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 7]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Donde el cielo se una con el mar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vuela, vuela",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Con tu imaginación",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Volando encontrarás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 8]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Un mundo nuevo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Solo déjate llevar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela, vuela!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No te hace falta equipaje (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 9]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Nadie controla tu imagen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela, vuela!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Verás que todo es posible (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 10]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Despierta tu mente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ya",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Volando encontrarás",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 11]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Un mundo nuevo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Solo déjate llevar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela, vuela!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No te hace falta equipaje (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 12]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Nadie controla tu imagen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¡Vuela, vuela!",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Verás que todo es posible (vuela, vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 13]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "¡Vuela! (vuela)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Despierta tu mente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vuela, vuela, vue-; vuela, vuela, vue-",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Vuela, vuela, vue-, vue-, vue-, vue-",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 14]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Vue-, vue-, vue-, vue-, vue-, vue-",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Despierta tu mente",
+          "lineType": "lyrics"
         }
       ]
     ]
