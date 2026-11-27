@@ -281,23 +281,26 @@ function buildTvSongs(bookKey) {
 // solo se marcan fallas y se deja un registro para compartirlo al final.
 // ==============================================================
 var TV_MARKS_KEY = 'cancionero_song_marks_v1';
-var TV_V4_MARKS_SEED_FLAG = 'cancionero_tv_v4_marks_seeded_v1';
+var TV_V4_MARKS_SEED_FLAG = 'cancionero_tv_v41_marks_seeded_v1';
 var TV_V4_INITIAL_SEED_MARKS = {
   arpaviejas_hoy_he_vuelto_a_beber: { fav: true },
   ozuna_siguelo_bailando: { fav: true },
   foreground_eclipse_obstruction_color_it_all_out: { fav: true },
-  la_polla_records_no_somos_nada: { badSync: true },
-  gatillazo_la_gran_enganada: { badLyric: true, badSync: true },
-  arpaviejas_me_despierto_psicotropico: { badSync: true },
-  escuela_de_odio_en_guerra: { badSync: true },
-  escuela_de_odio_flores_en_la_basura: { badChord: true, badSync: true },
-  estopa_fuego: { badSync: true },
-  paso_a_paso_esquimales: { badSync: true },
-  gritando_en_silencio_rutina_en_las_venas_feat_albertucho: { badChord: true },
-  extremoduro_romperas: { badLyric: true },
-  jowell_y_randy_loco: { badSync: true },
-  jowell_y_randy_sin_compromiso: { badSync: true },
-  mago_de_oz_suenos_dormidos: { badChord: true }
+  la_polla_records_ellos_dicen_mierda: { badSync: true },
+  kaos_etiliko_hoy_es_mi_dia: { badSync: true },
+  arpaviejas_ahora_me_importa_una_mierda: { badSync: true },
+  envidia_kotxina_estado_policial: { badSync: true },
+  piperrak_basta_ya: { badSync: true },
+  tronic_mateo: { badSync: true },
+  nina_pastori_valgame_dios: { badSync: true },
+  extremoduro_puta: { badSync: true },
+  rakim_y_ken_y_down: { badSync: true },
+  gritando_en_silencio_rutina_en_las_venas_feat_albertucho: { badChord: true, badSync: true },
+  la_fuga_baja_por_diversion_con_el_drogas: { badSync: true },
+  mago_de_oz_suenos_dormidos: { badChord: true },
+  kachi_kachi_yama_ayakashi_song: { badSync: true },
+  shinigiwa_satellite_magical_girl_magical_chen: { badLyric: true, badSync: true },
+  shinigiwa_satellite_kansoku_polaris: { badLyric: true, badSync: true }
 };
 tvState.songMarks = {};
 tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync', 'errors'
@@ -319,20 +322,28 @@ function tvHasActiveErrorMarks() {
 function seedTvV4ReportedMarksIfNeeded() {
   try {
     if (localStorage.getItem(TV_V4_MARKS_SEED_FLAG)) return false;
-    var base = tvState.songMarks || {};
+    var prevMap = tvState.songMarks || {};
+    var nextMap = {};
+    var prevKeys = Object.keys(prevMap);
+    for (var p = 0; p < prevKeys.length; p++) {
+      var pid = prevKeys[p];
+      if (prevMap[pid] && prevMap[pid].fav) {
+        nextMap[pid] = { fav: true, badChord: false, badLyric: false, badSync: false };
+      }
+    }
     var seedKeys = Object.keys(TV_V4_INITIAL_SEED_MARKS);
     for (var i = 0; i < seedKeys.length; i++) {
       var id = seedKeys[i];
       var seedObj = TV_V4_INITIAL_SEED_MARKS[id];
-      var prev = base[id] || {};
-      base[id] = {
+      var prev = nextMap[id] || {};
+      nextMap[id] = {
         fav: Boolean(prev.fav || seedObj.fav),
-        badChord: Boolean(prev.badChord || seedObj.badChord),
-        badLyric: Boolean(prev.badLyric || seedObj.badLyric),
-        badSync: Boolean(prev.badSync || seedObj.badSync)
+        badChord: Boolean(seedObj.badChord),
+        badLyric: Boolean(seedObj.badLyric),
+        badSync: Boolean(seedObj.badSync)
       };
     }
-    tvState.songMarks = base;
+    tvState.songMarks = nextMap;
     saveTvSongMarks();
     localStorage.setItem(TV_V4_MARKS_SEED_FLAG, '1');
     return true;
@@ -628,7 +639,7 @@ function selectTvSong(songId, autoPlay = true) {
   // Centrar la canción activa
   const activeItem = document.querySelector(`.tv-song-item[data-song-id="${song.id}"]`);
   if (activeItem) {
-    activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   // Iniciar reproducción multimedia (Audio nativo local + Escenario TV)

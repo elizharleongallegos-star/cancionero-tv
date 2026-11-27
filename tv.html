@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tv.css?v=4.0.0">
+  <link rel="stylesheet" href="tv.css?v=4.1.0">
 </head>
 <body class="theme-oled-dark layout-split">
   <div id="tv-app" class="tv-app-container">
@@ -218,14 +218,14 @@
         <section id="score-split-panel" class="score-split-panel" style="display:none;" aria-label="Tabs y Partitura en paralelo">
           <div class="score-panel-toolbar">
             <div class="score-tb-left">
-              <span id="score-source-badge" class="score-source-badge">🎼 Tabs 1L</span>
+              <span id="score-source-badge" class="score-source-badge">🎸 Tab</span>
               <span id="score-bar-readout" class="score-bar-readout">C.1 · 0:00</span>
+              <button type="button" id="btn-score-track-cycle" class="score-tb-btn score-tb-inst" style="display:none;" title="Cambiar tab de otro instrumento" tabindex="0">🎸 Inst 1/2</button>
               <select id="score-track-select" class="score-track-select" style="display:none;" title="Cambiar pista de instrumento" tabindex="0"></select>
             </div>
             <div class="score-tb-actions">
               <button type="button" id="btn-score-chart-toggle" class="score-tb-btn" style="display:none;" title="Alternar entre Acordes 1:1 y Riff Tablatura" tabindex="0">Riff</button>
               <button type="button" id="btn-score-stave" class="score-tb-btn" title="Alternar Solo Tablatura (6 cuerdas) o Pentagrama + Tab" tabindex="0">Tab</button>
-              <button type="button" id="btn-score-size" class="score-tb-btn" title="Alto de tira (1L / M / L)" tabindex="0">1L</button>
               <button type="button" id="btn-score-songsterr" class="score-tb-btn score-tb-songsterr" style="display:none;" title="Abrir tablatura en Songsterr" tabindex="0">🌐 Songsterr</button>
               <button type="button" id="btn-score-hide" class="score-tb-btn score-tb-close" title="Ocultar tira de Tabs" tabindex="0">✕</button>
             </div>
@@ -454,24 +454,24 @@
   </div>
 
   <!-- BUNDLES DE DATOS IDÉNTICOS AL CANCIONERO MÓVIL (SSOT) -->
-  <script src="cancionero_db.js?v=4.0.0"></script>
-  <script src="playlist_db.js?v=4.0.0"></script>
-  <script src="reggaeton_db.js?v=4.0.0"></script>
-  <script src="faltantes_db.js?v=4.0.0"></script>
-  <script src="karaoke_db.js?v=4.0.0"></script>
-  <script src="songsterr_db.js?v=4.0.0"></script>
+  <script src="cancionero_db.js?v=4.1.0"></script>
+  <script src="playlist_db.js?v=4.1.0"></script>
+  <script src="reggaeton_db.js?v=4.1.0"></script>
+  <script src="faltantes_db.js?v=4.1.0"></script>
+  <script src="karaoke_db.js?v=4.1.0"></script>
+  <script src="songsterr_db.js?v=4.1.0"></script>
   <script src="jszip.min.js"></script>
   <script src="pdf.min.js?v=2.16.105"></script>
-  <script src="libs/alphatab/alphaTab.min.js?v=4.0.0"></script>
+  <script src="libs/alphatab/alphaTab.min.js?v=4.1.0"></script>
   <script src="libs/tv-nosleep.min.js"></script>
   <script src="libs/tv-keepawake-media.js"></script>
   <script src="libs/tv-qrcode.js"></script>
   <!-- Motor Unificado de Sincronización Karaoke v4.0 (Palabra por palabra + Anticipación -0.50s) -->
-  <script src="karaokeTapCalibrator.js?v=4.0.0"></script>
+  <script src="karaokeTapCalibrator.js?v=4.1.0"></script>
   <!-- Motor de Tabs / Partitura Horizontal 6 Cuerdas (AlphaTab + Songsterr) -->
-  <script src="scoreSplitEngine.js?v=4.0.0"></script>
+  <script src="scoreSplitEngine.js?v=4.1.0"></script>
   <!-- Lógica y Controlador TV Universal Smart TV (LG, Samsung, Android, Sony, Hisense) -->
-  <script src="tv.js?v=4.0.0"></script>
+  <script src="tv.js?v=4.1.0"></script>
   <!-- YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api" async defer></script>
 </body>

@@ -318,14 +318,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "D             A                      F#m",
+          "text": "D             A                      F#m       E",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -353,14 +347,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "F#m           D                  A",
+          "text": "F#m           D                  A       E",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -393,14 +381,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "D           A                  F#m",
+          "text": "D           A                  F#m       E",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -428,14 +410,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "F#m               D                    A",
+          "text": "F#m               D                    A       E",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -497,14 +473,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "D            A                      F#m",
+          "text": "D            A                      F#m       E",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -5244,7 +5214,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Acordes intro)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -5547,7 +5518,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(acordes intro) termina en C",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -7815,6 +7787,11 @@ window.STANDALONE_FALTANTES = [
     "pages": [
       [
         {
+          "text": "[Verso 1]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
           "text": "Em      C",
           "lineType": "chords",
           "red": true
@@ -7833,8 +7810,18 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
+          "text": "Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
           "text": "Con la resaca de siempre",
           "lineType": "lyrics"
+        },
+        {
+          "text": "G            D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Y sin ninguna primavera",
@@ -7845,16 +7832,36 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
+          "text": "Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
           "text": "El aire lleva prisionero",
           "lineType": "lyrics"
+        },
+        {
+          "text": "G            D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Aroma de desencanto",
           "lineType": "lyrics"
         },
         {
+          "text": "Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
           "text": "Con los palos de mi espalda",
           "lineType": "lyrics"
+        },
+        {
+          "text": "G            D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Junto a la mierda que canto",
@@ -7865,16 +7872,36 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
+          "text": "Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
           "text": "Pero ahora al verte princesa",
           "lineType": "lyrics"
+        },
+        {
+          "text": "G            D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tu saliva no me quema",
           "lineType": "lyrics"
         },
         {
+          "text": "Em              C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
           "text": "Y no me veo en el fondo del vaso",
           "lineType": "lyrics"
+        },
+        {
+          "text": "G            D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Esos ojos que me condenan",
@@ -7885,20 +7912,211 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
+          "text": "[Coro 1] (Mismos acordes con más cañita)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Em      C         G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y todo sabe a despedida",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "      D      Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y en mis labios sabe a alcohol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "         C           G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En callejones sin salida",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "       D      Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ha caído muerto el amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        C           G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Voy de paso por la suerte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        D      Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca me ha asustado la muerte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "       C         G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo quedan los escombros",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "      D      Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "De soñar con poder verte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "        C      G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que no tenga soga al cuello",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "      D      Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Sigo sin poder ladrar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "         C      G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que siento que perdí mis sueños",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "       D      Em  C  G  D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En la puerta de algún bar",
+          "lineType": "lyrics"
+        },
+        {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "(Aquí van los mismos acordes pero con un poco más de",
+          "text": "[Verso 2] (Vuelve al ritmo del principio)",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "      Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "De los amigos de lo ajeno",
           "lineType": "lyrics"
         },
         {
-          "text": "cañita)",
+          "text": "          G      D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Se han llevado las emociones",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "      Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "De las noches que recorto",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "          G      D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pa meterlas en canciones",
           "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "      Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Fuera el mundo convulsiona",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "          G      D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Mientras malgasto saliva",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "      Em      C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y el tiempo que me destruye",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "          G      D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Es el que cura mis heridas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro 2] (Y de nuevo cañita)",
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "Em      C         G",
@@ -8008,143 +8226,6 @@ window.STANDALONE_FALTANTES = [
           "text": "En la puerta de algún bar",
           "lineType": "lyrics"
         }
-      ],
-      [
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "(Vuelve al ritmo del principio)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "      Em      C",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "De los amigos de lo ajeno",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "          G      D",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "Se han llevado las emociones",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "De las noches que recorto",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Pa meterlas en canciones",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Fuera el mundo convulsiona",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Mientras malgasto saliva",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y el tiempo que me destruye",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Es el que cura mis heridas",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "(Y de nuevo cañita)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Y todo sabe a despedida",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Y en mis labios sabe a alcohol",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En callejones sin salida",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Ha caído muerto el amor",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Voy de paso por la suerte",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Nunca me ha asustado la muerte",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Solo quedan los escombros",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "De soñar con poder verte",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que no tenga soga al cuello",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Sigo sin poder ladrar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que siento que perdí mis sueños",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "En la puerta de algún bar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Para dudas y demás: Edukdd@hotmail.com",
-          "lineType": "header",
-          "bold": true
-        }
       ]
     ]
   },
@@ -8206,7 +8287,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(corrección de las \"NO CORRECTAS\" anteriores)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -8717,14 +8799,8 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "A                      E",
+          "text": "A                      E       A",
           "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -8762,6 +8838,41 @@ window.STANDALONE_FALTANTES = [
         {
           "text": "",
           "lineType": "empty"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro Final]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "F#m      D      A        E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ven y deja que esta noche la gobierne yo,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pide mañana al jefe baja por diversión.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#m      D      A        E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ven y deja que esta noche la gobierne yo,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pide mañana al jefe baja por diversión.",
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -14651,6 +14762,16 @@ window.STANDALONE_FALTANTES = [
         "channel": "Mägo de Oz",
         "url": "https://www.youtube.com/watch?v=LkPZVT8sHws",
         "isAvailable": true
+      },
+      {
+        "id": "r8LN8ai8Kf4",
+        "index": 555,
+        "playlistIndex": 555,
+        "title": "Hasta Que Tu Muerte Noch Separe",
+        "author": "Mägo de Oz",
+        "channel": "Mägo de Oz",
+        "url": "https://www.youtube.com/watch?v=r8LN8ai8Kf4",
+        "isAvailable": true
       }
     ],
     "matchedVideo": {
@@ -15390,7 +15511,8 @@ window.STANDALONE_FALTANTES = [
       [
         {
           "text": "     (ESRIBILLO)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -15540,7 +15662,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(wapa :-*)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         }
       ]
     ]
@@ -18045,7 +18168,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Aki van los acordes del estribillo)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -18345,7 +18469,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Super currada que dura lo suyo...)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -18689,326 +18814,6 @@ window.STANDALONE_FALTANTES = [
         {
           "text": "",
           "lineType": "empty"
-        }
-      ]
-    ]
-  },
-  {
-    "id": "mago_de_oz_hasta_que_tu_muerte_nos_separe",
-    "order": 555,
-    "artist": "Mägo de Oz",
-    "title": "Hasta Que Tu Muerte Nos Separe",
-    "tone": "Am",
-    "capo": "0",
-    "album": "Jesús de Chamberí (1996)",
-    "genre": "Heavy Metal / Folk Rock",
-    "two_col": true,
-    "pdfPage": 35,
-    "pdfPages": [
-      35
-    ],
-    "totalPages": 1,
-    "matched": true,
-    "youtube": "https://www.youtube.com/watch?v=r8LN8ai8Kf4",
-    "youtubeTitle": "Hasta Que Tu Muerte Noch Separe",
-    "youtubeVersions": [
-      {
-        "id": "r8LN8ai8Kf4",
-        "index": 555,
-        "playlistIndex": 555,
-        "title": "Hasta Que Tu Muerte Noch Separe",
-        "author": "Mägo de Oz",
-        "channel": "Mägo de Oz",
-        "url": "https://www.youtube.com/watch?v=r8LN8ai8Kf4",
-        "isAvailable": true
-      }
-    ],
-    "matchedVideo": {
-      "id": "r8LN8ai8Kf4",
-      "index": 555,
-      "playlistIndex": 839,
-      "title": "Hasta Que Tu Muerte Noch Separe",
-      "author": "Mägo de Oz",
-      "channel": "Mägo de Oz",
-      "url": "https://www.youtube.com/watch?v=r8LN8ai8Kf4",
-      "isAvailable": true
-    },
-    "book": "faltantes",
-    "pdfFile": "faltantes.pdf",
-    "playlistIndex": 839,
-    "playlistOrder": 839,
-    "hasTranslation": false,
-    "spanishVersion": null,
-    "pages": [
-      [
-        {
-          "text": "Aquí les va esta canción, que se la dedique",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "a mi novia y espero que algún día sepa que",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "LA puse aquí...",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "   C           G",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "e|------0-----------1--------------|",
-          "lineType": "tab"
-        },
-        {
-          "text": "B|-----1-1---------0-0-------------|",
-          "lineType": "tab"
-        },
-        {
-          "text": "G|----0---0-------0---0------------|",
-          "lineType": "tab"
-        },
-        {
-          "text": "D|---2-----2-----0-----0-----------|",
-          "lineType": "tab"
-        },
-        {
-          "text": "A|--3-------3---2-------2---5^4^2--|",
-          "lineType": "tab"
-        },
-        {
-          "text": "E|-0---------0-3---------3--3^2^0--|",
-          "lineType": "tab"
-        },
-        {
-          "text": "                            .....     p.m.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "  Uh......................",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "  ¡Ooooooooooooooooooh!.............",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Dm           Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "Tan solo quiero que mi voz",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "F      C",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "te desespere y robe la razon",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Dm            Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "implorando que te abrase",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "F      C",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "eso esperas corazón.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Espero el día muñequita linda",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "en que tu herida sea tan fuerte",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que bañandote en recuerdos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "solo bebas el alcohol",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "ESTRIBILLO:",
-          "lineType": "header"
-        },
-        {
-          "text": "Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "Y veras tu linda cara",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "frente al espejo demacrada",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "y el dolor será tu amor",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "A  (Riff2)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "masturbando tu mirada",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "e|-0-0-0--",
-          "lineType": "tab"
-        },
-        {
-          "text": "B|-2/3/2--   (Varias veces)",
-          "lineType": "tab"
-        },
-        {
-          "text": "G|-2/3/2--",
-          "lineType": "tab"
-        },
-        {
-          "text": "D|-2/3/2--",
-          "lineType": "tab"
-        },
-        {
-          "text": "A|-0-0-0--",
-          "lineType": "tab"
-        }
-      ],
-      [
-        {
-          "text": "E|-0-0-0--",
-          "lineType": "tab"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "CORO:",
-          "lineType": "header"
-        },
-        {
-          "text": "Dm      Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "Tan solo quiero verte llorar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "F      C",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "he mandado a la muerte a buscar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Dm      Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "tan solo quiero oírte gritar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "F      C",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "en el infierno te he de encontrar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "Tan solo quiero que tu alma",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "no vuelva a ver la luz del sol",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y que llores sangre y miedo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y que pages corazon",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "p.m.= Palm mute (Apagado con la palma de la mano)",
-          "lineType": "lyrics"
         }
       ]
     ]
@@ -20408,7 +20213,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(al terminar la segunda vez)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "e. ----------------------------------------------|",
@@ -21241,7 +21047,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(sube el tempo)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         }
       ],
       [
@@ -21575,7 +21382,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(arpegeando los acordes)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -22745,7 +22553,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(terminas con esto hasta el final)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -28497,15 +28306,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "Am               G      D",
+          "text": "Am               G      D       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Murió la luz del sol la vida se durmió,",
@@ -29066,15 +28869,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "A  D",
+          "text": "A  D       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Sé bien lo que duele perder",
@@ -29116,15 +28913,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm        G",
+          "text": "Bm        G       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Sigue la luz que se esconde en tu interior.",
@@ -29298,15 +29089,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "header"
         },
         {
-          "text": "A  D",
+          "text": "A  D       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Serás lo que tú quieras ser",
@@ -29350,15 +29135,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm        G",
+          "text": "Bm        G       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Sigue la luz que se esconde en tu interior.",
@@ -29457,15 +29236,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm        G",
+          "text": "Bm        G       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Sigue la luz que se esconde en tu interior.",
@@ -30152,15 +29925,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "F                      E       F",
+          "text": "F                      E       F                E",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Aunque no te acuerdes ya de mi yo siempre cuido de ti",
@@ -30292,15 +30059,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "F                      E       F",
+          "text": "F                      E       F                E",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           E",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "Aunque no te acuerdes ya de mi siempre estaré junto a ti",
@@ -34716,7 +34477,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(En la segunda vuelta es dándole mas fuerte)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "*aclaración es con mas fuerza NO mas rápido*",
@@ -45483,8 +45245,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "((Dm)* C*...)",
-            "lineType": "lyrics",
-            "red": false
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "Dm                C                  Dm",
@@ -48763,7 +48525,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Instrumental de Guitarra - J-Rock)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -49135,6 +48898,16 @@ window.STANDALONE_FALTANTES = [
         "channel": "Touhou Hakutaku",
         "url": "https://www.youtube.com/watch?v=aRyi8qpuJak",
         "isAvailable": true
+      },
+      {
+        "id": "X5vrnM247ac",
+        "index": 771,
+        "playlistIndex": 771,
+        "title": "【東方ボーカルアレンジ】あやかしのうた / かちかち山【Screamo/Rap】",
+        "author": "KyokoAmane",
+        "channel": "KyokoAmane",
+        "url": "https://www.youtube.com/watch?v=X5vrnM247ac",
+        "isAvailable": true
       }
     ],
     "matchedVideo": {
@@ -49206,7 +48979,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Guitarras Melodic Metalcore y Flauta Tradicional)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -50287,7 +50061,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Instrumental Post-Hardcore)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -53417,19 +53192,19 @@ window.STANDALONE_FALTANTES = [
             "bold": true
           },
           {
-            "text": "Intro: Em - C - D - Bm (x4) / Drop C",
+            "text": "Intro: Dm - F - G - Bb / Drop C",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "Verso: Em - C - D - Bm",
+            "text": "Verso: Dm - F - G - Bb",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "Coro: C - D - Em",
+            "text": "Coro: Bb - C - Dm",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "",
@@ -53441,13 +53216,14 @@ window.STANDALONE_FALTANTES = [
             "bold": true
           },
           {
-            "text": "Em - C - D - Bm (x4)",
+            "text": "Dm - F - G - Bb (x4)",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "(Riff Post-Hardcore y Gritos)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -53459,24 +53235,76 @@ window.STANDALONE_FALTANTES = [
             "bold": true
           },
           {
-            "text": "Em - C - D - Bm",
+            "text": "Dm - F - G - Bb",
             "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "En la plaza sin color permanezco inmóvil y temblando,",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "la nostalgia impregnada comienza a desvanecerse.",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "¡Habría podido salvarte si tan solo hubiese sido más fuerte!",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El cielo comenzó a llorar y compartimos nuestras lágrimas.",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "",
+            "lineType": "empty"
+          },
+          {
+            "text": "[Pre-Coro]",
+            "lineType": "header",
             "bold": true
           },
           {
-            "text": "Los colores han desaparecido de este lugar, todavía sigo temblando.",
+            "text": "Dm - F - G - Bb",
+            "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "«Si tan solo pudiera retroceder el tiempo una vez más», ojos húmedos, tiempo quebrado,",
             "lineType": "lyrics"
           },
           {
-            "text": "Todo aquello que más amaba se está desvaneciendo frente a mí.",
+            "text": "con dedos temblorosos abracé mi bastón y susurré:",
             "lineType": "lyrics"
           },
           {
-            "text": "¡Habría podido ayudarte, si tan solo hubiese sido más fuerte!",
+            "text": "«¿Por qué? No quiero separarme de ti…», una luz intensa aplastó las sombras",
             "lineType": "lyrics"
           },
           {
-            "text": "El cielo comenzó a llorar y mis lágrimas brotaron sin control...",
+            "text": "y el presente roto se difuminó en una tenue bruma.",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "",
+            "lineType": "empty"
+          },
+          {
+            "text": "[Coro 1]",
+            "lineType": "header",
+            "bold": true
+          },
+          {
+            "text": "Bb - C - Dm - Am",
+            "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "«¡Ya no me detendré más!» Aceptaré todo el dolor y toda la tristeza,",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "«porque entendí lo que no puedo perder», con tal de recuperar a quien amo y aquel paisaje.",
             "lineType": "lyrics"
           },
           {
@@ -53489,20 +53317,24 @@ window.STANDALONE_FALTANTES = [
             "bold": true
           },
           {
-            "text": "Em - C - D - Bm",
+            "text": "Dm - F - G - Bb",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "\"¡Si tan solo pudiera retroceder el tiempo una sola vez!\" (¡Este viento feroz acecha mi corazón!)",
+            "text": "El viento feroz corroe mi corazón, todo el mundo es cubierto por la oscuridad,",
             "lineType": "lyrics"
           },
           {
-            "text": "¡Con los ojos cubiertos de llanto el tiempo se quebró! ¡Temblando aferré mi bastón mágico!",
+            "text": "el verdor se marchitó y el cielo se desgarró lamentando este mundo sin color.",
             "lineType": "lyrics"
           },
           {
-            "text": "(¡Todo el mundo está siendo devorado por la oscuridad!)",
+            "text": "«Si deseas alcanzar esa forma anhelada, lo concederé a cambio de tu corazón herido:",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "palabras de esperanza y palabras de despedida».",
             "lineType": "lyrics"
           },
           {
@@ -53510,56 +53342,38 @@ window.STANDALONE_FALTANTES = [
             "lineType": "empty"
           },
           {
-            "text": "[Coro]",
+            "text": "[Coro 2 / Outro]",
             "lineType": "header",
             "bold": true
           },
           {
-            "text": "C - D - Em - Bm",
+            "text": "Bb - C - Dm",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "\"¿Por qué? No quiero perderte...\" (¡Todo se corrompió y el firmamento se desgarró!)",
+            "text": "«Por favor, si tan solo pudiéramos vernos una vez más», dulce melodía con matiz amargo,",
             "lineType": "lyrics"
           },
           {
-            "text": "¡Una luz poderosa destruyó las sombras y se disolvió en una tenue bruma!",
+            "text": "el tiempo apremia y la historia se encamina hacia su final.",
             "lineType": "lyrics"
           },
           {
-            "text": "\"¡No te detengas nunca más!\"; el dolor y la tristeza cesarán por completo.",
+            "text": "«¡Espérame, voy hacia ti ahora mismo!», sacudiendo la ansiedad acumulada,",
             "lineType": "lyrics"
           },
           {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Outro]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "C - D - Em",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "\"¡Por favor, volvamos a encontrarnos algún día!\"",
+            "text": "recordando tu rostro extendí mi mano hacia ti;",
             "lineType": "lyrics"
           },
           {
-            "text": "¡Espera por mí, voy hacia ti ahora mismo!",
+            "text": "esa mano que apretó la mía era lo que siempre había deseado,",
             "lineType": "lyrics"
           },
           {
-            "text": "Nuestros sentimientos desbordaron el cielo, perdiéndose en el viento...",
+            "text": "y los sentimientos que desbordaron se fundieron en el viento.",
             "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
           }
         ]
       ]
@@ -53567,32 +53381,24 @@ window.STANDALONE_FALTANTES = [
     "pages": [
       [
         {
-          "text": "[Tonalidad Audio: Dm]",
-          "lineType": "header"
+          "text": "ESQUEMA DE ACORDES Y AFINACIÓN:",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "Dm - F - Dm",
+          "text": "Intro: Dm - F - G - Bb / Drop C",
           "lineType": "chords",
           "red": true
         },
         {
-          "text": "Dm",
+          "text": "Verso: Dm - F - G - Bb",
           "lineType": "chords",
           "red": true
         },
         {
-          "text": "Dm - F - G - Bb",
+          "text": "Coro: Bb - C - Dm",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "G - Dm - Gm - Bb",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
         },
         {
           "text": "",
@@ -53600,11 +53406,18 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "[Intro Screams & Guitarras Pesadas]",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Dm - F - G - Bb (x4)",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "(Riff Post-Hardcore & Screams)",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -53612,42 +53425,28 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "[Verso 1]",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "Colors disappeared from here, I’m still shivering.",
+          "text": "Dm - F - G - Bb",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "彩り抜けた広場 立ち尽くし震えてる",
           "lineType": "lyrics"
         },
         {
-          "text": "What I held dear, is now fading.",
+          "text": "染み付いた懐かしさ 滲んでく",
           "lineType": "lyrics"
         },
         {
-          "text": "Could have helped you, if only I had been stronger!",
+          "text": "救えた筈なのに もっと強ければ",
           "lineType": "lyrics"
         },
         {
-          "text": "The sky began to cry, and my tears flowed...",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Scream Break]",
-          "lineType": "header"
-        },
-        {
-          "text": "“If only I could turn back time just once!” (This strong wind is hunting my heart!)",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "My eyes wetted, the time broke! My fingers trembled, I grabbed my staff!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "(Everyone is being engulfed in the darkness!)",
+          "text": "泣き出した空と 交わす涙",
           "lineType": "lyrics"
         },
         {
@@ -53655,19 +53454,29 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Coro]",
-          "lineType": "header"
+          "text": "[Pre-Coro]",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "“Why? I don’t want to lose you…” (Everything rotted, the sky tore apart!)",
+          "text": "Dm - F - G - Bb",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "「もう一度 巻き戻せるなら」 潤む瞳 割れた時間",
           "lineType": "lyrics"
         },
         {
-          "text": "A strong light destroyed the shadows, and then dissolved into a light haze!",
+          "text": "震える指 杖を抱き寄せ 囁いた",
           "lineType": "lyrics"
         },
         {
-          "text": "“Just don’t stop anymore”; pain, sadness, they will completely cease!",
+          "text": "「どうして？離れたくないのに…」 強い光 影潰し",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "壊れた今 淡く霞んで",
           "lineType": "lyrics"
         },
         {
@@ -53675,19 +53484,89 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "[Outro]",
-          "lineType": "header"
+          "text": "[Coro 1]",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "“Please, let’s meet again!”",
+          "text": "Bb - C - Dm - Am",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "「もう立ち止まらないよ」 痛みも 悲しみも 全部受け止めるよ",
           "lineType": "lyrics"
         },
         {
-          "text": "Wait, I’m coming right now!",
+          "text": "「譲れないものが分かったから」 大事な人を 大切な風景を 取り戻せるなら",
           "lineType": "lyrics"
         },
         {
-          "text": "Feelings overflew, disappearing into the wind...",
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Puente Screamo]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Dm - F - G - Bb",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "荒ぶ風が心を蝕んでく 誰も彼もが闇に覆われてく",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "緑朽ち果て 空は裂け嘆いた 色味無い世界に抱く違和感を",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "「求める姿に望み願うなら その傷ついた心と引き換えに叶えましょう",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "希望の言葉と別れの言葉を」",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro 2 / Outro]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bb - C - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "「どうか、もう一度逢えたら」 苦味混じる 甘い音色",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "迫る時間 物語は終わりへ向かう",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "「待ってて 今すぐ行くから」 重なる不安 振りほどき",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "想い浮かべ 差し伸べた手を",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "握り返すその手は ずっと願っていたもので",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "溢れ出した想いはもう 風に溶けた",
           "lineType": "lyrics"
         }
       ]
@@ -54002,7 +53881,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Pesado de Guitarra - C5 - Ab5 - Bb5 - G5)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -54264,7 +54144,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff de Hard Rock / Metalcore)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -54954,7 +54835,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Post-Hardcore - B5 - G5 - A5 - F#5)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -55350,7 +55232,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Screamo y Riff de Guitarra en Drop D)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -55771,17 +55654,17 @@ window.STANDALONE_FALTANTES = [
           {
             "text": "Intro: Em - C - G - D (x4)",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "Verso: Em - C - G - D",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "Coro: C - D - Em",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "",
@@ -55795,11 +55678,12 @@ window.STANDALONE_FALTANTES = [
           {
             "text": "Em - C - G - D (x4)",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
             "text": "(Introducción de Guitarra Rock Melódico)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -55813,10 +55697,10 @@ window.STANDALONE_FALTANTES = [
           {
             "text": "Em - C - G - D",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "Es medianoche, la luna está llena y a lo lejos descansa una ilusión diferente.",
+            "text": "Es medianoche, la luna está llena y a lo lejos descansa una ilusión distante.",
             "lineType": "lyrics"
           },
           {
@@ -55824,11 +55708,15 @@ window.STANDALONE_FALTANTES = [
             "lineType": "lyrics"
           },
           {
-            "text": "Los encuentros siempre están llenos de milagros que hacen latir fuerte el corazón;",
+            "text": "Los encuentros siempre están rebosantes de milagros,",
             "lineType": "lyrics"
           },
           {
-            "text": "¡pinto un sueño sobre un lienzo tejido por el brillante cielo estrellado!",
+            "text": "haciendo danzar nuestro corazón en el mejor momento,",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "¡dibujando un sueño sobre el lienzo de un brillante cielo estrellado!",
             "lineType": "lyrics"
           },
           {
@@ -55843,27 +55731,23 @@ window.STANDALONE_FALTANTES = [
           {
             "text": "C - D - Em",
             "lineType": "chords",
-            "bold": true
+            "red": true
           },
           {
-            "text": "¿Existirá algo esperando al final del universo? ¡Es un gran misterio!",
+            "text": "¿Qué habrá en los confines del universo? ¡Está lleno de misterios!",
             "lineType": "lyrics"
           },
           {
-            "text": "¡Sonó la campana de partida y comenzamos a correr hacia un viaje estelar!",
+            "text": "Sonó la campana de partida y los dos salimos corriendo en un viaje misterioso.",
             "lineType": "lyrics"
           },
           {
-            "text": "Nuestros corazones laten tan deprisa ante esta maravilla;",
+            "text": "El latido de nuestro pecho se acelera, qué maravilloso es;",
             "lineType": "lyrics"
           },
           {
-            "text": "¡crucemos el arcoíris de la galaxia donde las estrellas se unen guiando nuestros sueños!",
+            "text": "¡crucemos el arcoíris de la galaxia donde tantas estrellas se unen en líneas y la fantasía crece!",
             "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
           }
         ]
       ]
@@ -55871,32 +55755,24 @@ window.STANDALONE_FALTANTES = [
     "pages": [
       [
         {
-          "text": "[Tonalidad Audio: D]",
-          "lineType": "header"
+          "text": "ESQUEMA DE ACORDES Y AFINACIÓN:",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "C# - B - F - B",
+          "text": "Intro: Em - C - G - D (x4)",
           "lineType": "chords",
           "red": true
         },
         {
-          "text": "B - D - G - A",
+          "text": "Verso: Em - C - G - D",
           "lineType": "chords",
           "red": true
         },
         {
-          "text": "G - D - F#m - D",
+          "text": "Coro: C - D - Em",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "D - G - A - G",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
         },
         {
           "text": "",
@@ -55904,11 +55780,18 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "[Intro]",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Em - C - G - D (x4)",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "(Melodic Rock Guitar Intro)",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -55916,22 +55799,32 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "[Verso 1]",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "Midnight, the moon is full and far away lies a different illusion.",
+          "text": "Em - C - G - D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "午前零時 月は満ちて 遥か遠い幻想",
           "lineType": "lyrics"
         },
         {
-          "text": "Look at the sky and listen carefully, if only you could hear the stars’ voice.",
+          "text": "空を見上げ耳を澄まし 星の声を聞いたら",
           "lineType": "lyrics"
         },
         {
-          "text": "Meetings are always full of miracles, the best moments that make our hearts pounding.",
+          "text": "出逢いはいつだって 奇跡に満ち溢れてる",
           "lineType": "lyrics"
         },
         {
-          "text": "I paint a dream on a canvas made of a twinkle, shiny starry sky!",
+          "text": "最高の瞬間に心躍らせて",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "きらきら輝いた 星空キャンバスに夢を描いて",
           "lineType": "lyrics"
         },
         {
@@ -55940,22 +55833,28 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "[Coro]",
-          "lineType": "header"
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "Is there something at the end of space? It’s a mystery!",
+          "text": "C - D - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "宇宙の果ては何があるの 謎だらけで",
           "lineType": "lyrics"
         },
         {
-          "text": "The departure bell rung and we began to run to a mystery tour!",
+          "text": "発車のベルが鳴り ふたりは駆け出したミステリーツアー",
           "lineType": "lyrics"
         },
         {
-          "text": "Our hearts are beating so fast, it’s so strange,",
+          "text": "胸の鼓動が高鳴り 不思議ね",
           "lineType": "lyrics"
         },
         {
-          "text": "let’s cross the galaxy’s rainbow! Many stars connected by a line, increasing daydreams.",
+          "text": "銀河の虹を渡りましょう 幾つの星が線で繋がり 空想は膨らむ",
           "lineType": "lyrics"
         }
       ]
@@ -56055,7 +55954,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Arreglo Tradicional y Guitarras Rock)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -56164,7 +56064,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Arreglo Tradicional & Guitarras Rock)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -56212,398 +56113,6 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "笑い飛ばそう 昨日の涙も！",
-          "lineType": "lyrics"
-        }
-      ]
-    ]
-  },
-  {
-    "id": "kachi_kachi_yama_ayakashi_song",
-    "order": 771,
-    "artist": "Kachi Kachi Yama (かちかち山)",
-    "title": "あやかしのうた (Ayakashi Song)",
-    "tone": "Dm",
-    "capo": "0",
-    "album": "どうぶつのうた 拾肆 (2018)",
-    "genre": "Screamo / Rap Metal Touhou",
-    "two_col": true,
-    "pdfPage": 89,
-    "pdfPages": [
-      89
-    ],
-    "totalPages": 1,
-    "matched": true,
-    "youtube": "https://www.youtube.com/watch?v=X5vrnM247ac",
-    "youtubeTitle": "【東方ボーカルアレンジ】あやかしのうた / かちかち山【Screamo/Rap】",
-    "youtubeVersions": [
-      {
-        "id": "X5vrnM247ac",
-        "index": 771,
-        "playlistIndex": 771,
-        "title": "【東方ボーカルアレンジ】あやかしのうた / かちかち山【Screamo/Rap】",
-        "author": "KyokoAmane",
-        "channel": "KyokoAmane",
-        "url": "https://www.youtube.com/watch?v=X5vrnM247ac",
-        "isAvailable": true
-      }
-    ],
-    "matchedVideo": {
-      "id": "X5vrnM247ac",
-      "index": 771,
-      "playlistIndex": 766,
-      "title": "【東方ボーカルアレンジ】あやかしのうた / かちかち山【Screamo/Rap】",
-      "author": "KyokoAmane",
-      "channel": "KyokoAmane",
-      "url": "https://www.youtube.com/watch?v=X5vrnM247ac",
-      "isAvailable": true
-    },
-    "book": "faltantes",
-    "pdfFile": "faltantes.pdf",
-    "playlistIndex": 744,
-    "playlistOrder": 744,
-    "hasTranslation": true,
-    "spanishVersion": {
-      "title": "あやかしのうた (Ayakashi Song)",
-      "subtitle": "[VERSIÓN TRADUCIDA AL ESPAÑOL – ADAPTACIÓN RÍTMICA Y MÉTRICA]",
-      "tone": "Dm",
-      "capo": "0",
-      "chordsScheme": "Intro: D5 - Bb5 - F5 - C5 (x4) / Drop D\nVerso: D5 - Bb5 - G5 - A5\nCoro: Bb5 - C5 - D5",
-      "pdfFile": "faltantes.pdf",
-      "pdfPage": 90,
-      "pdfPages": [
-        90
-      ],
-      "pages": [
-        [
-          {
-            "text": "ESQUEMA DE ACORDES Y AFINACIÓN:",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Intro: D5 - Bb5 - F5 - C5 (x4) / Drop D",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Verso: D5 - Bb5 - G5 - A5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Coro: Bb5 - C5 - D5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Intro Screams & Rapcore]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "D5 - Bb5 - F5 - C5 (x4)",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "(Riff Metalcore en Drop D y Gritos Iniciales)",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Verso 1]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "D5 - Bb5 - G5 - A5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Mientras la bruma blanca cubre un mundo plateado, ¿dónde duerme la primavera?",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Empuño mi espada con el orgullo del contrato jurado y jamás retrocederé!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Una mariposa negra alzó el viento dentro de la ilusión.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "El destino gira sin cesar; guíame más allá del sueño donde fuiste sepultada.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Aparición perdida en la brecha, invitada por la cálida lámpara!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Puente Screamo / Rap]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "D5 - Bb5 - G5 - A5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "¡Un nuevo incidente estalla con furia, los espectros yokai andan sueltos!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Me deslizo por la fisura! ¡La mutación atraviesa la grieta hacia una ilusión fantasmal!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Persiguiendo a la mariposa negra que agita sus alas en la noche!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Tomo mi filo con honor! ¡Devolvamos la primavera a esas flores elegantes!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Por ti, danzando como mariposa, sería capaz de entregarlo todo!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Oh, mariposa oscura, llévame contigo hasta ese lugar!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Coro Rapcore]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Bb5 - C5 - D5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "¡Revolotean las mariposas! ¡Los cerezos florecen en su máximo esplendor!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Atrapado por el farol ilusorio, la fortuna gira una y otra vez!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Hagamos que florezca con gracia! ¡Por favor, condúceme hasta allí!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡No me arrepiento de nada en mi vida! ¿Podré volver a encontrarte con vida?",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Outro Screamo]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "D5 - Bb5 - F5 - C5",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "¡Llamado por la trampa mortal, la canción que resuena en el inframundo es fugaz!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Mientras sentimientos como pétalos de cerezo rozan mis manos teñidas de sangre,",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "más allá de los sueños... ¡Hacia el lugar donde reposas en mi sueño espectral!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          }
-        ]
-      ]
-    },
-    "pages": [
-      [
-        {
-          "text": "[Tonalidad Audio: A]",
-          "lineType": "header"
-        },
-        {
-          "text": "D - F#m - A - E - F#m - A - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - D - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - A - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - E - A",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Intro]",
-          "lineType": "header"
-        },
-        {
-          "text": "(Guitarras Melodic Metalcore & Flauta Tradicional)",
-          "lineType": "header"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Verso 1 (Vocal: めらみぽっぷ)]",
-          "lineType": "header"
-        },
-        {
-          "text": "霞む白が覆う 白銀の世界",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "永い眠りについた春は何処",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "契りの誇りを胸に 剣を手に取る",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "黒い蝶が幻想の風を巻き起こした",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "巡り巡る運命よ 夢の彼方へ導いて",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "狭間に迷い込んだ妖かし 灯火に誘われて",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Scream / Rap (天舞音 叫子)]",
-          "lineType": "header"
-        },
-        {
-          "text": "荒ぶ変異 妖かしが rampant!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "この隙間潜り抜け Mutation go through the gap!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "幽々たる幻想に ghostly illusion!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "黒い蝶が羽ばたいた Fluttered!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "剣を取り 契りを誇れ 雅な花に春を届けよう",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "舞い踊る黒揚羽よ どうかあの場所へ連れて行ってくれ！",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro (Vocal)]",
-          "lineType": "header"
-        },
-        {
-          "text": "壊れた世界 呼吸が少し荒くなって",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "君へと繋ぐ 星の欠片を僕は手にした",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "夢の中で 虚ろな眼差しが鮮血に染まる",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "舞い散る桜よ 優雅に咲き誇れ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "この命に悔いはない 生きたまま君に逢えるだろうか",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "永遠の時を刻んで",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Outro]",
-          "lineType": "header"
-        },
-        {
-          "text": "死の罠に手招かれ 冥府に響くあやかしのうたは儚く",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "血塗られたこの手に 桜のような想いがそっと触れる",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "あやかしの風が吹き抜ける 白銀の彼方へ消え去りゆく",
           "lineType": "lyrics"
         }
       ]
@@ -56703,7 +56212,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Metalcore y Doble Pedal)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -56999,7 +56509,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Pesado Metalcore)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -57190,415 +56701,6 @@ window.STANDALONE_FALTANTES = [
     ]
   },
   {
-    "id": "kachi_kachi_yama_ayakashi_song",
-    "order": 776,
-    "artist": "かちかち山 (Kachi Kachi Yama)",
-    "title": "あやかしのうた (Ayakashi Song)",
-    "tone": "Am",
-    "capo": "0",
-    "album": "どうぶつのうた 陸",
-    "genre": "Touhou Melodic Metalcore / Screamo",
-    "two_col": true,
-    "pdfPage": 89,
-    "pdfPages": [
-      89
-    ],
-    "totalPages": 1,
-    "matched": true,
-    "youtube": "https://www.youtube.com/watch?v=aRyi8qpuJak",
-    "youtubeTitle": "【東方Vocal】あやかしのうた ~ Ayakashi Song「かちかち山」(English subs and Romaji)",
-    "youtubeVersions": [
-      {
-        "id": "aRyi8qpuJak",
-        "index": 776,
-        "playlistIndex": 776,
-        "title": "【東方Vocal】あやかしのうた ~ Ayakashi Song「かちかち山」(English subs and Romaji)",
-        "author": "Touhou Hakutaku",
-        "channel": "Touhou Hakutaku",
-        "url": "https://www.youtube.com/watch?v=aRyi8qpuJak",
-        "isAvailable": true
-      }
-    ],
-    "matchedVideo": {
-      "id": "aRyi8qpuJak",
-      "index": 776,
-      "playlistIndex": 744,
-      "title": "【東方Vocal】あやかしのうた ~ Ayakashi Song「かちかち山」(English subs and Romaji)",
-      "author": "Touhou Hakutaku",
-      "channel": "Touhou Hakutaku",
-      "url": "https://www.youtube.com/watch?v=aRyi8qpuJak",
-      "isAvailable": true
-    },
-    "book": "faltantes",
-    "pdfFile": "faltantes.pdf",
-    "playlistIndex": 744,
-    "playlistOrder": 744,
-    "hasTranslation": true,
-    "spanishVersion": {
-      "title": "あやかしのうた (Ayakashi Song)",
-      "subtitle": "[VERSIÓN TRADUCIDA AL ESPAÑOL – ADAPTACIÓN RÍTMICA Y MÉTRICA]",
-      "tone": "Am",
-      "capo": "0",
-      "chordsScheme": "Intro: Am - F - G - Em (x4)\nVerso: Am - F - G - Em\nCoro: F - G - Am - C\nOutro: Am - F - G - Am",
-      "pdfFile": "faltantes.pdf",
-      "pdfPage": 90,
-      "pdfPages": [
-        90
-      ],
-      "pages": [
-        [
-          {
-            "text": "ESQUEMA DE ACORDES Y AFINACIÓN:",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Intro: Am - F - G - Em (x4)",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Verso: Am - F - G - Em",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Coro: F - G - Am - C",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Outro: Am - F - G - Am",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Intro]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Am - F - G - Em (x4)",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "(Guitarras Melodic Metalcore y Flauta Tradicional)",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Verso 1 (Voz Melódica)]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Am - F - G - Em",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Una bruma blanca cubre por completo este mundo plateado;",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¿dónde descansa la primavera que cayó en un sueño eterno?",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Con el orgullo de mi pacto en el pecho, empuño mi espada sin retroceder.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Una mariposa negra levantó el viento en medio de la ilusión;",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "destino que gira sin cesar, guíame más allá del sueño donde yaces,",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "espectro perdido en la brecha, atraído por el calor de los faroles.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Scream / Rap]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Am - F - G - Em",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "¡Una nueva anomalía se desata, los espíritus yokai corren desbocados!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Me deslizo a través de la grieta dimensional hacia la mutación!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡En medio de una ilusión fantasmal y sombría,",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "la mariposa de alas negras batió su vuelo en la penumbra!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Toma la espada y honra la promesa! ¡Traigamos la primavera a los cerezos!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Oh, mariposa nocturna en tu danza, llévame contigo hacia aquel lugar!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Coro]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "F - G - Am - C",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "En este mundo quebrado, mi respiración se vuelve cada vez más agitada;",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "sostengo entre mis manos el fragmento de estrella que me conecta a ti.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Dentro del sueño, una mirada vacía se tiñe de sangre escarlata.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "¡Que los pétalos de cerezo dancen y florezcan con toda su gracia!",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "No tengo arrepentimientos en esta vida; ¿podré volver a verte con vida?",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "Grabando nuestro juramento en la eternidad del tiempo.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          },
-          {
-            "text": "[Outro]",
-            "lineType": "header",
-            "bold": true
-          },
-          {
-            "text": "Am - F - G - Am",
-            "lineType": "chords",
-            "bold": true
-          },
-          {
-            "text": "Atraído por el umbral de la muerte, el canto espiritual resuena efímero en el Hades;",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "mientras sentimientos como flores de cerezo acarician mis manos manchadas de carmesí,",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "el viento de los espíritus sopla con fuerza, desvaneciéndose más allá del horizonte plateado.",
-            "lineType": "lyrics"
-          },
-          {
-            "text": "",
-            "lineType": "empty"
-          }
-        ]
-      ]
-    },
-    "pages": [
-      [
-        {
-          "text": "[Tonalidad Audio: A]",
-          "lineType": "header"
-        },
-        {
-          "text": "D - F#m - A - E - F#m - A - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - D - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - A - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "E - F#m - E - A",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Intro]",
-          "lineType": "header"
-        },
-        {
-          "text": "(Guitarras Melodic Metalcore & Flauta Tradicional)",
-          "lineType": "header"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Verso 1 (Vocal: めらみぽっぷ)]",
-          "lineType": "header"
-        },
-        {
-          "text": "霞む白が覆う 白銀の世界",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "永い眠りについた春は何処",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "契りの誇りを胸に 剣を手に取る",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "黒い蝶が幻想の風を巻き起こした",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "巡り巡る運命よ 夢の彼方へ導いて",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "狭間に迷い込んだ妖かし 灯火に誘われて",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Scream / Rap (天舞音 叫子)]",
-          "lineType": "header"
-        },
-        {
-          "text": "荒ぶ変異 妖かしが rampant!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "この隙間潜り抜け Mutation go through the gap!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "幽々たる幻想に ghostly illusion!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "黒い蝶が羽ばたいた Fluttered!",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "剣を取り 契りを誇れ 雅な花に春を届けよう",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "舞い踊る黒揚羽よ どうかあの場所へ連れて行ってくれ！",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro (Vocal)]",
-          "lineType": "header"
-        },
-        {
-          "text": "壊れた世界 呼吸が少し荒くなって",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "君へと繋ぐ 星の欠片を僕は手にした",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "夢の中で 虚ろな眼差しが鮮血に染まる",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "舞い散る桜よ 優雅に咲き誇れ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "この命に悔いはない 生きたまま君に逢えるだろうか",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "永遠の時を刻んで",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Outro]",
-          "lineType": "header"
-        },
-        {
-          "text": "死の罠に手招かれ 冥府に響くあやかしのうたは儚く",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "血塗られたこの手に 桜のような想いがそっと触れる",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "あやかしの風が吹き抜ける 白銀の彼方へ消え去りゆく",
-          "lineType": "lyrics"
-        }
-      ]
-    ]
-  },
-  {
     "id": "kachi_kachi_yama_vocal_version",
     "order": 777,
     "artist": "Kachi Kachi Yama (かちかち山)",
@@ -57692,7 +56794,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Guitarra Melódica y Flauta Tradicional)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -57953,7 +57056,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Piano y Cuerdas Melódicas)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -58633,7 +57737,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Arpegio de Piano y Guitarra Acústica)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -59072,7 +58177,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Sintetizadores Eurobeat y Riff de Guitarra)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -59929,7 +59035,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Sintetizadores Trance y Piano Clásico)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -60325,7 +59432,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Trance Electrónico y Cuerdas)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -60681,7 +59789,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Sintetizador Electrónico y Guitarra Acústica)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -61032,7 +60141,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Sintetizador Electro Rock y Pulso)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -61138,7 +60248,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Electro Rock Synth & Beat)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -61693,7 +60804,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Rasgueo Rítmico Acústico - G - D - Em - C)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -62259,7 +61371,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "(Eurobeat / Synth-Pop Intro)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -62858,7 +61971,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Sintetizador Trance y Arpegios)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -63684,7 +62798,7 @@ window.STANDALONE_FALTANTES = [
     ]
   },
   {
-    "id": "virtual_relic",
+    "id": "virtual_relic_indigo_rain",
     "order": 798,
     "artist": "Virtual Relic",
     "title": "インディゴレイン",
@@ -63777,7 +62891,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Piano Melancólico y Sonido de Lluvia)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -64635,7 +63750,7 @@ window.STANDALONE_FALTANTES = [
     ]
   },
   {
-    "id": "virtual_relic",
+    "id": "virtual_relic_kisetsu_ga_kimi_wo",
     "order": 800,
     "artist": "Virtual Relic",
     "title": "季節が君を置き去りにしても",
@@ -64733,7 +63848,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Arpegio Acústico y Melodía de Viento)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -65151,7 +64267,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff de Guitarra Indie Rock)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -65499,7 +64616,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Línea de Bajo Psy-Trance y Sintetizador)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -65841,7 +64959,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Pesado de Metal - prod. Utsu-P)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -66257,7 +65376,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(Riff Post-Hardcore y Gritos)",
-            "lineType": "lyrics"
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "",
@@ -67182,15 +66302,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "D       Bm",
+          "text": "D       Bm       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "vos siempre cambiando ya no cambias más",
@@ -67357,15 +66471,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "D       Bm",
+          "text": "D       Bm       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "vos siempre cambiando ya no cambias más",
@@ -67522,15 +66630,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "D       Bm",
+          "text": "D       Bm       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "vos siempre cambiando ya no cambias más",
@@ -67568,15 +66670,9 @@ window.STANDALONE_FALTANTES = [
           "lineType": "lyrics"
         },
         {
-          "text": "D       Bm",
+          "text": "D       Bm       A",
           "lineType": "chords",
           "red": true
-        },
-        {
-          "text": "           A",
-          "lineType": "chords",
-          "red": true,
-          "bold": true
         },
         {
           "text": "vos siempre cambiando ya no cambias más",
@@ -69195,8 +68291,8 @@ window.STANDALONE_FALTANTES = [
           },
           {
             "text": "(PERCUSIÓN en Am)",
-            "lineType": "lyrics",
-            "red": false
+            "lineType": "header",
+            "bold": true
           },
           {
             "text": "Señorita, siente la conga,",

@@ -461,9 +461,9 @@ class KaraokeSyncController {
         const effectiveTime = Math.max(0, (Number(rawCurrentTimeSec) || 0) + (Number(this.globalOffsetSec) || 0));
         let activeIdx = -1;
 
-        // Anticipación de lectura suave (0.30s línea, 0.08s palabra para calce exacto sin saltar palabras rápidas)
-        const WORD_LEAD_SEC = 0.08;
-        const LINE_LEAD_SEC = 0.30;
+        // Anticipación de lectura clara: 0.45s línea y 0.26s palabra para que cada palabra se alumbre antes de cantarse
+        const WORD_LEAD_SEC = 0.26;
+        const LINE_LEAD_SEC = 0.45;
 
         for (let i = 0; i < this.lines.length; i++) {
             const line = this.lines[i];
@@ -509,7 +509,12 @@ class KaraokeSyncController {
                 let activeW = -1;
                 for (let wIdx = 0; wIdx < lineObj.words.length; wIdx++) {
                     const w = lineObj.words[wIdx];
-                    if (w && effectiveTime >= Math.max(0, w.start - WORD_LEAD_SEC)) {
+                    if (!w) continue;
+                    const prevW = wIdx > 0 ? lineObj.words[wIdx - 1] : null;
+                    const triggerSec = prevW
+                        ? Math.max(prevW.start + 0.06, w.start - WORD_LEAD_SEC)
+                        : Math.max(0, w.start - WORD_LEAD_SEC);
+                    if (effectiveTime >= triggerSec) {
                         activeW = wIdx;
                     }
                 }
