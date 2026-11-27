@@ -1,11 +1,11 @@
 /**
  * @file scoreSplitEngine.js
- * @description Motor SSoT de Tablatura de 6 Cuerdas (estilo Songsterr Oscuro) Sincronizada 1:1 con la Playlist:
- *  - Modo A (Tablatura 6 Cuerdas en 1 Línea Sincronizada con Playlist): Renderiza en LayoutMode.Horizontal
- *    las 6 líneas horizontales de las cuerdas (StaveProfile.Tab + TabRhythmMode.ShowWithBars), números de compás,
- *    trastes blancos sobre fondo oscuro estilo Songsterr y plicas rítmicas debajo, avanzando nota por nota
- *    en paralelo con el reproductor de YouTube mediante boundsLookup exacto + cursor en vivo.
- *  - Modo B (Songsterr Oficial): Permite abrir la vista nativa oficial de Songsterr con cuenta básica.
+ * @description Motor SSoT v3.9.0 de Partituras Reales y Songsterr Oficial (0 tablaturas sintéticas/inventadas):
+ *  - Modo Songsterr Oficial Anclado: Ancla la vista oficial de Songsterr (Cuenta Básica a velocidad 1x original)
+ *    exactamente dentro de #score-scroll-container justo encima de #player-bar, funcionando en paralelo con
+ *    el reproductor de la Playlist de YouTube y ocultándose automáticamente al abrir cajones, modales o editor.
+ *  - Modo Guitar Pro / Riff Real 6 Cuerdas: Renderiza archivos .gp/.gp5 reales multipista, ediciones "Listas"
+ *    de Estación 3 y riffs ASCII reales del Cancionero en 1 línea oscura estilo Songsterr sincronizada con la Playlist.
  */
 
 (function () {
@@ -13,107 +13,17 @@
   const STORE_NAME = 'gp_files';
   const LIVE_CACHE_KEY = 'songsterr_live_cache_v1';
   const PREF_OPEN_KEY = 'cancionero_score_strip_open_v1';
-  const PREF_STAVE_KEY = 'cancionero_score_stave_v2'; // v2: 6 cuerdas (StaveProfile.Tab) por defecto
+  const PREF_STAVE_KEY = 'cancionero_score_stave_v2';
+  const PREF_SIZE_KEY = 'cancionero_score_size_v39';
 
   const SCORE_HEIGHTS = [
-    { key: '1L', css: '148px', nativePct: 30, scale: 0.72 },
-    { key: 'M', css: '176px', nativePct: 38, scale: 0.84 },
-    { key: 'L', css: '216px', nativePct: 48, scale: 0.96 }
+    { key: 'S', css: '148px', nativePct: 28, scale: 0.72 },
+    { key: 'M', css: '188px', nativePct: 34, scale: 0.84 },
+    { key: 'L', css: '236px', nativePct: 44, scale: 0.94 }
   ];
 
-  const CHROMATIC = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-  const FLAT_TO_SHARP = { DB: 'C#', EB: 'D#', GB: 'F#', AB: 'G#', BB: 'A#', CB: 'B', FB: 'E' };
-  const STANDARD_TUNING = [64, 59, 55, 50, 45, 40]; // 1:E4, 2:B3, 3:G3, 4:D3, 5:A2, 6:E2
-  const DROP_D_TUNING = [64, 59, 55, 50, 45, 38];
-
-  function midiToAlphaPitch(midi) {
-    const m = Math.max(24, Math.min(84, Math.round(Number(midi) || 40)));
-    const oct = Math.floor(m / 12) - 1;
-    return CHROMATIC[m % 12] + oct;
-  }
-
-  function resolveTuningArray(chart) {
-    if (chart && Array.isArray(chart.tn) && chart.tn.length === 6) {
-      return chart.tn.map(n => Number(n) || 40);
-    }
-    return (chart && chart.dd) ? DROP_D_TUNING : STANDARD_TUNING;
-  }
-
-  function parseChordInfo(chordName) {
-    const clean = String(chordName || 'G5').replace(/\/.*$/, '').trim();
-    const m = clean.match(/^([A-G])(#|b)?(m|maj|min|dim|aug|sus|add|M)?([0-9]*)/);
-    if (!m) return { pitchClass: 7, isMinor: false, isPower: true };
-    let root = m[1].toUpperCase() + (m[2] || '');
-    if (FLAT_TO_SHARP[root]) root = FLAT_TO_SHARP[root];
-    const pc = CHROMATIC.indexOf(root);
-    const qual = (m[3] || '') + (m[4] || '');
-    const isPower = /^5$/.test(qual);
-    const isMinor = /^m(?!aj)/.test(qual) || /min|dim/.test(qual);
-    return { pitchClass: pc >= 0 ? pc : 7, isMinor, isPower };
-  }
-
   /**
-   * Genera un compás 4/4 de tablatura de 6 cuerdas con notas individuales / octavas / quintas
-   * en corcheas (.8) y negras (.4) estilo Songsterr (con plicas rítmicas debajo).
-   */
-  function chordToSongsterrBar(chordName, barIdx, sectionKind, tuningArr) {
-    const { pitchClass, isMinor, isPower } = parseChordInfo(chordName);
-    const open6 = (tuningArr[5] || 40) % 12;
-    const open5 = (tuningArr[4] || 45) % 12;
-    const open4 = (tuningArr[3] || 50) % 12;
-    const isDrop = ((open5 - open6 + 12) % 12) === 7; // ej. Drop D / Drop C#
-
-    const fret6 = (pitchClass - open6 + 12) % 12;
-    const fret5 = (pitchClass - open5 + 12) % 12;
-    const fret4 = (pitchClass - open4 + 12) % 12;
-
-    // Elegir cuerda base cómoda (cuerda 6 si traste <= 7, cuerda 5 si <= 9, cuerda 4 para riffs agudos)
-    if (sectionKind === 'intro' || sectionKind === 'solo') {
-      // Riff melódico estilo Songsterr sobre cuerdas 4, 3 y 2 (como referencia visual compases 14-15)
-      const r4 = fret4 <= 10 ? fret4 : Math.max(0, fret4 - 12);
-      const fifth4 = Math.min(22, r4 + 7);
-      const pass4 = Math.min(22, fifth4 + 2);
-      const oct3 = Math.min(22, r4 + 7 - 5 + 5); // en cuerda 3: +5 semitonos respecto a cuerda 4 => octava = r4 + 7, 5ta = r4 + 2
-      const note3a = Math.min(22, r4 + 5);
-      const note3b = Math.min(22, note3a + (isMinor ? 2 : 2));
-      const note2 = Math.min(22, r4 + (isMinor ? 3 : 4));
-      if (barIdx % 2 === 0) {
-        return `${r4}.4.8 ${fifth4}.4.8 ${pass4}.4.8 ${fifth4}.4.8 ${note3a}.3.8 ${note3b}.3.4 ${note2}.2.8`;
-      }
-      const step3 = Math.max(0, note3a - 1);
-      return `${r4}.4.8 ${fifth4}.4.8 ${pass4}.4.8 ${fifth4}.4.8 ${note3a}.3.8 ${step3}.3.8 ${pass4}.4.8 ${fifth4}.4.8`;
-    }
-
-    const useStr5 = (!isDrop && fret6 > 7) || (fret5 <= 7 && (barIdx % 4 >= 2) && fret6 > 3);
-    const sRoot = useStr5 ? 5 : 6;
-    const r = useStr5 ? fret5 : fret6;
-    const s5th = sRoot - 1;
-    const f5 = (sRoot === 6 && isDrop) ? r : (r + 2);
-    const sOct = sRoot - 2;
-    const fOct = (sRoot === 6 && isDrop) ? (r + 2) : (r + 2);
-    const s3rd = Math.max(1, sRoot - 3);
-    // Ajuste intervalo cuerda 3->2 (4 semitonos en vez de 5)
-    const thirdShift = s3rd === 2 ? (isMinor ? 1 : 2) : (isMinor ? 0 : 1);
-    const f3rd = Math.max(0, Math.min(22, r + thirdShift));
-    const fPass = Math.min(22, fOct + 2);
-
-    if (sectionKind === 'chorus' || isPower) {
-      // Coro / quintas con pulso rítmico de rock en corcheas + octavas
-      if (barIdx % 2 === 0) {
-        return `(${r}.${sRoot} ${f5}.${s5th}).8 ${r}.${sRoot}.8 ${r}.${sRoot}.8 (${r}.${sRoot} ${f5}.${s5th} ${fOct}.${sOct}).8 ${r}.${sRoot}.8 ${fOct}.${sOct}.8 ${fPass}.${sOct}.8 ${fOct}.${sOct}.8`;
-      }
-      return `(${r}.${sRoot} ${f5}.${s5th}).8 ${r}.${sRoot}.8 ${f5}.${s5th}.8 ${fOct}.${sOct}.8 ${fPass}.${sOct}.8 ${fOct}.${sOct}.8 (${r}.${sRoot} ${f5}.${s5th}).4`;
-    }
-
-    // Verso / Puente: arpegio limpio y movimiento en las 6 cuerdas (8 corcheas por compás)
-    if (barIdx % 2 === 0) {
-      return `${r}.${sRoot}.8 ${f5}.${s5th}.8 ${fOct}.${sOct}.8 ${f3rd}.${s3rd}.8 ${fOct}.${sOct}.8 ${f5}.${s5th}.8 ${f3rd}.${s3rd}.8 ${fOct}.${sOct}.8`;
-    }
-    return `${r}.${sRoot}.8 ${f5}.${s5th}.8 ${fOct}.${sOct}.8 ${fPass}.${sOct}.8 ${f3rd}.${s3rd}.8 ${fOct}.${sOct}.8 ${f5}.${s5th}.8 ${r}.${sRoot}.8`;
-  }
-
-  /**
-   * Convierte bloques ASCII editados en vivo (ej. desde Estación 3 del Editor) en compases AlphaTex de 6 cuerdas.
+   * Convierte bloques ASCII reales editados en Estación 3 ("Lista") en compases AlphaTex de 6 cuerdas.
    */
   function parseLiveAsciiTabToBars(rawTabText) {
     if (!rawTabText || typeof rawTabText !== 'string') return [];
@@ -184,112 +94,24 @@
         outBars.push(sl.map(e => `${e}.8`).join(' ') + (pad > 0 ? ' r.8'.repeat(pad) : ''));
       }
     }
-    return outBars.slice(0, 32);
-  }
-
-  function classifySectionKind(secLabel, barIdx) {
-    const s = String(secLabel || '').toLowerCase();
-    if (/intro|riff|punteo|solo|inter/.test(s)) return 'intro';
-    if (/coro|estribillo|final|outro/.test(s)) return 'chorus';
-    if (/verso|estrofa|puente|pre/.test(s)) return 'verse';
-    return barIdx < 4 ? 'intro' : 'verse';
-  }
-
-  function expandCompactChartToAlphaTex(chart, liveEditedTabBars = null) {
-    if (!chart || !Array.isArray(chart.ev) || chart.ev.length === 0) return null;
-    const totalBars = Math.max(16, Math.min(360, Number(chart.b) || 105));
-    const tuningArr = resolveTuningArray(chart);
-    const evMap = new Map();
-    for (const item of chart.ev) {
-      if (Array.isArray(item) && item.length >= 2) {
-        evMap.set(Number(item[0]), { ch: String(item[1] || 'G5'), sec: item[2] ? String(item[2]) : '' });
-      }
-    }
-
-    const riffBars = (Array.isArray(liveEditedTabBars) && liveEditedTabBars.length > 0)
-      ? liveEditedTabBars
-      : (Array.isArray(chart.rb) ? chart.rb : []);
-    const riffStartBar = Math.max(0, Number(chart.rbs) || 0);
-
-    let activeChord = (chart.ev[0] && chart.ev[0][1]) || 'G5';
-    let activeSectionKind = 'intro';
-    let lastShownChord = '';
-    const bars = [];
-
-    for (let b = 0; b < totalBars; b++) {
-      const ev = evMap.get(b);
-      let chordLabel = '';
-      let secCmd = '';
-      if (ev) {
-        activeChord = ev.ch;
-        if (ev.sec) {
-          const safeSec = ev.sec.replace(/"/g, '').slice(0, 18);
-          secCmd = `\\section "${safeSec}" `;
-          activeSectionKind = classifySectionKind(safeSec, b);
-        } else if (b >= 4 && activeSectionKind === 'intro') {
-          activeSectionKind = 'verse';
-        }
-        if (activeChord !== lastShownChord || secCmd) {
-          const safeCh = activeChord.replace(/"/g, '');
-          chordLabel = ` {ch "${safeCh}"}`;
-          lastShownChord = activeChord;
-        }
-      } else {
-        if (b === 0) {
-          chordLabel = ` {ch "${activeChord.replace(/"/g, '')}"}`;
-          lastShownChord = activeChord;
-        } else if (b === 4 && activeSectionKind === 'intro') {
-          activeSectionKind = 'verse';
-        }
-      }
-
-      // Si hay tablatura ASCII real para este compás (Intro / Riff / Editada), insertarla directamente
-      const relRiffIdx = b - riffStartBar;
-      if (riffBars.length > 0 && relRiffIdx >= 0 && relRiffIdx < riffBars.length) {
-        const rbStr = riffBars[relRiffIdx];
-        if (chordLabel) {
-          const firstSpace = rbStr.indexOf(' ');
-          if (firstSpace > 0) {
-            bars.push(`${secCmd}${rbStr.slice(0, firstSpace)}${chordLabel}${rbStr.slice(firstSpace)}`);
-          } else {
-            bars.push(`${secCmd}${rbStr}${chordLabel}`);
-          }
-        } else {
-          bars.push(`${secCmd}${rbStr}`);
-        }
-        continue;
-      }
-
-      const generated = chordToSongsterrBar(activeChord, b, activeSectionKind, tuningArr);
-      if (chordLabel) {
-        const firstSpace = generated.indexOf(' ');
-        if (firstSpace > 0) {
-          bars.push(`${secCmd}${generated.slice(0, firstSpace)}${chordLabel}${generated.slice(firstSpace)}`);
-        } else {
-          bars.push(`${secCmd}${generated}${chordLabel}`);
-        }
-      } else {
-        bars.push(`${secCmd}${generated}`);
-      }
-    }
-
-    const tuningLine = '\\tuning ' + tuningArr.map(midiToAlphaPitch).join(' ');
-    return `\\tempo 120\n${tuningLine}\n.\n${bars.join(' | ')}`;
+    return outBars.slice(0, 64);
   }
 
   const mgr = {
     isPanelOpen: false,
     isNativeSplitOpen: false,
-    sizeIdx: 0, // '1L' por defecto (6 cuerdas arriba del reproductor)
-    staveMode: 'tab', // 'tab' (6 cuerdas estilo Songsterr) | 'scoreTab' (Pentagrama + Tab)
-    preferRiffMode: false,
+    sizeIdx: 1, // 'M' (224px) por defecto para Songsterr y Tab 6C cómodos sobre el reproductor
+    staveMode: 'tab',
+    forcedModeForCurrentSong: null, // 'songsterr' | 'alphatab' | null
     api: null,
+    activeTrackIdx: 0,
     currentSong: null,
-    currentScoreMode: null, // 'customGp' | 'alphaTex' | 'songsterr'
-    currentChartFullSync: true,
+    currentScoreMode: null, // 'customGp' | 'realGp' | 'asciiRiff' | 'empty'
+    currentBaseOnsetSec: 0,
+    currentTempoScale: 1.0,
+    currentLoopRiff: false,
     offsetSec: 0,
     syncTimer: null,
-    suppressHostMedia: false,
     lastLoadedKey: '',
     renderedTimeline: null,
     userTouchHoldUntil: 0,
@@ -297,12 +119,16 @@
     pointerMoved: false,
     customGpIndexSet: new Set(),
     liveSongsterrCache: {},
-    pendingFileSongId: null
+    pendingFileSongId: null,
+    resizeObs: null,
+    overlayObs: null
   };
 
   try {
     const savedStave = localStorage.getItem(PREF_STAVE_KEY);
     if (savedStave === 'tab' || savedStave === 'scoreTab') mgr.staveMode = savedStave;
+    const savedSize = parseInt(localStorage.getItem(PREF_SIZE_KEY), 10);
+    if (savedSize >= 0 && savedSize < SCORE_HEIGHTS.length) mgr.sizeIdx = savedSize;
   } catch (_) {}
 
   function normText(s) {
@@ -311,7 +137,7 @@
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/\([^)]*\)|\[[^\]]*\]/g, ' ')
-      .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/[^\p{L}\p{N}]+/gu, ' ')
       .trim();
   }
 
@@ -425,32 +251,54 @@
     const hasCustom = mgr.customGpIndexSet.has(song.id) || mgr.customGpIndexSet.has(sidKey);
     const meta = getStaticScoreMeta(song);
     const liveTabBars = extractLiveEditedTabBarsFromSong(song);
-    const hasTabTex = !!(meta && meta.tex) || liveTabBars.length > 0;
-    let chart = (meta && meta.c && Array.isArray(meta.c.ev) && meta.c.ev.length > 0) ? meta.c : null;
-    if (!chart) {
-      chart = {
-        b: Math.max(24, Math.ceil(((typeof state !== 'undefined' && state.durationSec) || 200) / 2.0)),
-        dd: 0,
-        ev: [[0, song.tone || 'Am', 'Inicio']]
-      };
-    }
+    const hasLiveEditorTab = liveTabBars.length > 0;
+    const hasRealGp = !!(meta && meta.gpTex);
+    const hasAsciiRiff = !!(meta && meta.tex);
     const songsterrId = meta && meta.sid ? meta.sid : null;
+    const songsterrUrl = songsterrId ? `https://www.songsterr.com/a/wa/song?id=${songsterrId}` : null;
+    const searchPattern = encodeURIComponent(`${song.artist || ''} ${song.title || ''}`.trim());
+    const songsterrSearchUrl = `https://www.songsterr.com/?pattern=${searchPattern}`;
+
+    const hasLocalRealTab = hasCustom || hasLiveEditorTab || hasRealGp || hasAsciiRiff;
+    const hasAnyRealTab = hasLocalRealTab || !!songsterrUrl;
+
+    const gpOffsetSec = (meta && meta.gpOffsetSec != null)
+      ? Number(meta.gpOffsetSec) || 0
+      : ((meta && Number(meta.onsetSec)) || 0);
+    const gpTempoScale = (meta && Number(meta.gpTempoScale) > 0.25 && Number(meta.gpTempoScale) < 3.0)
+      ? Number(meta.gpTempoScale)
+      : 1.0;
 
     return {
+      hasAnyRealTab,
+      hasLocalRealTab,
       hasCustom,
       customSongKey: mgr.customGpIndexSet.has(song.id) ? song.id : sidKey,
-      hasTabTex,
-      tabTex: (meta && meta.tex) ? meta.tex : null,
+      hasLiveEditorTab,
       liveTabBars,
-      tabStartSec: (meta && Number(meta.tabStartSec)) || 0,
-      hasChart: true,
-      chart,
+      hasRealGp,
+      gpTex: hasRealGp ? meta.gpTex : null,
+      gpTrack: (meta && Number(meta.gpTrack)) || 0,
+      onsetSec: gpOffsetSec,
+      gpOffsetSec,
+      gpTempoScale,
+      detectedBpm: (meta && Number(meta.detectedBpm)) || 0,
+      hasAsciiRiff,
+      tabTex: hasAsciiRiff ? meta.tex : null,
+      tabStartSec: (meta && Number(meta.tabStartSec)) || gpOffsetSec,
       songsterrId,
-      songsterrUrl: songsterrId ? `https://www.songsterr.com/a/wa/song?id=${songsterrId}` : null,
+      songsterrUrl,
+      songsterrSearchUrl,
       tracks: (meta && meta.tr) || [],
       artist: (meta && meta.a) || song.artist || '',
       title: (meta && meta.t) || song.title || ''
     };
+  }
+
+  function resolvePreferredMode(info) {
+    if (!info) return 'empty';
+    if (info.hasLocalRealTab) return 'alphatab';
+    return 'empty';
   }
 
   function updateToggleButtonForSong(song) {
@@ -471,29 +319,31 @@
       }
       btn.style.display = 'inline-flex';
       btn.classList.toggle('active', active);
-      btn.classList.toggle('has-gp-sync', true);
+      btn.classList.toggle('has-gp-sync', info.hasAnyRealTab);
       const lbl = btn.querySelector('.score-pill-label-text') || (btn.id === 'btn-toggle-score-panel' ? document.getElementById('score-pill-label') : null);
       if (lbl) {
         if (active) {
-          lbl.textContent = 'Tab ▲';
-        } else if (info.hasCustom) {
+          lbl.textContent = 'Tab 6C ▲';
+        } else if (info.hasCustom || info.hasRealGp) {
           lbl.textContent = 'Tab .gp';
-        } else {
+        } else if (info.hasLiveEditorTab || info.hasAsciiRiff) {
           lbl.textContent = 'Tab 6C';
+        } else {
+          lbl.textContent = 'Tab .gp';
         }
       }
       btn.title = active
-        ? 'Ocultar tablatura de 6 cuerdas'
-        : 'Mostrar tablatura de 6 cuerdas sincronizada con la playlist';
+        ? 'Ocultar barra fija de tablatura 6 cuerdas'
+        : 'Mostrar tablatura fija de 6 cuerdas sincronizada';
     }
   }
 
   async function discoverLiveSongsterrIfNeeded(song) {
-    if (!song || !song.artist || !song.title) return;
+    if (!song || !song.artist || !song.title) return null;
     const existing = getStaticScoreMeta(song);
-    if (existing && existing.sid) return;
-    if (mgr.liveSongsterrCache[song.id] !== undefined) return;
-    if (!window.AndroidBridge || typeof window.AndroidBridge.httpGet !== 'function') return;
+    if (existing && existing.sid) return existing;
+    if (mgr.liveSongsterrCache[song.id] !== undefined) return mgr.liveSongsterrCache[song.id];
+    if (!window.AndroidBridge || typeof window.AndroidBridge.httpGet !== 'function') return null;
 
     try {
       const url = 'https://www.songsterr.com/api/songs?pattern=' + encodeURIComponent(`${song.artist} ${song.title}`) + '&size=25';
@@ -501,32 +351,163 @@
       if (!raw) {
         mgr.liveSongsterrCache[song.id] = null;
         saveLiveCache();
-        return;
+        return null;
       }
       const list = JSON.parse(raw);
       const targetTitle = normText(song.title);
+      const targetArtist = normText(song.artist);
       const hit = Array.isArray(list) ? list.find(item => {
         const it = normText(item.title);
-        return it === targetTitle || (targetTitle.length >= 5 && (it.includes(targetTitle) || targetTitle.includes(it)));
+        const ia = normText(item.artist);
+        const artistMatch = !targetArtist || ia.includes(targetArtist) || targetArtist.includes(ia);
+        if (!artistMatch) return false;
+        return it === targetTitle || (targetTitle.length >= 5 && (it.startsWith(targetTitle + ' ') || targetTitle.startsWith(it + ' ')));
       }) : null;
 
       if (hit) {
-        mgr.liveSongsterrCache[song.id] = {
+        const entry = {
           ...(existing || {}),
           sid: hit.songId,
           a: hit.artist,
           t: hit.title,
           tr: (hit.tracks || []).slice(0, 4).map(t => ({ n: t.name || t.instrument, i: t.instrument }))
         };
+        mgr.liveSongsterrCache[song.id] = entry;
+        saveLiveCache();
+        return entry;
+      } else {
+        mgr.liveSongsterrCache[song.id] = null;
         saveLiveCache();
       }
     } catch (_) {}
+    return null;
   }
 
-  /**
-   * Construye mapa exacto de tiempos (segundos) y coordenadas X (píxeles) de cada compás y cada pulso/nota
-   * a partir de api.renderer.boundsLookup + api.score.masterBars.
-   */
+  function isAnyBlockingOverlayOpen() {
+    const drawer = document.getElementById('songs-drawer');
+    if (drawer && drawer.classList.contains('open')) return true;
+    const ed = document.getElementById('embedded-editor-overlay');
+    if (ed && !ed.classList.contains('hidden') && window.getComputedStyle(ed).display !== 'none') return true;
+    if (document.querySelector('.modal-overlay.active')) return true;
+    return false;
+  }
+
+  function syncOverlayVisibilityWithNative() {
+    if (!window.AndroidBridge || typeof window.AndroidBridge.setSongsterrOverlayTemporarilyHidden !== 'function') return;
+    try {
+      window.AndroidBridge.setSongsterrOverlayTemporarilyHidden(isAnyBlockingOverlayOpen());
+    } catch (_) {}
+  }
+
+  function computeScrollerRatios() {
+    const scroller = document.getElementById('score-scroll-container');
+    const vh = window.innerHeight || document.documentElement.clientHeight || 800;
+    if (!scroller || vh <= 0) return { topRatio: 0.60, heightRatio: 0.24 };
+    const r = scroller.getBoundingClientRect();
+    const topRatio = Math.max(0.05, Math.min(0.90, r.top / vh));
+    const heightRatio = Math.max(0.10, Math.min(0.75, r.height / vh));
+    return { topRatio, heightRatio };
+  }
+
+  function syncNativeDockedRect() {
+    if (!mgr.isNativeSplitOpen) return;
+    if (!window.AndroidBridge || typeof window.AndroidBridge.updateSongsterrSplitRect !== 'function') return;
+    const { topRatio, heightRatio } = computeScrollerRatios();
+    try {
+      window.AndroidBridge.updateSongsterrSplitRect(topRatio, heightRatio);
+    } catch (_) {}
+  }
+
+  function openExternalSongsterr(song, info) {
+    const resolved = info || getSongScoreInfo(song) || {};
+    const targetUrl = resolved.songsterrUrl || resolved.songsterrSearchUrl || 'https://www.songsterr.com/';
+    if (window.AndroidBridge && typeof window.AndroidBridge.openExternalUrl === 'function') {
+      try {
+        window.AndroidBridge.openExternalUrl(targetUrl);
+        return;
+      } catch (_) {}
+    }
+    try {
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
+    } catch (_) {
+      window.location.href = targetUrl;
+    }
+  }
+
+  function configureToolbarForMode(mode, info) {
+    const badge = document.getElementById('score-source-badge');
+    const readout = document.getElementById('score-bar-readout');
+    const sel = document.getElementById('score-track-select');
+    const btnSwitch = document.getElementById('btn-score-mode-switch');
+    const btnStave = document.getElementById('btn-score-stave');
+    const btnMinus = document.getElementById('btn-score-offset-minus');
+    const btnPlus = document.getElementById('btn-score-offset-plus');
+    const btnReload = document.getElementById('btn-score-reload-st');
+
+    if (btnReload) btnReload.style.display = 'none';
+    if (mode === 'empty') {
+      if (badge) badge.textContent = '🎸 Tab 6C';
+      if (readout) readout.textContent = 'Sin .gp local';
+      if (sel) sel.style.display = 'none';
+      if (btnStave) btnStave.style.display = 'none';
+      if (btnMinus) btnMinus.style.display = 'none';
+      if (btnPlus) btnPlus.style.display = 'none';
+    } else {
+      if (btnStave) btnStave.style.display = 'inline-flex';
+      if (btnMinus) btnMinus.style.display = 'inline-flex';
+      if (btnPlus) btnPlus.style.display = 'inline-flex';
+    }
+    if (btnSwitch) {
+      btnSwitch.style.display = 'inline-flex';
+      btnSwitch.textContent = '🌐 Songsterr';
+      btnSwitch.title = 'Abrir en Songsterr en navegador externo (sin mini-página dentro de la app)';
+    }
+  }
+
+  async function openDockedSongsterr(song, info) {
+    const panel = document.getElementById('score-split-panel');
+    const banner = document.getElementById('score-status-banner');
+    const surface = document.getElementById('alphatab-surface');
+    if (!panel) return;
+
+    stopSyncTicker();
+    hideNativeSongsterrOverlayOnly();
+    mgr.isPanelOpen = true;
+    mgr.currentScoreMode = 'empty';
+    saveOpenPref(true);
+
+    panel.style.display = 'flex';
+    applyPanelSize();
+    configureToolbarForMode('empty', info);
+    if (surface) surface.style.visibility = 'hidden';
+
+    const labelTitle = `${info && info.artist ? info.artist + ' - ' : ''}${(info && info.title) || (song && song.title) || ''}`;
+    if (banner) {
+      banner.style.display = 'flex';
+      banner.innerHTML = '';
+      const span = document.createElement('span');
+      span.textContent = `Sin tablatura .gp local para "${labelTitle}". Carga tu archivo .gp/.gp5 o abre Songsterr externo:`;
+      const gpBtn = document.createElement('button');
+      gpBtn.type = 'button';
+      gpBtn.className = 'score-tb-btn';
+      gpBtn.style.marginLeft = '8px';
+      gpBtn.textContent = '📂 Cargar .gp';
+      gpBtn.addEventListener('click', () => promptGpImport(song));
+
+      const extBtn = document.createElement('button');
+      extBtn.type = 'button';
+      extBtn.className = 'score-tb-btn score-tb-songsterr';
+      extBtn.style.marginLeft = '6px';
+      extBtn.textContent = '🌐 Songsterr';
+      extBtn.addEventListener('click', () => openExternalSongsterr(song, info));
+
+      banner.appendChild(span);
+      banner.appendChild(gpBtn);
+      banner.appendChild(extBtn);
+    }
+    updateToggleButtonForSong(song);
+  }
+
   function buildRenderedTimeline() {
     mgr.renderedTimeline = null;
     if (!mgr.api || !mgr.api.renderer || !mgr.api.renderer.boundsLookup || !mgr.api.score) return;
@@ -648,16 +629,13 @@
     const overlays = ensureLivePlayheadElements();
     if (!overlays) return;
 
-    let targetSec = Math.max(0, audioSec + mgr.offsetSec);
-    if (mgr.currentScoreMode === 'alphaTex' && !mgr.currentChartFullSync && tl.totalDurationSec > 0) {
-      const info = getSongScoreInfo(mgr.currentSong);
-      const tabStart = (info && info.tabStartSec) || 0;
-      targetSec = Math.max(0, audioSec - tabStart + mgr.offsetSec) % tl.totalDurationSec;
+    let targetSec = Math.max(0, (audioSec - mgr.currentBaseOnsetSec + mgr.offsetSec) * (mgr.currentTempoScale || 1.0));
+    if (mgr.currentLoopRiff && tl.totalDurationSec > 0 && tl.totalDurationSec < 32) {
+      targetSec = targetSec % tl.totalDurationSec;
     } else if (tl.totalDurationSec > 0) {
       targetSec = Math.min(tl.totalDurationSec - 0.01, targetSec);
     }
 
-    // Búsqueda binaria del compás activo
     const bars = tl.bars;
     let lo = 0, hi = bars.length - 1, barIdx = 0;
     while (lo <= hi) {
@@ -705,10 +683,9 @@
     }
 
     if (readout) {
-      readout.textContent = `C.${bar.index + 1} · ${formatSecShort(targetSec)}`;
+      readout.textContent = `C.${bar.index + 1} · ${formatSecShort(audioSec)}`;
     }
 
-    // Auto-scroll horizontal suave siguiendo la nota activa (si el usuario no está arrastrando manualmente)
     if (Date.now() > mgr.userTouchHoldUntil) {
       const desiredLeft = Math.max(0, cursorX - scroller.clientWidth * 0.26);
       const diff = desiredLeft - scroller.scrollLeft;
@@ -730,7 +707,7 @@
   function startSyncTicker() {
     stopSyncTicker();
     mgr.syncTimer = setInterval(() => {
-      if (!mgr.isPanelOpen || !mgr.api) return;
+      if (!mgr.isPanelOpen || mgr.currentScoreMode === 'songsterr' || !mgr.api) return;
       try {
         const audioSec = typeof getSmoothAudioTimeSec === 'function' ? getSmoothAudioTimeSec() : 0;
         updateLivePlayheadAndScroll(audioSec);
@@ -744,7 +721,7 @@
   }
 
   function buildAlphaTabSettingsObject() {
-    const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[0];
+    const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[1];
     const NE = window.alphaTab.NotationElement || {};
     const hidden = {};
     if (NE.ScoreTitle !== undefined) hidden[NE.ScoreTitle] = false;
@@ -773,7 +750,7 @@
       display: {
         layoutMode: window.alphaTab.LayoutMode.Horizontal,
         staveProfile: getConfiguredStaveProfile(),
-        scale: preset.scale || 0.72,
+        scale: preset.scale || 0.84,
         stretchForce: 0.92,
         padding: [2, 10, 2, 10],
         firstSystemPaddingTop: 6,
@@ -824,6 +801,7 @@
     scroller.addEventListener('wheel', holdManualScroll, { passive: true });
 
     surface.addEventListener('click', (e) => {
+      if (mgr.currentScoreMode === 'songsterr') return;
       if (mgr.pointerMoved || !mgr.renderedTimeline || !mgr.renderedTimeline.bars.length) return;
       const rect = surface.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
@@ -831,11 +809,7 @@
       const hitBar = bars.find(b => clickX >= b.x && clickX <= b.x + b.w);
       if (!hitBar) return;
       const frac = Math.max(0, Math.min(1, (clickX - hitBar.x) / Math.max(1, hitBar.w)));
-      let targetSec = hitBar.startSec + frac * hitBar.durSec - mgr.offsetSec;
-      if (mgr.currentScoreMode === 'alphaTex' && !mgr.currentChartFullSync) {
-        const info = getSongScoreInfo(mgr.currentSong);
-        targetSec += (info && info.tabStartSec) || 0;
-      }
+      const targetSec = ((hitBar.startSec + frac * hitBar.durSec) / (mgr.currentTempoScale || 1.0)) + mgr.currentBaseOnsetSec - mgr.offsetSec;
       mgr.userTouchHoldUntil = 0;
       if (typeof seekToSeconds === 'function') {
         seekToSeconds(Math.max(0, targetSec));
@@ -857,7 +831,7 @@
     api.scoreLoaded.on((score) => {
       try {
         mgr.renderedTimeline = null;
-        populateTrackDropdown(score);
+        populateTrackDropdown(score, mgr.activeTrackIdx);
       } catch (_) {}
     });
 
@@ -875,87 +849,80 @@
   }
 
   function applyStaveAndScaleToApi() {
-    if (!mgr.api || typeof window.alphaTab === 'undefined') return;
+    if (!mgr.api || typeof window.alphaTab === 'undefined' || mgr.currentScoreMode === 'songsterr') return;
     try {
-      const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[0];
+      const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[1];
       mgr.api.settings.display.layoutMode = window.alphaTab.LayoutMode.Horizontal;
       mgr.api.settings.display.staveProfile = getConfiguredStaveProfile();
-      mgr.api.settings.display.scale = preset.scale || 0.72;
+      mgr.api.settings.display.scale = preset.scale || 0.84;
       mgr.renderedTimeline = null;
       mgr.api.updateSettings();
       mgr.api.render();
     } catch (_) {}
   }
 
-  function populateTrackDropdown(score) {
+  function populateTrackDropdown(score, selectedIdx = 0) {
     const sel = document.getElementById('score-track-select');
     if (!sel || !score || !Array.isArray(score.tracks)) return;
-    if (score.tracks.length <= 1) {
+    if (score.tracks.length <= 1 || mgr.currentScoreMode === 'songsterr') {
       sel.style.display = 'none';
       return;
     }
     sel.style.display = 'inline-block';
     sel.innerHTML = '';
     score.tracks.forEach((tr, idx) => {
+      const st = tr.staves && tr.staves[0];
+      const nStr = (st && st.stringTuning && st.stringTuning.tunings && st.stringTuning.tunings.length) || 0;
+      const strSuffix = nStr > 0 ? ` (${nStr}C)` : '';
       const opt = document.createElement('option');
       opt.value = String(idx);
-      opt.textContent = tr.name || `Pista ${idx + 1}`;
+      opt.textContent = (tr.name ? tr.name.trim() : `Pista ${idx + 1}`) + strSuffix;
       sel.appendChild(opt);
     });
+    const clamped = Math.max(0, Math.min(score.tracks.length - 1, Number(selectedIdx) || 0));
+    sel.value = String(clamped);
   }
 
   function applyPanelSize() {
     const panel = document.getElementById('score-split-panel');
     const sizeBtn = document.getElementById('btn-score-size');
     const staveBtn = document.getElementById('btn-score-stave');
-    const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[0];
+    const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[1];
     if (panel) panel.style.height = preset.css;
     if (sizeBtn) sizeBtn.textContent = preset.key;
     if (staveBtn) staveBtn.textContent = mgr.staveMode === 'tab' ? 'Pent+Tab' : '6 Cuerdas';
-    if (mgr.isNativeSplitOpen && window.AndroidBridge && typeof window.AndroidBridge.setSongsterrSplitHeight === 'function') {
-      window.AndroidBridge.setSongsterrSplitHeight(preset.nativePct);
+    if (mgr.isNativeSplitOpen) {
+      requestAnimationFrame(() => syncNativeDockedRect());
+      if (window.AndroidBridge && typeof window.AndroidBridge.setSongsterrSplitHeight === 'function') {
+        window.AndroidBridge.setSongsterrSplitHeight(preset.nativePct);
+      }
     }
   }
 
-  function openNativeSongsterr(info) {
-    if (!info || !info.songsterrUrl) return false;
-    const preset = SCORE_HEIGHTS[mgr.sizeIdx] || SCORE_HEIGHTS[0];
-    if (window.AndroidBridge && typeof window.AndroidBridge.openSongsterrSplit === 'function') {
-      mgr.isNativeSplitOpen = true;
-      window.AndroidBridge.openSongsterrSplit(
-        info.songsterrUrl,
-        `${info.artist ? info.artist + ' - ' : ''}${info.title}`,
-        preset.nativePct
-      );
-      updateToggleButtonForSong(mgr.currentSong);
-      return true;
+  function hideNativeSongsterrOverlayOnly() {
+    if (mgr.isNativeSplitOpen) {
+      mgr.isNativeSplitOpen = false;
+      if (window.AndroidBridge && typeof window.AndroidBridge.hideSongsterrSplit === 'function') {
+        try { window.AndroidBridge.hideSongsterrSplit(); } catch (_) {}
+      }
     }
-
-    window.open(info.songsterrUrl, '_blank', 'noopener');
-    return true;
   }
 
-  async function openInAppAlphaTab(song, info) {
+  async function openRealAlphaTab(song, info) {
     const panel = document.getElementById('score-split-panel');
     const badge = document.getElementById('score-source-badge');
     const banner = document.getElementById('score-status-banner');
-    const btnSt = document.getElementById('btn-score-songsterr');
-    const btnChartToggle = document.getElementById('btn-score-chart-toggle');
-    const sel = document.getElementById('score-track-select');
+    const surface = document.getElementById('alphatab-surface');
     if (!panel) return;
 
+    hideNativeSongsterrOverlayOnly();
     mgr.isPanelOpen = true;
     saveOpenPref(true);
     panel.style.display = 'flex';
-    applyPanelSize();
-    if (sel) sel.style.display = 'none';
+    if (surface) surface.style.visibility = 'visible';
     if (banner) banner.style.display = 'none';
-    if (btnSt) btnSt.style.display = info && info.songsterrUrl ? 'inline-flex' : 'none';
-    if (btnChartToggle) {
-      const canToggle = !info.hasCustom && !!info.tabTex && info.hasChart;
-      btnChartToggle.style.display = canToggle ? 'inline-flex' : 'none';
-      btnChartToggle.textContent = mgr.preferRiffMode ? 'Tema Completo' : 'Solo Riff';
-    }
+    applyPanelSize();
+    configureToolbarForMode('alphatab', info);
 
     const api = ensureAlphaTabApi();
     if (!api) {
@@ -966,13 +933,17 @@
       return;
     }
 
+    // 1. Archivo .gp/.gp5 importado por el usuario
     if (info.hasCustom) {
       const rec = await getCustomGpFile(info.customSongKey);
       if (rec && rec.bytes) {
         mgr.currentScoreMode = 'customGp';
-        mgr.currentChartFullSync = true;
+        mgr.currentBaseOnsetSec = info.gpOffsetSec || info.onsetSec || 0;
+        mgr.currentTempoScale = info.gpTempoScale || 1.0;
+        mgr.currentLoopRiff = false;
+        mgr.activeTrackIdx = 0;
         const loadKey = `gp:${info.customSongKey}:${rec.savedAt}`;
-        if (badge) badge.textContent = '🎸 Tab .gp (6 Cuerdas)';
+        if (badge) badge.textContent = '🎸 Guitar Pro (.gp)';
         if (mgr.lastLoadedKey !== loadKey) {
           mgr.lastLoadedKey = loadKey;
           mgr.renderedTimeline = null;
@@ -984,49 +955,101 @@
       }
     }
 
-    const useRiffOnly = !!info.tabTex && mgr.preferRiffMode;
-    const tex = useRiffOnly
-      ? info.tabTex
-      : expandCompactChartToAlphaTex(info.chart, info.liveTabBars);
-
-    if (tex) {
-      mgr.currentScoreMode = 'alphaTex';
-      mgr.currentChartFullSync = !useRiffOnly;
-      const editSig = info.liveTabBars && info.liveTabBars.length ? info.liveTabBars.join('').length : 0;
-      const loadKey = `tex:${song.id}:${useRiffOnly ? 'riff' : 'full'}:${editSig}`;
-      if (badge) {
-        badge.textContent = useRiffOnly
-          ? '🎸 Riff Tab (6C)'
-          : (info.songsterrId ? '🎸 Tab 6C · Songsterr' : '🎸 Tab 6 Cuerdas');
-      }
+    // 2. Tablatura editada y marcada como "Lista" en Estación 3 del Editor
+    if (info.hasLiveEditorTab) {
+      const liveTex = `\\tempo 120\n\\tuning E4 B3 G3 D3 A2 E2\n.\n${info.liveTabBars.join(' | ')}`;
+      mgr.currentScoreMode = 'asciiRiff';
+      mgr.currentBaseOnsetSec = info.gpOffsetSec || info.tabStartSec || 0;
+      mgr.currentTempoScale = info.gpTempoScale || 1.0;
+      mgr.currentLoopRiff = false;
+      mgr.activeTrackIdx = 0;
+      const loadKey = `edtab:${song.id}:${liveTex.length}`;
+      if (badge) badge.textContent = '🎸 Tab Editada (6C)';
       if (mgr.lastLoadedKey !== loadKey) {
         mgr.lastLoadedKey = loadKey;
         mgr.renderedTimeline = null;
-        if (typeof api.tex === 'function') {
-          api.tex(tex, [0]);
-        } else {
-          api.load(new TextEncoder().encode(tex), [0]);
+        api.tex(liveTex, [0]);
+      }
+      startSyncTicker();
+      updateToggleButtonForSong(song);
+      return;
+    }
+
+    // 3. Partitura Guitar Pro real multipista validada (real_gp_alphatex.json)
+    if (info.hasRealGp && info.gpTex) {
+      mgr.currentScoreMode = 'realGp';
+      mgr.currentBaseOnsetSec = info.gpOffsetSec || info.onsetSec || 0;
+      mgr.currentTempoScale = info.gpTempoScale || 1.0;
+      mgr.currentLoopRiff = false;
+      mgr.activeTrackIdx = info.gpTrack || 0;
+      const loadKey = `realgp:${song.id}:${mgr.activeTrackIdx}`;
+      if (badge) badge.textContent = '🎸 Guitar Pro Real (6C)';
+      if (mgr.lastLoadedKey !== loadKey) {
+        mgr.lastLoadedKey = loadKey;
+        mgr.renderedTimeline = null;
+        try {
+          const imp = new window.alphaTab.importer.AlphaTexImporter();
+          imp.initFromString(info.gpTex, api.settings);
+          const score = imp.readScore();
+          const trIdx = Math.max(0, Math.min(score.tracks.length - 1, mgr.activeTrackIdx));
+          mgr.activeTrackIdx = trIdx;
+          populateTrackDropdown(score, trIdx);
+          api.renderScore(score, [trIdx]);
+        } catch (_) {
+          await openDockedSongsterr(song, info);
+          return;
         }
         const scroller = document.getElementById('score-scroll-container');
         if (scroller) scroller.scrollLeft = 0;
       }
       startSyncTicker();
       updateToggleButtonForSong(song);
+      return;
+    }
+
+    // 4. Riff ASCII real de 6 cuerdas del Cancionero (calibrado acústicamente al .opus)
+    if (info.hasAsciiRiff && info.tabTex) {
+      mgr.currentScoreMode = 'asciiRiff';
+      mgr.currentBaseOnsetSec = info.gpOffsetSec || info.tabStartSec || 0;
+      mgr.currentTempoScale = info.gpTempoScale || 1.0;
+      mgr.currentLoopRiff = true;
+      mgr.activeTrackIdx = 0;
+      const loadKey = `riff:${song.id}`;
+      if (badge) badge.textContent = '🎸 Riff Cancionero (6C)';
+      if (mgr.lastLoadedKey !== loadKey) {
+        mgr.lastLoadedKey = loadKey;
+        mgr.renderedTimeline = null;
+        api.tex(info.tabTex, [0]);
+        const scroller = document.getElementById('score-scroll-container');
+        if (scroller) scroller.scrollLeft = 0;
+      }
+      startSyncTicker();
+      updateToggleButtonForSong(song);
+      return;
+    }
+
+    await openDockedSongsterr(song, info);
+  }
+
+  async function openPreferredScoreView(song, info) {
+    if (!song || !info) return;
+    const mode = resolvePreferredMode(info);
+    if (mode === 'alphatab' && info.hasLocalRealTab) {
+      await openRealAlphaTab(song, info);
+    } else {
+      await openDockedSongsterr(song, info);
     }
   }
 
-  function closeInAppScorePanel(keepNativeState = false, preservePref = false) {
+  function closeAllScoreViews(keepNativeState = false, preservePref = false) {
     mgr.isPanelOpen = false;
     mgr.currentScoreMode = null;
     if (!preservePref) saveOpenPref(false);
     stopSyncTicker();
     const panel = document.getElementById('score-split-panel');
     if (panel) panel.style.display = 'none';
-    if (!keepNativeState && mgr.isNativeSplitOpen) {
-      mgr.isNativeSplitOpen = false;
-      if (window.AndroidBridge && typeof window.AndroidBridge.hideSongsterrSplit === 'function') {
-        window.AndroidBridge.hideSongsterrSplit();
-      }
+    if (!keepNativeState) {
+      hideNativeSongsterrOverlayOnly();
     }
     if (mgr.currentSong) updateToggleButtonForSong(mgr.currentSong);
   }
@@ -1036,24 +1059,30 @@
     if (!song) return;
 
     if (mgr.isPanelOpen || mgr.isNativeSplitOpen) {
-      closeInAppScorePanel(false);
+      closeAllScoreViews(false, false);
       return;
     }
 
     const info = getSongScoreInfo(song);
     if (!info) return;
-    await openInAppAlphaTab(song, info);
+    await openPreferredScoreView(song, info);
   }
 
   async function onSongChanged(song) {
     mgr.currentSong = song;
     mgr.offsetSec = 0;
     mgr.lastLoadedKey = '';
+    mgr.forcedModeForCurrentSong = null;
     mgr.userTouchHoldUntil = 0;
     updateToggleButtonForSong(song);
 
     if (song && !getStaticScoreMeta(song)) {
-      discoverLiveSongsterrIfNeeded(song);
+      discoverLiveSongsterrIfNeeded(song).then((found) => {
+        if (found && mgr.currentSong && mgr.currentSong.id === song.id) {
+          updateToggleButtonForSong(song);
+          if (typeof renderDrawerList === 'function') renderDrawerList();
+        }
+      });
     }
 
     let wantOpen = mgr.isPanelOpen || mgr.isNativeSplitOpen;
@@ -1064,22 +1093,17 @@
 
     const info = getSongScoreInfo(song);
     if (!info) {
-      closeInAppScorePanel(false, true);
+      closeAllScoreViews(false, true);
       return;
     }
-
-    if (mgr.isNativeSplitOpen && !info.hasCustom && info.songsterrUrl) {
-      openNativeSongsterr(info);
-    } else {
-      await openInAppAlphaTab(song, info);
-    }
+    await openPreferredScoreView(song, info);
   }
 
   function refreshCurrentSongIfOpen() {
     if (!mgr.isPanelOpen || !mgr.currentSong) return;
     mgr.lastLoadedKey = '';
     const info = getSongScoreInfo(mgr.currentSong);
-    if (info) openInAppAlphaTab(mgr.currentSong, info);
+    if (info) openPreferredScoreView(mgr.currentSong, info);
   }
 
   function promptGpImport(targetSong = null) {
@@ -1096,13 +1120,42 @@
     }
   }
 
+  function setupLayoutAndOverlayObservers() {
+    if (typeof ResizeObserver !== 'undefined' && !mgr.resizeObs) {
+      mgr.resizeObs = new ResizeObserver(() => {
+        if (mgr.isNativeSplitOpen) syncNativeDockedRect();
+      });
+      for (const id of ['score-scroll-container', 'sheet-viewport', 'player-bar']) {
+        const el = document.getElementById(id);
+        if (el) mgr.resizeObs.observe(el);
+      }
+    }
+    window.addEventListener('resize', () => {
+      if (mgr.isNativeSplitOpen) syncNativeDockedRect();
+    });
+
+    if (typeof MutationObserver !== 'undefined' && !mgr.overlayObs) {
+      mgr.overlayObs = new MutationObserver(() => {
+        syncOverlayVisibilityWithNative();
+        if (mgr.isNativeSplitOpen) syncNativeDockedRect();
+      });
+      for (const id of ['songs-drawer', 'embedded-editor-overlay', 'modal-manual-match', 'modal-upload', 'modal-apple-artist', 'modal-share-marks', 'player-bar']) {
+        const el = document.getElementById(id);
+        if (el) {
+          mgr.overlayObs.observe(el, { attributes: true, attributeFilter: ['class', 'style'] });
+        }
+      }
+    }
+  }
+
   function init() {
     loadLiveCache();
     refreshCustomGpKeys();
+    setupLayoutAndOverlayObservers();
 
     window.onNativeScoreSplitClosed = () => {
       mgr.isNativeSplitOpen = false;
-      if (mgr.currentSong) updateToggleButtonForSong(mgr.currentSong);
+      closeAllScoreViews(true, false);
     };
 
     const btnToggle = document.getElementById('btn-toggle-score-panel');
@@ -1112,12 +1165,13 @@
     if (btnToggleExp) btnToggleExp.addEventListener('click', toggle);
 
     const btnHide = document.getElementById('btn-score-hide');
-    if (btnHide) btnHide.addEventListener('click', () => closeInAppScorePanel(false));
+    if (btnHide) btnHide.addEventListener('click', () => closeAllScoreViews(false, false));
 
     const btnSize = document.getElementById('btn-score-size');
     if (btnSize) {
       btnSize.addEventListener('click', () => {
         mgr.sizeIdx = (mgr.sizeIdx + 1) % SCORE_HEIGHTS.length;
+        try { localStorage.setItem(PREF_SIZE_KEY, String(mgr.sizeIdx)); } catch (_) {}
         applyPanelSize();
         applyStaveAndScaleToApi();
       });
@@ -1133,14 +1187,22 @@
       });
     }
 
-    const btnChartToggle = document.getElementById('btn-score-chart-toggle');
-    if (btnChartToggle) {
-      btnChartToggle.addEventListener('click', async () => {
-        mgr.preferRiffMode = !mgr.preferRiffMode;
-        mgr.lastLoadedKey = '';
+    const btnModeSwitch = document.getElementById('btn-score-mode-switch');
+    if (btnModeSwitch) {
+      btnModeSwitch.addEventListener('click', () => {
         const s = mgr.currentSong || (typeof state !== 'undefined' && state.currentSong);
+        if (!s) return;
         const info = getSongScoreInfo(s);
-        if (s && info) await openInAppAlphaTab(s, info);
+        openExternalSongsterr(s, info);
+      });
+    }
+
+    const btnReloadSt = document.getElementById('btn-score-reload-st');
+    if (btnReloadSt) {
+      btnReloadSt.addEventListener('click', () => {
+        if (window.AndroidBridge && typeof window.AndroidBridge.reloadSongsterrSplit === 'function') {
+          window.AndroidBridge.reloadSongsterrSplit();
+        }
       });
     }
 
@@ -1157,14 +1219,6 @@
       btnPlus.addEventListener('click', () => {
         mgr.offsetSec = +(mgr.offsetSec + 0.5).toFixed(1);
         if (typeof showToast === 'function') showToast(`Desfase tablatura: ${mgr.offsetSec > 0 ? '+' : ''}${mgr.offsetSec}s`, 'info', 1400);
-      });
-    }
-
-    const btnSongsterr = document.getElementById('btn-score-songsterr');
-    if (btnSongsterr) {
-      btnSongsterr.addEventListener('click', () => {
-        const info = getSongScoreInfo(mgr.currentSong);
-        if (info && info.songsterrUrl) openNativeSongsterr(info);
       });
     }
 
@@ -1186,6 +1240,7 @@
         const idx = parseInt(trackSel.value, 10);
         const tr = mgr.api.score.tracks[idx];
         if (tr) {
+          mgr.activeTrackIdx = idx;
           mgr.renderedTimeline = null;
           mgr.api.renderTracks([tr]);
         }
@@ -1202,11 +1257,12 @@
         try {
           await saveCustomGpFile(songId, file);
           mgr.lastLoadedKey = '';
+          mgr.forcedModeForCurrentSong = 'alphatab';
           if (typeof showToast === 'function') showToast(`Partitura "${file.name}" vinculada y lista`, 'success', 2500);
           const s = mgr.currentSong || (typeof state !== 'undefined' && state.currentSong);
           if (s && s.id === songId) {
             const info = getSongScoreInfo(s);
-            if (info) await openInAppAlphaTab(s, info);
+            if (info) await openRealAlphaTab(s, info);
           }
         } catch (err) {
           if (typeof showToast === 'function') showToast('Error cargando archivo de partitura: ' + (err.message || err), 'warn', 3000);
@@ -1217,12 +1273,11 @@
 
   mgr.init = init;
   mgr.toggle = toggle;
-  mgr.hide = () => closeInAppScorePanel(false);
+  mgr.hide = () => closeAllScoreViews(false, false);
   mgr.onSongChanged = onSongChanged;
   mgr.refreshCurrentSongIfOpen = refreshCurrentSongIfOpen;
   mgr.getSongScoreInfo = getSongScoreInfo;
   mgr.promptGpImport = promptGpImport;
-  mgr.expandCompactChartToAlphaTex = expandCompactChartToAlphaTex;
 
   window.ScoreSplitManager = mgr;
 })();

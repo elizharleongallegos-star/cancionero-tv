@@ -200,8 +200,8 @@ class KaraokeSyncController {
 
                 const isChordOrMeta = typeCode !== 0 ||
                     /^[-=_*.\s…|\\\/]+$/.test(text) ||
-                    /^\(?k?oro:?\)?$/i.test(text) ||
-                    /^(?:PM\s*=|Cejill?a|Capo|ESQUEMA|Intro|Solo|Estrofa|Estribillo|Cambio|fill\s*\d|\(?la\s+segunda\s+vez\s+se\s+toca|la\s+intro\s+y\s+el\s+verso\s+se\s+tocan|m[aá]s\s+o\s+menos:|ultimo\s+jalarla|el\s+solo\s+se\s+acompa[nñ]a|hasta\s+el\s+final\s+en\s+orden)/i.test(text);
+                    /^\(?k?oro:?\)?(?:\s*x?\d+)?$/i.test(text) ||
+                    /^(?:PM\s*=|Cejill?a|Capo|ESQUEMA|Intro(?:\s*\d+)?(?:\s*[:+\-]|$)|Solo(?:\s+(?:de\s+)?(?:guitarra|bajo|bater[ií]a|saxo?|trompeta|arm[oó]nica|teclado|flauta|viol[ií]n|intro|final|\d+|x\d+)|[:.\-\)]|$)|\(?Solo(?:\s*\d+)?\)?[:.\-]?$|Estrofa|Estribillo|Pre[-\s]?Coro|Puente(?:\s|$)|Cambio|fill\s*\d|A\)\s*\([^)]*guitarra|[A-Z]\)\s*\.\.\.|\(?la\s+segunda\s+vez\s+se\s+toca|la\s+intro\s+y\s+el\s+verso\s+se\s+tocan|m[aá]s\s+o\s+menos:|ultimo\s+jalarla|el\s+solo\s+se\s+acompa[nñ]a|hasta\s+el\s+final\s+en\s+orden)/i.test(text);
 
                 const wordsText = text.split(/\s+/).filter(Boolean);
                 const words = wordsText.map((w, wIdx) => {
@@ -461,9 +461,9 @@ class KaraokeSyncController {
         const effectiveTime = Math.max(0, (Number(rawCurrentTimeSec) || 0) + (Number(this.globalOffsetSec) || 0));
         let activeIdx = -1;
 
-        // Anticipación de medio segundo (-0.50s) para una lectura y canto fluidos
-        const WORD_LEAD_SEC = 0.50;
-        const LINE_LEAD_SEC = 0.50;
+        // Anticipación de lectura suave (0.30s línea, 0.08s palabra para calce exacto sin saltar palabras rápidas)
+        const WORD_LEAD_SEC = 0.08;
+        const LINE_LEAD_SEC = 0.30;
 
         for (let i = 0; i < this.lines.length; i++) {
             const line = this.lines[i];

@@ -1091,6 +1091,19 @@ body.theme-paper-white .word-line.note-line {
   font-size: 1.0em;
 }
 
+.word-line.chord-line {
+  white-space: pre !important;
+  word-break: normal !important;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 100%;
+  display: block;
+}
+
+.word-line.chord-line::-webkit-scrollbar {
+  display: none;
+}
+
 .word-line.empty-line {
   height: 0.8em;
 }
@@ -2030,7 +2043,15 @@ body.oled-dimmed #tv-oled-dim-hint {
   margin-bottom: -4px;
   padding-left: 14px;
   letter-spacing: 0.04em;
+  white-space: pre;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 100%;
   transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.karaoke-chord-row::-webkit-scrollbar {
+  display: none;
 }
 
 .karaoke-chord-row.karaoke-chord-active {

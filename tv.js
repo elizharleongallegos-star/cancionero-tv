@@ -191,6 +191,10 @@ function sortSongsByMasterPlaylistOrder(songsList) {
       var livePos = playlistVidPos.get(activeVid);
       s.playlistIndex = livePos;
       s.playlistOrder = livePos;
+    } else if (s.matchedVideo && Number(s.matchedVideo.playlistIndex || s.matchedVideo.index) > 0) {
+      var mvPos = Number(s.matchedVideo.playlistIndex || s.matchedVideo.index);
+      s.playlistIndex = mvPos;
+      s.playlistOrder = mvPos;
     } else if (typeof s.playlistIndex === 'number' && s.playlistIndex > 0) {
       s.playlistOrder = s.playlistIndex;
     } else if (typeof s.playlistOrder !== 'number') {
@@ -277,11 +281,74 @@ function buildTvSongs(bookKey) {
 // solo se marcan fallas y se deja un registro para compartirlo al final.
 // ==============================================================
 var TV_MARKS_KEY = 'cancionero_song_marks_v1';
+var TV_V4_MARKS_SEED_FLAG = 'cancionero_tv_v4_marks_seeded_v1';
+var TV_V4_INITIAL_SEED_MARKS = {
+  arpaviejas_hoy_he_vuelto_a_beber: { fav: true },
+  ozuna_siguelo_bailando: { fav: true },
+  foreground_eclipse_obstruction_color_it_all_out: { fav: true },
+  la_polla_records_no_somos_nada: { badSync: true },
+  gatillazo_la_gran_enganada: { badLyric: true, badSync: true },
+  arpaviejas_me_despierto_psicotropico: { badSync: true },
+  escuela_de_odio_en_guerra: { badSync: true },
+  escuela_de_odio_flores_en_la_basura: { badChord: true, badSync: true },
+  estopa_fuego: { badSync: true },
+  paso_a_paso_esquimales: { badSync: true },
+  gritando_en_silencio_rutina_en_las_venas_feat_albertucho: { badChord: true },
+  extremoduro_romperas: { badLyric: true },
+  jowell_y_randy_loco: { badSync: true },
+  jowell_y_randy_sin_compromiso: { badSync: true },
+  mago_de_oz_suenos_dormidos: { badChord: true }
+};
 tvState.songMarks = {};
-tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync'
+tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync', 'errors'
 
 function tvEmptyMark() {
   return { fav: false, badChord: false, badLyric: false, badSync: false };
+}
+
+function tvHasActiveErrorMarks() {
+  var map = tvState.songMarks || {};
+  var keys = Object.keys(map);
+  for (var i = 0; i < keys.length; i++) {
+    var m = map[keys[i]];
+    if (m && (m.badChord || m.badLyric || m.badSync)) return true;
+  }
+  return false;
+}
+
+function seedTvV4ReportedMarksIfNeeded() {
+  try {
+    if (localStorage.getItem(TV_V4_MARKS_SEED_FLAG)) return false;
+    var base = tvState.songMarks || {};
+    var seedKeys = Object.keys(TV_V4_INITIAL_SEED_MARKS);
+    for (var i = 0; i < seedKeys.length; i++) {
+      var id = seedKeys[i];
+      var seedObj = TV_V4_INITIAL_SEED_MARKS[id];
+      var prev = base[id] || {};
+      base[id] = {
+        fav: Boolean(prev.fav || seedObj.fav),
+        badChord: Boolean(prev.badChord || seedObj.badChord),
+        badLyric: Boolean(prev.badLyric || seedObj.badLyric),
+        badSync: Boolean(prev.badSync || seedObj.badSync)
+      };
+    }
+    tvState.songMarks = base;
+    saveTvSongMarks();
+    localStorage.setItem(TV_V4_MARKS_SEED_FLAG, '1');
+    return true;
+  } catch (e) { return false; }
+}
+
+function syncTvMarkFilterButtonsUI() {
+  var mf = tvState.markFilter || 'all';
+  document.querySelectorAll('.tv-mark-filter-btn').forEach(function(btn) {
+    var key = btn.getAttribute('data-mark-filter') || 'all';
+    if (mf === 'errors') {
+      btn.classList.toggle('active', key === 'badChord' || key === 'badLyric' || key === 'badSync');
+    } else {
+      btn.classList.toggle('active', key === mf);
+    }
+  });
 }
 
 function loadTvSongMarks() {
@@ -291,6 +358,8 @@ function loadTvSongMarks() {
   } catch (e) {
     tvState.songMarks = {};
   }
+  seedTvV4ReportedMarksIfNeeded();
+  tvState.markFilter = tvHasActiveErrorMarks() ? 'errors' : 'all';
 }
 
 function saveTvSongMarks() {
@@ -321,6 +390,12 @@ function toggleTvSongMark(markKey) {
   saveTvSongMarks();
   updateTvMarkButtons(song);
   filterTvSongs();
+  if (tvState.markFilter && tvState.markFilter !== 'all' && tvState.filteredSongs && tvState.filteredSongs.length === 0) {
+    tvState.markFilter = 'all';
+    syncTvMarkFilterButtonsUI();
+    filterTvSongs();
+    showTvToast('\u00a1Marcas revisadas! Mostrando repertorio completo', 2000);
+  }
 
   var labels = {
     fav: next.fav ? '♥ Añadida a Favoritas' : '♡ Quitada de Favoritas',
@@ -365,6 +440,7 @@ function updateTvMarkCounts() {
   if (e2) e2.textContent = chordC;
   if (e3) e3.textContent = lyricC;
   if (e4) e4.textContent = syncC;
+  syncTvMarkFilterButtonsUI();
 }
 function filterTvSongs() {
   const q = normalizeSearch(tvState.searchQuery);
@@ -380,7 +456,12 @@ function filterTvSongs() {
     // 1.b Filtro por Favoritas / Reportes de error
     if (markFilter !== 'all') {
       const m = tvState.songMarks[song.id];
-      if (!m || !m[markFilter]) return false;
+      if (!m) return false;
+      if (markFilter === 'errors') {
+        if (!m.badChord && !m.badLyric && !m.badSync) return false;
+      } else if (!m[markFilter]) {
+        return false;
+      }
     }
 
     // 2. Filtro por artista
@@ -1379,9 +1460,15 @@ function renderTvWordSheet(song, renderBox) {
       continue;
     }
 
-    const isChord = (typeof line === 'object' && (line.lineType === 'chords' || line.red)) || isLikelyChordLine(text);
-    const isHeader = (typeof line === 'object' && line.lineType === 'header') || /^(intro|coro|estribillo|solo|puente|verso|outro):?/i.test(trimmed);
-    const isNote = (typeof line === 'object' && line.lineType === 'note') || /^\(.*\)$/.test(trimmed);
+    const hasType = typeof line === 'object' && line && typeof line.lineType === 'string';
+    const isChord = hasType
+      ? (line.lineType === 'chords' || line.lineType === 'tab' || !!line.red)
+      : isLikelyChordLine(text);
+    const isHeader = !isChord && (
+      (hasType && line.lineType === 'header') ||
+      (!hasType && isTvSectionHeaderLine(trimmed))
+    );
+    const isNote = hasType && line.lineType === 'note';
 
     let cls = 'word-line lyric-line';
     if (isChord) cls = 'word-line chord-line';
@@ -1391,7 +1478,10 @@ function renderTvWordSheet(song, renderBox) {
     if (isChord && i + 1 < currentPageLines.length) {
       const nextLine = currentPageLines[i + 1];
       const nextText = typeof nextLine === 'string' ? nextLine : (nextLine.text || '');
-      const nextIsChord = isLikelyChordLine(nextText);
+      const nextHasType = typeof nextLine === 'object' && nextLine && typeof nextLine.lineType === 'string';
+      const nextIsChord = nextHasType
+        ? (nextLine.lineType === 'chords' || nextLine.lineType === 'tab' || !!nextLine.red)
+        : isLikelyChordLine(nextText);
       if (nextText.trim() && !nextIsChord) {
         html += `
           <div class="chord-lyric-group">
@@ -1448,8 +1538,9 @@ function buildTvKaraokeData(song) {
       var l = lines[i];
       var txt = (typeof l === 'string' ? l : (l && l.text ? l.text : '')).trim();
       if (!txt) continue;
-      var isChord = (typeof l === 'object' && l && (l.lineType === 'chords' || l.red)) || isLikelyChordLine(txt);
-      var isHeader = !isChord && ((typeof l === 'object' && l && l.lineType === 'header') || /^\[.*\]$/.test(txt));
+      var hasTypeK = typeof l === 'object' && l && typeof l.lineType === 'string';
+      var isChord = hasTypeK ? (l.lineType === 'chords' || l.lineType === 'tab' || !!l.red) : isLikelyChordLine(txt);
+      var isHeader = !isChord && ((hasTypeK && l.lineType === 'header') || (!hasTypeK && isTvSectionHeaderLine(txt)));
       docSeq.push({ type: isChord ? 'chord' : (isHeader ? 'header' : 'lyrics'), text: txt });
     }
   }
@@ -2221,11 +2312,11 @@ function initTvApp() {
   initTvShareMarksModal();
 
   // Filtros de Favoritas y Reportes de error
+  syncTvMarkFilterButtonsUI();
   document.querySelectorAll('.tv-mark-filter-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      document.querySelectorAll('.tv-mark-filter-btn').forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
       tvState.markFilter = btn.getAttribute('data-mark-filter') || 'all';
+      syncTvMarkFilterButtonsUI();
       tvState.shuffleQueue = [];
       filterTvSongs();
     });
@@ -2301,9 +2392,10 @@ function initTvApp() {
     toggleTvOledBlackout(false);
   });
 
-  // Seleccionar la primera canción por defecto (sin forzar autoplay inmediato en carga)
-  if (tvState.songs.length > 0) {
-    selectTvSong(tvState.songs[0].id, false);
+  // Seleccionar la primera canción filtrada por defecto (o primera del repertorio)
+  var startTvPool = (tvState.filteredSongs && tvState.filteredSongs.length > 0) ? tvState.filteredSongs : tvState.songs;
+  if (startTvPool.length > 0) {
+    selectTvSong(startTvPool[0].id, false);
   }
 }
 
@@ -2948,6 +3040,14 @@ function renderChordDiagramSvg(chordName) {
   return svg;
 }
 
+function isTvSectionHeaderLine(trimmed) {
+  if (!trimmed || trimmed.length > 72) return false;
+  if (/^\(?solo\b/i.test(trimmed)) {
+    return /^(?:solo(?:\s+(?:de\s+)?(?:guitarra|bajo|bater[ií]a|saxo?|trompeta|arm[oó]nica|teclado|flauta|viol[ií]n|intro|final|\d+|x\d+)|[:.\-\)]|$)|\(?solo(?:\s*\d+)?\)?[:.\-]?$)/i.test(trimmed);
+  }
+  return /^(?:\[[^\]]{1,42}\]|[-*]?\s*(?:intro(?:\s*\d+)?\s*[:+\-]?|coro\b[:.\-…\s]*(?:x\d+)?|estribillo\b[:.\-…\s]*(?:x\d+)?|pre[-\s]?coro\b[:.\-…\s]*|puente(?:\s*\d+)?[:.\-…\s]*|verso(?:\s*\d+)?[:.\-]*|estrofa(?:\s*\d+)?[:.\-]*|riff(?:\s*\d+)?[:.\-]*|punteo(?:\s+principal(?:\s+de\s+la\s+kanci[oó]n)?)?[:.\-\s]*|outro[:.\-]*|final[:.\-]*|interludio[:.\-]*|bis(?:\s*\(?\s*x?\d+\s*\)?)?[:.\-]*)(?:$|\s*[:.\-…\+])|[A-Z]\)\s*\([^)]*(?:guitarra|bajo|punteo|akordes|acordes)[^)]*\)|[A-Z]\)\s*\.\.\.|(?:esquema(?:\s+de\s+acordes)?|afinaci[oó]n|cejilla|capo)\b.*)$/i.test(trimmed);
+}
+
 function isChordToken(w) {
   if (!w) return false;
   const c = w.replace(/^[(\[]+|[)\].,:;\-+—–\/]+$/g, '').trim();
@@ -3263,16 +3363,29 @@ function renderTvShareQr(reportText) {
   }
   try {
     var payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(reportText);
-    if (payload.length > 1800) {
-      payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(reportText.slice(0, 900) + '\n... (usa Copiar para el informe completo)');
+    // QR Versión 40 ECC L admite hasta ~2953 bytes UTF-8; compactar etiquetas repetidas antes de acotar si excede
+    if (payload.length > 2600) {
+      var compacted = reportText
+        .replace(/ — Revisar (?:sincronización|acordes|letra)/g, '')
+        .replace(/📋 \*INFORME DE FALLAS Y FAVORITAS — CANCIONERO TV\*/, '📋 *INFORME CANCIONERO TV*');
+      payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(compacted);
+      if (payload.length > 2600) {
+        var cut = compacted;
+        while (cut.length > 400 && ('https://api.whatsapp.com/send?text=' + encodeURIComponent(cut + '\n… (Copiar para detalle completo)')).length > 2550) {
+          cut = cut.slice(0, Math.floor(cut.length * 0.9));
+        }
+        var lastNl = cut.lastIndexOf('\n');
+        if (lastNl > 300) cut = cut.slice(0, lastNl);
+        payload = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(cut + '\n… (Copiar para detalle completo)');
+      }
     }
     var qr = window.qrcode(0, 'L');
     qr.addData(payload);
     qr.make();
     qrBox.style.display = 'flex';
     qrBox.innerHTML =
-      '<img src="' + qr.createDataURL(4, 8) + '" alt="QR WhatsApp Informe" class="tv-share-qr-img">' +
-      '<span class="tv-share-qr-caption">📱 Escanea desde tu celular para abrir el informe en WhatsApp</span>';
+      '<img src="' + qr.createDataURL(3, 6) + '" alt="QR WhatsApp Informe" class="tv-share-qr-img">' +
+      '<span class="tv-share-qr-caption">📱 Escanea desde tu celular para abrir el informe completo en WhatsApp</span>';
   } catch (e) {
     qrBox.style.display = 'none';
   }

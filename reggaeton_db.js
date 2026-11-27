@@ -46,7 +46,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "A# - A - Dm - G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me regalen más libros porque no los leo,",
@@ -102,7 +102,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "solo tengo una sonrisa y espero una de vuelta",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -146,36 +146,39 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "A#                     C                        Dm",
-          "lineType": "chords"
+          "text": "A#      C      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dame la mano y vamos a darle la vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "G                       A#   A                      Dm    G",
-          "lineType": "chords"
+          "text": "G      A#   A      Dm    G",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "darle la vuelta al mundo, darle al vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "A#                     C                        Dm",
-          "lineType": "chords"
+          "text": "A#      C      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dame la mano y vamos a darle la vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "G                   A#       A                      Dm",
-          "lineType": "chords"
+          "text": "G      A#       A      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "darle la vuelta al mundo, darle al vuelta al mundo",
@@ -188,7 +191,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "A# - A - Dm - G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "La renta, el sueldo, el trabajo en la oficina",
@@ -292,36 +295,39 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "A#                   C                        Dm",
-          "lineType": "chords"
+          "text": "A#      C      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dame la mano y vamos a darle la vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "G                   A#      A                   Dm     G",
-          "lineType": "chords"
+          "text": "G      A#      A      Dm     G",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "darle la vuelta al mundo, darle al vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "A#                   C                        Dm",
-          "lineType": "chords"
+          "text": "A#      C      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dame la mano y vamos a darle la vuelta al mundo",
           "lineType": "lyrics"
         },
         {
-          "text": "G                   A#      A                      Dm",
-          "lineType": "chords"
+          "text": "G      A#      A      Dm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "darle la vuelta al mundo, darle al vuelta al mundo",
@@ -376,7 +382,8 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo he peleado con cocodrilos",
@@ -384,7 +391,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Me he balanceado sobre un hilo cargando más de quinientos kilos",
@@ -392,15 +400,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Le he da'o la vuelta al mundo en menos de un segundo",
           "lineType": "lyrics"
         },
         {
-          "text": "DO.                                  RE",
-          "lineType": "chords"
+          "text": "DO.      RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "He cruza'o cien laberintos y nunca me confundo",
@@ -408,7 +418,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Respiro dentro y fuera del agua como las focas",
@@ -416,7 +427,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SI7",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Soy a prueba de fuego, agarro balas con la boca",
@@ -424,23 +436,26 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mi creatividad vuela como los aviones",
           "lineType": "lyrics"
         },
         {
-          "text": "DO                                          RE",
-          "lineType": "chords"
+          "text": "DO      RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Puedo construir un cerebro sin leer las instrucciones",
           "lineType": "lyrics"
         },
         {
-          "text": "DO.                                     RE",
-          "lineType": "chords"
+          "text": "DO.      RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Hablo todos los idiomas de todos los abecedarios",
@@ -448,15 +463,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tengo más vocabulario que cualquier diccionario",
           "lineType": "lyrics"
         },
         {
-          "text": "DO.                                   RE",
-          "lineType": "chords"
+          "text": "DO.      RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tengo vista de águila, olfato de perro",
@@ -464,7 +481,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Puedo caminar descalzo sobre clavos de hierro",
@@ -472,15 +490,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Soy inmune a la muerte",
           "lineType": "lyrics"
         },
         {
-          "text": "RE.                           SOL.               MIm",
-          "lineType": "chords"
+          "text": "RE.      SOL.      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No necesito bendiciones porque siempre tengo buena suerte",
@@ -488,15 +508,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ven conmigo a dar un paseo por el parque",
           "lineType": "lyrics"
         },
         {
-          "text": "B7.                                       RE",
-          "lineType": "chords"
+          "text": "B7.      RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Porque tengo más cuentos que contarte que García Marquez",
@@ -507,16 +529,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "SOL.                     RE       SOL",
-          "lineType": "chords"
+          "text": "SOL.      RE       SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Por ti, todo lo que hago lo hago por ti",
           "lineType": "lyrics"
         },
         {
-          "text": "SOL.                RE.      MIm",
-          "lineType": "chords"
+          "text": "SOL.      RE.      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Es que tú me sacas lo mejor de mi",
@@ -524,7 +548,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Soy todo lo que soy",
@@ -536,7 +561,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Porque tú eres todo lo que quiero",
@@ -547,16 +573,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "SOL.                      RE.        SOL",
-          "lineType": "chords"
+          "text": "SOL.      RE.        SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Por ti, todo lo que hago lo hago por ti",
           "lineType": "lyrics"
         },
         {
-          "text": "SOL.                  RE.      MIm",
-          "lineType": "chords"
+          "text": "SOL.      RE.      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Es que tú me sacas lo mejor de mí",
@@ -564,7 +592,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Soy todo lo que soy",
@@ -572,7 +601,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Porque tú eres todo lo que quiero",
@@ -584,7 +614,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Puedo brincar la cuerda con solo una pierna",
@@ -734,8 +765,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Dm                                   F/A",
-          "lineType": "chords"
+          "text": "Dm      F/A",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "En el mundo hay gente bruta y astuta,",
@@ -743,15 +775,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "C",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "hay vírgenes y prostitutas,",
           "lineType": "lyrics"
         },
         {
-          "text": "Dm                          F/A",
-          "lineType": "chords"
+          "text": "Dm      F/A",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "ricos, pobres, clase media,",
@@ -759,7 +793,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "C",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "cosas bonitas y un par de tragedias,",
@@ -887,7 +922,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Dm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No hay nadie como tú,",
@@ -895,7 +931,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "F/A",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no hay nadie como tú, mi amor,",
@@ -903,7 +940,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "C",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no hay nadie como tú.",
@@ -1166,7 +1204,8 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "C#m        B",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Atrevetetete salte del closet",
@@ -1174,15 +1213,23 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A         G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "destapate quitate el esmalte.",
           "lineType": "lyrics"
         },
         {
-          "text": "C#m           B                     A",
-          "lineType": "chords"
+          "text": "C#m           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "           A",
+          "lineType": "chords",
+          "red": true,
+          "bold": true
         },
         {
           "text": "Deja de taparte que nadie va a retratarte",
@@ -1190,7 +1237,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "levantate ponte hyper.",
@@ -1201,32 +1249,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "C#m              B",
-          "lineType": "chords"
+          "text": "C#m      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Prendete sacale chispas al starter,",
           "lineType": "lyrics"
         },
         {
-          "text": "A                  G#",
-          "lineType": "chords"
+          "text": "A      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "prendete en fuego como un lighter,",
           "lineType": "lyrics"
         },
         {
-          "text": "C#m                    B",
-          "lineType": "chords"
+          "text": "C#m      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "sacudete el sudor como si fueras un wiper",
           "lineType": "lyrics"
         },
         {
-          "text": "A                   G#",
-          "lineType": "chords"
+          "text": "A      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que tu eres callejera street fighter.",
@@ -1590,7 +1642,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – SOL# – LA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -1613,7 +1665,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "sin dejarme una cartita ",
+          "text": "sin dejarme una cartita",
           "lineType": "lyrics"
         },
         {
@@ -1625,7 +1677,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "ya no como ya no duermo ",
+          "text": "ya no como ya no duermo",
           "lineType": "lyrics"
         },
         {
@@ -1654,7 +1706,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro: (dos veces)",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -1679,8 +1731,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -1699,7 +1750,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "por favor llame un doctor ",
+          "text": "por favor llame un doctor",
           "lineType": "lyrics"
         },
         {
@@ -1744,7 +1795,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro: (dos veces)",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -1772,19 +1823,19 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando volverás, ",
+          "text": "Cuando volverás,",
           "lineType": "lyrics"
         },
         {
-          "text": "cuando volverás, ",
+          "text": "cuando volverás,",
           "lineType": "lyrics"
         },
         {
-          "text": "cuando volverás, ",
+          "text": "cuando volverás,",
           "lineType": "lyrics"
         },
         {
-          "text": "cuando volverás ... ",
+          "text": "cuando volverás ...",
           "lineType": "lyrics"
         },
         {
@@ -1808,7 +1859,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando volverás,Cuando volverás ",
+          "text": "Cuando volverás,Cuando volverás",
           "lineType": "lyrics"
         },
         {
@@ -1865,7 +1916,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – G#m – E – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "cupido no te entiendo alardeas de ejemplo",
@@ -1888,9 +1939,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "             E – F# - B – F# – G#m",
+          "text": "      E – F# - B – F# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "pues dile al amor que no toque mi puerta",
@@ -1923,7 +1974,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – G#m – E – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "cupido no entiendo si la suerte me odia",
@@ -1954,9 +2005,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "             E – F# - B – F# – G#m",
+          "text": "      E – F# - B – F# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "pues dile al amor que no toque mi puerta",
@@ -1997,7 +2048,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G – A – F#m - Bm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "no quiero fechas en mi calendario",
@@ -2044,9 +2095,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "             E – F# - B – F# – G#m",
+          "text": "      E – F# - B – F# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "dile al amor que no toque mi puerta",
@@ -2130,21 +2181,21 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA SOL LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "FA SOL LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "REm – LA# – DO ",
+          "text": "REm – LA# – DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Te vi llorar, viviste la monotonía",
@@ -2179,142 +2230,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA – DO – LA# – DO ",
+          "text": "FA – DO – LA# – DO",
           "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Ay ve y dile que lo odio y lo detesto   ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "por tener lo que fue mio",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que el culpable he sido yo.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Que hoy lo considero un enemigo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "lamentando mi perdida en la batalla por tu amor.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Recálcale que no duermo de noche",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "imaginando que en el sexo el te devora con pasión.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "REm – LA# – DO ",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Me falta valentía",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "para admitirle que a tu lado fui un chiquillo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y su hombría supero.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Agrégale que hoy yo me rebelo",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "envidioso egoísta impulsivo sin control.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "FA – DO – LA# – DO ",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Por creer que yo era el único",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que tu amarias, que estúpido",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "fulano con el premio, y yo el perdedor.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "REm DO LA# DO",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "REm – LA# – DO ",
-          "lineType": "chords",
-          "bold": true
-        },
-        {
-          "text": "Lo vi llegar y no pense que importaría",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y te empezaba a conquistar",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "convirtiendoté en MI enemiga",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y me robo ese tesoro de duende",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "y ahora comprendo el valor",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "que no se tapan los defectos con pretextos",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "en cambio siento rencor.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "FA – DO – LA# – DO ",
-          "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ay ve y dile que lo odio y lo detesto",
@@ -2349,9 +2267,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "REm – DO – LA# – DO ",
+          "text": "REm – LA# – DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Me falta valentía",
@@ -2378,9 +2296,142 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA – DO – LA# – DO ",
+          "text": "FA – DO – LA# – DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
+        },
+        {
+          "text": "Por creer que yo era el único",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que tu amarias, que estúpido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "fulano con el premio, y yo el perdedor.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "REm DO LA# DO",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "REm – LA# – DO",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo vi llegar y no pense que importaría",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y te empezaba a conquistar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "convirtiendoté en MI enemiga",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y me robo ese tesoro de duende",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y ahora comprendo el valor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que no se tapan los defectos con pretextos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "en cambio siento rencor.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "FA – DO – LA# – DO",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay ve y dile que lo odio y lo detesto",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "por tener lo que fue mio",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que el culpable he sido yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que hoy lo considero un enemigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "lamentando mi perdida en la batalla por tu amor.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Recálcale que no duermo de noche",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "imaginando que en el sexo el te devora con pasión.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "REm – DO – LA# – DO",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Me falta valentía",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "para admitirle que a tu lado fui un chiquillo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y su hombría supero.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Agrégale que hoy yo me rebelo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "envidioso egoísta impulsivo sin control.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "FA – DO – LA# – DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Por creer que yo era el único",
@@ -2442,9 +2493,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "       A                   C#m",
+          "text": "       A      C#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Son las 5 de la mañana y yo no he dormido nada",
@@ -2496,31 +2547,36 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "E            B            F#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No Ohhhhh, no es amor, lo que tu sientes",
           "lineType": "lyrics"
         },
         {
-          "text": "        E ",
-          "lineType": "chords"
+          "text": "        E",
+          "lineType": "chords",
+          "red": true,
+          "bold": true
         },
         {
           "text": "se llama obsesión",
           "lineType": "lyrics"
         },
         {
-          "text": "       C#m            B                  F#m            ",
-          "lineType": "chords"
+          "text": "       C#m            B      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Una ilusion en tu pensamiento que te hace hacer cosas",
           "lineType": "lyrics"
         },
         {
-          "text": "                E       G#.",
-          "lineType": "chords"
+          "text": "      E       G#.",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "asi funciona el corazon.",
@@ -2531,9 +2587,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": " A                       C#m",
+          "text": " A      C#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y bien vestido ayer en mi Lexus pase por tu colegio",
@@ -2560,7 +2616,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "yo se que le gustaba y le di una mirada ",
+          "text": "yo se que le gustaba y le di una mirada",
           "lineType": "lyrics"
         },
         {
@@ -2589,35 +2645,42 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "*Coro:",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "red": false,
+          "bold": true
         },
         {
-          "text": "E            B                     F#m",
-          "lineType": "chords"
+          "text": "E            B      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "NOhhhhh, no es amor,(escuchame por favor) lo que tu sientes (¿que es?)",
           "lineType": "lyrics"
         },
         {
-          "text": "        E ",
-          "lineType": "chords"
+          "text": "        E",
+          "lineType": "chords",
+          "red": true,
+          "bold": true
         },
         {
           "text": "se llama obsesion",
           "lineType": "lyrics"
         },
         {
-          "text": "       C#m                            B                  F#m            ",
-          "lineType": "chords"
+          "text": "       C#m      B      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Una ilusion (estoy perdiendo el control) en tu pensamiento que te hace hacer cosas",
           "lineType": "lyrics"
         },
         {
-          "text": "                E       G#.",
-          "lineType": "chords"
+          "text": "      E       G#.",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "asi funciona el corazon.",
@@ -2628,9 +2691,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "A                          C#m",
+          "text": "A      C#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y esa cita pa'l psiquiatra a ver si me ayudaba",
@@ -2645,9 +2708,13 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A                          C#m  (muy rapido)",
+          "text": "A                          C#m",
           "lineType": "chords",
-          "green": true
+          "red": true
+        },
+        {
+          "text": "(muy rapido)",
+          "lineType": "lyrics"
         },
         {
           "text": "Sera posible que por una obsesssion uno pueda morir",
@@ -2703,15 +2770,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "E          E",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No es amor,no es amor",
           "lineType": "lyrics"
         },
         {
-          "text": "    B               E           E",
-          "lineType": "chords"
+          "text": "    B      E           E",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ah Es una obession No es amor, no es amor",
@@ -2719,7 +2788,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    B",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ah Es una obession",
@@ -2727,15 +2797,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "E          E",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No es amor,no es amor",
           "lineType": "lyrics"
         },
         {
-          "text": "    B               E           E",
-          "lineType": "chords"
+          "text": "    B      E           E",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ah Es una obession No es amor, no es amor",
@@ -2743,7 +2815,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    B",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ah Es una obession...",
@@ -2797,9 +2870,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "DO – SOL – FA – SOL ",
+          "text": "DO – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quien te ama como yo cosita linda",
@@ -2822,9 +2895,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                            DO       SOL",
+          "text": "      DO       SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Dime que esta ceremonia es una pesadilla",
@@ -2835,9 +2908,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA – LA ",
+          "text": "FA – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Un momento padre no permita",
@@ -2912,9 +2985,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO – SOL – FA – SOL ",
+          "text": "DO – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quien te ama como yo cosita linda",
@@ -2937,9 +3010,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                                 DO       SOL",
+          "text": "      DO       SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Dime que esta ceremonia es una pesadilla",
@@ -2950,9 +3023,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA – LA ",
+          "text": "FA – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mi amor por Dios recapacita",
@@ -3056,9 +3129,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Riff: con SOL",
-          "lineType": "header",
-          "bold": true,
-          "green": true
+          "lineType": "lyrics",
+          "bold": true
         },
         {
           "text": "Mi amor pero tú eres loca",
@@ -3070,9 +3142,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Riff: con DO  SOL",
-          "lineType": "header",
-          "bold": true,
-          "green": true
+          "lineType": "lyrics",
+          "bold": true
         },
         {
           "text": "Let me find out",
@@ -3084,7 +3155,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Intervalo con:   MIm   DO   REm   DO",
-          "lineType": "chords",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -3092,9 +3163,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "          DO                SOL",
+          "text": "          DO      SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quien te ama como yo cosita linda",
@@ -3105,9 +3176,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA – LA ",
+          "text": "FA – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora me dirijo al insuficiente de poca cosa",
@@ -3197,16 +3268,18 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LAm                  SOL                      LAm",
-          "lineType": "chords"
+          "text": "LAm      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Quítate la ropa lentamente quiero amanecer contigo",
           "lineType": "lyrics"
         },
         {
-          "text": "     FA                      SOL                    LAm",
-          "lineType": "chords"
+          "text": "     FA      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y cuidado si sospechan los vecinos, mi mujer o tu marido.",
@@ -3217,32 +3290,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "                             DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tu y yo durmiendo con los enemigos",
           "lineType": "lyrics"
         },
         {
-          "text": "                             SOL",
-          "lineType": "chords"
+          "text": "      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "dos seres que jamás hemos querido",
           "lineType": "lyrics"
         },
         {
-          "text": "    FA                        REm",
-          "lineType": "chords"
+          "text": "    FA      REm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "los dos haciendo un bendito capricho",
           "lineType": "lyrics"
         },
         {
-          "text": "                FA                              SOL",
-          "lineType": "chords"
+          "text": "      FA      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "donde somos masoquistas por volver a nuestros nidos",
@@ -3253,8 +3330,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "                                  DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "//Desnúdate al paso mi reina y solo ámame",
@@ -3262,24 +3340,27 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "                                    SOL",
-          "lineType": "chords"
+          "text": "      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que el secreto permanezca en un cuarto de hotel",
           "lineType": "lyrics"
         },
         {
-          "text": "      FA                            REm",
-          "lineType": "chords"
+          "text": "      FA      REm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "te aseguro que esos tontos no van a entender",
           "lineType": "lyrics"
         },
         {
-          "text": "       FA                             SOL",
-          "lineType": "chords"
+          "text": "       FA      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que si les somos infieles es por un gran querer.",
@@ -3290,32 +3371,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "                              DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Así con cautela despacio solo ámame",
           "lineType": "lyrics"
         },
         {
-          "text": "                                 SOL",
-          "lineType": "chords"
+          "text": "      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que si nos coge la noche yo me inventare",
           "lineType": "lyrics"
         },
         {
-          "text": "      FA                        REm",
-          "lineType": "chords"
+          "text": "      FA      REm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "una excusa bien tramada ella me va a creer",
           "lineType": "lyrics"
         },
         {
-          "text": "       FA                     SOL",
-          "lineType": "chords"
+          "text": "       FA      SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y tu di otra mentirita al idiota aquel",
@@ -3326,32 +3411,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA                   SOL                      LAm",
-          "lineType": "chords"
+          "text": "FA      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Quítate la ropa lentamente quiero amanecer contigo",
           "lineType": "lyrics"
         },
         {
-          "text": "     FA                      SOL                    LAm",
-          "lineType": "chords"
+          "text": "     FA      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y cuidado si sospechan los vecinos, mi mujer o tu marido",
           "lineType": "lyrics"
         },
         {
-          "text": "           FA                    SOL                   LAm",
-          "lineType": "chords"
+          "text": "           FA      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Que nos perdone nuestro divino señor si cometemos un delito",
           "lineType": "lyrics"
         },
         {
-          "text": "      FA                          SOL                     LAm",
-          "lineType": "chords"
+          "text": "      FA      SOL      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "pero Adán y Eva pecaron por tentación tu y yo no somos distintos// x2",
@@ -3406,32 +3495,36 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "A#m                               G#",
-          "lineType": "chords"
+          "text": "A#m      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Él te da su amor, tu duermes con dudas.",
           "lineType": "lyrics"
         },
         {
-          "text": "                    F#                            C#",
-          "lineType": "chords"
+          "text": "      F#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ahora ves que la costumbre no es lo que aparenta ser.",
           "lineType": "lyrics"
         },
         {
-          "text": "           A#m                    G#",
-          "lineType": "chords"
+          "text": "           A#m      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Es tan sincero, contrario a mis defectos,",
           "lineType": "lyrics"
         },
         {
-          "text": "                     F#                     C#",
-          "lineType": "chords"
+          "text": "      F#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "pero sigo siendo el malo que no dejas de querer.",
@@ -3442,32 +3535,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "A#                      G#",
-          "lineType": "chords"
+          "text": "A#      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tú serás la cinderella, él, el tonto que da pena,",
           "lineType": "lyrics"
         },
         {
-          "text": "   F#                            C#-Fm",
-          "lineType": "chords"
+          "text": "   F#      C#-Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y aunque yo no sea un príncipe azul.",
           "lineType": "lyrics"
         },
         {
-          "text": "A#m                       G#",
-          "lineType": "chords"
+          "text": "A#m      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Soy tu amor y tu dilema y al igual que en las novelas,",
           "lineType": "lyrics"
         },
         {
-          "text": "F#                      C#-Fm---A#m",
-          "lineType": "tab"
+          "text": "F#      C#-Fm---A#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "soy el malo con una virtud.",
@@ -3480,10 +3577,10 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "F# - C#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "El no entiende el procedimiento,    ",
+          "text": "El no entiende el procedimiento,",
           "lineType": "lyrics"
         },
         {
@@ -3511,32 +3608,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "                A#m",
-          "lineType": "chords"
+          "text": "      A#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tendrías que volver a nacer,",
           "lineType": "lyrics"
         },
         {
-          "text": "                    Fm",
-          "lineType": "chords"
+          "text": "      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "para ver si en otra vida te enamoras de él.",
           "lineType": "lyrics"
         },
         {
-          "text": "F#                                                 C#",
-          "lineType": "chords"
+          "text": "F#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No tiene la táctica adecuada pa' arrancarme de tu pecho.",
           "lineType": "lyrics"
         },
         {
-          "text": "F#                                               C#",
-          "lineType": "chords"
+          "text": "F#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo que te falle a ti mil veces, sigo siendo tu dueño.",
@@ -3547,8 +3648,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "A#m – Fm ",
-          "lineType": "chords"
+          "text": "A#m – Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Que me pregunte como te conquiste.",
@@ -3572,17 +3674,16 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A#m-G#-A#-G#-",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "---Se Repite todo---",
-          "lineType": "tab",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "solo",
-          "lineType": "header",
-          "green": true
+          "lineType": "header"
         }
       ]
     ]
@@ -3632,9 +3733,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SOL               LA                 SIm",
+          "text": "SOL      LA      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Explícame por qué razón no me mirás la cara",
@@ -3657,9 +3758,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "      SOL                   LA                      SIm",
+          "text": "      SOL      LA      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Sabes bien que no puedes olvidarme y mucho meno' engañarme",
@@ -3670,7 +3771,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si antes de inventarse el amor ya yo te estaba amando ",
+          "text": "Si antes de inventarse el amor ya yo te estaba amando",
           "lineType": "lyrics"
         },
         {
@@ -3695,42 +3796,41 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "                   SOL",
+          "text": "      SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y a donde irá este amor",
           "lineType": "lyrics"
         },
         {
-          "text": "               LA  ",
+          "text": "      LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "todita la ilusión ",
+          "text": "todita la ilusión",
           "lineType": "lyrics"
         },
         {
-          "text": "                    SIm",
+          "text": "      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "me pregunto cada instante.",
           "lineType": "lyrics"
         },
         {
-          "text": "Yo sé que yo fallé ",
+          "text": "Yo sé que yo fallé",
           "lineType": "lyrics"
         },
         {
-          "text": "pero tu orgullo y tu actitud ",
+          "text": "pero tu orgullo y tu actitud",
           "lineType": "lyrics"
         },
         {
@@ -3738,7 +3838,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Niegas sentir amor ",
+          "text": "Niegas sentir amor",
           "lineType": "lyrics"
         },
         {
@@ -3750,7 +3850,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Conmigo no podrás ",
+          "text": "Conmigo no podrás",
           "lineType": "lyrics"
         },
         {
@@ -3766,9 +3866,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "     SOL                        LA                 SIm",
+          "text": "     SOL      LA      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No importa que hoy te alejes de mí me extrañarás mañana.",
@@ -3876,7 +3976,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Am – Dm – G – C - E7-Am",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "En el proceso de dejarla, de mi vida arrancarla,",
@@ -3895,9 +3995,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "F – G – DO – MI – LA ",
+          "text": "F – G – DO – MI – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tal vez... Mi futuro está en sus manos",
@@ -3922,16 +4022,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ay.. ella tiene un tóxico agridulce,",
           "lineType": "lyrics"
         },
         {
-          "text": "                       G",
+          "text": "      G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "la sustancia de este amor...",
@@ -3947,13 +4047,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "F – G – DO – MI – LA ",
+          "text": "F – G – DO – MI – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Suu-mal-dito veneno que viene en frasco de besos",
@@ -4001,12 +4100,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "INTERMEDIO:",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "[Solo de Guitarra Acústica]",
-          "lineType": "header",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -4014,7 +4112,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Am - Dm - G - C-E7-Am (x2)",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -4022,12 +4121,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Solo de Guitarra Electrica]",
-          "lineType": "header",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "A#   -   C   (3 veces)",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -4035,25 +4134,26 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[En la pequeña figura justo antes del precoro]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Am - Dm - E7-Am",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Am - A7",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "F – G – DO – MI – LA ",
+          "text": "F – G – DO – MI – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tal vez... Mi futuro está en sus manos",
@@ -4078,16 +4178,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ella tiene un tóxico agridulce,",
           "lineType": "lyrics"
         },
         {
-          "text": "                       G",
+          "text": "      G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "la sustancia de este amor...",
@@ -4103,7 +4203,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO: …..",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -4120,7 +4220,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Am-A7 - Dm - G - C-E7-Am",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -4128,7 +4229,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Dm - G - C-E7- Am",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -4136,7 +4238,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO: …..",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -4187,9 +4289,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "D# – F ",
+          "text": "D# – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quizás este no sea el momento para preguntarte",
@@ -4244,14 +4346,13 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         },
         {
-          "text": "Cm                         D#                             F",
+          "text": "Cm      D#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora por un segundo, me ahogo en los mares de la realidad,",
@@ -4259,9 +4360,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "LAm                        D#                      F",
+          "text": "LAm      D#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Por un segundo acepto mi derrota, te perdí de verdad,",
@@ -4269,9 +4370,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Gm                           A#                    F",
+          "text": "Gm      A#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y por un segundo enfrento mi duelo, ya no estas conmigo",
@@ -4281,7 +4382,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "D#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y desde luego siento el frío, ni tu alma, ni tu cuerpo son míos",
@@ -4291,7 +4392,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "                      F                       D#   ( D# F) x 2",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mis sueños se han perdido y me hechas al olvido...nooo",
@@ -4303,9 +4404,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "D# – F ",
+          "text": "D# – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quizás este no sea el momento para humillarme,",
@@ -4332,7 +4433,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y delante de la gente, te reclamo de repente ",
+          "text": "Y delante de la gente, te reclamo de repente",
           "lineType": "lyrics"
         },
         {
@@ -4344,9 +4445,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "D# – F ",
+          "text": "D# – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Como en los cuentos de hadas, nuestra historia fue contada",
@@ -4365,14 +4466,13 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         },
         {
-          "text": "Cm                         D#                             F",
+          "text": "Cm      D#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora por un segundo, me ahogo en los mares de la realidad,",
@@ -4380,9 +4480,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "LAm                        D#                      F",
+          "text": "LAm      D#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Por un segundo acepto mi derrota, te perdí de verdad,",
@@ -4390,9 +4490,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Gm                           A#                    F",
+          "text": "Gm      A#      F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y por un segundo enfrento mi duelo, ya no estas conmigo",
@@ -4402,7 +4502,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "D#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y desde luego siento el frío, ni tu alma, ni tu cuerpo son míos",
@@ -4410,9 +4510,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "                                      F            Gm      D#",
+          "text": "      F            Gm      D#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mis sueños se han perdido y me hechas al olvido.....nooo",
@@ -4420,8 +4520,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "                        Gm",
-          "lineType": "chords"
+          "text": "      Gm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Noooo.... Noooo noooo..noooo",
@@ -4440,9 +4541,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "D# – F ",
+          "text": "D# – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "aventura.... lets take it back",
@@ -4469,14 +4570,8 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "…",
-          "lineType": "note",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         }
       ]
     ]
@@ -4527,7 +4622,8 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "D# - Fm - C# - Fm - D# - C# - Fm - D# -C# - Fm - D# - C# - G# - D# - G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -4535,47 +4631,53 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": " G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Sera esto un sueño,que te perdi,",
           "lineType": "lyrics"
         },
         {
-          "text": "                        D#",
-          "lineType": "chords"
+          "text": "      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que en verdad ya no te tengo",
           "lineType": "lyrics"
         },
         {
-          "text": " C#              A#m",
-          "lineType": "chords"
+          "text": " C#      A#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "cuanto quisiera cerrar mis ojos",
           "lineType": "lyrics"
         },
         {
-          "text": "              D#",
-          "lineType": "chords"
+          "text": "      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": " y empezar de nuevo",
           "lineType": "lyrics"
         },
         {
-          "text": " G#                                                D#",
-          "lineType": "chords"
+          "text": " G#      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "sera posible que he de olvidar aquel romance apasionado",
           "lineType": "lyrics"
         },
         {
-          "text": "             C#                 A#m                    D",
-          "lineType": "chords"
+          "text": "      C#      A#m      D",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "mmmm sera possible un dia decirte que por fin ya no te amo",
@@ -4586,16 +4688,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "  Fm                           C#                          G#",
-          "lineType": "chords"
+          "text": "  Fm      C#      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "lo dudo mucho mi amor, es como ver a un pez del mar poder volar",
           "lineType": "lyrics"
         },
         {
-          "text": "  Fm                           C#                      D#",
-          "lineType": "chords"
+          "text": "  Fm      C#      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y aunque te deje de amar, es imposible que te pueda olvidar",
@@ -4607,13 +4711,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "C# – Fm – D#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "si me enseñaste a querer también enséñame olvidar esto que siento",
@@ -4641,79 +4744,89 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": " C#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Llevo en mis venas la magia de tus besos",
           "lineType": "lyrics"
         },
         {
-          "text": "                    G#",
-          "lineType": "chords"
+          "text": "      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "el fruto de este amor lo veo como un juego",
           "lineType": "lyrics"
         },
         {
-          "text": "                D#               C#",
-          "lineType": "chords"
+          "text": "      D#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y al fin de la jugada tu saliste ganadora",
           "lineType": "lyrics"
         },
         {
-          "text": "               G#",
-          "lineType": "chords"
+          "text": "      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y hoy por ti estoy sufriendo",
           "lineType": "lyrics"
         },
         {
-          "text": " Fm                        C#",
-          "lineType": "chords"
+          "text": " Fm      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "aprendi amar estando a tu lado",
           "lineType": "lyrics"
         },
         {
-          "text": "                G#",
-          "lineType": "chords"
+          "text": "      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me enseñaste a quere y me hiciste un daño",
           "lineType": "lyrics"
         },
         {
-          "text": "                         D#              C#",
-          "lineType": "chords"
+          "text": "      D#      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "fuiste mi profesora en el amor y en tus clases de amor",
           "lineType": "lyrics"
         },
         {
-          "text": "                 G#",
-          "lineType": "chords"
+          "text": "      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no me enseñaste de lo malo",
           "lineType": "lyrics"
         },
         {
-          "text": "  C#                        A#m                   D#",
-          "lineType": "chords"
+          "text": "  C#      A#m      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "si me enseñaste a querer tambien enseñame olvidar esto que siento",
           "lineType": "lyrics"
         },
         {
-          "text": "  C#                       G#                             D#",
-          "lineType": "chords"
+          "text": "  C#      G#      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "porque eres tu niña querida la mujer a quien yo amo y a quien quiero....",
@@ -4725,7 +4838,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -4776,11 +4889,12 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "    LA#              FA#                 SOL#",
-          "lineType": "chords"
+          "text": "    LA#      FA#      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "13 de Diciembre del año 80 a las tres veinticuatro ",
+          "text": "13 de Diciembre del año 80 a las tres veinticuatro",
           "lineType": "lyrics"
         },
         {
@@ -4801,7 +4915,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         Rem#            LAm#           FA#          SOL#",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Pues el padre con solo seis meses de aquel embarazo los abandonó",
@@ -4820,8 +4934,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "    LA#              FA#                 SOL#",
-          "lineType": "chords"
+          "text": "    LA#      FA#      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "El niño va pa ocho meses se parece a su padre y ya dice mamá",
@@ -4833,7 +4948,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "solo le importa entender,  que su hijo necesita comer.",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -4841,7 +4956,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         Rem#            LAm#           FA#          SOL#",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Y la renta le faltan dos meses la plata que entra no alcanza pa´ ná",
@@ -4860,8 +4975,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "LA#              FA#                 SOL#",
-          "lineType": "chords"
+          "text": "LA#      FA#      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Iban pasando los años y el niño lindo de mami vive con mujer",
@@ -4881,7 +4997,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "solo un amigo de infancia y muchos enemigos por su personalidad.",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -4889,7 +5005,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Rem#            LAm#           FA#          SOL#",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Cuando llegues a grande yo quiero que seas abogado o un gran militar",
@@ -4937,8 +5053,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "    LA#              FA#                 SOL#",
-          "lineType": "chords"
+          "text": "    LA#      FA#      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Diciembre 16 del año 2003, ya no es un niño ya tiene 23",
@@ -5048,9 +5165,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LAm – SOL – FA – SOL  ",
+          "text": "LAm – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ella Y Yo dos locos viviendo una aventura",
@@ -5110,7 +5227,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "solo nos vemos a escondidas",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "para ahogar esta prohibida pasion",
@@ -5133,9 +5250,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "    Rem – LA ",
+          "text": "    Rem – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Oye Don lucha por  amor",
@@ -5174,9 +5291,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "LAm – SOL – FA – SOL  ",
+          "text": "LAm – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mi esposa y yo",
@@ -5231,9 +5348,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "LAm – SOL – FA – SOL  ",
+          "text": "LAm – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ahy ya te explique",
@@ -5264,9 +5381,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": " REm – LA ",
+          "text": " REm – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y te repito lucha por  amor",
@@ -5307,16 +5424,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm – SOL – FA – SOL  (X4)",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": " SIm – SOL – SIm – LA  ",
+          "text": " SIm – SOL – SIm – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Amigo pido perdon",
@@ -5474,9 +5591,13 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Intro: A# - F -  D# - F",
-          "lineType": "header",
-          "bold": true
+          "text": "Intro:",
+          "lineType": "header"
+        },
+        {
+          "text": "A# - F -  D# - F",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -5569,7 +5690,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "D# - F - A# - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No se como hacer sin ti",
@@ -5613,13 +5734,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "A# - F - D# - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Vivo enamorado y loco...",
@@ -5637,23 +5757,22 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "De nada vale ya lo que este en mi doctorado ",
+          "text": "De nada vale ya lo que este en mi doctorado",
           "lineType": "lyrics",
           "bold": true
         },
         {
           "text": "(Bis)",
-          "lineType": "note",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "A# - F -  D# - F ",
+          "text": "A# - F -  D# - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tengo una casa de campo",
@@ -5678,7 +5797,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "D# - F - A# - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No se como hacer sin ti",
@@ -5730,7 +5849,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A# - F - D# - F (X2)",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         }
       ]
     ]
@@ -5780,9 +5900,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "REm – FA – LAm – SOL ",
+          "text": "REm – FA – LAm – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -6128,9 +6248,13 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Intro: (DOm - SOLm)",
-          "lineType": "tab",
-          "bold": true
+          "text": "Intro:",
+          "lineType": "header"
+        },
+        {
+          "text": "(DOm - SOLm)",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -6139,16 +6263,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DOm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Cuerpo sensual",
           "lineType": "lyrics"
         },
         {
-          "text": "                       SOLm",
+          "text": "      SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "dulce mirada que me invita a pecar",
@@ -6161,16 +6285,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DOm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "no aguanto más",
           "lineType": "lyrics"
         },
         {
-          "text": " RE#                      SOLm",
+          "text": " RE#      SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "estoy loco por sentir tu cuerpo",
@@ -6183,12 +6307,13 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "CORO 2x",
           "lineType": "header",
-          "bold": true
+          "bold": true,
+          "red": false
         },
         {
           "text": "SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Quisiera pasar el tiempo",
@@ -6198,7 +6323,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "        RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Haciéndote eh eh",
@@ -6213,7 +6338,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "         SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Perreándote eh eh",
@@ -6225,9 +6350,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DOm – RE# - SOLm ",
+          "text": "DOm – RE# - SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Concédame esta Pieza",
@@ -6276,7 +6401,8 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "CORO 2x",
           "lineType": "header",
-          "bold": true
+          "bold": true,
+          "red": false
         },
         {
           "text": "",
@@ -6284,8 +6410,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(DOm – RE# - SOLm)",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "A que no te luces",
@@ -6465,7 +6591,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -6513,8 +6639,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Dime como olvidarte si no quiero alejarme",
@@ -6593,8 +6718,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Dime como olvidarte si no quiero alejarme",
@@ -6685,8 +6809,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Dime como olvidarte si no quiero alejarme",
@@ -6773,7 +6896,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI – FA – FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -6804,7 +6927,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "y de besarte igual que ayeeeeeer,   ",
+          "text": "y de besarte igual que ayeeeeeer,",
           "lineType": "lyrics"
         },
         {
@@ -6816,15 +6939,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "   Yo te confieso que yo te extraño mi vida, ",
+          "text": "   Yo te confieso que yo te extraño mi vida,",
           "lineType": "lyrics"
         },
         {
-          "text": "que eres la única mujer que sanara mis heridas,  ",
+          "text": "que eres la única mujer que sanara mis heridas,",
           "lineType": "lyrics"
         },
         {
-          "text": "desde que tu te fuistes mi amor yo no tengo vida ",
+          "text": "desde que tu te fuistes mi amor yo no tengo vida",
           "lineType": "lyrics"
         },
         {
@@ -6832,23 +6955,23 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "   Amor regresa tuyo es mi corazón y si en algo te he fallado te pido perdón.   ",
+          "text": "   Amor regresa tuyo es mi corazón y si en algo te he fallado te pido perdón.",
           "lineType": "lyrics"
         },
         {
           "text": "Solo te pido que te pongas en mi posición y que escuches claro lo que dice mi canción.",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": " Que si decides regresar, aquí estaré esperándote, ",
+          "text": " Que si decides regresar, aquí estaré esperándote,",
           "lineType": "lyrics"
         },
         {
-          "text": "ya no lo pienses mujer ven y entrégate. ",
+          "text": "ya no lo pienses mujer ven y entrégate.",
           "lineType": "lyrics"
         },
         {
@@ -6856,7 +6979,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "y de besarte igual que ayeeeeeer,   ",
+          "text": "y de besarte igual que ayeeeeeer,",
           "lineType": "lyrics"
         },
         {
@@ -6868,15 +6991,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "   Amor te extraño tanto ",
+          "text": "   Amor te extraño tanto",
           "lineType": "lyrics"
         },
         {
-          "text": "que no se ni que hacer, ",
+          "text": "que no se ni que hacer,",
           "lineType": "lyrics"
         },
         {
-          "text": "baby regresa o voy a enloquecer,   ",
+          "text": "baby regresa o voy a enloquecer,",
           "lineType": "lyrics"
         },
         {
@@ -6884,7 +7007,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "que yo no se ni que hacer, ",
+          "text": "que yo no se ni que hacer,",
           "lineType": "lyrics"
         },
         {
@@ -6896,11 +7019,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "   Me dijeron que te vieron por ahí, ",
+          "text": "   Me dijeron que te vieron por ahí,",
           "lineType": "lyrics"
         },
         {
-          "text": "que te encuentras muy bien ",
+          "text": "que te encuentras muy bien",
           "lineType": "lyrics"
         },
         {
@@ -6920,7 +7043,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "mujer ven y entrégate. ",
+          "text": "mujer ven y entrégate.",
           "lineType": "lyrics"
         },
         {
@@ -6928,7 +7051,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "y de besarte igual que ayeeeeeer,       ",
+          "text": "y de besarte igual que ayeeeeeer,",
           "lineType": "lyrics"
         },
         {
@@ -6985,7 +7108,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - SOL# - SIbm - FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -7022,7 +7145,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - SOL# - LA# - FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "quiero mas",
@@ -7082,7 +7205,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      SIbm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "wuooh",
@@ -7099,7 +7223,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - SOL# - SIbm - FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ven y abrázame mi amor siente el latido de mi pecho",
@@ -7140,7 +7264,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - SOL# - LA# - FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "mas",
@@ -7209,7 +7333,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - SOL# - SIbm - FA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Como en un cuento de hadas",
@@ -7285,7 +7409,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – DO – SOL – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tu mirada me inspira a escribir canciones ohohoh,",
@@ -7316,9 +7440,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO – RE – SOL  ",
+          "text": "DO – RE – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Nuestro amor sera para siempre, our we love will be forever,",
@@ -7335,7 +7459,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – DO – SOL – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "(tu amor es forever)",
@@ -7386,9 +7510,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO – RE – SOL  ",
+          "text": "DO – RE – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Nuestro amor sera para siempre, our we love will be forever,",
@@ -7405,7 +7529,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – DO – SOL – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Como evitar escucharte gritar mi nombre y decirme te amo,",
@@ -7499,9 +7623,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "   REm – LAm – REm – LAm ",
+          "text": "   REm – LAm – REm – LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -7528,9 +7652,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "REm – SOL – LAm  ",
+          "text": "REm – SOL – LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "pero dale que hoy",
@@ -7554,7 +7678,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(2x)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -7621,9 +7745,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "REm – SOL – LAm  ",
+          "text": "REm – SOL – LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "pero dale que hoy",
@@ -7647,7 +7771,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(2x)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -7656,7 +7780,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "REm – LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "porque negarlo mas",
@@ -7707,9 +7831,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "   REm – LAm – REm – LAm ",
+          "text": "   REm – LAm – REm – LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Me matas",
@@ -7775,9 +7899,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "FA#m – DO#m – RE – MI ",
+          "text": "FA#m – DO#m – RE – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -7825,8 +7949,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "RAPIDO",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Como nos amábamos",
@@ -8052,9 +8175,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO – SOL – SOL# – FA ",
+          "text": "DO – SOL – SOL# – FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -8094,8 +8217,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "¿Donde estas?",
@@ -8251,7 +8373,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -8301,7 +8423,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -8377,10 +8499,13 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Intro: (MIm-SIm)",
-          "lineType": "tab",
-          "bold": true,
-          "green": true
+          "text": "Intro:",
+          "lineType": "header"
+        },
+        {
+          "text": "(MIm-SIm)",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -8389,7 +8514,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Cuando me miras así",
@@ -8398,7 +8523,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "          SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "yo me pierdo",
@@ -8407,7 +8532,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "me llevas lejos de aquí",
@@ -8416,7 +8541,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "        SIm  LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "con un beso",
@@ -8428,13 +8553,14 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO A:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "chords",
+          "bold": true,
+          "red": true
         },
         {
-          "text": "MIm                                SIm",
+          "text": "MIm      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ven, que la noche se hizo para los dos",
@@ -8442,9 +8568,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "       LA                       MIm",
+          "text": "       LA      MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "ven y quédate esta noche porque yo",
@@ -8452,9 +8578,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "                           SIm",
+          "text": "      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "un cantito de tus labios quiero",
@@ -8464,7 +8590,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tus besos",
@@ -8477,13 +8603,14 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO B:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "chords",
+          "bold": true,
+          "red": true
         },
         {
-          "text": "MIm                               SIm",
+          "text": "MIm      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ven, y desnúdate en mi cama por favor",
@@ -8491,9 +8618,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "     LA                        MIm",
+          "text": "     LA      MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "déjame probar tu cuerpo porque yo",
@@ -8501,9 +8628,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "                            SIm",
+          "text": "      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "un cantito de tus labios quiero",
@@ -8513,7 +8640,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tus besos",
@@ -8525,10 +8652,13 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Estrofa 1: (Em - Bm - A)2x",
-          "lineType": "header",
-          "bold": true,
-          "green": true
+          "text": "Estrofa 1:",
+          "lineType": "header"
+        },
+        {
+          "text": "(Em - Bm - A)2x",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "De tus labios un beso",
@@ -8580,8 +8710,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO A:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "chords",
+          "bold": true,
+          "red": true
         },
         {
           "text": "",
@@ -8597,8 +8728,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO B:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "chords",
+          "bold": true,
+          "red": true
         }
       ]
     ]
@@ -8648,9 +8780,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "FA#m – RE – MI ",
+          "text": "FA#m – RE – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -8681,7 +8813,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Yo en ti busco un sueño ",
+          "text": "Yo en ti busco un sueño",
           "lineType": "lyrics"
         },
         {
@@ -8702,8 +8834,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Quizás, amaste a quién no debiste amar",
@@ -8787,7 +8918,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:….",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -8868,7 +8999,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:….",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -8953,7 +9084,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:….",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -9006,7 +9137,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA# - SIm – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -9021,7 +9152,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "ya no te siento como antes, ",
+          "text": "ya no te siento como antes,",
           "lineType": "lyrics"
         },
         {
@@ -9029,7 +9160,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "espera un momento, no te vallas, ",
+          "text": "espera un momento, no te vallas,",
           "lineType": "lyrics"
         },
         {
@@ -9089,7 +9220,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "porque en las noches no duermo?, ",
+          "text": "porque en las noches no duermo?,",
           "lineType": "lyrics"
         },
         {
@@ -9102,15 +9233,14 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "repite: porque te siento...",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "no me digas que ya se acabo, ",
+          "text": "no me digas que ya se acabo,",
           "lineType": "lyrics"
         },
         {
@@ -9118,7 +9248,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "en que momento se nos escapo? ",
+          "text": "en que momento se nos escapo?",
           "lineType": "lyrics"
         },
         {
@@ -9131,15 +9261,14 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Rakim:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "ven y siéntate habla conmigo de la situación",
           "lineType": "lyrics"
         },
         {
-          "text": "dime que siente tu corazón, ",
+          "text": "dime que siente tu corazón,",
           "lineType": "lyrics"
         },
         {
@@ -9147,11 +9276,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "dame la oportunidad por favor razona, ",
+          "text": "dame la oportunidad por favor razona,",
           "lineType": "lyrics"
         },
         {
-          "text": "de verdad tengo mal presentimiento, ",
+          "text": "de verdad tengo mal presentimiento,",
           "lineType": "lyrics"
         },
         {
@@ -9159,7 +9288,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "dime la verdad, ya no te robo el aliento, ",
+          "text": "dime la verdad, ya no te robo el aliento,",
           "lineType": "lyrics"
         },
         {
@@ -9179,7 +9308,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "porque en las noches no duermo?, ",
+          "text": "porque en las noches no duermo?,",
           "lineType": "lyrics"
         },
         {
@@ -9191,7 +9320,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "no quiero, no puedo, ",
+          "text": "no quiero, no puedo,",
           "lineType": "lyrics"
         },
         {
@@ -9199,7 +9328,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "me quieres, te quiero, ",
+          "text": "me quieres, te quiero,",
           "lineType": "lyrics"
         },
         {
@@ -9207,7 +9336,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "no puedo perderte, nooo, ",
+          "text": "no puedo perderte, nooo,",
           "lineType": "lyrics"
         },
         {
@@ -9223,27 +9352,27 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "quiero hablarte, necesito desahogarme, ",
+          "text": "quiero hablarte, necesito desahogarme,",
           "lineType": "lyrics"
         },
         {
-          "text": "ya no te siento antes, ",
+          "text": "ya no te siento antes,",
           "lineType": "lyrics"
         },
         {
-          "text": "he empezado a preocuparme, ",
+          "text": "he empezado a preocuparme,",
           "lineType": "lyrics"
         },
         {
-          "text": "espera un momento, no te vallas, ",
+          "text": "espera un momento, no te vallas,",
           "lineType": "lyrics"
         },
         {
-          "text": "mírame fijo a la cara ",
+          "text": "mírame fijo a la cara",
           "lineType": "lyrics"
         },
         {
-          "text": "y dime que es cierto que tu me amas, ",
+          "text": "y dime que es cierto que tu me amas,",
           "lineType": "lyrics"
         },
         {
@@ -9255,7 +9384,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "nuestro amor se acabaaa, ",
+          "text": "nuestro amor se acabaaa,",
           "lineType": "lyrics"
         },
         {
@@ -9312,7 +9441,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL# - FA# - DO# - SI# - SI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -9484,7 +9613,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SI LA ves!...",
-          "lineType": "chords"
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -9534,10 +9663,14 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "G#m - F# - C#m   ( E )<< OPCIONA",
+          "text": "G#m - F# - C#m",
           "lineType": "chords",
-          "bold": true,
-          "green": true
+          "red": true
+        },
+        {
+          "text": "( E )<< OPCIONA",
+          "lineType": "lyrics",
+          "bold": true
         },
         {
           "text": "",
@@ -9580,7 +9713,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "sin sospechar   ",
+          "text": "sin sospechar",
           "lineType": "lyrics"
         },
         {
@@ -9588,7 +9721,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "   y que daría mi vida y más   ",
+          "text": "   y que daría mi vida y más",
           "lineType": "lyrics"
         },
         {
@@ -9601,8 +9734,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[ CORO ]",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "  Si tu me amaras, bajaría el cielo a tus pies,",
@@ -9645,7 +9777,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "   mira que soy en verdad     ",
+          "text": "   mira que soy en verdad",
           "lineType": "lyrics"
         },
         {
@@ -9653,7 +9785,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "   y que daría mi vida y más    ",
+          "text": "   y que daría mi vida y más",
           "lineType": "lyrics"
         },
         {
@@ -9666,8 +9798,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[ CORO ]",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Si tu me amaras, bajaría el cielo a tus pies,",
@@ -9691,8 +9822,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "x2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -9770,9 +9900,13 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Intro: FAm - SI – DO# - RE#",
-          "lineType": "header",
-          "bold": true
+          "text": "Intro:",
+          "lineType": "header"
+        },
+        {
+          "text": "FAm - SI – DO# - RE#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -9833,7 +9967,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI - DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que te vas, te vas, te vas",
@@ -9846,7 +9980,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm - SI – DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que este amor",
@@ -9894,7 +10028,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "FAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Saber porque me causas un dolor que no merezco",
@@ -9907,7 +10042,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI - DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que te vas, te vas, te vas",
@@ -9924,7 +10059,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm - SI – DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que este amor",
@@ -9949,7 +10084,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm - SI – DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora me dejas y sin decir porque",
@@ -10042,7 +10177,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI - DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que te vas, te vas, te vas",
@@ -10055,7 +10190,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm - SI – DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No me digas que este amor",
@@ -10126,7 +10261,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "              RE",
+          "text": "      RE",
           "lineType": "chords",
           "red": true
         },
@@ -10145,7 +10280,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "          SIm SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y de esperar",
@@ -10153,7 +10289,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "            RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "la llamada de su amor",
@@ -10161,7 +10298,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "     LA        SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que no responde",
@@ -10169,31 +10307,35 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "            SOL      RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Se pone su minifalda",
           "lineType": "lyrics"
         },
         {
-          "text": "             LA      SIm",
-          "lineType": "chords"
+          "text": "      LA      SIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y se mira en el espejo",
           "lineType": "lyrics"
         },
         {
-          "text": "              SOL         RE",
-          "lineType": "chords"
+          "text": "      SOL         RE",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "se pone en su carro y sola",
           "lineType": "lyrics"
         },
         {
-          "text": "               LA",
-          "lineType": "chords"
+          "text": "      LA",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "sale en busca de perreo...",
@@ -10246,7 +10388,6 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SIm",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -10490,16 +10631,16 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "MI – LA ",
+          "text": "MI – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "Tuve Un Sueño contigo ",
+          "text": "Tuve Un Sueño contigo",
           "lineType": "lyrics"
         },
         {
@@ -10519,19 +10660,19 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Por el piso ",
+          "text": "Por el piso",
           "lineType": "lyrics"
         },
         {
-          "text": "Por el piso ",
+          "text": "Por el piso",
           "lineType": "lyrics"
         },
         {
-          "text": "por el piso ",
+          "text": "por el piso",
           "lineType": "lyrics"
         },
         {
-          "text": "por el piso ",
+          "text": "por el piso",
           "lineType": "lyrics"
         },
         {
@@ -10591,7 +10732,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Yo haciéndote el amor ",
+          "text": "Yo haciéndote el amor",
           "lineType": "lyrics"
         },
         {
@@ -10668,7 +10809,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "y",
-          "lineType": "note"
+          "lineType": "lyrics"
         },
         {
           "text": "tu y yo",
@@ -10804,7 +10945,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dom – RE# – SOL – LA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Por que se me hace tan dificil aceptar que ya tu no estas",
@@ -10828,13 +10969,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Ken Y)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "DO – SOL ",
+          "text": "DO – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -10882,13 +11022,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Rakim)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "DO – SOL ",
+          "text": "DO – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo no entiendo porque te fuiste y me engae",
@@ -10928,14 +11067,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Ken Y)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "DO – SOL  (rápido continuo)",
+          "text": "DO – SOL",
           "lineType": "chords",
-          "bold": true,
-          "green": true
+          "red": true
+        },
+        {
+          "text": "(rápido continuo)",
+          "lineType": "lyrics",
+          "bold": true
         },
         {
           "text": "Yo sigo buscandote",
@@ -11115,7 +11257,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI – SOL - LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -11483,11 +11625,12 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI SI LA SI x2",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "MI",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Antes de tenerte",
@@ -11495,7 +11638,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "REsus2",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "poco tiempo antes de verte",
@@ -11503,7 +11647,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        LA/DO#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "ya yo soñaba contigo",
@@ -11511,7 +11656,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "en el nombre de cupido",
@@ -11519,15 +11665,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "          FA#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "ya yo te ame ay..",
           "lineType": "lyrics"
         },
         {
-          "text": "   LA         SI                   MI",
-          "lineType": "chords"
+          "text": "   LA         SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "dibuje amor donde no hay en mis sueños",
@@ -11536,31 +11684,34 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     MI  LA/FA# MI/SOL# MI/SI   LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "si amar asi es pecado   pe    que",
           "lineType": "lyrics"
         },
         {
-          "text": "         SI                     MI",
-          "lineType": "chords"
+          "text": "         SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y rio porque  te tengo en mis sueños",
           "lineType": "lyrics"
         },
         {
-          "text": "          SI                    LA",
-          "lineType": "chords"
+          "text": "          SI      LA",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y este momento que tus labios bese",
           "lineType": "lyrics"
         },
         {
-          "text": "          SI                MI",
-          "lineType": "chords"
+          "text": "          SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "yo me enamore y esto que siento",
@@ -11568,15 +11719,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        SI         DO#m        SI         LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me hace bn contigo yo la paso bn en mis sueños",
           "lineType": "lyrics"
         },
         {
-          "text": " SI                                        MI",
-          "lineType": "chords"
+          "text": " SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me dormi tempranito pa' tenerte en mis sueños",
@@ -11588,13 +11741,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "MI               SI                  DO#m",
+          "text": "MI      SI      DO#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tengo todo de ti tengo grabao' tu nombre",
@@ -11602,9 +11754,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "      LA               SI                MI",
+          "text": "      LA      SI      MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "lo tengo pegadito en el pecho y tengo todo",
@@ -11612,9 +11764,9 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "MI                 SI                         DO#m",
+          "text": "MI      SI      DO#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tengo sueños por ti hay cuando el sol se esconde",
@@ -11624,7 +11776,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "       LA        SI            MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tengo mi corazon latiendo por ti",
@@ -11634,8 +11786,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "(se repite)",
           "lineType": "lyrics",
-          "bold": true,
-          "green": true
+          "bold": true
         },
         {
           "text": "",
@@ -11643,13 +11794,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(RKM)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "MI – SI - DO#m – LA – SI – MI ",
+          "text": "MI – SI - DO#m – LA – SI – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "yo te ame y yo te tuve en mis sueños",
@@ -11673,7 +11823,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MI",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Hoy quize tenerte",
@@ -11681,7 +11832,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "REsus2",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "hoy que me moria por verte",
@@ -11689,7 +11841,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "LA/DO#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "desidi soñar contigo",
@@ -11697,7 +11850,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "en el nombre de cupido",
@@ -11705,15 +11859,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       FA#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "ya yo te ame ay..",
           "lineType": "lyrics"
         },
         {
-          "text": "   LA               SI             MI",
-          "lineType": "chords"
+          "text": "   LA      SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "dibuje amor donde no hay en mis sueños",
@@ -11722,31 +11878,34 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "     MI  LA/FA#  MI/SOL# MI/SI LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "si amar asi es pecado  pe    que",
           "lineType": "lyrics"
         },
         {
-          "text": "         SI                     MI",
-          "lineType": "chords"
+          "text": "         SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y rio porque  te tengo en mis sueños",
           "lineType": "lyrics"
         },
         {
-          "text": "          SI                    LA",
-          "lineType": "chords"
+          "text": "          SI      LA",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y este momento que tus labios bese",
           "lineType": "lyrics"
         },
         {
-          "text": "         SI                 MI",
-          "lineType": "chords"
+          "text": "         SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "yo me enamore y esto que siento",
@@ -11754,15 +11913,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         SI        DO#m        SI           LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me hace bn contigo yo la paso bn en mis sueños",
           "lineType": "lyrics"
         },
         {
-          "text": " SI                                        MI",
-          "lineType": "chords"
+          "text": " SI      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me dormi tempranito pa' tenerte en mis sueños",
@@ -11774,12 +11935,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "…",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -11787,13 +11943,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(RKM)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "MI – SI - DO#m – LA – SI – MI ",
+          "text": "MI – SI - DO#m – LA – SI – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tengo la noche y everything la luna llena",
@@ -11816,9 +11971,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "MI – SI - DO#m – LA – SI – MI ",
+          "text": "MI – SI - DO#m – LA – SI – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "todos los dias muy temprano me acuesto",
@@ -11842,17 +11997,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "…",
-          "lineType": "note"
-        },
-        {
-          "text": "MI – SI - DO#m – LA – SI – MI ",
+          "text": "MI – SI - DO#m – LA – SI – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tengo todo de ti tengo grabao' tu nombre",
@@ -11929,7 +12079,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "D, F#m, Bm, A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -12261,7 +12411,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "  DOm – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -12427,18 +12577,18 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SIm                                      FA#m",
+          "text": "SIm      FA#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ay, dime que será Lo que de ti me vuelve loco",
           "lineType": "lyrics"
         },
         {
-          "text": "         MI                    ",
+          "text": "         MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No puedo más y no me puedo controlar",
@@ -12489,18 +12639,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "SIm                                                FA#m",
+          "text": "SIm      FA#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Enséñame como lo haces tú Acércate y apágame la luz",
           "lineType": "lyrics"
         },
         {
-          "text": "                            MI",
+          "text": "      MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Hazme lo que a mi me domina Haz que de este juego me rinda",
@@ -12629,25 +12779,25 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Será tu forma de bailar reggae lento",
           "lineType": "lyrics"
         },
         {
-          "text": "                                     FA#m",
+          "text": "      FA#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "O la manera en que meneas todo tu cuerpo",
           "lineType": "lyrics"
         },
         {
-          "text": "                 MI                        SIm",
+          "text": "      MI      SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Me pones inquieto, dime que me estoy muriendo",
@@ -12662,9 +12812,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                                    FA#m",
+          "text": "      FA#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "O la manera en que meneas todo tu cuerpo",
@@ -12728,7 +12878,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – SOL# - FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -13024,7 +13174,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Re# - FA# - LA# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -13223,31 +13373,35 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Como Olvidar..",
           "lineType": "lyrics"
         },
         {
-          "text": "                         MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Lo que esa noche a mi me paso..",
           "lineType": "lyrics"
         },
         {
-          "text": "                DO                      MIm",
-          "lineType": "chords"
+          "text": "      DO      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Me estaba despidiendo y tu mirada me cautivo (me cautivo)",
           "lineType": "lyrics"
         },
         {
-          "text": " DO                       MIm",
-          "lineType": "chords"
+          "text": " DO      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Pero el avion tenia que partir (tenia q' partir)",
@@ -13255,7 +13409,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "   DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y jure volver a verte",
@@ -13263,7 +13418,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": " MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y todavia no he podido cumplir",
@@ -13282,32 +13438,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO                    MIm",
-          "lineType": "chords"
+          "text": "DO      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Te quiero volver a ver.. eh eh",
           "lineType": "lyrics"
         },
         {
-          "text": "                      MIm               DO",
-          "lineType": "chords"
+          "text": "      MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Estés donde estés.. hey yeah..hey yeah..",
           "lineType": "lyrics"
         },
         {
-          "text": "                   MIm        LAm",
-          "lineType": "chords"
+          "text": "      MIm        LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Te quiero volver a ver.. eh eh",
           "lineType": "lyrics"
         },
         {
-          "text": "                     MIm                DO",
-          "lineType": "chords"
+          "text": "      MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Estés donde estés.. hey yeah..hey yeah..",
@@ -13319,7 +13479,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Siento yo decir que todavia no te he olvidado",
@@ -13327,7 +13488,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Hablo yo de ti hasta en la tele hasta la radio",
@@ -13335,15 +13497,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "nuca me he sentido tan feliz y enamorado",
           "lineType": "lyrics"
         },
         {
-          "text": "MIm                                         DO",
-          "lineType": "chords"
+          "text": "MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y es que de una FAN nunca me habia enamorado (bia enamorado)",
@@ -13355,47 +13519,53 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO            DOmaj7            LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y yo guardo tu foto, en el armario",
           "lineType": "lyrics"
         },
         {
-          "text": "               MIm                         LAm",
-          "lineType": "chords"
+          "text": "      MIm      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y la miro y lloro porque tu no estás a mi lado..",
           "lineType": "lyrics"
         },
         {
-          "text": "                  MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "se que volveré a verte",
           "lineType": "lyrics"
         },
         {
-          "text": "                  DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "nadie podrá detenerme",
           "lineType": "lyrics"
         },
         {
-          "text": "                  MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ma' no desesperes mas",
           "lineType": "lyrics"
         },
         {
-          "text": "                 DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que ese dia llegará",
@@ -13406,32 +13576,36 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "                      MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Te quiero volver a ver.. eh eh",
           "lineType": "lyrics"
         },
         {
-          "text": "                      MIm               DO",
-          "lineType": "chords"
+          "text": "      MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Estés donde estés.. hey yeah..hey yeah..",
           "lineType": "lyrics"
         },
         {
-          "text": "                   MIm        LAm",
-          "lineType": "chords"
+          "text": "      MIm        LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Te quiero volver a ver.. eh eh",
           "lineType": "lyrics"
         },
         {
-          "text": "                     MIm                DO",
-          "lineType": "chords"
+          "text": "      MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Estés donde estés.. hey yeah..hey yeah..",
@@ -13443,12 +13617,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "tito:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "creeme mi amor yo nunca quise lastimarte",
@@ -13456,7 +13630,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "cosas del destino que no puedo explicarte",
@@ -13464,15 +13639,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "tu me haces falta tambien",
           "lineType": "lyrics"
         },
         {
-          "text": "MIm                             DO",
-          "lineType": "chords"
+          "text": "MIm      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y por eso he venido a buscarte..",
@@ -13484,8 +13661,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "rkm:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "  Quisiera encontrarte  y",
@@ -13537,56 +13713,61 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "ken-y:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "DO               DOmaj7            LAm",
-          "lineType": "chords"
+          "text": "DO      DOmaj7            LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  y yo guardo tu foto, en el armario",
           "lineType": "lyrics"
         },
         {
-          "text": "               MIm                         LAm",
-          "lineType": "chords"
+          "text": "      MIm      LAm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y la miro y lloro porque tu no estás a mi lado..",
           "lineType": "lyrics"
         },
         {
-          "text": "                  MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "se que volveré a verte",
           "lineType": "lyrics"
         },
         {
-          "text": "                  DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "nadie podrá detenerme",
           "lineType": "lyrics"
         },
         {
-          "text": "                  MIm",
-          "lineType": "chords"
+          "text": "      MIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ma' no desesperes mas",
           "lineType": "lyrics"
         },
         {
-          "text": "                 DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que ese dia llegará",
@@ -13642,7 +13823,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm - A# - A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -13846,7 +14027,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA – SOL - RE",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -13954,7 +14135,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Si , si",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo me pego a tu cuerpo",
@@ -13970,7 +14152,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo dime ke tu quieres, yo estoy atento",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Kiero saciar tu cuerpo a lo lento",
@@ -13981,7 +14163,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Y hacértelo en la esquina, la sala, la disco en la cama, ",
+          "text": "Y hacértelo en la esquina, la sala, la disco en la cama,",
           "lineType": "lyrics"
         },
         {
@@ -14010,7 +14192,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja ke el ritmo te lleve",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Ya ke estas suelta y yo estoy sueltoo",
@@ -14030,7 +14212,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja ke el ritmo te lleve",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Ya ke estas suelta y yo estoy sueltoo",
@@ -14089,7 +14271,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Ella carga un magneto cuerpo completo ",
+          "text": "Ella carga un magneto cuerpo completo",
           "lineType": "lyrics"
         },
         {
@@ -14146,7 +14328,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja ke el ritmo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Te lleve",
@@ -14178,7 +14360,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja ke el ritmo te lleve",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Ya ke estas suelta y yo estoy sueltoo",
@@ -14198,7 +14380,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja ke el ritmo te lleve",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Ya ke estas suelta y yo estoy sueltoo",
@@ -14302,7 +14484,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA – DO# - LA#/SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -14558,7 +14740,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL – DO – RE",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No sabes cuantas cosas",
@@ -14606,13 +14788,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Dom – FA – LA# – SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y es q mi cama huele a ti",
@@ -14624,7 +14805,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Cierro los ojos y pienso en ti",
@@ -14636,7 +14817,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Y es q mi cama huele a ti",
@@ -14648,7 +14829,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Cierro los ojos y pienso en ti",
@@ -14660,11 +14841,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo tu olor",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -14673,7 +14854,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dom – FA – LA# - SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mas pronto salgo de la casa",
@@ -14700,9 +14881,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DOm – FA ",
+          "text": "DOm – FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "hay mami! Por que me sucede esto a mi",
@@ -14711,7 +14892,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# – SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "todo mi ser te extraña mi cama huele a ti",
@@ -14731,13 +14912,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Dom – FA – LA# – SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y es q mi cama huele a ti",
@@ -14749,7 +14929,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Cierro los ojos y pienso en ti",
@@ -14761,7 +14941,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Y es q mi cama huele a ti",
@@ -14773,7 +14953,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Cierro los ojos y pienso en ti",
@@ -14785,11 +14965,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A ti…",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo tu olor",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -14836,9 +15016,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Dom – FA ",
+          "text": "Dom – FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "hay mami! Por que me sucede esto a mi",
@@ -14847,7 +15027,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# – SOLm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "todo mi ser te extraña mi cama huele a ti",
@@ -14953,9 +15133,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SOL – MIm – SIm – LA ",
+          "text": "SOL – MIm – SIm – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -15159,7 +15339,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA#m – MI – Sim – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -15263,7 +15443,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo quiero estar contigo esta noche",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Torturando provocando emociones",
@@ -15271,7 +15451,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo esperando el momento perfecto",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Tocar tu piel sin ningún pretexto",
@@ -15517,9 +15697,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Cm – Fm ",
+          "text": "Cm – Fm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -15527,8 +15707,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO 1:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Tu tienes algo lindo en ti",
@@ -15665,7 +15844,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "mami chula ",
+          "text": "mami chula",
           "lineType": "lyrics"
         },
         {
@@ -15678,8 +15857,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO 2:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "dale pa lante",
@@ -15727,8 +15905,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO 1:..",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -15736,7 +15913,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO 2:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -15817,8 +15994,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO 2:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         }
       ]
     ]
@@ -15870,7 +16046,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm# – DO# – RE – MI6",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -15881,7 +16057,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "caminando por la playa ",
+          "text": "caminando por la playa",
           "lineType": "lyrics"
         },
         {
@@ -15893,7 +16069,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "tu mereces ser amada, ",
+          "text": "tu mereces ser amada,",
           "lineType": "lyrics"
         },
         {
@@ -15905,7 +16081,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "si quieres y puedes, ",
+          "text": "si quieres y puedes,",
           "lineType": "lyrics"
         },
         {
@@ -15913,7 +16089,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "si te gusta y no te asusta ",
+          "text": "si te gusta y no te asusta",
           "lineType": "lyrics"
         },
         {
@@ -15925,7 +16101,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "si tu quieres yo me entrego ",
+          "text": "si tu quieres yo me entrego",
           "lineType": "lyrics"
         },
         {
@@ -15933,7 +16109,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "tu sabes que por ti me muero, ",
+          "text": "tu sabes que por ti me muero,",
           "lineType": "lyrics"
         },
         {
@@ -15941,7 +16117,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "dejame decirte cosas al oido mama ",
+          "text": "dejame decirte cosas al oido mama",
           "lineType": "lyrics"
         },
         {
@@ -15949,7 +16125,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "ou no no mas ",
+          "text": "ou no no mas",
           "lineType": "lyrics"
         },
         {
@@ -15965,7 +16141,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "caminando por la playa ",
+          "text": "caminando por la playa",
           "lineType": "lyrics"
         },
         {
@@ -15977,7 +16153,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "tu mereces ser amada ",
+          "text": "tu mereces ser amada",
           "lineType": "lyrics"
         },
         {
@@ -15993,7 +16169,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "si tu quieres yo me entrego ",
+          "text": "si tu quieres yo me entrego",
           "lineType": "lyrics"
         },
         {
@@ -16001,7 +16177,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "tu sabes que por ti me muero, ",
+          "text": "tu sabes que por ti me muero,",
           "lineType": "lyrics"
         },
         {
@@ -16013,19 +16189,19 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "si quieres y puedes ",
+          "text": "si quieres y puedes",
           "lineType": "lyrics"
         },
         {
           "text": "}",
-          "lineType": "note"
+          "lineType": "lyrics"
         },
         {
           "text": "yo te voy a llevar",
           "lineType": "lyrics"
         },
         {
-          "text": "si te gusta y no te asusta ",
+          "text": "si te gusta y no te asusta",
           "lineType": "lyrics"
         },
         {
@@ -16037,7 +16213,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "vente conmigo que yo se que te hago sentir cosas ",
+          "text": "vente conmigo que yo se que te hago sentir cosas",
           "lineType": "lyrics"
         },
         {
@@ -16049,7 +16225,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "yo te prometo ternura ",
+          "text": "yo te prometo ternura",
           "lineType": "lyrics"
         },
         {
@@ -16057,7 +16233,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "yo te prometo ser yo tu nene  ",
+          "text": "yo te prometo ser yo tu nene",
           "lineType": "lyrics"
         },
         {
@@ -16069,7 +16245,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "si tu quieres yo me entrego ",
+          "text": "si tu quieres yo me entrego",
           "lineType": "lyrics"
         },
         {
@@ -16077,7 +16253,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "tu sabes que por ti me muero, ",
+          "text": "tu sabes que por ti me muero,",
           "lineType": "lyrics"
         },
         {
@@ -16134,7 +16310,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – SIm – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -16209,7 +16385,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Y así nos entendemos           ",
+          "text": "Y así nos entendemos",
           "lineType": "lyrics"
         },
         {
@@ -16478,7 +16654,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# – FA° – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -16486,8 +16662,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Arcangel)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Entro a la disco aun no sale el sol (vaya)",
@@ -16623,8 +16798,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Daddy Yankee)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Daddy, Lets Go",
@@ -16704,8 +16878,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Arcangel)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Entro a la disco aun no sale el sol (vaya)",
@@ -16745,8 +16918,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Daddy Yankee)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Pam Pam",
@@ -16826,7 +16998,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI – DO#m – SOL#m – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -17116,9 +17288,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "A – G – D – C ",
+          "text": "A – G – D – C",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -17346,7 +17518,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "A# – G# – F# – G#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo te cuidare..",
@@ -17391,8 +17563,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Yaga]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Usted tranquila conmigo",
@@ -17480,8 +17651,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Arcangel y Mackie]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Nada va a pasar",
@@ -17510,8 +17680,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Mackie]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Tranquila que yo estoy contigo",
@@ -17571,8 +17740,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Mackie y Arcangel]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Nada va a pasar",
@@ -17601,8 +17769,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Arcangel]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Oye mami",
@@ -17666,8 +17833,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Arcangel y Mackie]",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "Yo te cuidare..",
@@ -17760,7 +17926,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Bm - A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -17868,8 +18034,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "No se si fue la distancia",
@@ -17924,7 +18089,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "También recuerdo decías que eras mía ",
+          "text": "También recuerdo decías que eras mía",
           "lineType": "lyrics"
         },
         {
@@ -17969,8 +18134,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "No se si fue la distancia",
@@ -18120,9 +18284,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SOL – MIm – SIm  ",
+          "text": "SOL – MIm – SIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -18137,7 +18301,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Maravillosamente a la pista se adapta ",
+          "text": "Maravillosamente a la pista se adapta",
           "lineType": "lyrics"
         },
         {
@@ -18412,9 +18576,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Em – C – D ",
+          "text": "Em – C – D",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -18449,7 +18613,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Con ese cuerpo, esa falda y tu lápiz labial ",
+          "text": "Con ese cuerpo, esa falda y tu lápiz labial",
           "lineType": "lyrics"
         },
         {
@@ -18734,7 +18898,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "   Gm – F - D# - Cm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -18798,13 +18962,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       *****Coro*****",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "tab"
         },
         {
-          "text": "Cm - D# - Gm - F ",
+          "text": "Cm - D# - Gm - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora que no te tengo",
@@ -18912,13 +19075,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      *****Coro*****",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "tab"
         },
         {
           "text": "         Cm - D# - Gm - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -18962,13 +19124,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "  ***Tercer verso***",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
-          "text": "Gm – F - D# - Cm ",
+          "text": "Gm – F - D# - Cm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo le pregunta a mi padre",
@@ -19024,13 +19185,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       *****Coro*****",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "tab"
         },
         {
-          "text": "Cm - D# - Gm - F ",
+          "text": "Cm - D# - Gm - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y ahora que no te tengo",
@@ -19070,13 +19230,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "  ***outro****",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "  Gm – F - D# - Cm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         }
       ]
     ]
@@ -19126,9 +19285,41 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Intro: FA – SOL – LAm - SOL",
-          "lineType": "tab",
-          "bold": true
+          "text": "[Tonalidad Audio: Am]",
+          "lineType": "header"
+        },
+        {
+          "text": "Ab - F - Am - Em - F#m - F - D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D - C - G - Am",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F - Am - Em - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - E - G - F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "Intro:",
+          "lineType": "header"
+        },
+        {
+          "text": "FA – SOL – LAm - SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -19252,8 +19443,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Arcángel)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Yoo",
@@ -19282,7 +19472,9 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "que yo nunca me esperaba era el dolor el sufrimiento",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "Lo q me segaba al no darme cuenta que eras solo una malvada",
           "lineType": "lyrics"
@@ -19308,7 +19500,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Quedaron marcadas ",
+          "text": "Quedaron marcadas",
           "lineType": "lyrics"
         },
         {
@@ -19329,8 +19521,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Yadiel)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Yo no voy a volver nono",
@@ -19342,8 +19533,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Arcángel)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Para q volver si yo tengo a quien me ama",
@@ -19419,7 +19609,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA#m - MI – SIm - FA#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -19583,7 +19773,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "MI  chamaquita",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Tan bonita",
@@ -19677,15 +19867,15 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SOL – LA – LA# – SI ",
+          "text": "SOL – LA – LA# – SI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "……….",
-          "lineType": "note",
+          "lineType": "header",
           "bold": true,
-          "red": true
+          "red": false
         },
         {
           "text": "",
@@ -19730,7 +19920,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# - LA – RE°",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Sí, sí",
@@ -19863,7 +20053,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# - LA – RE°",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Sí, sí",
@@ -20019,7 +20209,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL# - LA# - DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -20335,7 +20525,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# - SOL# - FA° - FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -20574,7 +20764,7 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "FA – FA° - SI  …",
-          "lineType": "chords",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -20586,7 +20776,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Se disfraza con mucha elegancia ",
+          "text": "Se disfraza con mucha elegancia",
           "lineType": "lyrics"
         },
         {
@@ -20602,7 +20792,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Se disfraza con mucha elegancia ",
+          "text": "Se disfraza con mucha elegancia",
           "lineType": "lyrics"
         },
         {
@@ -20631,7 +20821,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo la cama y la almohada.",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Tu te vas a ir conmigo",
@@ -20738,7 +20928,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Esa boca que me quema nena ",
+          "text": "Esa boca que me quema nena",
           "lineType": "lyrics"
         },
         {
@@ -20750,7 +20940,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Una nube mas ",
+          "text": "Una nube mas",
           "lineType": "lyrics"
         },
         {
@@ -20774,7 +20964,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y sustancia es mi infierno, ",
+          "text": "Y sustancia es mi infierno,",
           "lineType": "lyrics"
         },
         {
@@ -20782,11 +20972,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y ese pelo negro, ",
+          "text": "Y ese pelo negro,",
           "lineType": "lyrics"
         },
         {
-          "text": "Me muerooo ",
+          "text": "Me muerooo",
           "lineType": "lyrics"
         },
         {
@@ -20862,15 +21052,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Tu te vas a ir conmigo ",
+          "text": "Tu te vas a ir conmigo",
           "lineType": "lyrics"
         },
         {
-          "text": "Donde yo te llevare, ",
+          "text": "Donde yo te llevare,",
           "lineType": "lyrics"
         },
         {
-          "text": "A un lugar de fantasia, ",
+          "text": "A un lugar de fantasia,",
           "lineType": "lyrics"
         },
         {
@@ -20933,9 +21123,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SIm – F#m – SOL – LA ",
+          "text": "SIm – F#m – SOL – LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -21265,9 +21455,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SI – RE# – DO# ",
+          "text": "SI – RE# – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -21275,11 +21465,10 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "Aparentemente no, no te quierenconmigo, ",
+          "text": "Aparentemente no, no te quierenconmigo,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -21389,7 +21578,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro: …",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -21398,7 +21587,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "D#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Olvida a Ricky Ricón y llama a mi celli",
@@ -21410,7 +21600,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Uahh, no te sorprendas",
@@ -21466,7 +21657,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro: …",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -21546,7 +21737,7 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "Cm# - SI#",
-          "lineType": "chords",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -21555,8 +21746,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "J-Alvarez :",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame aunque sea una noche (una nada mas)",
@@ -21580,8 +21770,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Arcangel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame Aunque sea una noche Una nada mas Yo te juro",
@@ -21605,8 +21794,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "J-Alvarez:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Sentarte comoda lo unico que quieres es platicar la noche nos dira",
@@ -21650,8 +21838,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Arcangel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame aunque sea una noche (una nada mas)",
@@ -21675,8 +21862,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "J-Alvarez:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame aunque sea una noche (una nada mas)",
@@ -21700,8 +21886,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Arcangel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame una noche na mas baby en la cual podamos viajar sin tener",
@@ -21729,8 +21914,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "J-Alvarez:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Me gusta ver como tu cuerpo se deslisa y ver como tu pelo se combina",
@@ -21766,8 +21950,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Arcangel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Regalame aunque sea una noche (una nada mas)",
@@ -21842,9 +22025,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "F#m – E – Bm – A ",
+          "text": "F#m – E – Bm – A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Si se nos da la oportunidad",
@@ -21951,9 +22134,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "F#m – E – Bm – A ",
+          "text": "F#m – E – Bm – A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "quiero hacerte mujer jugando a ser infiel",
@@ -22105,7 +22288,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI7 – RE X2    - DO - RE",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -22117,7 +22300,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo quiero ver tu figura",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Tu cintura me tiene algo de la locura",
@@ -22325,7 +22508,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo quiero ver tu figura",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Tu cintura me tiene algo de la locura",
@@ -22437,7 +22620,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": " Dm - C - G - F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -22445,8 +22628,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Te estoy llamando",
@@ -22810,8 +22992,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         }
       ]
     ]
@@ -22863,7 +23044,6 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G#m - D#m - C#m - E",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -23150,9 +23330,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LA – SOL – FA /MI ",
+          "text": "LA – SOL – FA /MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -23395,16 +23575,16 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Una noche más, ",
+          "text": "Una noche más,",
           "lineType": "lyrics"
         },
         {
           "text": "solo quiero que te quedes conmigo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo actúa natural, te voy a enseñar el camino",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Una noche más, una noche más",
@@ -23412,7 +23592,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo actúa natural, te voy a enseñar el camino",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -23504,12 +23684,12 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "C#m – SOL# - LA – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "C#m – B – LA – B ",
+          "text": "C#m – B – LA – B",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -23549,7 +23729,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[2x]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -23633,7 +23813,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[2x]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -23725,7 +23905,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[2x]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -23793,11 +23973,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA -SOL – FA/MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "RE – RE# - DO – RE – SI – DO - ….",
+          "text": "RE – RE# - DO – RE",
           "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "– SI – DO - ….",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -23894,19 +24079,23 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Uh-la-la-la-la-la",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Uh-la-la-la-la-la",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Uh-la-la-la-la-la",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Uh-la-la-la-la-la",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -23978,19 +24167,20 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Uh-la-la-la-la-la, pa-ra-ra-pa-pa",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Uh-la-la-la-la-la, uh-la-la-la-la-la",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Uh-la-la-la-la-la, oh-oh-oh-oh-oh",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Uh-la-la-la-la-la (uh-uh-uh)",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -24080,9 +24270,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Dm – Am – SOL   ",
+          "text": "Dm – Am – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -24224,7 +24414,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo Le Falta Su Nene",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Que La lleve De Paseo",
@@ -24284,7 +24474,6 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SIm – SOL – RE – LA  (x2)",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -24632,9 +24821,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Em – Bm ",
+          "text": "Em – Bm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -24681,7 +24870,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "¿que será?, no sé qué es, ",
+          "text": "¿que será?, no sé qué es,",
           "lineType": "lyrics"
         },
         {
@@ -24790,43 +24979,35 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Can you tell me?",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "Rome la mano negra",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "di-yei-ur-ba",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "Los lobos, jedais",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "El talentoooooo del bloque",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "Farruko (Opi)",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "seguimos comandando la fucking carretera",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "Alex gárgola",
-          "lineType": "note",
-          "red": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -24906,12 +25087,12 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "RE – LA# - DO8",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "RE – SI - SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -25215,7 +25396,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – FA8",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -25224,7 +25405,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -25523,9 +25704,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Dm – Bb – C ",
+          "text": "Dm – Bb – C",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -25741,63 +25922,70 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "C#, B, D#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "C#             B         (D#m)          C#",
-          "lineType": "chords"
+          "text": "C#      B         (D#m)          C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "¡Hello! solo llamo para ver como te encuentras",
           "lineType": "lyrics"
         },
         {
-          "text": "    B             (D#m)",
-          "lineType": "chords"
+          "text": "    B      (D#m)",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No quiero molestar",
           "lineType": "lyrics"
         },
         {
-          "text": "          C#                      B",
-          "lineType": "chords"
+          "text": "          C#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Se que es tarde y no son horas de llamar",
           "lineType": "lyrics"
         },
         {
-          "text": "        C#                       B",
-          "lineType": "chords"
+          "text": "        C#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Pero necesito baby contigo hablar",
           "lineType": "lyrics"
         },
         {
-          "text": "                 C#                       B",
-          "lineType": "chords"
+          "text": "      C#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Porque me siento preso y extraño tus besos",
           "lineType": "lyrics"
         },
         {
-          "text": "                                            C#",
-          "lineType": "chords"
+          "text": "      C#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Y las cositas que hacíamos cuando teníamos sexo",
           "lineType": "lyrics"
         },
         {
-          "text": "                B",
-          "lineType": "chords"
+          "text": "      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mami en el sexo uuu",
@@ -25805,7 +25993,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -25869,7 +26057,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics"
+          "lineType": "header"
         }
       ]
     ]
@@ -25921,7 +26109,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm - FA - DO - SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -26229,7 +26417,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA – FA – SOL – RE°",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -26248,7 +26436,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que sin ti no puedo vivir, ",
+          "text": "Que sin ti no puedo vivir,",
           "lineType": "lyrics"
         },
         {
@@ -26332,7 +26520,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Tú decide, mi amor, ",
+          "text": "Tú decide, mi amor,",
           "lineType": "lyrics"
         },
         {
@@ -26400,7 +26588,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Porque tú me lleva', ",
+          "text": "Porque tú me lleva',",
           "lineType": "lyrics"
         },
         {
@@ -26408,7 +26596,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Contigo mi alma vuela ",
+          "text": "Contigo mi alma vuela",
           "lineType": "lyrics"
         },
         {
@@ -26421,11 +26609,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo dime si tú sientes lo mismo que yo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo dime si tú sientes lo mismo que yo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -26444,7 +26632,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que sin ti no puedo vivir, ",
+          "text": "Que sin ti no puedo vivir,",
           "lineType": "lyrics"
         },
         {
@@ -26547,9 +26735,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Rem – FA – LAm – SOL ",
+          "text": "Rem – FA – LAm – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -26592,7 +26780,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Porque tengo gata linda ",
+          "text": "Porque tengo gata linda",
           "lineType": "lyrics"
         },
         {
@@ -26613,8 +26801,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Mi fashion girl yeeee yeee",
@@ -26682,8 +26869,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Mi fashion girl yeeee yeee",
@@ -26771,8 +26957,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Mi fashion girl yeeee yeee",
@@ -26856,7 +27041,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm FA SOL MIm X2",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -27190,23 +27375,23 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "B – Ebm – C# – G#m ",
+          "text": "B – Ebm – C# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "B – Ebm – C #",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "B – Ebm – C# – G#m ",
+          "text": "B – Ebm – C# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Hace mucho tiempo le hago caso al corazón",
@@ -27230,7 +27415,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Pre coro",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "red": false,
+          "bold": true
         },
         {
           "text": "Antes de que salga el sol, hunde el acelerador",
@@ -27254,8 +27441,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Y sólo mírame con esos ojitos lindos",
@@ -27319,8 +27505,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Y sólo mírame con esos ojitos lindos",
@@ -27348,7 +27533,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    B       Ebm      C#     G#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tú y yo, tú y yo, tú y yo",
@@ -27356,7 +27542,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    B       Ebm      C#     G#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tú y yo, tú y yo",
@@ -27367,9 +27554,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "B – Ebm – C# – G#m ",
+          "text": "B – Ebm – C# – G#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo no me dejo llevar de nadie",
@@ -27450,7 +27637,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Pre coro:",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "red": false,
+          "bold": true
         },
         {
           "text": "Antes de que salga el sol, hunde el acelerador",
@@ -27474,8 +27663,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Y sólo mírame con esos ojitos lindos",
@@ -27541,9 +27729,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "MI – FA# – RE#m – MI ",
+          "text": "MI – FA# – RE#m – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Como tú me llegan 7 al día",
@@ -27584,12 +27772,12 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MImaj7",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "MI – FA# – RE#m – MI ",
+          "text": "MI – FA# – RE#m – MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "You call I dub, I don’t pick up",
@@ -27871,9 +28059,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Gm – Eb – Dm – Gm ",
+          "text": "Gm – Eb – Dm – Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No soy lo que crees, y si te dejas llevar",
@@ -27900,9 +28088,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Eb – Gm ",
+          "text": "Eb – Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "No te enamores de mí",
@@ -27941,9 +28129,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Gm – Eb – Dm – Gm ",
+          "text": "Gm – Eb – Dm – Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo soy de esa' que toca el fin de semana no fallan en salir (En salir)",
@@ -28014,9 +28202,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Gm – Eb – Dm – Gm ",
+          "text": "Gm – Eb – Dm – Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mi cuerpo es un arte",
@@ -28053,7 +28241,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Eb",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "La que puede, puede, y yo puedo",
@@ -28062,7 +28250,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Baby, si me entrego, aprovéchalo",
@@ -28071,7 +28259,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "F Eb",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Todo es discreto, no creo en tercero'",
@@ -28080,7 +28268,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Gm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "En este caso no eres tú, soy yo",
@@ -28129,7 +28317,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Eb Gm Eb Gm D",
           "lineType": "chords",
-          "bold": true
+          "red": true
         }
       ]
     ]
@@ -28179,9 +28367,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "SOL – DO – LA# - LA ",
+          "text": "SOL – DO – LA# - LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -28467,8 +28655,32 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "…",
-          "lineType": "note"
+          "text": "[Tonalidad Audio: Gm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Am - Dm - G - F - G - Dm - Gm - F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - Gm - F - Gm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Gm - Am - Gm - F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Gm - F - Gm - C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
         },
         {
           "text": "",
@@ -28479,7 +28691,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Dime lo que necesitas y sin miedo te lo daré ",
+          "text": "Dime lo que necesitas y sin miedo te lo daré",
           "lineType": "lyrics"
         },
         {
@@ -28523,7 +28735,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "No quiero tanto, solo te pido una noche ",
+          "text": "No quiero tanto, solo te pido una noche",
           "lineType": "lyrics"
         },
         {
@@ -28599,16 +28811,16 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que yo estaré aquí mujer, comiéndote a besos ",
+          "text": "Que yo estaré aquí mujer, comiéndote a besos",
           "lineType": "lyrics"
         },
         {
           "text": "Solo ven conmigo, chula, te lo digo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo déjame ver amanecer, comiéndote a besos",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -28621,13 +28833,15 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Después de hoy quizás no se dará otro chance",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "Te vi tan sola que no me concentraba",
           "lineType": "lyrics"
         },
         {
-          "text": "No quiero tanto, solo te pido una noche ",
+          "text": "No quiero tanto, solo te pido una noche",
           "lineType": "lyrics"
         },
         {
@@ -28655,7 +28869,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "El de los tickets, el millonari' ",
+          "text": "El de los tickets, el millonari'",
           "lineType": "lyrics"
         },
         {
@@ -28679,7 +28893,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Yo no voy a parar, mamita, ven hagamo' un romance ",
+          "text": "Yo no voy a parar, mamita, ven hagamo' un romance",
           "lineType": "lyrics"
         },
         {
@@ -28687,7 +28901,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Frontea de que andas conmigo pa' que to' te vean ",
+          "text": "Frontea de que andas conmigo pa' que to' te vean",
           "lineType": "lyrics"
         },
         {
@@ -28699,16 +28913,16 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que yo estaré aquí mujer, comiéndote a besos ",
+          "text": "Que yo estaré aquí mujer, comiéndote a besos",
           "lineType": "lyrics"
         },
         {
           "text": "Solo ven conmigo, chula, te lo digo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo déjame ver amanecer, comiéndote a besos",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -28814,9 +29028,8 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "DOm - FAm - SOL# -  DOm     ",
+          "text": "DOm - FAm - SOL# -  DOm",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -28825,7 +29038,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo Mia (Solo Mia)",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Y Que Conmigo Te Iras (Conmigo Te Iras)",
@@ -28866,7 +29079,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO - FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tira El Orgullo Pa Detras Del Asiento,",
@@ -28945,9 +29158,8 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DOm - FAm - SOL# -  DOm     ",
+          "text": "DOm - FAm - SOL# -  DOm",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -28977,7 +29189,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO - FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "You!",
@@ -29032,9 +29244,8 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "DOm - FAm - SOL# -  DOm     ",
+          "text": "DOm - FAm - SOL# -  DOm",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -29043,7 +29254,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo Mia (Solo Mia)",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Y Que Conmigo Te Iras (Conmigo Te Iras)",
@@ -29131,12 +29342,12 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI7 – RE# - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "MI – FA° - SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -29184,7 +29395,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(x2)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -29448,7 +29659,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(x2)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "si tu me dices si, mami yo te salgo a buskar",
@@ -29516,7 +29727,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "A# - G# - D#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -29524,8 +29735,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Se preparó, se puso linda, a su amiga llamaba",
@@ -29569,8 +29779,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Verso:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Sale a olvidar las penas y el sufrimiento",
@@ -29594,8 +29803,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Pre-Coro:",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Hoy ella hace lo que quiera",
@@ -29647,8 +29855,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Se preparó, se puso linda, a su amiga llamaba",
@@ -29688,8 +29895,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Verso:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Ese bobo se perdió a esa mamacita tan chula",
@@ -29737,8 +29943,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Pre-Coro:",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Hoy ella hace lo que quiera",
@@ -29790,8 +29995,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Se preparó, se puso linda, a su amiga llamaba",
@@ -29879,7 +30083,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm – Am – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -30231,7 +30435,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – A#m – D#m – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Extraño tu aroma en la cama",
@@ -30267,8 +30471,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Pre-Coro]",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Mi libertad no la quiero, tampoco la vida de soltero",
@@ -30292,36 +30495,39 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "B               C#                     D#m",
-          "lineType": "chords"
+          "text": "B      C#      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dime bebé, si todavía me amas como antes",
           "lineType": "lyrics"
         },
         {
-          "text": "          F#                   B",
-          "lineType": "chords"
+          "text": "          F#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ya nada me parece interesante",
           "lineType": "lyrics"
         },
         {
-          "text": "A#m                              D#m",
-          "lineType": "chords"
+          "text": "A#m      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sé que en el amor soy un farsante",
           "lineType": "lyrics"
         },
         {
-          "text": "               F#",
-          "lineType": "chords"
+          "text": "      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sin ti no vuelvo a enamorarme, bebé",
@@ -30329,8 +30535,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -30339,7 +30544,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – A#m – D#m – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Sin ti yo no me vuelvo a enamorar",
@@ -30379,36 +30584,39 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "B               C#                     D#m",
-          "lineType": "chords"
+          "text": "B      C#      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dime bebé, si todavía me amas como antes",
           "lineType": "lyrics"
         },
         {
-          "text": "          F#                   B",
-          "lineType": "chords"
+          "text": "          F#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ya nada me parece interesante",
           "lineType": "lyrics"
         },
         {
-          "text": "A#m                              D#m",
-          "lineType": "chords"
+          "text": "A#m      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sé que en el amor soy un farsante",
           "lineType": "lyrics"
         },
         {
-          "text": "               F#",
-          "lineType": "chords"
+          "text": "      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sin ti no vuelvo a enamorarme, bebé",
@@ -30416,8 +30624,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -30426,7 +30633,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – A#m – D#m – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -30466,13 +30673,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Pre-Coro]",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "B – A#m – D#m – F#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Mi libertad no la quiero, tampoco la vida de soltero",
@@ -30496,36 +30702,39 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Coro]",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "B               C#                     D#m",
-          "lineType": "chords"
+          "text": "B      C#      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Dime bebé, si todavía me amas como antes",
           "lineType": "lyrics"
         },
         {
-          "text": "          F#                   B",
-          "lineType": "chords"
+          "text": "          F#      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Ya nada me parece interesante",
           "lineType": "lyrics"
         },
         {
-          "text": "A#m                              D#m",
-          "lineType": "chords"
+          "text": "A#m      D#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sé que en el amor soy un farsante",
           "lineType": "lyrics"
         },
         {
-          "text": "               F#",
-          "lineType": "chords"
+          "text": "      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo sin ti no vuelvo a enamorarme, bebé",
@@ -30533,8 +30742,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         }
       ]
     ]
@@ -30586,7 +30794,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm – C – A#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -30893,23 +31101,24 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "C#m B F#m E-G#m/D#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "C#m – B – F#m – E ",
+          "text": "C#m – B – F#m – E",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
-          "text": "Dime, ¿qué carajo fue lo que me hiciste?   ",
+          "text": "Dime, ¿qué carajo fue lo que me hiciste?",
           "lineType": "lyrics"
         },
         {
-          "text": "Son las 6 a. m. y quiero dormirme ya       ",
+          "text": "Son las 6 a. m. y quiero dormirme ya",
           "lineType": "lyrics"
         },
         {
@@ -30993,8 +31202,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "  C#m              B",
-          "lineType": "chords"
+          "text": "  C#m      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Condado, vista al mar amanecimos ese día",
@@ -31002,31 +31212,35 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "F#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": " Nos fuimos en Fifty Eight pa' la playa",
           "lineType": "lyrics"
         },
         {
-          "text": "  E                            G#m/D#",
-          "lineType": "chords"
+          "text": "  E      G#m/D#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Pero nunca pensé que iba a ser el último día",
           "lineType": "lyrics"
         },
         {
-          "text": "C#m             B",
-          "lineType": "chords"
+          "text": "C#m      B",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Baby, ¿dónde estás? Que yo paso por ti",
           "lineType": "lyrics"
         },
         {
-          "text": "F#m                                   E",
-          "lineType": "chords"
+          "text": "F#m      E",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": " Ando activo con los títeres en las motoras,",
@@ -31041,9 +31255,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "C#m – B – F#m – E ",
+          "text": "C#m – B – F#m – E",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Hey, ma, ¿cómo te saco de aquí?",
@@ -31058,11 +31272,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Con otra chimba, pero no sabe igual ",
+          "text": "Con otra chimba, pero no sabe igual",
           "lineType": "lyrics"
         },
         {
-          "text": "No te voy a mentir ",
+          "text": "No te voy a mentir",
           "lineType": "lyrics"
         },
         {
@@ -31078,7 +31292,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Un culo como el tuyo, cualquiera peca ",
+          "text": "Un culo como el tuyo, cualquiera peca",
           "lineType": "lyrics"
         },
         {
@@ -31094,16 +31308,16 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Solo quiero que te decidas pa' irte a buscar ",
-          "lineType": "header"
+          "text": "Solo quiero que te decidas pa' irte a buscar",
+          "lineType": "lyrics"
         },
         {
           "text": "Un perreíto lento y adentro terminar",
           "lineType": "lyrics"
         },
         {
-          "text": "Solo falta que te decidas pa' irte a buscar ",
-          "lineType": "header"
+          "text": "Solo falta que te decidas pa' irte a buscar",
+          "lineType": "lyrics"
         },
         {
           "text": "Un perreíto lento y adentro terminar",
@@ -31170,7 +31384,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "¿Pa' qué te voy a mentir? ",
+          "text": "¿Pa' qué te voy a mentir?",
           "lineType": "lyrics"
         },
         {
@@ -31229,9 +31443,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "FA – DO# – SOL# – SOL ",
+          "text": "FA – DO# – SOL# – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -31275,8 +31489,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Por algo será que no cambio lo de conocerte",
@@ -31328,7 +31541,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo hemos hablao y te siento muy húmeda",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "La vida es muy frágil mira, que fácil se va",
@@ -31376,8 +31589,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Por algo será que no cambio lo de conocerte",
@@ -31493,8 +31705,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro....",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Por algo será que no cambio lo de conocerte",
@@ -31582,7 +31793,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI# – DO# – RE# – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -31930,7 +32141,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL#m – SI – FA# – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -32245,9 +32456,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Em – G – Bm – A ",
+          "text": "Em – G – Bm – A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -32306,7 +32517,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Ponle ",
+          "text": "Ponle",
           "lineType": "lyrics"
         },
         {
@@ -32324,7 +32535,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Me gusta como te ve' (Como te ve'-e'-e')",
@@ -32333,7 +32544,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": " G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Moviéndote, así e' (Así e'-e)",
@@ -32342,16 +32553,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "  Bm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Dejando la timide (Uoh-oh)",
           "lineType": "lyrics"
         },
         {
-          "text": " A                               C#m",
+          "text": " A      C#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Me gustas demasiado, aquí me tienes",
@@ -32495,7 +32706,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "B – C# – D#m – A#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -32595,7 +32806,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Dímelo, dímelo (dímelo)",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Kiss my skin, I won't tell lies",
@@ -32875,7 +33086,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em - C – D - A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -32883,7 +33094,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "La, La, La, La",
-          "lineType": "lyrics"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -32930,7 +33142,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Como Acercarme Hacia Ti.. ",
+          "text": "Como Acercarme Hacia Ti..",
           "lineType": "lyrics"
         },
         {
@@ -32938,7 +33150,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Siento Tu Cuerpo Que Viene Hacia Mi.. ",
+          "text": "Siento Tu Cuerpo Que Viene Hacia Mi..",
           "lineType": "lyrics"
         },
         {
@@ -32950,7 +33162,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Como Acercarme Hacia Ti.. ",
+          "text": "Como Acercarme Hacia Ti..",
           "lineType": "lyrics"
         },
         {
@@ -32958,7 +33170,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Siento Tu Cuerpo Que Viene Hacia Mi.. ",
+          "text": "Siento Tu Cuerpo Que Viene Hacia Mi..",
           "lineType": "lyrics"
         },
         {
@@ -32970,24 +33182,24 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Tu Eres La Que Me Pone A Temblar.. ",
+          "text": "Tu Eres La Que Me Pone A Temblar..",
           "lineType": "lyrics"
         },
         {
           "text": "[Y A La Media Luna]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
-          "text": "Tu Eres La Que Me Pone A Temblar.. ",
+          "text": "Tu Eres La Que Me Pone A Temblar..",
           "lineType": "lyrics"
         },
         {
           "text": "[Tu Seras Mi Loba]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "[Si No Es El Momento]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -32995,19 +33207,19 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Y A La Media Luna]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
-          "text": "Tu Eres La Que Me Pone A Temblar.. ",
+          "text": "Tu Eres La Que Me Pone A Temblar..",
           "lineType": "lyrics"
         },
         {
           "text": "[Tu Seras Mi Loba]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "[Si No Es El Momento]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -33026,7 +33238,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Y Como Es Que Te Llamas.. ",
+          "text": "Y Como Es Que Te Llamas..",
           "lineType": "lyrics"
         },
         {
@@ -33034,7 +33246,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Seguimos Bailando.. ",
+          "text": "Seguimos Bailando..",
           "lineType": "lyrics"
         },
         {
@@ -33079,7 +33291,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -33110,24 +33322,24 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Tu Eres La Que Me Pone A Temblar.. ",
+          "text": "Tu Eres La Que Me Pone A Temblar..",
           "lineType": "lyrics"
         },
         {
           "text": "[Y A La Media Luna]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
-          "text": "Tu Eres La Que Me Pone A Temblar.. ",
+          "text": "Tu Eres La Que Me Pone A Temblar..",
           "lineType": "lyrics"
         },
         {
           "text": "[Tu Seras Mi Loba]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "[Si No Es El Momento]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -33135,7 +33347,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Y A La Media Luna]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "Tu Eres La Que Me Pone A Temblar.. [Tu Seras Mi Loba]",
@@ -33143,7 +33355,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[Si No Es El Momento]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -33154,7 +33366,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Ya Llego La Hora Que Me Digas Mami ",
+          "text": "Ya Llego La Hora Que Me Digas Mami",
           "lineType": "lyrics"
         },
         {
@@ -33166,7 +33378,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "En Frente De Too El Mundo En Mi Coche ",
+          "text": "En Frente De Too El Mundo En Mi Coche",
           "lineType": "lyrics"
         },
         {
@@ -33203,7 +33415,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics"
+          "lineType": "header"
         }
       ]
     ]
@@ -33255,7 +33467,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "F# - A# - G#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -33263,7 +33475,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo recuerdo aquellos besos que nos dimos sin cesar",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Donde la luna sea testigo de tu inocencia nada más",
@@ -33645,9 +33857,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Am – Em   ",
+          "text": "Am – Em",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -33728,7 +33940,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Mientras yo... ",
+          "text": "Mientras yo...",
           "lineType": "lyrics",
           "bold": true
         },
@@ -33753,7 +33965,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Mientras yo... ",
+          "text": "Mientras yo...",
           "lineType": "lyrics",
           "bold": true
         },
@@ -33829,7 +34041,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:….",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -33874,7 +34086,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo dame un momento",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Pa tu cuerpo",
@@ -33978,7 +34190,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO: …..",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -34031,12 +34243,11 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm – C – A#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "(Baby Rasta)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Ya no me conformo escuchar tu voz,",
@@ -34056,8 +34267,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Randy)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Amor de lejos, amor que no veo...",
@@ -34069,8 +34279,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Baby Rasta & Randy)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Y quien soy yo, sin saber",
@@ -34090,8 +34299,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Baby Rasta & Randy)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Y quien soy yo, sin saber",
@@ -34115,8 +34323,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Yomo)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "La noche, el sol, quedaron perplejos",
@@ -34172,8 +34379,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Gringo)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Perdido en un mar de amor,",
@@ -34201,8 +34407,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Baby Rasta & Randy)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Y quien soy yo, sin saber",
@@ -34226,8 +34431,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Randy)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Que dificil renunciar, a la escencia de tu cuerpo",
@@ -34243,8 +34447,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Jowell)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Un amor de lejos,",
@@ -34322,9 +34525,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "DO - LAm - FA - SOL ",
+          "text": "DO - LAm - FA - SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -34379,7 +34582,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "fuerte destruyoo ",
+          "text": "fuerte destruyoo",
           "lineType": "lyrics"
         },
         {
@@ -34662,9 +34865,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LAm – SOL – FA – SOL ",
+          "text": "LAm – SOL – FA – SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -35000,7 +35203,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "   MI – RE – DO – SI#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -35116,7 +35319,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[2x]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -35180,7 +35383,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo deja que abra la puerta de tu amor",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Me aproximo lentamente a tu oído y digo",
@@ -35228,7 +35431,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "[2x]",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -35324,7 +35527,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL#m – FA# – MI – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -35344,8 +35547,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Te vas, no me dices nada",
@@ -35517,12 +35719,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "…",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -35662,7 +35859,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -35767,7 +35964,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Gm - A# - D# - D",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -36055,7 +36252,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm - SOL - FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -36367,7 +36564,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo quiere volar",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Sin compromiso, solo dale hasta el piso",
@@ -36435,7 +36632,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL# - RE# - FAm - DO# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -36487,11 +36684,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo llora por ti",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo sufre por ti, eh yeah",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Mi corazón solo piensa en ti",
@@ -36499,11 +36696,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo llora por ti",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo sufre por ti, eh yeah",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Cuánto tiempo tengo que esperar",
@@ -36543,7 +36740,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo me recuerdo el aroma a tu cabello",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Mi corazón solo piensa en ti",
@@ -36551,11 +36748,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo llora por ti",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo sufre por ti, eh yeah",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Mi corazón solo piensa en ti",
@@ -36563,11 +36760,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo llora por ti",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Solo sufre por ti, eh yeah",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Ah y sin dudar",
@@ -36603,7 +36800,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo una como tú",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Tú me haces trucutú con tus truqitos, belleza",
@@ -36707,7 +36904,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "MI7 – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -36755,8 +36952,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Jowell",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Por el valle del cauca",
@@ -36812,8 +37008,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Randy",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -36849,8 +37044,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Jowell",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -36878,8 +37072,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Randy",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -36903,8 +37096,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Jowell",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -36952,8 +37144,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Randy",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -37025,7 +37216,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO# - DO - FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -37405,7 +37596,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO -  Bm – DO – SOL# – LA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Ya yo se... Que fue",
@@ -37466,7 +37657,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO - SI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Venga dulce damisela",
@@ -37485,11 +37676,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Ella se revela ",
+          "text": "Ella se revela",
           "lineType": "lyrics"
         },
         {
-          "text": "Vamo' a ver si aquí ella espera ",
+          "text": "Vamo' a ver si aquí ella espera",
           "lineType": "lyrics"
         },
         {
@@ -37497,15 +37688,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Pa' azotarla, oh yeah ",
+          "text": "Pa' azotarla, oh yeah",
           "lineType": "lyrics"
         },
         {
-          "text": "Fui-mo', métele al rit-mó ",
+          "text": "Fui-mo', métele al rit-mó",
           "lineType": "lyrics"
         },
         {
-          "text": "Loco deja mini watch it to' lo pri-mos ",
+          "text": "Loco deja mini watch it to' lo pri-mos",
           "lineType": "lyrics"
         },
         {
@@ -37513,7 +37704,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Hasta en el lim-bo ",
+          "text": "Hasta en el lim-bo",
           "lineType": "lyrics"
         },
         {
@@ -37623,7 +37814,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO - SI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Okey, we're ready",
@@ -37712,7 +37903,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – LA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Pero cuando",
@@ -37880,7 +38071,6 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Bbm – G# – FA# / Ebm",
           "lineType": "chords",
-          "bold": true,
           "red": true
         },
         {
@@ -38277,7 +38467,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LA# - SOL - RE°",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -38305,8 +38495,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X3",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -38333,7 +38522,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38343,7 +38532,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38353,7 +38542,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38377,7 +38566,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "ritmo bestial que te pone bien al dia,",
-          "lineType": "lyrics"
+          "lineType": "header"
         },
         {
           "text": "suena el timbal ra ca ca ca tan tan",
@@ -38400,7 +38589,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "El mundo entere el Reggaeton se vive. ",
+          "text": "El mundo entere el Reggaeton se vive.",
           "lineType": "lyrics"
         },
         {
@@ -38412,7 +38601,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Prende, Prende, Prende, Prende, Prende, ",
+          "text": "Prende, Prende, Prende, Prende, Prende,",
           "lineType": "lyrics"
         },
         {
@@ -38424,7 +38613,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Prende, Prende, Prende, Prende, Prende, ",
+          "text": "Prende, Prende, Prende, Prende, Prende,",
           "lineType": "lyrics"
         },
         {
@@ -38468,7 +38657,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38478,7 +38667,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38488,7 +38677,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38547,7 +38736,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Prende, Prende, Prende, Prende, Prende, ",
+          "text": "Prende, Prende, Prende, Prende, Prende,",
           "lineType": "lyrics"
         },
         {
@@ -38559,7 +38748,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Prende, Prende, Prende, Prende, Prende, ",
+          "text": "Prende, Prende, Prende, Prende, Prende,",
           "lineType": "lyrics"
         },
         {
@@ -38575,7 +38764,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38585,7 +38774,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38595,7 +38784,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Persíguelo! Persíguelo ",
+          "text": "Persíguelo! Persíguelo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -38657,18 +38846,18 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Am – F – E ",
+          "text": "Am – F – E",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "Am – F – G ",
+          "text": "Am – F – G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Tú me dejaste caer",
@@ -38739,9 +38928,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Am – E ",
+          "text": "Am – E",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Limpió mis jeringas a tiempo, hey",
@@ -38764,9 +38953,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Am – F – G ",
+          "text": "Am – F – G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Llora nena llora llora",
@@ -39100,9 +39289,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "DO – RE – MIm ",
+          "text": "DO – RE – MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -39400,9 +39589,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LA# – FA# – SOL#         ",
+          "text": "LA# – FA# – SOL#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -39466,7 +39655,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo Pienso En Ti ohh",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -39778,7 +39967,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO – RE – MI/MI6  -  SI#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -40205,17 +40394,16 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "Capo en el traste 1",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "header"
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "C - Am - F - G ",
+          "text": "C - Am - F - G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -40487,7 +40675,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "C - Am - F – G",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         }
       ]
     ]
@@ -40539,7 +40728,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL#m – FA# – DO#m – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -40634,7 +40823,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "La noche es de nosotros, tú lo sabe' ",
+          "text": "La noche es de nosotros, tú lo sabe'",
           "lineType": "lyrics"
         },
         {
@@ -40929,9 +41118,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "D#m – B ",
+          "text": "D#m – B",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -41155,7 +41344,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Fm – D# – A#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -41184,7 +41373,8 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "CORO X2:",
           "lineType": "header",
-          "bold": true
+          "bold": true,
+          "red": false
         },
         {
           "text": "Le dicen la rompe corazones, falsas ilusiones",
@@ -41240,8 +41430,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "PRE CORO X2:",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header",
+          "bold": true,
+          "red": false
         },
         {
           "text": "Y empieza su venganza",
@@ -41266,7 +41457,8 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "CORO X2:",
           "lineType": "header",
-          "bold": true
+          "bold": true,
+          "red": false
         },
         {
           "text": "Le dicen la rompe corazones, falsas ilusiones",
@@ -41322,8 +41514,9 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "PRE-CORO X2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header",
+          "bold": true,
+          "red": false
         },
         {
           "text": "Y empieza su venganza",
@@ -41348,7 +41541,8 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "CORO X2:",
           "lineType": "header",
-          "bold": true
+          "bold": true,
+          "red": false
         },
         {
           "text": "Le dicen la rompe corazones, falsas ilusiones",
@@ -41410,18 +41604,17 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Em – C – G – D ",
+          "text": "Em – C – G – D",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         },
         {
           "text": "Vamos cógele ritmo, cintura, rodillas al piso",
@@ -41435,8 +41628,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "X2",
-          "lineType": "lyrics",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -41492,7 +41684,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "******************************************************",
-          "lineType": "lyrics"
+          "lineType": "tab"
         },
         {
           "text": "Súbela y bájala y por debajo pásala",
@@ -41552,16 +41744,15 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "******************************************************",
-          "lineType": "lyrics"
+          "lineType": "tab"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         },
         {
           "text": "******************************************************",
-          "lineType": "lyrics"
+          "lineType": "tab"
         },
         {
           "text": "",
@@ -41641,12 +41832,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "******************************************************",
-          "lineType": "lyrics"
+          "lineType": "tab"
         },
         {
-          "text": "CORO: ",
-          "lineType": "header",
-          "bold": true
+          "text": "CORO:",
+          "lineType": "header"
         }
       ]
     ]
@@ -41696,9 +41886,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "C#m – B – A – B  ",
+          "text": "C#m – B – A – B",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -41925,7 +42115,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Lo que se fue  ",
+          "text": "Lo que se fue",
           "lineType": "lyrics"
         },
         {
@@ -42127,7 +42317,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G – A – Bm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -42135,7 +42325,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo somos tu y yo bailando así",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Pidiendo mas y mas, calor",
@@ -42207,7 +42397,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo somos tu y yo bailando así",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Pidiendo mas y mas, calor",
@@ -42283,7 +42473,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo somos tu y yo bailando así",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Pidiendo mas y mas, calor",
@@ -42303,8 +42493,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(x2)",
-          "lineType": "note",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "",
@@ -42396,7 +42585,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo somos tu y yo bailando así",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Pidiendo mas y mas, calor",
@@ -42411,13 +42600,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Llego el tiempo de los dos ",
+          "text": "Llego el tiempo de los dos",
           "lineType": "lyrics"
         },
         {
           "text": "(x2)",
-          "lineType": "note",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "(Love and rumba)",
@@ -42489,7 +42677,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Am# - G# - F# - G#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -42923,9 +43111,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "A# – C – Dm  ",
+          "text": "A# – C – Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "antes que te vayas dame un beso",
@@ -43033,8 +43221,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(CORO)",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "antes que te vayas dame un beso",
@@ -43173,9 +43360,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Am – G – Em – F ",
+          "text": "Am – G – Em – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -43183,11 +43370,10 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "Mi mujer me estaba llamando ",
+          "text": "Mi mujer me estaba llamando",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43197,7 +43383,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Pero yo no contesté ",
+          "text": "Pero yo no contesté",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43207,7 +43393,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Y de ella me olvidé ",
+          "text": "Y de ella me olvidé",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43217,7 +43403,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "No sé por qué yo le fallé ",
+          "text": "No sé por qué yo le fallé",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43227,7 +43413,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Y con ella me enredé ",
+          "text": "Y con ella me enredé",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43236,17 +43422,17 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Yo estaba en la disco perreando ",
+          "text": "Yo estaba en la disco perreando",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Yo estaba en la disco perreando ",
+          "text": "Yo estaba en la disco perreando",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Yo estaba en la disco perreando  ",
+          "text": "Yo estaba en la disco perreando",
           "lineType": "lyrics",
           "bold": true
         },
@@ -43260,15 +43446,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "  De la forma en que me miraba ",
+          "text": "  De la forma en que me miraba",
           "lineType": "lyrics"
         },
         {
-          "text": "Podía notar que ella tenía lo que en la disco buscaba ",
+          "text": "Podía notar que ella tenía lo que en la disco buscaba",
           "lineType": "lyrics"
         },
         {
-          "text": "  Quería que me bailara ",
+          "text": "  Quería que me bailara",
           "lineType": "lyrics"
         },
         {
@@ -43276,35 +43462,35 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y se está prendí'a en fuego ",
+          "text": "Y se está prendí'a en fuego",
           "lineType": "lyrics"
         },
         {
-          "text": "Que no se enamora, ella está pa'l juego ",
+          "text": "Que no se enamora, ella está pa'l juego",
           "lineType": "lyrics"
         },
         {
-          "text": "Anda sola, nunca le baja a su ego ",
+          "text": "Anda sola, nunca le baja a su ego",
           "lineType": "lyrics"
         },
         {
-          "text": "Me provoca y facilito me le pego ",
+          "text": "Me provoca y facilito me le pego",
           "lineType": "lyrics"
         },
         {
-          "text": "Y es que se está prendí'a en fuego ",
+          "text": "Y es que se está prendí'a en fuego",
           "lineType": "lyrics"
         },
         {
-          "text": "Que no se enamora, ella esta pa'l juego ",
+          "text": "Que no se enamora, ella esta pa'l juego",
           "lineType": "lyrics"
         },
         {
-          "text": "Anda sola, nunca le baja a su ego ",
+          "text": "Anda sola, nunca le baja a su ego",
           "lineType": "lyrics"
         },
         {
-          "text": "Me provoca y facilito me le pego y es que ",
+          "text": "Me provoca y facilito me le pego y es que",
           "lineType": "lyrics"
         },
         {
@@ -43316,7 +43502,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Yo no sé por qué soy así ",
+          "text": "Yo no sé por qué soy así",
           "lineType": "lyrics"
         },
         {
@@ -43324,15 +43510,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "El día que yo nací ",
+          "text": "El día que yo nací",
           "lineType": "lyrics"
         },
         {
-          "text": "Baby, pon la mano en el suelo ",
+          "text": "Baby, pon la mano en el suelo",
           "lineType": "lyrics"
         },
         {
-          "text": "Y juégate con el pelo ",
+          "text": "Y juégate con el pelo",
           "lineType": "lyrics"
         },
         {
@@ -43340,15 +43526,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bebé, tú me lleva' al cielo ",
+          "text": "Bebé, tú me lleva' al cielo",
           "lineType": "lyrics"
         },
         {
-          "text": "  Tú me dejaste caer, pero ella me levantó ",
+          "text": "  Tú me dejaste caer, pero ella me levantó",
           "lineType": "lyrics"
         },
         {
-          "text": "Déjame, poca mujer, pero ella me levantó ",
+          "text": "Déjame, poca mujer, pero ella me levantó",
           "lineType": "lyrics"
         },
         {
@@ -43365,7 +43551,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -43393,11 +43579,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sino peleemos, nunca regreso y por eso ",
+          "text": "Sino peleemos, nunca regreso y por eso",
           "lineType": "lyrics"
         },
         {
-          "text": "Yo me quiero ir pa' casa, pero tú no me dejas ",
+          "text": "Yo me quiero ir pa' casa, pero tú no me dejas",
           "lineType": "lyrics"
         },
         {
@@ -43409,7 +43595,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Porque el alcohol se metió en mi sistema ",
+          "text": "Porque el alcohol se metió en mi sistema",
           "lineType": "lyrics"
         },
         {
@@ -43417,7 +43603,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "No me eche' la culpa, cúlpenla a ella ",
+          "text": "No me eche' la culpa, cúlpenla a ella",
           "lineType": "lyrics"
         },
         {
@@ -43441,11 +43627,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "  Pero sí sé que rico la pasé ",
+          "text": "  Pero sí sé que rico la pasé",
           "lineType": "lyrics"
         },
         {
-          "text": "  Llegó la media noche ",
+          "text": "  Llegó la media noche",
           "lineType": "lyrics"
         },
         {
@@ -43457,7 +43643,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Antes que fueran las doce ",
+          "text": "Antes que fueran las doce",
           "lineType": "lyrics"
         },
         {
@@ -43465,7 +43651,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sé que fallé y que me perdone ",
+          "text": "Sé que fallé y que me perdone",
           "lineType": "lyrics"
         },
         {
@@ -43485,7 +43671,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando con ella me envolví, sí ",
+          "text": "Cuando con ella me envolví, sí",
           "lineType": "lyrics"
         },
         {
@@ -43493,11 +43679,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y tuve que darle delete, y ",
+          "text": "Y tuve que darle delete, y",
           "lineType": "lyrics"
         },
         {
-          "text": "  Y yo que no me dejo envolver ",
+          "text": "  Y yo que no me dejo envolver",
           "lineType": "lyrics"
         },
         {
@@ -43509,7 +43695,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y hasta el más santo quiere ser infiel ",
+          "text": "Y hasta el más santo quiere ser infiel",
           "lineType": "lyrics"
         },
         {
@@ -43537,7 +43723,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "De R.D. hasta Cartagena ",
+          "text": "De R.D. hasta Cartagena",
           "lineType": "lyrics"
         },
         {
@@ -43545,7 +43731,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si te cogió, pago mi condena, yeh ",
+          "text": "Si te cogió, pago mi condena, yeh",
           "lineType": "lyrics"
         },
         {
@@ -43554,7 +43740,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -43605,9 +43791,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Dm – F – Am – G ",
+          "text": "Dm – F – Am – G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -43655,8 +43841,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Pero el color de sus ojos, su pelo, su cara",
@@ -43756,8 +43941,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "El color de sus ojos, su pelo, su cara",
@@ -43877,8 +44061,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "Pero el color de sus ojos, su pelo, su cara",
@@ -43961,7 +44144,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sexo seguro ",
+          "text": "Sexo seguro",
           "lineType": "lyrics"
         },
         {
@@ -43973,7 +44156,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sexo seguro ",
+          "text": "Sexo seguro",
           "lineType": "lyrics"
         },
         {
@@ -44362,7 +44545,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "F#m – C#m",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -44377,7 +44560,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "en que te encontré ",
+          "text": "en que te encontré",
           "lineType": "lyrics"
         },
         {
@@ -44389,7 +44572,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "en que te encontré ",
+          "text": "en que te encontré",
           "lineType": "lyrics"
         },
         {
@@ -44702,7 +44885,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL – SI#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -44725,7 +44908,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Disfrútalo y apaga el fuego ",
+          "text": "Disfrútalo y apaga el fuego",
           "lineType": "lyrics"
         },
         {
@@ -44733,7 +44916,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Disfrútalo y apaga el fuego, fuego ",
+          "text": "Disfrútalo y apaga el fuego, fuego",
           "lineType": "lyrics"
         },
         {
@@ -44777,7 +44960,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Si el momento se dio, aprovéchalo ",
+          "text": "Si el momento se dio, aprovéchalo",
           "lineType": "lyrics"
         },
         {
@@ -44785,11 +44968,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si el momento se dio, aprovéchalo ",
+          "text": "Si el momento se dio, aprovéchalo",
           "lineType": "lyrics"
         },
         {
-          "text": "Disfrútalo y apaga el fuego, fuego ",
+          "text": "Disfrútalo y apaga el fuego, fuego",
           "lineType": "lyrics"
         },
         {
@@ -44837,11 +45020,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Ya te encontré, no me digas que no ",
+          "text": "Ya te encontré, no me digas que no",
           "lineType": "lyrics"
         },
         {
-          "text": "No me digas que no, no me digas que no ",
+          "text": "No me digas que no, no me digas que no",
           "lineType": "lyrics"
         },
         {
@@ -44849,7 +45032,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "No me digas que no, no me digas que no ",
+          "text": "No me digas que no, no me digas que no",
           "lineType": "lyrics"
         },
         {
@@ -44857,7 +45040,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Si el momento se dio, aprovéchalo ",
+          "text": "Si el momento se dio, aprovéchalo",
           "lineType": "lyrics"
         },
         {
@@ -44906,7 +45089,7 @@ window.STANDALONE_REGGAETON = [
     "matchedVideo": {
       "id": "PASU2LNkiSY",
       "index": 139,
-      "playlistIndex": 139,
+      "playlistIndex": 709,
       "title": "Descara (Remix)",
       "author": "Yomo - Topic",
       "channel": "Yomo - Topic",
@@ -44915,14 +45098,14 @@ window.STANDALONE_REGGAETON = [
     },
     "book": "reggaeton",
     "pdfFile": "reggaeton.pdf",
-    "playlistIndex": null,
-    "playlistOrder": 708.01,
+    "playlistIndex": 709,
+    "playlistOrder": 709,
     "pages": [
       [
         {
           "text": "SOL# – RE# – DO# – SI#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -44933,7 +45116,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Pero dime si tú la ves ",
+          "text": "Pero dime si tú la ves",
           "lineType": "lyrics"
         },
         {
@@ -45045,7 +45228,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Oye tú sabes que tú estas ",
+          "text": "Oye tú sabes que tú estas",
           "lineType": "lyrics"
         },
         {
@@ -45066,11 +45249,10 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "Descara, en una esquina postia ",
+          "text": "Descara, en una esquina postia",
           "lineType": "lyrics",
           "bold": true
         },
@@ -45115,12 +45297,12 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "De alla la velo ",
+          "text": "De alla la velo",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Ella esta en celo ",
+          "text": "Ella esta en celo",
           "lineType": "lyrics",
           "bold": true
         },
@@ -45162,7 +45344,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Déjame besarte la oreja",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "La cosa esta pareja",
@@ -45177,7 +45359,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "'Toy seguro que después de aquella me despelleja ",
+          "text": "'Toy seguro que después de aquella me despelleja",
           "lineType": "lyrics"
         },
         {
@@ -45205,7 +45387,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Oye, ¿tienes una amiga pa' mi amigo? ",
+          "text": "Oye, ¿tienes una amiga pa' mi amigo?",
           "lineType": "lyrics"
         },
         {
@@ -45221,7 +45403,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "¿Que bebe? ¿Dime que quiere tomarse? ",
+          "text": "¿Que bebe? ¿Dime que quiere tomarse?",
           "lineType": "lyrics"
         },
         {
@@ -45270,7 +45452,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -45351,7 +45533,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         }
       ]
@@ -45404,7 +45586,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": " D – Bm - F#m - E",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -45784,7 +45966,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "  SI - C# - F# - G#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -45836,7 +46018,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(x4)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "",
@@ -45896,8 +46078,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Yandel",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Extraño tu calor, eres un ángel que cayó del cielo",
@@ -45921,7 +46102,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "W",
-          "lineType": "note"
+          "lineType": "lyrics"
         },
         {
           "text": "Yo no se que me pasa que ya sin ella no puedo estar",
@@ -46009,7 +46190,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA# – LA – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -46028,7 +46209,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que probé yo de tu boca ",
+          "text": "Que probé yo de tu boca",
           "lineType": "lyrics"
         },
         {
@@ -46040,7 +46221,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Se me quedó tu olor en mi ropa ",
+          "text": "Se me quedó tu olor en mi ropa",
           "lineType": "lyrics"
         },
         {
@@ -46052,11 +46233,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Que probé yo de tu boca ",
+          "text": "Que probé yo de tu boca",
           "lineType": "lyrics"
         },
         {
-          "text": "Vamo' a repetirlo, mami, una y otra, y otra, y otra vez ",
+          "text": "Vamo' a repetirlo, mami, una y otra, y otra, y otra vez",
           "lineType": "lyrics"
         },
         {
@@ -46084,7 +46265,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Y yo me puse el vendaje ",
+          "text": "Y yo me puse el vendaje",
           "lineType": "lyrics"
         },
         {
@@ -46176,11 +46357,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me gusta cuando sonríe el alto calibre, -libre, -libre, -libre ",
+          "text": "Me gusta cuando sonríe el alto calibre, -libre, -libre, -libre",
           "lineType": "lyrics"
         },
         {
-          "text": "Una mirada tentadora ",
+          "text": "Una mirada tentadora",
           "lineType": "lyrics"
         },
         {
@@ -46212,7 +46393,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Tenemos semejanzas ",
+          "text": "Tenemos semejanzas",
           "lineType": "lyrics"
         },
         {
@@ -46347,9 +46528,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Am – D – G – Em ",
+          "text": "Am – D – G – Em",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -46408,7 +46589,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me la paso pensándote nunca voy a soltarte ",
+          "text": "Me la paso pensándote nunca voy a soltarte",
           "lineType": "lyrics"
         },
         {
@@ -46445,8 +46626,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(parte de rápida de Wisin)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Estoy enamorado (Escuchame bien)",
@@ -46676,9 +46856,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "LAm – MIm ",
+          "text": "LAm – MIm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -46713,7 +46893,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "hace rato que te ando velando ",
+          "text": "hace rato que te ando velando",
           "lineType": "lyrics"
         },
         {
@@ -46737,11 +46917,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "hace rato que te ando velando oh oh¦ ",
+          "text": "hace rato que te ando velando oh oh¦",
           "lineType": "lyrics"
         },
         {
-          "text": "Tu cuerpo rozandome eh eh¦ ",
+          "text": "Tu cuerpo rozandome eh eh¦",
           "lineType": "lyrics"
         },
         {
@@ -46757,11 +46937,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "dale ron con hielo ",
+          "text": "dale ron con hielo",
           "lineType": "lyrics"
         },
         {
-          "text": "Dale rompe el suelo ",
+          "text": "Dale rompe el suelo",
           "lineType": "lyrics"
         },
         {
@@ -46773,7 +46953,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Ella es la reina del party ",
+          "text": "Ella es la reina del party",
           "lineType": "lyrics"
         },
         {
@@ -46781,11 +46961,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Dale somebody at it ",
+          "text": "Dale somebody at it",
           "lineType": "lyrics"
         },
         {
-          "text": "Al novio tuyo dejalo jugando Atari ",
+          "text": "Al novio tuyo dejalo jugando Atari",
           "lineType": "lyrics"
         },
         {
@@ -46813,11 +46993,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Me estas tentando ",
+          "text": "Me estas tentando",
           "lineType": "lyrics"
         },
         {
-          "text": "hace rato que te ando velando ",
+          "text": "hace rato que te ando velando",
           "lineType": "lyrics"
         },
         {
@@ -46837,7 +47017,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Me estas tentando ",
+          "text": "Me estas tentando",
           "lineType": "lyrics"
         },
         {
@@ -46893,7 +47073,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Relájate ponte cómoda inhala y exhala ",
+          "text": "Relájate ponte cómoda inhala y exhala",
           "lineType": "lyrics"
         },
         {
@@ -46901,7 +47081,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Dale mete presión, coraje sube la escala ",
+          "text": "Dale mete presión, coraje sube la escala",
           "lineType": "lyrics"
         },
         {
@@ -46913,7 +47093,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Mami llego tu doctor a darte la receta, aprieta! ",
+          "text": "Mami llego tu doctor a darte la receta, aprieta!",
           "lineType": "lyrics"
         },
         {
@@ -46921,11 +47101,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Me estas tentando ",
+          "text": "Me estas tentando",
           "lineType": "lyrics"
         },
         {
-          "text": "hace rato que te ando velando ",
+          "text": "hace rato que te ando velando",
           "lineType": "lyrics"
         },
         {
@@ -46949,7 +47129,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "hace rato que te ando velando ",
+          "text": "hace rato que te ando velando",
           "lineType": "lyrics"
         },
         {
@@ -46957,7 +47137,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Tu cuerpo rozandome eh eh¦ ",
+          "text": "Tu cuerpo rozandome eh eh¦",
           "lineType": "lyrics"
         },
         {
@@ -47042,16 +47222,16 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SI – FA# - RE° - FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "   Bbm – D#m – F ",
+          "text": "   Bbm – D#m – F",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -47082,7 +47262,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y tú perfume combinado con el viento... ",
+          "text": "Y tú perfume combinado con el viento...",
           "lineType": "lyrics"
         },
         {
@@ -47110,7 +47290,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y tu perfume combinao con el viento... ",
+          "text": "Y tu perfume combinao con el viento...",
           "lineType": "lyrics"
         },
         {
@@ -47210,7 +47390,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y tu perfume combinado con el viento... ",
+          "text": "Y tu perfume combinado con el viento...",
           "lineType": "lyrics"
         },
         {
@@ -47322,7 +47502,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y tu perfume combinado con el viento... ",
+          "text": "Y tu perfume combinado con el viento...",
           "lineType": "lyrics"
         },
         {
@@ -47355,7 +47535,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Bbm-D#m-F",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         }
       ]
     ]
@@ -47405,9 +47586,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "  Bm – G – D – A ",
+          "text": "  Bm – G – D – A",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -47625,9 +47806,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "       Am – E – F – Dm ",
+          "text": "       Am – E – F – Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Hace mucho tiempo que te quiero ver",
@@ -47666,9 +47847,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "       Am – E – F – Dm7 ",
+          "text": "       Am – E – F – Dm7",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Y solo ten mi número telefónico",
@@ -47708,7 +47889,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         Dm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "A todas horas",
@@ -47719,9 +47901,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "       Am – E7 – F – Dm ",
+          "text": "       Am – E7 – F – Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Muñeca llama colect",
@@ -47768,9 +47950,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Am – E – F – Dm ",
+          "text": "Am – E – F – Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Hace mucho tiempo que te quiero ver",
@@ -47994,18 +48176,18 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL# - FA# - MI – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "A tu amiga pregunté por ti ",
+          "text": "A tu amiga pregunté por ti",
           "lineType": "lyrics"
         },
         {
-          "text": "Me dijo que ya no andabas sola ",
+          "text": "Me dijo que ya no andabas sola",
           "lineType": "lyrics"
         },
         {
@@ -48021,19 +48203,19 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Sabiendo que yo te hice mujer ",
+          "text": "Sabiendo que yo te hice mujer",
           "lineType": "lyrics"
         },
         {
-          "text": "Sabiendo que tú eres mi vida ",
+          "text": "Sabiendo que tú eres mi vida",
           "lineType": "lyrics"
         },
         {
-          "text": "Triste fue la despedida ",
+          "text": "Triste fue la despedida",
           "lineType": "lyrics"
         },
         {
-          "text": "Quiero volverla a tener ",
+          "text": "Quiero volverla a tener",
           "lineType": "lyrics"
         },
         {
@@ -48056,12 +48238,12 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Mami, devórame otra vez ",
+          "text": "Mami, devórame otra vez",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Devórame otra vez (devórame otra vez) ",
+          "text": "Devórame otra vez (devórame otra vez)",
           "lineType": "lyrics",
           "bold": true
         },
@@ -48071,7 +48253,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Ven devórame otra vez (devórame otra vez) ",
+          "text": "Ven devórame otra vez (devórame otra vez)",
           "lineType": "lyrics",
           "bold": true
         },
@@ -48121,15 +48303,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "De mujeres como ella hay escasez ",
+          "text": "De mujeres como ella hay escasez",
           "lineType": "lyrics"
         },
         {
-          "text": "Llena de madurez, deja la timidez ",
+          "text": "Llena de madurez, deja la timidez",
           "lineType": "lyrics"
         },
         {
-          "text": "Nena, déjame estar contigo hasta la vejez ",
+          "text": "Nena, déjame estar contigo hasta la vejez",
           "lineType": "lyrics"
         },
         {
@@ -48137,22 +48319,22 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Devórame otra vez (devórame otra vez) ",
+          "text": "Devórame otra vez (devórame otra vez)",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Devórame otra vez ",
+          "text": "Devórame otra vez",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Ven devórame otra vez (devórame otra vez) ",
+          "text": "Ven devórame otra vez (devórame otra vez)",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Mami, devórame otra vez ",
+          "text": "Mami, devórame otra vez",
           "lineType": "lyrics",
           "bold": true
         },
@@ -48181,15 +48363,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Recuerdo que… ",
+          "text": "Recuerdo que…",
           "lineType": "lyrics"
         },
         {
-          "text": "sin compromiso, la llevé hasta el piso ",
+          "text": "sin compromiso, la llevé hasta el piso",
           "lineType": "lyrics"
         },
         {
-          "text": "Besando sus labios rojizos ",
+          "text": "Besando sus labios rojizos",
           "lineType": "lyrics"
         },
         {
@@ -48305,11 +48487,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "sin compromiso, la llevé hasta el piso ",
+          "text": "sin compromiso, la llevé hasta el piso",
           "lineType": "lyrics"
         },
         {
-          "text": "Besando sus labios rojizos ",
+          "text": "Besando sus labios rojizos",
           "lineType": "lyrics"
         },
         {
@@ -48386,7 +48568,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SIm – FA#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -48401,7 +48583,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me encantaría que te pongas romántica ",
+          "text": "Me encantaría que te pongas romántica",
           "lineType": "lyrics"
         },
         {
@@ -48470,7 +48652,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo déjame ver como mueves la cintura",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Y va subiendo la temperatura",
@@ -48485,7 +48667,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Una pregunta, Andan todas junta? ",
+          "text": "Una pregunta, Andan todas junta?",
           "lineType": "lyrics"
         },
         {
@@ -48513,11 +48695,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me encantaría que te pongas romántica ",
+          "text": "Me encantaría que te pongas romántica",
           "lineType": "lyrics"
         },
         {
-          "text": "y que me pidas mas, mas, mas, mas, mas ",
+          "text": "y que me pidas mas, mas, mas, mas, mas",
           "lineType": "lyrics"
         },
         {
@@ -48726,18 +48908,18 @@ window.STANDALONE_REGGAETON = [
         {
           "text": " RE – LA – FA – DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "Y es que tú vives en mí ",
+          "text": "Y es que tú vives en mí",
           "lineType": "lyrics"
         },
         {
-          "text": "No puedo dejarte un momento ",
+          "text": "No puedo dejarte un momento",
           "lineType": "lyrics"
         },
         {
@@ -48753,7 +48935,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Nena, dame de tu aliento ",
+          "text": "Nena, dame de tu aliento",
           "lineType": "lyrics"
         },
         {
@@ -48761,7 +48943,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú te quedas, aquí estoy ",
+          "text": "Si tú te quedas, aquí estoy",
           "lineType": "lyrics"
         },
         {
@@ -48769,15 +48951,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú te vas, me voy ",
+          "text": "Si tú te vas, me voy",
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú te quedas, aquí estoy ",
+          "text": "Si tú te quedas, aquí estoy",
           "lineType": "lyrics"
         },
         {
-          "text": "Para todo tu cuerpo, nena, devorarte hoy ",
+          "text": "Para todo tu cuerpo, nena, devorarte hoy",
           "lineType": "lyrics"
         },
         {
@@ -48785,22 +48967,22 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Mi corazón es tuyo, tu corazón es mío ",
+          "text": "Mi corazón es tuyo, tu corazón es mío",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Recuerdo aquel día haciendo el amor en el río ",
+          "text": "Recuerdo aquel día haciendo el amor en el río",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Cinco de la mañana, nos mojaba el rocío ",
+          "text": "Cinco de la mañana, nos mojaba el rocío",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "Antes vivía aborrecí'o, tú has calmado mi brío ",
+          "text": "Antes vivía aborrecí'o, tú has calmado mi brío",
           "lineType": "lyrics",
           "bold": true
         },
@@ -48841,7 +49023,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y es que tú vives en mí ",
+          "text": "Y es que tú vives en mí",
           "lineType": "lyrics"
         },
         {
@@ -48849,7 +49031,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Nena, dame de tu aliento ",
+          "text": "Nena, dame de tu aliento",
           "lineType": "lyrics"
         },
         {
@@ -48857,11 +49039,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú te quedas, aquí estoy ",
+          "text": "Si tú te quedas, aquí estoy",
           "lineType": "lyrics"
         },
         {
-          "text": "Para todo tu cuerpo, nena, devorarte hoy ",
+          "text": "Para todo tu cuerpo, nena, devorarte hoy",
           "lineType": "lyrics"
         },
         {
@@ -48869,11 +49051,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú te quedas, aquí estoy ",
+          "text": "Si tú te quedas, aquí estoy",
           "lineType": "lyrics"
         },
         {
-          "text": "Para todo tu cuerpo, nena, devorarte hoy ",
+          "text": "Para todo tu cuerpo, nena, devorarte hoy",
           "lineType": "lyrics"
         },
         {
@@ -48917,7 +49099,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si hace algo negativo, enseguida se retracta ",
+          "text": "Si hace algo negativo, enseguida se retracta",
           "lineType": "lyrics"
         },
         {
@@ -48949,7 +49131,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Y es que tú vives en mí ",
+          "text": "Y es que tú vives en mí",
           "lineType": "lyrics"
         },
         {
@@ -48961,7 +49143,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y es que tú vives en mí ",
+          "text": "Y es que tú vives en mí",
           "lineType": "lyrics"
         },
         {
@@ -49046,38 +49228,38 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FAm - DO# - SOL# - RE#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "No puedo ya disimular ",
+          "text": "No puedo ya disimular",
           "lineType": "lyrics"
         },
         {
-          "text": "Te toco y empiezo a temblar ",
+          "text": "Te toco y empiezo a temblar",
           "lineType": "lyrics"
         },
         {
-          "text": "Empiezas tú a desnudarte ",
+          "text": "Empiezas tú a desnudarte",
           "lineType": "lyrics"
         },
         {
-          "text": "Me miras y me pides más ",
+          "text": "Me miras y me pides más",
           "lineType": "lyrics"
         },
         {
-          "text": "Sudados los dos ",
+          "text": "Sudados los dos",
           "lineType": "lyrics"
         },
         {
-          "text": "Perdí el control ",
+          "text": "Perdí el control",
           "lineType": "lyrics"
         },
         {
-          "text": "Me entrego y solo sé ",
+          "text": "Me entrego y solo sé",
           "lineType": "lyrics"
         },
         {
@@ -49129,11 +49311,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sentir tu piel y cuando me tocas ",
+          "text": "Sentir tu piel y cuando me tocas",
           "lineType": "lyrics"
         },
         {
-          "text": "Haciéndonos uno los dos ",
+          "text": "Haciéndonos uno los dos",
           "lineType": "lyrics"
         },
         {
@@ -49145,15 +49327,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Está disfrutándolo y me pide más ",
+          "text": "Está disfrutándolo y me pide más",
           "lineType": "lyrics"
         },
         {
-          "text": "No hay medicina que pueda a mí curarme ",
+          "text": "No hay medicina que pueda a mí curarme",
           "lineType": "lyrics"
         },
         {
-          "text": "Sólo la que tú me das ",
+          "text": "Sólo la que tú me das",
           "lineType": "lyrics"
         },
         {
@@ -49181,11 +49363,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y empiezas tú a desnudarte ",
+          "text": "Y empiezas tú a desnudarte",
           "lineType": "lyrics"
         },
         {
-          "text": "Me miras y me pides más ",
+          "text": "Me miras y me pides más",
           "lineType": "lyrics"
         },
         {
@@ -49197,7 +49379,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me entrego y solo sé ",
+          "text": "Me entrego y solo sé",
           "lineType": "lyrics"
         },
         {
@@ -49253,11 +49435,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Sensual, con pasión me arropa ",
+          "text": "Sensual, con pasión me arropa",
           "lineType": "lyrics"
         },
         {
-          "text": "Por encima de mi cuerpo galopa ",
+          "text": "Por encima de mi cuerpo galopa",
           "lineType": "lyrics"
         },
         {
@@ -49277,7 +49459,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y así mismo ",
+          "text": "Y así mismo",
           "lineType": "lyrics"
         },
         {
@@ -49289,7 +49471,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Tiene magia ",
+          "text": "Tiene magia",
           "lineType": "lyrics"
         },
         {
@@ -49297,7 +49479,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "No puedo contigo, mami ya yo no resisto ",
+          "text": "No puedo contigo, mami ya yo no resisto",
           "lineType": "lyrics"
         },
         {
@@ -49310,7 +49492,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo la que tú me das",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Si no me das de lo tuyo",
@@ -49321,7 +49503,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Y me pide más ",
+          "text": "Y me pide más",
           "lineType": "lyrics"
         },
         {
@@ -49329,15 +49511,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Solo la que tú me das ",
-          "lineType": "header"
+          "text": "Solo la que tú me das",
+          "lineType": "lyrics"
         },
         {
           "text": "Si no me das de lo tuyo",
           "lineType": "lyrics"
         },
         {
-          "text": "Empiezo a desesperarme (no, no) ",
+          "text": "Empiezo a desesperarme (no, no)",
           "lineType": "lyrics"
         },
         {
@@ -49353,11 +49535,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Te toco y empiezo a temblar, eeeh ",
+          "text": "Te toco y empiezo a temblar, eeeh",
           "lineType": "lyrics"
         },
         {
-          "text": "Empiezas tú a desnudarte ",
+          "text": "Empiezas tú a desnudarte",
           "lineType": "lyrics"
         },
         {
@@ -49373,7 +49555,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Me entrego y solo sé ",
+          "text": "Me entrego y solo sé",
           "lineType": "lyrics"
         },
         {
@@ -49456,8 +49638,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "       Bm                           F#m",
-          "lineType": "chords"
+          "text": "       Bm      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Imaginate..dos cuerpos en la cama ardiendo",
@@ -49468,8 +49651,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                      Bm",
-          "lineType": "chords"
+          "text": "      Bm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "susados y afuera lloviendo",
@@ -49477,7 +49661,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "           F#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "oh oh oh oh",
@@ -49488,8 +49673,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "       Bm                           F#m",
-          "lineType": "chords"
+          "text": "       Bm      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Imaginate..dos cuerpos en la cama ardiendo",
@@ -49500,8 +49686,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                      Bm",
-          "lineType": "chords"
+          "text": "      Bm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "susados y afuera lloviendo",
@@ -49509,7 +49696,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "           F#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "oh oh oh oh",
@@ -49520,8 +49708,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm                                           F#m",
-          "lineType": "chords"
+          "text": "Bm      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Deja salir esa sensualidad que me llevo a un punto",
@@ -49532,8 +49721,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm                                     F#m",
-          "lineType": "chords"
+          "text": "Bm      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y provoca deslizar cada parte de tu cuerpo",
@@ -49544,16 +49734,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bm                        F#m                        Bm",
-          "lineType": "chords"
+          "text": "Bm      F#m      Bm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "No se cuanto tiempo tengo que esperar para que tu me des",
           "lineType": "lyrics"
         },
         {
-          "text": "                  F#m",
-          "lineType": "chords"
+          "text": "      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "una oportunidad para yo poder desarrollarme...",
@@ -49869,7 +50061,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA – SOL - LA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -50165,7 +50357,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA – DO#",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -50173,8 +50365,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Tony dize:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Inmaginate",
@@ -50206,8 +50397,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Yandel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Dime como te sientes",
@@ -50247,8 +50437,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Wisin",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Como ella hay dos ella cuando",
@@ -50312,8 +50501,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "yandel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Dime como te sientes",
@@ -50353,8 +50541,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Tony dize:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Olvidas tus problemas",
@@ -50374,7 +50561,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "solo deseo que te entregues por completo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "hacia mi y te quedes conmigo",
@@ -50418,8 +50605,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Yandel:",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Dime como te sientes",
@@ -50463,7 +50649,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Solo quiero que uses la inmaginacion",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "Y pienses que estoy besando tu cuerpo",
@@ -50547,26 +50733,26 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em – Am - G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "Hace tiempo que estaba por decirte ",
+          "text": "Hace tiempo que estaba por decirte",
           "lineType": "lyrics"
         },
         {
-          "text": "Lo que me tiene loco ",
+          "text": "Lo que me tiene loco",
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando me devoras poco a poco ",
+          "text": "Cuando me devoras poco a poco",
           "lineType": "lyrics"
         },
         {
-          "text": "O cuando de tu pelo yo me agarro ",
+          "text": "O cuando de tu pelo yo me agarro",
           "lineType": "lyrics"
         },
         {
@@ -50578,11 +50764,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando me devoras poco a poco ",
+          "text": "Cuando me devoras poco a poco",
           "lineType": "lyrics"
         },
         {
-          "text": "O cuando de tu pelo yo me agarro ",
+          "text": "O cuando de tu pelo yo me agarro",
           "lineType": "lyrics"
         },
         {
@@ -50590,7 +50776,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Esa forma en que me mira' a mí ",
+          "text": "Esa forma en que me mira' a mí",
           "lineType": "lyrics"
         },
         {
@@ -50602,11 +50788,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Si tú estás pa' mí y yo pa ti ",
+          "text": "Si tú estás pa' mí y yo pa ti",
           "lineType": "lyrics"
         },
         {
-          "text": "Y te invito a salir ",
+          "text": "Y te invito a salir",
           "lineType": "lyrics"
         },
         {
@@ -50614,7 +50800,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Tu cuerpo de modelo, cómo te peinas el pelo ",
+          "text": "Tu cuerpo de modelo, cómo te peinas el pelo",
           "lineType": "lyrics"
         },
         {
@@ -50634,15 +50820,15 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Nadie mejor que tú ",
+          "text": "Nadie mejor que tú",
           "lineType": "lyrics"
         },
         {
-          "text": "A poca luz ",
+          "text": "A poca luz",
           "lineType": "lyrics"
         },
         {
-          "text": "Nadie como tú ",
+          "text": "Nadie como tú",
           "lineType": "lyrics"
         },
         {
@@ -50650,23 +50836,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Hace tiempo que estaba por decirte ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Lo que me tiene loco ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Cuando me devoras poco a poco",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "O cuando de tu pelo yo me agarro ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Hace tiempo que estaba por decírtelo, oh-oh ",
+          "text": "Hace tiempo que estaba por decirte",
           "lineType": "lyrics"
         },
         {
@@ -50674,7 +50844,23 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando me devoras poco a poco ",
+          "text": "Cuando me devoras poco a poco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "O cuando de tu pelo yo me agarro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Hace tiempo que estaba por decírtelo, oh-oh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Lo que me tiene loco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cuando me devoras poco a poco",
           "lineType": "lyrics"
         },
         {
@@ -50686,7 +50872,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Mami, wow, qué corte ",
+          "text": "Mami, wow, qué corte",
           "lineType": "lyrics"
         },
         {
@@ -50698,7 +50884,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Su belleza la combina con el fronte ",
+          "text": "Su belleza la combina con el fronte",
           "lineType": "lyrics"
         },
         {
@@ -50726,7 +50912,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Nadie mejor que tú ",
+          "text": "Nadie mejor que tú",
           "lineType": "lyrics"
         },
         {
@@ -50738,7 +50924,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A poca luz ",
+          "text": "A poca luz",
           "lineType": "lyrics"
         },
         {
@@ -50746,11 +50932,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Hace tiempo que estaba por decirte ",
+          "text": "Hace tiempo que estaba por decirte",
           "lineType": "lyrics"
         },
         {
-          "text": "Lo que me tiene loco ",
+          "text": "Lo que me tiene loco",
           "lineType": "lyrics"
         },
         {
@@ -50758,7 +50944,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "O cuando de tu pelo yo me agarro ",
+          "text": "O cuando de tu pelo yo me agarro",
           "lineType": "lyrics"
         },
         {
@@ -50766,7 +50952,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Lo que me tiene loco ",
+          "text": "Lo que me tiene loco",
           "lineType": "lyrics"
         },
         {
@@ -50782,31 +50968,31 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Hace tiempo que quería decirte ",
+          "text": "Hace tiempo que quería decirte",
           "lineType": "lyrics"
         },
         {
-          "text": "Lo que me vuelve loco ",
+          "text": "Lo que me vuelve loco",
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando me devoras poco a poco ",
+          "text": "Cuando me devoras poco a poco",
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando de tu pelo yo me agarro ",
+          "text": "Cuando de tu pelo yo me agarro",
           "lineType": "lyrics"
         },
         {
-          "text": "Hace tiempo que quería decírtelo, oh-oh ",
+          "text": "Hace tiempo que quería decírtelo, oh-oh",
           "lineType": "lyrics"
         },
         {
-          "text": "Que me vuelves loco ",
+          "text": "Que me vuelves loco",
           "lineType": "lyrics"
         },
         {
-          "text": "Cuando me devoras poco a poco ",
+          "text": "Cuando me devoras poco a poco",
           "lineType": "lyrics"
         },
         {
@@ -50827,20 +51013,27 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "INTRO: LA - MI - RE - REm.",
-          "lineType": "tab"
+          "text": "INTRO:",
+          "lineType": "header"
         },
         {
-          "text": "LA          MI        RE-REm   LA     MI    RE-REm     ",
-          "lineType": "chords"
+          "text": "LA - MI - RE - REm.",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "LA          MI        RE-REm   LA     MI    RE-REm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Quien dice que no duele       las huellas en la arena",
           "lineType": "lyrics"
         },
         {
-          "text": "LA          MI        REm REm                   LA  ",
-          "lineType": "chords"
+          "text": "LA          MI        REm REm      LA",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Que ya el mar se la llevo     pero la luna sigue ahí",
@@ -50848,10 +51041,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       MI        RE-REm-SOL-LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Esa luna es mi condena ",
+          "text": "Esa luna es mi condena",
           "lineType": "lyrics"
         },
         {
@@ -50860,71 +51054,80 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "LA    MI     RE-REm   LA      MI    RE-REm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo nací una mañana y juntos por la noche",
           "lineType": "lyrics"
         },
         {
-          "text": "LA     MI               RE-REm",
-          "lineType": "chords"
+          "text": "LA     MI      RE-REm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "y la insitiva del recuerdo ",
+          "text": "y la insitiva del recuerdo",
           "lineType": "lyrics"
         },
         {
-          "text": "                   LA ",
-          "lineType": "chords"
+          "text": "      LA",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "se disfrazan de intuición ",
+          "text": "se disfrazan de intuición",
           "lineType": "lyrics"
         },
         {
-          "text": "         MI              RE-REm-SOL.",
-          "lineType": "chords"
-        },
-        {
-          "text": "y en una pos tu voz se esconde ",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "LA           MI             RE-REm-SOL",
-          "lineType": "chords"
+          "text": "         MI      RE-REm-SOL.",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y en una pos tu voz se esconde",
           "lineType": "lyrics"
         },
         {
-          "text": "RE  MI        F#m            RE                    MI              ",
-          "lineType": "chords"
+          "text": "LA           MI      RE-REm-SOL",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y en una pos tu voz se esconde",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "RE  MI        F#m            RE      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y yo sé que tal vez tu nunca escuches mi canción lo sé",
           "lineType": "lyrics"
         },
         {
-          "text": "RE  MI        F#m            RE                    MI",
-          "lineType": "chords"
+          "text": "RE  MI        F#m            RE      MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y yo sé que tal veiiiezz siga usando así robandote en mi inspiración",
           "lineType": "lyrics"
         },
         {
-          "text": "LA                   MI                   F#m",
-          "lineType": "chords"
+          "text": "LA      MI      F#m",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "mientras siga viendo tu cara en la cara de la luna",
           "lineType": "lyrics"
         },
         {
-          "text": "                  REm    LA                  MI       RE-REm-SOL   ",
-          "lineType": "chords"
+          "text": "      REm    LA      MI       RE-REm-SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "mientras yo siga escuchando tu voz entre las olas entre la espuma",
@@ -50932,15 +51135,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "          LA            MI            F#m",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "mientras tenga que cambiar la radio de estación",
           "lineType": "lyrics"
         },
         {
-          "text": "            REm          LA           MI        RE...LA ",
-          "lineType": "chords"
+          "text": "            REm          LA           MI        RE...LA",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "por que cada canción me hable de tí de ti yy y y yyy",
@@ -50996,7 +51201,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "De lunes a domingo voy desesperado",
@@ -51009,7 +51214,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "buscandote y buscando como un mercenario",
@@ -51018,7 +51223,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "   SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "tu dime donde estas que yo no te he encontrado",
@@ -51031,7 +51236,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "las manecillas giran, yo voy al contrario",
@@ -51044,7 +51249,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "me diste asi de frente, ¡que tremendo impacto!",
@@ -51053,7 +51258,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "para unirme a tu mirada dime:",
@@ -51070,7 +51275,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "DO",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "\"si hay que ser torero",
@@ -51081,9 +51286,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "                     SOL",
+          "text": "      SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "no importa lo que se venga",
@@ -51094,18 +51299,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "               FA",
+          "text": "      FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "como un buen, torero,",
           "lineType": "lyrics"
         },
         {
-          "text": "                     MI",
+          "text": "      MI",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "me juego la vida por ti\"",
@@ -51118,7 +51323,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "te cuentan que ya me vieron",
@@ -51129,7 +51334,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "que ya no duermo y desvario ",
+          "text": "que ya no duermo y desvario",
           "lineType": "lyrics"
         },
         {
@@ -51139,7 +51344,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "y tu por donde estas",
@@ -51152,7 +51357,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "   SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "te buscare vuelve conmigo",
@@ -51165,7 +51370,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "    LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "que yo te necesito como el perro al amo",
@@ -51182,7 +51387,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "    FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "me diste asi de frente,¡que tremendo impacto!",
@@ -51191,7 +51396,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "      SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "para unirme a tu mirada dime:",
@@ -51208,7 +51413,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "LAm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "de noviembre hasta enero",
@@ -51225,7 +51430,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "FA",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "y en marzo el amor, en diciembre tu y yo",
@@ -51234,7 +51439,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "   SOL",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "no importa mi amada si hay.......",
@@ -51288,9 +51493,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "C – Em – Dm – G – G – F – Em – Dm – G ",
+          "text": "C – Em – Dm – G – G – F – Em – Dm – G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "",
@@ -51299,7 +51504,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "C",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Cuando no tengas donde ir",
@@ -51308,7 +51513,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "cuando te sangre la nariz",
@@ -51317,7 +51522,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "cuando te duela la cabeza",
@@ -51326,7 +51531,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G     F-Em-Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "y se termine esa cerveza",
@@ -51335,7 +51540,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "C",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Cuando las alas de tu avión",
@@ -51344,7 +51549,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em         Em - D#m - Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "se derritan sin razón",
@@ -51353,7 +51558,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "y el cáncer de la soledad",
@@ -51362,7 +51567,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "te haya matado en la ciudad",
@@ -51374,13 +51579,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "C",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Yo romperé tus fotos",
@@ -51390,7 +51594,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Em",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "yo quemare tus cartas",
@@ -51400,7 +51604,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "para no verte más",
@@ -51410,7 +51614,7 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "G    G-F-Em-Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "para no verte más",
@@ -51431,8 +51635,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SE REPITEN LOS ACORDES.",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -51476,7 +51679,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:…",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
@@ -51536,23 +51739,26 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "F C D*-F*-E*-D*  x2",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "C                G*",
-          "lineType": "chords"
+          "text": "C      G*",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Wrerwrarwrurwra, wrarwrarwrirwrarwri.",
           "lineType": "lyrics"
         },
         {
-          "text": "C                G*",
-          "lineType": "chords"
+          "text": "C      G*",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Wrerwrarwrurwra, arwrarwrirwrarwro.",
@@ -51575,8 +51781,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "F                  C",
-          "lineType": "chords"
+          "text": "F      C",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Arwrarwrirwrarwro, arwrarwrirwrarwro.",
@@ -51584,15 +51791,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "D*        F*-E*D*    C",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Wrarwrirwrorwrorwre, arwrarwrirwrarwro.",
           "lineType": "lyrics"
         },
         {
-          "text": "F                   C",
-          "lineType": "chords"
+          "text": "F      C",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Arwrarwrirwrarwro, arwrarwrirwrarwro.",
@@ -51600,7 +51809,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "D*       F*-E*-D*  C",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Wrerwrirwrarwri, arwrarwrirwrarwro.",
@@ -51766,16 +51976,18 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "FA         SOL ",
-          "lineType": "chords"
+          "text": "FA         SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Bailan sin cesar ",
+          "text": "Bailan sin cesar",
           "lineType": "lyrics"
         },
         {
-          "text": "FA                 SOL    SIb        SOL ",
-          "lineType": "chords"
+          "text": "FA      SOL    SIb        SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Hasta que aparezca Cesar y lo arruine todo",
@@ -51798,7 +52010,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Que no baile Cesar ",
+          "text": "Que no baile Cesar",
           "lineType": "lyrics"
         },
         {
@@ -51806,8 +52018,8 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Déjenme bailar ",
-          "lineType": "chords"
+          "text": "Déjenme bailar",
+          "lineType": "lyrics"
         },
         {
           "text": "Hasta que aparezca Cesar y lo arruine todo",
@@ -51819,7 +52031,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Déjenme bailar",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "Hasta que aparezca Cesar y lo arruine todo",
@@ -51838,7 +52050,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Quiero expresarme, déjenme bailar, Déjenme bailar ",
+          "text": "Quiero expresarme, déjenme bailar, Déjenme bailar",
           "lineType": "lyrics"
         },
         {
@@ -51846,35 +52058,39 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "REm       DO    SOL     REm    DO    SOL   ",
-          "lineType": "chords"
+          "text": "REm       DO    SOL     REm    DO    SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mi cuerpo pide baile, y ustedes no me dejan",
           "lineType": "lyrics"
         },
         {
-          "text": "REm        DO    SOL      REm    DO    SOL ",
-          "lineType": "chords"
+          "text": "REm        DO    SOL      REm    DO    SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Yo quiero expresarme, ser libre con mi cuerpo ",
+          "text": "Yo quiero expresarme, ser libre con mi cuerpo",
           "lineType": "lyrics"
         },
         {
-          "text": "REm      DO     SOL       REm     DO    SOL   ",
-          "lineType": "chords"
+          "text": "REm      DO     SOL       REm     DO    SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Bailar es saludable, por qué tan mala onda",
           "lineType": "lyrics"
         },
         {
-          "text": "REm      DO    SOL      REm   DO    SOL ",
-          "lineType": "chords"
+          "text": "REm      DO    SOL      REm   DO    SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Soy un gran bailarín,  yo quiero bailar ",
+          "text": "Soy un gran bailarín,  yo quiero bailar",
           "lineType": "lyrics"
         },
         {
@@ -51890,7 +52106,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bailan con Cesar, bailan con Cesar ",
+          "text": "Bailan con Cesar, bailan con Cesar",
           "lineType": "lyrics"
         },
         {
@@ -51906,11 +52122,11 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Bailan con Cesar ",
+          "text": "Bailan con Cesar",
           "lineType": "lyrics"
         },
         {
-          "text": "Yo voy a bailar ",
+          "text": "Yo voy a bailar",
           "lineType": "lyrics"
         },
         {
@@ -51970,15 +52186,17 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "A - F# (2 veces)",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
           "lineType": "empty"
         },
         {
-          "text": "A                F#",
-          "lineType": "chords"
+          "text": "A      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Por ahorrarme el peluquero",
@@ -52005,8 +52223,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "header"
         },
         {
-          "text": "E                   F#",
-          "lineType": "chords"
+          "text": "E      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mis amigos me van a molestar",
@@ -52022,7 +52241,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A           F#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mi compartidura al medio",
@@ -52049,8 +52269,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "header"
         },
         {
-          "text": "E                   F#",
-          "lineType": "chords"
+          "text": "E      F#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mis amigos me van a molestar",
@@ -52082,15 +52303,23 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A           F#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Solo me queda un consuelo",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
-          "text": "A                F#            A",
-          "lineType": "chords"
+          "text": "A                F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "           A",
+          "lineType": "chords",
+          "red": true,
+          "bold": true
         },
         {
           "text": "que vuelva a crecer mi pelo.",
@@ -52143,6 +52372,34 @@ window.STANDALONE_REGGAETON = [
     "playlistOrder": 725.06,
     "pages": [
       [
+        {
+          "text": "[Tonalidad Audio: D]",
+          "lineType": "header"
+        },
+        {
+          "text": "D - F - Em - Eb - D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D - Gm - Am - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Dm - Em - Dm - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Dm - E - Dm - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
         {
           "text": "Lala lala lala lala lala",
           "lineType": "lyrics"
@@ -52299,8 +52556,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "  RE             DO",
-          "lineType": "chords"
+          "text": "  RE      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  conocí a las estrellas",
@@ -52308,15 +52566,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "            SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  de las portadas, u-hu-hu",
           "lineType": "lyrics"
         },
         {
-          "text": "  RE             DO",
-          "lineType": "chords"
+          "text": "  RE      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  sumergido en la fama",
@@ -52324,15 +52584,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "            SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  y en el placer, u-hu-hu",
           "lineType": "lyrics"
         },
         {
-          "text": "  RE             DO",
-          "lineType": "chords"
+          "text": "  RE      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  me compré autos caros",
@@ -52340,7 +52602,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "           SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  una casa en la playa",
@@ -52348,7 +52611,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  pero no fui feliz",
@@ -52356,7 +52620,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "    DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  pero no fui feliz...",
@@ -52446,9 +52711,9 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "C               Em      Am    Dm",
+          "text": "C      Em      Am    Dm",
           "lineType": "chords",
-          "bold": true
+          "red": true
         },
         {
           "text": "Un mamut chiquitito quería volar",
@@ -52504,7 +52769,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Cáncer",
-          "lineType": "chords"
+          "lineType": "lyrics"
         },
         {
           "text": "al mamut le dio cáncer (3)",
@@ -52666,12 +52931,13 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
-          "text": "Coro: ",
+          "text": "Coro:",
           "lineType": "header"
         },
         {
-          "text": "                 DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Mi muñeca me hablo",
@@ -52679,23 +52945,26 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me dijo cosas",
           "lineType": "lyrics"
         },
         {
-          "text": "                 REm   SOL",
-          "lineType": "chords"
+          "text": "      REm   SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que no puedo repetir",
           "lineType": "lyrics"
         },
         {
-          "text": "                        DO",
-          "lineType": "chords"
+          "text": "      DO",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "porque me habla solo a mi",
@@ -52707,7 +52976,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Me dijo cosas tan secretas",
@@ -52715,7 +52985,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Que tu no puedes oir",
@@ -52723,7 +52994,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       REm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me confeso algunos pecados",
@@ -52731,7 +53003,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que prefiero no decir",
@@ -52739,7 +53012,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "           LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me dijo algunas cosas locas",
@@ -52747,7 +53021,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que no te voy a contar",
@@ -52755,7 +53030,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "         REm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "tocamos temas muy profundas",
@@ -52763,7 +53039,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "muy dificiles de hablar",
@@ -52815,19 +53092,21 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        LAm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Solo a mi",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "        DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Solo a ti",
-          "lineType": "header"
+          "lineType": "lyrics"
         }
       ]
     ]
@@ -52878,10 +53157,11 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Yo opino que opinar es necesario ",
+          "text": "Yo opino que opinar es necesario",
           "lineType": "lyrics"
         },
         {
@@ -52894,7 +53174,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino que si opino un pensamiento",
@@ -52910,7 +53191,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino de lo humano y lo divino",
@@ -52926,7 +53208,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino que el gobierno esta en lo cierto",
@@ -52942,7 +53225,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino Yo opino, Yo opino",
@@ -52954,7 +53238,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino con criterio y elocuencia",
@@ -52970,7 +53255,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opino porque leo bien los diarios",
@@ -52986,10 +53272,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Yo opino sin saber leer ni escribo ",
+          "text": "Yo opino sin saber leer ni escribo",
           "lineType": "lyrics"
         },
         {
@@ -53002,10 +53289,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Yo opino con respeto a su persona ",
+          "text": "Yo opino con respeto a su persona",
           "lineType": "lyrics"
         },
         {
@@ -53017,7 +53305,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Yo opino, Yo opino, Yo opino, Yo opino ",
+          "text": "Yo opino, Yo opino, Yo opino, Yo opino",
           "lineType": "lyrics"
         },
         {
@@ -53089,7 +53377,8 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "        RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo nunca vi televisión",
@@ -53097,7 +53386,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "            SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "porque es muy fome",
@@ -53105,7 +53395,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "yo prefería estudiar",
@@ -53113,7 +53404,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y hasta leer",
@@ -53121,15 +53413,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Pero mi padre que un es loco ",
+          "text": "Pero mi padre que un es loco",
           "lineType": "lyrics"
         },
         {
           "text": "      SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y vende teles",
@@ -53137,7 +53431,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      RE           LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "para mi santo me vendió",
@@ -53145,7 +53440,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "un televisor",
@@ -53160,24 +53456,27 @@ window.STANDALONE_REGGAETON = [
           "lineType": "header"
         },
         {
-          "text": "SIm                  RE            SIm",
-          "lineType": "chords"
+          "text": "SIm      RE            SIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "    Y descubrí un mundo nuevo y fácil",
           "lineType": "lyrics"
         },
         {
-          "text": "                  RE    SIm",
-          "lineType": "chords"
+          "text": "      RE    SIm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que estaba en la televisión",
           "lineType": "lyrics"
         },
         {
-          "text": "               LA SOL FA#m MI ",
-          "lineType": "chords"
+          "text": "      LA SOL FA#m MI",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no necesito amigos que me  hablen",
@@ -53185,7 +53484,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "        RE            LA           RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "es la pantalla la que cumple esa función",
@@ -53221,8 +53521,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(Igual al coro)",
-          "lineType": "lyrics",
-          "green": true
+          "lineType": "lyrics"
         },
         {
           "text": "Y descubrí un mundo muy complejo",
@@ -53246,27 +53545,33 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "   RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "LA LA LA LA LA LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "LA LA LA LA LA LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "LA-LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "      RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tanganani qui qui qui qui",
@@ -53278,7 +53583,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "      SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Tangananica",
@@ -53290,7 +53596,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "     RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Yo opi pi pi pi pi",
@@ -53302,7 +53609,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "     SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "yo opino",
@@ -53310,7 +53618,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "     RE",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Top top top top top top",
@@ -53322,7 +53631,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "top top",
@@ -53334,7 +53644,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "RE SIm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -53409,7 +53720,8 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "SI - SOL# - SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "",
@@ -53417,7 +53729,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SI       SOL#          SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  Siempre que yo juego a la pelota",
@@ -53428,7 +53741,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "  cuando trato de que me la devuelva ",
+          "text": "  cuando trato de que me la devuelva",
           "lineType": "lyrics"
         },
         {
@@ -53457,12 +53770,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "DO#m - SI - LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "       por favor",
@@ -53478,7 +53791,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       solo un niño soy",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
           "text": "",
@@ -53486,7 +53799,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SI     SOL#           SOL",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  mira niño ya me has hecho mucho daño",
@@ -53513,7 +53827,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "  que seria de don sergio sin balones ",
+          "text": "  que seria de don sergio sin balones",
           "lineType": "lyrics"
         },
         {
@@ -53526,12 +53840,12 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "CORO:",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
           "text": "DO#m   SI      LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "       por favor",
@@ -53547,27 +53861,30 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "       solo un niño soy",
-          "lineType": "header"
+          "lineType": "lyrics"
         },
         {
-          "text": "SOL#        LA               SOL#",
-          "lineType": "chords"
+          "text": "SOL#        LA      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "por que no vas a jugar a la plaza",
           "lineType": "lyrics"
         },
         {
-          "text": "        LA               SOL#",
-          "lineType": "chords"
+          "text": "        LA      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no pudo ir quien me acompaña",
           "lineType": "lyrics"
         },
         {
-          "text": "        LA                 SOL#",
-          "lineType": "chords"
+          "text": "        LA      SOL#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "no tengo hermanos y mi madre trabaja",
@@ -53575,7 +53892,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "SOL#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "se me ocurrio la solucion",
@@ -53590,8 +53908,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "SI                 SOL#         SOL",
-          "lineType": "chords"
+          "text": "SI      SOL#         SOL",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "  vamos vamoa vamos a jugar don sergio,cuidao cuidao",
@@ -53606,7 +53925,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "  la idea es que la chutee pue,don serguio donsergio no se valla, ",
+          "text": "  la idea es que la chutee pue,don serguio donsergio no se valla,",
           "lineType": "lyrics"
         },
         {
@@ -53623,14 +53942,15 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "DO#m  SI     LA",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "      por favor ",
+          "text": "      por favor",
           "lineType": "lyrics"
         },
         {
-          "text": "      por favor, devuelvame ",
+          "text": "      por favor, devuelvame",
           "lineType": "lyrics"
         },
         {
@@ -53702,14 +54022,16 @@ window.STANDALONE_REGGAETON = [
       [
         {
           "text": "Cm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Cm                        Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Me muero por suplicarte, ",
+          "text": "Me muero por suplicarte,",
           "lineType": "lyrics"
         },
         {
@@ -53717,11 +54039,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#  A#7                    D#",
-          "lineType": "chords"
+          "text": "A#  A#7      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "me muero por escucharte  ",
+          "text": "me muero por escucharte",
           "lineType": "lyrics"
         },
         {
@@ -53729,11 +54052,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cm                       Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "me callo y te marchas, ",
+          "text": "me callo y te marchas,",
           "lineType": "lyrics"
         },
         {
@@ -53741,11 +54065,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#  A#7                    D#",
-          "lineType": "chords"
+          "text": "A#  A#7      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "de ser capaz algún día,  ",
+          "text": "de ser capaz algún día,",
           "lineType": "lyrics"
         },
         {
@@ -53753,11 +54078,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "G          G#                  A#         D#          Fm",
-          "lineType": "chords"
+          "text": "G          G#      A#         D#          Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "que me duelen al pensar ",
+          "text": "que me duelen al pensar",
           "lineType": "lyrics"
         },
         {
@@ -53766,7 +54092,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G#   A#    Cm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Cuánto tiempo vamos a esperar",
@@ -53777,11 +54104,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Cm                          Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Me muero por abrazarte ",
+          "text": "Me muero por abrazarte",
           "lineType": "lyrics"
         },
         {
@@ -53789,11 +54117,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#   A#7                   D#",
-          "lineType": "chords"
+          "text": "A#   A#7      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "me muero por divertirte   ",
+          "text": "me muero por divertirte",
           "lineType": "lyrics"
         },
         {
@@ -53801,11 +54130,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "Cm                        Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "acomodado en tu pecho ",
+          "text": "acomodado en tu pecho",
           "lineType": "lyrics"
         },
         {
@@ -53813,11 +54143,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#  A#7                         D#",
-          "lineType": "chords"
+          "text": "A#  A#7      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Me voy perdiendo en tu aroma,  ",
+          "text": "Me voy perdiendo en tu aroma,",
           "lineType": "lyrics"
         },
         {
@@ -53825,11 +54156,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "G          G#                    A#           D#       Fm",
-          "lineType": "chords"
+          "text": "G          G#      A#           D#       Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "que se acercan susurrando palabras ",
+          "text": "que se acercan susurrando palabras",
           "lineType": "lyrics"
         },
         {
@@ -53838,7 +54170,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G#     D#       Cm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Voy sintiendo el fuego en mi interior",
@@ -53849,11 +54182,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "G#       A#                 D#",
-          "lineType": "chords"
+          "text": "G#       A#      D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Me muero por conocerte, ",
+          "text": "Me muero por conocerte,",
           "lineType": "lyrics"
         },
         {
@@ -53861,11 +54195,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "G                G#         A#          D#",
-          "lineType": "chords"
+          "text": "G      G#         A#          D#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "abrir todas tus puertas ",
+          "text": "abrir todas tus puertas",
           "lineType": "lyrics"
         },
         {
@@ -53874,18 +54209,20 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G       G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "que nos quieran abatir",
           "lineType": "lyrics"
         },
         {
-          "text": "A#        D#       G              G#",
-          "lineType": "chords"
+          "text": "A#        D#       G      G#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Centrar en tus ojos mi mirada, ",
+          "text": "Centrar en tus ojos mi mirada,",
           "lineType": "lyrics"
         },
         {
@@ -53893,8 +54230,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#           D#             G       G#",
-          "lineType": "chords"
+          "text": "A#           D#      G       G#",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "besarnos hasta desgastarnos nuestros labios",
@@ -53902,7 +54240,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G#        A#           D#    G         G#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Y ver en tu rostro cada día crecer esa semilla",
@@ -53910,10 +54249,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A#     A#7   D#          Fm        G#        A#       Cm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "crear, soñar, dejar todo surgir, ",
+          "text": "crear, soñar, dejar todo surgir,",
           "lineType": "lyrics"
         },
         {
@@ -53925,11 +54265,12 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Cm                       Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "Me muero por explicarte ",
+          "text": "Me muero por explicarte",
           "lineType": "lyrics"
         },
         {
@@ -53938,7 +54279,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A#    A#7",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "me muero por intrigarte",
@@ -53946,15 +54288,17 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "D#",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "y seguir siendo capaz de sorprenderte",
           "lineType": "lyrics"
         },
         {
-          "text": "Cm                   Fm",
-          "lineType": "chords"
+          "text": "Cm      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Sentir cada día ese flechazo al verte",
@@ -53962,18 +54306,20 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "A#   A#7",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "qué más dará lo que digan",
           "lineType": "lyrics"
         },
         {
-          "text": "D#              G            G#",
-          "lineType": "chords"
+          "text": "D#      G            G#",
+          "lineType": "chords",
+          "red": true
         },
         {
-          "text": "qué más dará lo que piensen ",
+          "text": "qué más dará lo que piensen",
           "lineType": "lyrics"
         },
         {
@@ -53981,8 +54327,9 @@ window.STANDALONE_REGGAETON = [
           "lineType": "lyrics"
         },
         {
-          "text": "A#             D#             Fm",
-          "lineType": "chords"
+          "text": "A#      D#      Fm",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "Y ahora vuelvo a mirar el mundo a mi favor",
@@ -53990,7 +54337,8 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "G#       A#      Cm",
-          "lineType": "chords"
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "vuelvo a ver brillar la luz del sol",
@@ -54044,6 +54392,34 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
+          "text": "[Tonalidad Audio: Dm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Dm - Em - Bb - F - C - Am",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - Gm - Dm - G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C - F - D - A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D - Bb - F - C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
           "text": "Baby! Why are you doing this to me?",
           "lineType": "lyrics"
         },
@@ -54081,7 +54457,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(2x)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "I touch your lips and stare in your eyes",
@@ -54129,7 +54505,7 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "(2x)",
-          "lineType": "note"
+          "lineType": "header"
         },
         {
           "text": "I touch your lips and stare in your eyes",
@@ -54198,7 +54574,9 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Tonight I raise my glass",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "There’s nothing left",
           "lineType": "lyrics"
@@ -54270,6 +54648,34 @@ window.STANDALONE_REGGAETON = [
     "playlistOrder": 732.01,
     "pages": [
       [
+        {
+          "text": "[Tonalidad Audio: Abm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Bb - Abm - B - Em - C# - Bm - Ebm - Bbm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bbm - B - Bbm - E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F# - Bb - Abm - C#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C#m - Abm - Bbm - Abm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
         {
           "text": "Stay for tonight if you want to",
           "lineType": "lyrics"
@@ -54425,7 +54831,9 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "As long as you’re here with me, I know I’ll be okay",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "They say that love is forever",
           "lineType": "lyrics"
@@ -54529,6 +54937,34 @@ window.STANDALONE_REGGAETON = [
     "playlistOrder": 732.02,
     "pages": [
       [
+        {
+          "text": "[Tonalidad Audio: C#m]",
+          "lineType": "header"
+        },
+        {
+          "text": "D - C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A - Abm - B - C#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C#m - Ebm - Cm - C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C# - Bm - C#m - B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
         {
           "text": "True friends lie underneath,",
           "lineType": "lyrics"
@@ -54725,6 +55161,34 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
+          "text": "[Tonalidad Audio: D]",
+          "lineType": "header"
+        },
+        {
+          "text": "E - G - A - Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm - D - Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm - A - D - Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm - G - D - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
           "text": "And I’d give up forever to touch you",
           "lineType": "lyrics"
         },
@@ -54896,6 +55360,34 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
+          "text": "[Tonalidad Audio: Em]",
+          "lineType": "header"
+        },
+        {
+          "text": "Em - F#m - C - G - Em - C - G - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - G - Em - B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D - Em - Am - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G - Am - Em - G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
           "text": "Is there a right way for how this goes",
           "lineType": "lyrics"
         },
@@ -55050,7 +55542,9 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Nobody’s gonna hold your hand (hold your hand) and guide you through",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "It’s up for you to understand",
           "lineType": "lyrics"
@@ -55120,6 +55614,34 @@ window.STANDALONE_REGGAETON = [
     "playlistOrder": 735,
     "pages": [
       [
+        {
+          "text": "[Tonalidad Audio: Dm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Cm - Bm - Bb - F#m - Dm - F - Bb - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Dm - F - Bb - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C - Dm - E - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C - Bb - B - Gm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
         {
           "text": "Baby, pour over",
           "lineType": "lyrics"
@@ -55275,7 +55797,9 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "And I think heaven has a plot to take my life",
           "lineType": "lyrics"
-        },
+        }
+      ],
+      [
         {
           "text": "Listen, I’m the one who made you",
           "lineType": "lyrics"
@@ -55335,10 +55859,6 @@ window.STANDALONE_REGGAETON = [
         {
           "text": "Oh, oh, oh, oh, oh",
           "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
         }
       ]
     ]
@@ -55387,6 +55907,34 @@ window.STANDALONE_REGGAETON = [
     "playlistOrder": 784,
     "pages": [
       [
+        {
+          "text": "[Tonalidad Audio: Dm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Dm - Am - Bb - C - Dm - Gm - C - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bb - C - Dm - C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
         {
           "text": "stardust (Polvo de Estrellas)",
           "lineType": "lyrics",
@@ -55533,6 +56081,34 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
+          "text": "[Tonalidad Audio: Bm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Ebm - D - A - Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm - D - Em - Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm - D - Bm - D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
           "text": "",
           "lineType": "empty"
         },
@@ -55650,10 +56226,6 @@ window.STANDALONE_REGGAETON = [
           "text": "Enlace al video: https://www.youtube.com/watch?v=WyUXZq0DZsk",
           "lineType": "lyrics",
           "bold": true
-        },
-        {
-          "text": "",
-          "lineType": "empty"
         }
       ]
     ]
@@ -55706,6 +56278,34 @@ window.STANDALONE_REGGAETON = [
     "pages": [
       [
         {
+          "text": "[Tonalidad Audio: Dm]",
+          "lineType": "header"
+        },
+        {
+          "text": "Dm - Bb - G - Am - Bb - C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "C - Am - Bb - Am",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - Bb - Am - Gm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Am - Dm - Gm - Am",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
           "text": "Círculo: Shinigiwa Satellite | Voz: EiSei-P",
           "lineType": "lyrics",
           "bold": true
@@ -55715,7 +56315,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "[00:00] (Introducción instrumental: Guitarras distorsionadas y atmósfera de tensión) [00:15] Atrapado en el ciclo, donde el negro del universo lo envuelve todo, ",
+          "text": "[00:00] (Introducción instrumental: Guitarras distorsionadas y atmósfera de tensión) [00:15] Atrapado en el ciclo, donde el negro del universo lo envuelve todo,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55725,16 +56325,15 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "VERSO 1 (Voz Limpia / Melancólica)",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "[00:20] busco la perfección en este dilema manchado de pecado. ",
+          "text": "[00:20] busco la perfección en este dilema manchado de pecado.",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[00:26] Las manos carmesí intentan alcanzar un cielo que ya no existe, ",
+          "text": "[00:26] Las manos carmesí intentan alcanzar un cielo que ya no existe,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55753,12 +56352,12 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "[00:37] Miro hacia atrás y solo veo el rastro de mis propios intentos, ",
+          "text": "[00:37] Miro hacia atrás y solo veo el rastro de mis propios intentos,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[00:42] cenizas de una voluntad que se niega a ser doblegada. ",
+          "text": "[00:42] cenizas de una voluntad que se niega a ser doblegada.",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55778,11 +56377,11 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Coro I  Clímax Vocal: Repetición Dinámica:",
-          "lineType": "header",
+          "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[00:58] ¡Grita! Que el vacío escuche tu desesperación, ",
+          "text": "[00:58] ¡Grita! Que el vacío escuche tu desesperación,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55792,7 +56391,7 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": " [01:09] Busco la pureza en medio de la inmundicia total, ",
+          "text": " [01:09] Busco la pureza en medio de la inmundicia total,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55806,22 +56405,22 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Coro II (Repetición) ",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "[01:19] ¡Grita! Que el vacío escuche tu desesperación, ",
+          "text": "Coro II (Repetición)",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[01:25] en este mundo donde la luz es solo una traición. ",
+          "text": "[01:19] ¡Grita! Que el vacío escuche tu desesperación,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[01:30] Busco la pureza en medio de la inmundicia total, ",
+          "text": "[01:25] en este mundo donde la luz es solo una traición.",
+          "lineType": "lyrics",
+          "bold": true
+        },
+        {
+          "text": "[01:30] Busco la pureza en medio de la inmundicia total,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55835,7 +56434,7 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "[01:41] Puente Instrumental y Quiebre (Breakdown): ",
+          "text": "[01:41] Puente Instrumental y Quiebre (Breakdown):",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55845,21 +56444,20 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Verso III (Contraste de Intensidad):",
-          "lineType": "header",
-          "bold": true
+          "lineType": "header"
         },
         {
-          "text": "[02:02] ¿Es este el precio de proteger lo que ya está muerto? ",
+          "text": "[02:02] ¿Es este el precio de proteger lo que ya está muerto?",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:08] Cada paso es una herida, cada aliento es un desacierto. ",
+          "text": "[02:08] Cada paso es una herida, cada aliento es un desacierto.",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:13] Admiro las ansias de aquellos que aún se atreven a soñar, ",
+          "text": "[02:13] Admiro las ansias de aquellos que aún se atreven a soñar,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55874,24 +56472,26 @@ window.STANDALONE_REGGAETON = [
         },
         {
           "text": "Puente hacia el Caos:",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "[02:24] Rompe las cadenas del destino que nos impuso el ayer, ",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:29] no hay redención para quienes solo saben perder. ",
+          "text": "[02:24] Rompe las cadenas del destino que nos impuso el ayer,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:35] Pero en el intento, en esa lucha sin fin y violenta, ",
+          "text": "[02:29] no hay redención para quienes solo saben perder.",
           "lineType": "lyrics",
           "bold": true
         },
+        {
+          "text": "[02:35] Pero en el intento, en esa lucha sin fin y violenta,",
+          "lineType": "lyrics",
+          "bold": true
+        }
+      ],
+      [
         {
           "text": "[02:40] encuentro la belleza que mi alma atormentada alimenta.",
           "lineType": "lyrics",
@@ -55902,22 +56502,22 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "Coro III ",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "[02:46] ¡Grita! Que el vacío escuche tu desesperación, ",
+          "text": "Coro III",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:51] en este mundo donde la luz es solo una traición. ",
+          "text": "[02:46] ¡Grita! Que el vacío escuche tu desesperación,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[02:56] Busco la pureza en medio de la inmundicia total, ",
+          "text": "[02:51] en este mundo donde la luz es solo una traición.",
+          "lineType": "lyrics",
+          "bold": true
+        },
+        {
+          "text": "[02:56] Busco la pureza en medio de la inmundicia total,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55927,22 +56527,22 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Coro IV (Repetición) ",
-          "lineType": "header",
-          "bold": true
-        },
-        {
-          "text": "[03:07] ¡Grita! Que el vacío escuche tu desesperación, ",
+          "text": "Coro IV (Repetición)",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:13] en este mundo donde la luz es solo una traición. ",
+          "text": "[03:07] ¡Grita! Que el vacío escuche tu desesperación,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:18] Busco la pureza en medio de la inmundicia total, ",
+          "text": "[03:13] en este mundo donde la luz es solo una traición.",
+          "lineType": "lyrics",
+          "bold": true
+        },
+        {
+          "text": "[03:18] Busco la pureza en medio de la inmundicia total,",
           "lineType": "lyrics",
           "bold": true
         },
@@ -55952,27 +56552,27 @@ window.STANDALONE_REGGAETON = [
           "bold": true
         },
         {
-          "text": "Clímax / Outro ",
+          "text": "Clímax / Outro",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:29] Dilema de pecado, mancha que no se borrará, ",
+          "text": "[03:29] Dilema de pecado, mancha que no se borrará,",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:34] en el negro absoluto, mi voz siempre resonará. ",
+          "text": "[03:34] en el negro absoluto, mi voz siempre resonará.",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:40] Admiro el intento... ",
+          "text": "[03:40] Admiro el intento...",
           "lineType": "lyrics",
           "bold": true
         },
         {
-          "text": "[03:43] Admiro las ganas... ",
+          "text": "[03:43] Admiro las ganas...",
           "lineType": "lyrics",
           "bold": true
         },
@@ -56018,8 +56618,10 @@ window.STANDALONE_REGGAETON = [
           "lineType": "empty"
         },
         {
-          "text": "[00:00] (Introducción Instrumental - Tensión ascendente) ",
-          "lineType": "lyrics"
+          "text": "[00:00] (Introducción Instrumental - Tensión ascendente)",
+          "lineType": "header",
+          "red": false,
+          "bold": true
         },
         {
           "text": "",
