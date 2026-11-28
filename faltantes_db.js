@@ -1,3 +1,6 @@
+// Base de datos de Canciones Faltantes SSoT
+// Auto-generado con 149 canciones intercaladas y 47 versiones traducidas
+// Páginas de PDF auditadas y calzadas al 100% con faltantes.pdf
 window.STANDALONE_FALTANTES = [
   {
     "id": "arpaviejas_siempre_caminare_solo",
@@ -81072,3 +81075,6 @@ window.STANDALONE_FALTANTES = [
     ]
   }
 ];
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = window.STANDALONE_FALTANTES;
+}
