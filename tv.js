@@ -281,32 +281,45 @@ function buildTvSongs(bookKey) {
 // solo se marcan fallas y se deja un registro para compartirlo al final.
 // ==============================================================
 var TV_MARKS_KEY = 'cancionero_song_marks_v1';
-var TV_V4_MARKS_SEED_FLAG = 'cancionero_tv_v41_marks_seeded_v1';
+var TV_V4_MARKS_SEED_FLAG = 'cancionero_tv_v41_marks_seeded_v2';
 var TV_V4_INITIAL_SEED_MARKS = {
   arpaviejas_hoy_he_vuelto_a_beber: { fav: true },
+  non_servium_el_imperio_del_mal: { fav: true },
+  ska_p_villancico: { fav: true },
+  mago_de_oz_alma: { fav: true },
   ozuna_siguelo_bailando: { fav: true },
   foreground_eclipse_obstruction_color_it_all_out: { fav: true },
   la_polla_records_ellos_dicen_mierda: { badSync: true },
   kaos_etiliko_hoy_es_mi_dia: { badSync: true },
   arpaviejas_ahora_me_importa_una_mierda: { badSync: true },
+  envidia_kotxina_la_vida_no_me_da_la_cara: { badChord: true },
+  envidia_kotxina_maldita_mi_suerte: { badLyric: true, badSync: true },
   envidia_kotxina_estado_policial: { badSync: true },
   piperrak_basta_ya: { badSync: true },
+  escuela_de_odio_gritos: { badLyric: true, badSync: true },
   tronic_mateo: { badSync: true },
   nina_pastori_valgame_dios: { badSync: true },
+  marea_entre_hormigones: { badSync: true },
   extremoduro_puta: { badSync: true },
+  mago_de_oz_requiem: { badSync: true },
   rakim_y_ken_y_down: { badSync: true },
+  ozuna_del_mar: { badSync: true },
   gritando_en_silencio_rutina_en_las_venas_feat_albertucho: { badChord: true, badSync: true },
   la_fuga_baja_por_diversion_con_el_drogas: { badSync: true },
+  mago_de_oz_el_arbol_de_la_noche_triste: { badSync: true },
   mago_de_oz_suenos_dormidos: { badChord: true },
   kachi_kachi_yama_ayakashi_song: { badSync: true },
+  foreground_eclipse_dear_are_you_getting_sober: { badSync: true },
   shinigiwa_satellite_magical_girl_magical_chen: { badLyric: true, badSync: true },
-  shinigiwa_satellite_kansoku_polaris: { badLyric: true, badSync: true }
+  shinigiwa_satellite_kansoku_polaris: { badLyric: true, badSync: true },
+  the_black_eyed_peas_meet_me_halfway: { badSync: true },
+  nsync_bye_bye_bye: { badSync: true }
 };
 tvState.songMarks = {};
-tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync', 'errors'
+tvState.markFilter = 'all'; // 'all', 'fav', 'badChord', 'badLyric', 'badSync', 'badTab', 'errors'
 
 function tvEmptyMark() {
-  return { fav: false, badChord: false, badLyric: false, badSync: false };
+  return { fav: false, badChord: false, badLyric: false, badSync: false, badTab: false };
 }
 
 function tvHasActiveErrorMarks() {
@@ -314,7 +327,7 @@ function tvHasActiveErrorMarks() {
   var keys = Object.keys(map);
   for (var i = 0; i < keys.length; i++) {
     var m = map[keys[i]];
-    if (m && (m.badChord || m.badLyric || m.badSync)) return true;
+    if (m && (m.badChord || m.badLyric || m.badSync || m.badTab)) return true;
   }
   return false;
 }
@@ -328,7 +341,7 @@ function seedTvV4ReportedMarksIfNeeded() {
     for (var p = 0; p < prevKeys.length; p++) {
       var pid = prevKeys[p];
       if (prevMap[pid] && prevMap[pid].fav) {
-        nextMap[pid] = { fav: true, badChord: false, badLyric: false, badSync: false };
+        nextMap[pid] = { fav: true, badChord: false, badLyric: false, badSync: false, badTab: false };
       }
     }
     var seedKeys = Object.keys(TV_V4_INITIAL_SEED_MARKS);
@@ -340,7 +353,8 @@ function seedTvV4ReportedMarksIfNeeded() {
         fav: Boolean(prev.fav || seedObj.fav),
         badChord: Boolean(seedObj.badChord),
         badLyric: Boolean(seedObj.badLyric),
-        badSync: Boolean(seedObj.badSync)
+        badSync: Boolean(seedObj.badSync),
+        badTab: Boolean(seedObj.badTab)
       };
     }
     tvState.songMarks = nextMap;
@@ -355,7 +369,7 @@ function syncTvMarkFilterButtonsUI() {
   document.querySelectorAll('.tv-mark-filter-btn').forEach(function(btn) {
     var key = btn.getAttribute('data-mark-filter') || 'all';
     if (mf === 'errors') {
-      btn.classList.toggle('active', key === 'badChord' || key === 'badLyric' || key === 'badSync');
+      btn.classList.toggle('active', key === 'badChord' || key === 'badLyric' || key === 'badSync' || key === 'badTab');
     } else {
       btn.classList.toggle('active', key === mf);
     }
@@ -390,10 +404,11 @@ function toggleTvSongMark(markKey) {
     fav: !!prev.fav,
     badChord: !!prev.badChord,
     badLyric: !!prev.badLyric,
-    badSync: !!prev.badSync
+    badSync: !!prev.badSync,
+    badTab: !!prev.badTab
   };
   next[markKey] = !prev[markKey];
-  if (!next.fav && !next.badChord && !next.badLyric && !next.badSync) {
+  if (!next.fav && !next.badChord && !next.badLyric && !next.badSync && !next.badTab) {
     delete tvState.songMarks[song.id];
   } else {
     tvState.songMarks[song.id] = next;
@@ -424,6 +439,7 @@ function updateTvMarkButtons(song) {
   var bChord = document.getElementById('btn-tv-mark-bad-chord');
   var bLyric = document.getElementById('btn-tv-mark-bad-lyric');
   var bSync = document.getElementById('btn-tv-mark-bad-sync');
+  var bTab = document.getElementById('btn-tv-mark-bad-tab');
   if (bFav) {
     bFav.classList.toggle('active', !!mark.fav);
     bFav.innerHTML = mark.fav ? '♥ Favorita' : '♡ Favorita';
@@ -431,10 +447,11 @@ function updateTvMarkButtons(song) {
   if (bChord) bChord.classList.toggle('active', !!mark.badChord);
   if (bLyric) bLyric.classList.toggle('active', !!mark.badLyric);
   if (bSync) bSync.classList.toggle('active', !!mark.badSync);
+  if (bTab) bTab.classList.toggle('active', !!mark.badTab);
 }
 
 function updateTvMarkCounts() {
-  var favC = 0, chordC = 0, lyricC = 0, syncC = 0;
+  var favC = 0, chordC = 0, lyricC = 0, syncC = 0, tabC = 0;
   for (var i = 0; i < tvState.songs.length; i++) {
     var m = tvState.songMarks[tvState.songs[i].id];
     if (!m) continue;
@@ -442,15 +459,18 @@ function updateTvMarkCounts() {
     if (m.badChord) chordC++;
     if (m.badLyric) lyricC++;
     if (m.badSync) syncC++;
+    if (m.badTab) tabC++;
   }
   var e1 = document.getElementById('count-mark-fav');
   var e2 = document.getElementById('count-mark-bad-chord');
   var e3 = document.getElementById('count-mark-bad-lyric');
   var e4 = document.getElementById('count-mark-bad-sync');
+  var e5 = document.getElementById('count-mark-bad-tab');
   if (e1) e1.textContent = favC;
   if (e2) e2.textContent = chordC;
   if (e3) e3.textContent = lyricC;
   if (e4) e4.textContent = syncC;
+  if (e5) e5.textContent = tabC;
   syncTvMarkFilterButtonsUI();
 }
 function filterTvSongs() {
@@ -469,7 +489,7 @@ function filterTvSongs() {
       const m = tvState.songMarks[song.id];
       if (!m) return false;
       if (markFilter === 'errors') {
-        if (!m.badChord && !m.badLyric && !m.badSync) return false;
+        if (!m.badChord && !m.badLyric && !m.badSync && !m.badTab) return false;
       } else if (!m[markFilter]) {
         return false;
       }
@@ -526,7 +546,8 @@ function renderTvSongList() {
       (mark.fav ? '<span class="tv-mark-tag tv-mark-tag-fav" title="Favorita">♥</span>' : '') +
       (mark.badChord ? '<span class="tv-mark-tag tv-mark-tag-err" title="Acordes con error">Ac✗</span>' : '') +
       (mark.badLyric ? '<span class="tv-mark-tag tv-mark-tag-err" title="Letra con error">Lt✗</span>' : '') +
-      (mark.badSync ? '<span class="tv-mark-tag tv-mark-tag-err" title="Sincronización mala">Sn✗</span>' : '');
+      (mark.badSync ? '<span class="tv-mark-tag tv-mark-tag-err" title="Sincronización mala">Sn✗</span>' : '') +
+      (mark.badTab ? '<span class="tv-mark-tag tv-mark-tag-err" title="Tabs con error">Tb✗</span>' : '');
 
     html += `
       <div class="tv-song-item ${isActive ? 'active' : ''} ${isPlaying ? 'playing' : ''}" 
@@ -2313,11 +2334,12 @@ function initTvApp() {
     });
   });
 
-  // Botones de marca de la canción actual: Favorita / Acorde ✗ / Letra ✗ / Sincro ✗
+  // Botones de marca de la canción actual: Favorita / Acorde ✗ / Letra ✗ / Sincro ✗ / Tabs ✗
   on('btn-tv-mark-fav', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('fav'); });
   on('btn-tv-mark-bad-chord', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badChord'); });
   on('btn-tv-mark-bad-lyric', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badLyric'); });
   on('btn-tv-mark-bad-sync', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badSync'); });
+  on('btn-tv-mark-bad-tab', 'click', function(e) { e.stopPropagation(); toggleTvSongMark('badTab'); });
 
   // Botón e interfaz de Compartir Informe (sin edición, solo registro de marcas/fallas)
   initTvShareMarksModal();
@@ -3261,6 +3283,7 @@ function getTvMarkedSongsCatalog() {
   var badChords = [];
   var badLyrics = [];
   var badSyncs = [];
+  var badTabs = [];
   var uniqueMap = {};
   var totalUnique = 0;
 
@@ -3272,6 +3295,7 @@ function getTvMarkedSongsCatalog() {
     if (m.badChord) { badChords.push(s); hasAny = true; }
     if (m.badLyric) { badLyrics.push(s); hasAny = true; }
     if (m.badSync) { badSyncs.push(s); hasAny = true; }
+    if (m.badTab) { badTabs.push(s); hasAny = true; }
     if (hasAny && !uniqueMap[s.id]) {
       uniqueMap[s.id] = true;
       totalUnique++;
@@ -3282,6 +3306,7 @@ function getTvMarkedSongsCatalog() {
     badChords: badChords,
     badLyrics: badLyrics,
     badSyncs: badSyncs,
+    badTabs: badTabs,
     totalUnique: totalUnique
   };
 }
@@ -3313,12 +3338,12 @@ function buildTvMarksShareReport(filter) {
   var dateStr = '';
   try { dateStr = new Date().toLocaleDateString('es-CL'); } catch (e) { dateStr = new Date().toISOString().slice(0, 10); }
   lines.push('📋 *INFORME DE FALLAS Y FAVORITAS — CANCIONERO TV* (' + dateStr + ')');
-  lines.push('Resumen: ' + cat.favs.length + ' favoritas · ' + cat.badChords.length + ' acordes malos · ' + cat.badLyrics.length + ' letras malas · ' + cat.badSyncs.length + ' sincro mala');
+  lines.push('Resumen: ' + cat.favs.length + ' favoritas · ' + cat.badChords.length + ' acordes malos · ' + cat.badLyrics.length + ' letras malas · ' + cat.badSyncs.length + ' sincro mala · ' + cat.badTabs.length + ' tabs malas');
 
   if (cat.totalUnique === 0) {
     lines.push('');
     lines.push('Aún no hay canciones marcadas en ninguno de los cancioneros (Principal, Reggaetón o Faltantes).');
-    lines.push('Usa ♥ Favorita, Acorde ✗, Letra ✗ o Sincro ✗ mientras escuchas canciones para registrar fallas y compartirlas al final.');
+    lines.push('Usa ♥ Favorita, Acorde ✗, Letra ✗, Sincro ✗ o Tabs ✗ mientras escuchas canciones para registrar fallas y compartirlas al final.');
     return lines.join('\n');
   }
 
@@ -3359,6 +3384,16 @@ function buildTvMarksShareReport(filter) {
       for (var s = 0; s < cat.badSyncs.length; s++) lines.push(formatTvSongLineForShare(cat.badSyncs[s], 'Revisar sincronización'));
     } else if (filter === 'badSync') {
       lines.push('\nNo hay canciones marcadas con Sincronización mala.');
+    }
+  }
+
+  if (filter === 'all' || filter === 'badTab') {
+    if (cat.badTabs.length > 0) {
+      lines.push('');
+      lines.push('🎼 *TABS MALAS A CORREGIR (' + cat.badTabs.length + '):*');
+      for (var tb = 0; tb < cat.badTabs.length; tb++) lines.push(formatTvSongLineForShare(cat.badTabs[tb], 'Revisar tabs'));
+    } else if (filter === 'badTab') {
+      lines.push('\nNo hay canciones marcadas con Tabs malas.');
     }
   }
 
@@ -3500,19 +3535,19 @@ function fallbackCopyTvText(textarea) {
 // 10. SELECTOR DE IDIOMA (ORIGINAL / ESPAÑOL) EN CANCIONES CON TRADUCCIÓN
 // ==============================================================
 function detectTvOriginalLangBadge(song) {
-  if (!song) return '🌐 Original';
-  var sample = String(song.title || '') + ' ' + String(song.artist || '');
+  if (!song) return '🇺🇸 Original';
+  var sample = '';
   try {
     var pages = song.pages || [];
     if (pages[0] && Array.isArray(pages[0])) {
-      for (var i = 0; i < Math.min(12, pages[0].length); i++) {
+      for (var i = 0; i < Math.min(24, pages[0].length); i++) {
         var l = pages[0][i];
         sample += ' ' + (typeof l === 'string' ? l : (l && l.text ? l.text : ''));
       }
     }
   } catch (e) {}
   if (/[\u3040-\u30ff\u4e00-\u9faf]/.test(sample)) return '🇯🇵 Original';
-  return '🌐 Original';
+  return '🇺🇸 Original';
 }
 
 function updateTvLangToggleUI(song) {

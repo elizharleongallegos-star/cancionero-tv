@@ -17349,15 +17349,18 @@ window.STANDALONE_FALTANTES = [
       [
         {
           "text": "Bueno esta es la correcta tab. de la canción el árbol de la noche",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "triste(unas de mis favoritas) viva mago de ozpróximamente en Ecuador",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "Att. Jose Enrique Bravo",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "",
@@ -17381,7 +17384,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "1era parte                    x1 2da parte                    x3",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "---------0---------------0-----| --------0--------------0------|",
@@ -17417,7 +17421,8 @@ window.STANDALONE_FALTANTES = [
         },
         {
           "text": "GUITARRA (00:18)",
-          "lineType": "lyrics"
+          "lineType": "header",
+          "bold": true
         },
         {
           "text": "------------------------------------",
@@ -69256,26 +69261,17 @@ window.STANDALONE_FALTANTES = [
     "pages": [
       [
         {
-          "text": "[Tonalidad Audio: Bm]",
-          "lineType": "header"
+          "text": "ESQUEMA DE ACORDES Y AFINACIÓN:",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "C - Bm - D - C#m - A - G - D - C#m",
+          "text": "Intro / Coro: Bm - G - D - A",
           "lineType": "chords",
           "red": true
         },
         {
-          "text": "C#m - A - Bm - G",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "F#m - A - D - E",
-          "lineType": "chords",
-          "red": true
-        },
-        {
-          "text": "Dm - A - Em - Bb",
+          "text": "Verso: Bm - A - G - F#m",
           "lineType": "chords",
           "red": true
         },
@@ -69284,107 +69280,458 @@ window.STANDALONE_FALTANTES = [
           "lineType": "empty"
         },
         {
-          "text": "",
-          "lineType": "empty"
+          "text": "[Coro Intro (Fergie)]",
+          "lineType": "header",
+          "bold": true
         },
         {
-          "text": "[Intro]",
-          "lineType": "header"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Verso 1 - Fergie]",
-          "lineType": "header"
-        },
-        {
-          "text": "I can't go any further then this,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I want you so badly, it's my biggest wish.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Cool, I spend my time just thinkin' thinkin' thinkin' 'bout you,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "every single day yes, I'm really missin' missin' you.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "And all those things we used to used to used to make us do,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "hey girl, what's up, it's used to used to be just me and you.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Puente]",
-          "lineType": "header"
-        },
-        {
-          "text": "I spend my time just thinkin' thinkin' thinkin' 'bout you,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "here's my lookin' lookin' lookin' at you.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "Meet me halfway, right at the borderline,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "that's where I'm gonna wait, for you.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "I'll be lookin' out, night n' day,",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "took my heart to the limit, and this is where I'll stay.",
-          "lineType": "lyrics"
-        },
-        {
-          "text": "",
-          "lineType": "empty"
-        },
-        {
-          "text": "[Coro]",
-          "lineType": "header"
+          "text": "Bm                 G",
+          "lineType": "chords",
+          "red": true
         },
         {
           "text": "I can't go any further than this,",
           "lineType": "lyrics"
         },
         {
-          "text": "I want you so bad it's my only wish.",
+          "text": "D                  A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so badly, it's my biggest wish.",
           "lineType": "lyrics"
         },
         {
-          "text": "Can you meet me halfway, right at the borderline?",
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 1 (apl.de.ap & Taboo)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bm                         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cool, I spend my time just thinkin', thinkin', thinkin' 'bout you,",
           "lineType": "lyrics"
         },
         {
-          "text": "That's where I'm gonna wait, for you.",
+          "text": "G                          F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Every single day, yes, I'm really missin', missin' you,",
           "lineType": "lyrics"
         },
         {
-          "text": "Oh, I want you so bad it's my only wish,",
+          "text": "Bm                         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "And all those things we used to, used to, used to, used to do.",
           "lineType": "lyrics"
         },
         {
-          "text": "can you meet me halfway, right at the borderline?",
+          "text": "G                          F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Hey girl, what's up? It used to, used to be just me and you.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I spend my time just thinkin', thinkin', thinkin' 'bout you,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                          F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Every single day, yes, I'm really missin', missin' you,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "And all those things we used to, used to, used to do,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                          F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Hey girl, what's up? Yo, what's up, what's up, what's up?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro 1 (Fergie)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Can you meet me halfway, right at the borderline,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "is where I'm gonna wait for you.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I'll be lookin' out, night and day,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "took my heart to the limit, and this is where I stay.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I can't go any further than this,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so bad, it's my only wish.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Verso 2 (will.i.am)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bm                               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Girl, I travel 'round the world and even sail the seven seas,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Across the universe and all the other galaxies,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Just tell me where to go, just tell me where you wanna meet,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I navigate myself, myself to take me where you be.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "'Cause girl I want, I, I, I want you right now,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I travel uptown, town, I travel downtown,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Wanna have you around, 'round like every single day,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I love you alway-way, I'll meet you halfway.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro 2 (Fergie)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Can you meet me halfway, right at the borderline,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "is where I'm gonna wait for you.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I'll be lookin' out, night and day,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "took my heart to the limit, and this is where I stay.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I can't go any further than this,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so bad, it's my only wish.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I can't go any further than this,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so bad, it's my only wish.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Puente (will.i.am)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "G                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Let's cross the bridge to the other side, just you and I,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I will fly, fly the skies for you and I,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I will try until I die for you and I, for, for you and I.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Can you meet me halfway? Can you meet me halfway?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "",
+          "lineType": "empty"
+        },
+        {
+          "text": "[Coro Final (Fergie)]",
+          "lineType": "header",
+          "bold": true
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Meet me halfway, right at the borderline,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "is where I'm gonna wait for you.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I'll be lookin' out, night and day,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "took my heart to the limit, and this is where I stay.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I can't go any further than this,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so bad, it's my only wish.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I can't go any further than this,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "I want you so bad, it's my only wish.",
           "lineType": "lyrics"
         }
       ]
