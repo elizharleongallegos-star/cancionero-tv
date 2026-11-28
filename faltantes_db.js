@@ -1,6 +1,3 @@
-// Base de datos de Canciones Faltantes SSoT
-// Auto-generado con 149 canciones intercaladas y 47 versiones traducidas
-// Páginas de PDF auditadas y calzadas al 100% con faltantes.pdf
 window.STANDALONE_FALTANTES = [
   {
     "id": "arpaviejas_siempre_caminare_solo",
@@ -73981,8 +73978,7097 @@ window.STANDALONE_FALTANTES = [
         }
       ]
     ]
+  },
+  {
+    "id": "extremoduro_mi_voluntad",
+    "order": 825,
+    "artist": "Extremoduro",
+    "title": "Mi voluntad",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Rock / Punk",
+    "two_col": true,
+    "pdfPage": 198,
+    "pdfPages": [
+      198
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=7m0ShoN8Qas",
+    "youtubeTitle": "Extremoduro - Mi voluntad",
+    "youtubeVersions": [
+      {
+        "id": "7m0ShoN8Qas",
+        "index": 825,
+        "playlistIndex": 825,
+        "title": "Extremoduro - Mi voluntad",
+        "author": "Extremoduro",
+        "channel": "Extremoduro",
+        "url": "https://www.youtube.com/watch?v=7m0ShoN8Qas",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "7m0ShoN8Qas",
+      "index": 825,
+      "playlistIndex": 825,
+      "title": "Extremoduro - Mi voluntad",
+      "author": "Extremoduro",
+      "channel": "Extremoduro",
+      "url": "https://www.youtube.com/watch?v=7m0ShoN8Qas",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 825,
+    "playlistOrder": 918,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Lo que te perdí de vista",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Detrás de tu pista",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y por si acaso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Desaceleraré el paso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Para comprender primero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Lo que estoy buscando sin parar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Salgo por cambiar el ritmo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Fuera de mí mismo a ver qué pasa",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Por fuera de esta carcasa",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me convierto en algo incierto",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cántaro o diablo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Qué más da",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cántaro a la fuente, bienvenido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me marcho y mi suerte maldigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo quisiera estar siempre contigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me rompo en mitad del camino",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero ser como una mula",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Terco, es mi más pura voluntad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi voluntad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Porque te perdí de vista",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Detrás de tu pista",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y por si acaso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Desaceleraré el paso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Para comprender primero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Lo que estoy buscando sin parar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Salgo por cambiar el ritmo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Fuera de mi mismo a ver qué pasa",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Por fuera de esta carcasa",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me convierto en algo incierto",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cántaro o diablo, qué más da",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "¿Por qué estás diablo tan abatido?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Soy malo y mi suerte maldigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tengo en el horno niños metidos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Me duele escuchar sus quejidos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Quiero ser como una mula",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Terco, es mi más pura voluntad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi voluntad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi voluntad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi voluntad",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "pierce_the_veil_today_i_saw_the_whole_world",
+    "order": 826,
+    "artist": "Pierce The Veil",
+    "title": "Today I Saw The Whole World",
+    "tone": "Dm",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Rock / Punk",
+    "two_col": true,
+    "pdfPage": 199,
+    "pdfPages": [
+      199
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=ltqXGUHwX6I",
+    "youtubeTitle": "Pierce The Veil - Today I Saw The Whole World",
+    "youtubeVersions": [
+      {
+        "id": "ltqXGUHwX6I",
+        "index": 826,
+        "playlistIndex": 826,
+        "title": "Pierce The Veil - Today I Saw The Whole World",
+        "author": "Pierce The Veil",
+        "channel": "Pierce The Veil",
+        "url": "https://www.youtube.com/watch?v=ltqXGUHwX6I",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "ltqXGUHwX6I",
+      "index": 826,
+      "playlistIndex": 826,
+      "title": "Pierce The Veil - Today I Saw The Whole World",
+      "author": "Pierce The Veil",
+      "channel": "Pierce The Veil",
+      "url": "https://www.youtube.com/watch?v=ltqXGUHwX6I",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 826,
+    "playlistOrder": 919,
+    "hasTranslation": true,
+    "spanishVersion": {
+      "title": "Today I Saw The Whole World",
+      "subtitle": "[VERSIÓN EN ESPAÑOL — \"Hoy vi el mundo entero\"]",
+      "tone": "Dm",
+      "capo": "0",
+      "pdfFile": "faltantes.pdf",
+      "pdfPage": 199,
+      "pdfPages": [
+        199
+      ],
+      "pages": [
+        [
+          {
+            "text": "[Acordes Verificados]",
+            "lineType": "header"
+          },
+          {
+            "text": "Intro/Verso/Coro: Em - Em9 - Cmaj7 | Puente: Cmaj7 - Em - Em6 - Cmaj7 - Em",
+            "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "[Letra Completa en Español]",
+            "lineType": "header"
+          },
+          {
+            "text": "Nena, inclínate, dime, ¿somos de concreto?",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "¿Qué harías sin mi perfecta compañía para tu espalda descubierta?",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero puedo oírte arrastrarte detrás de mi auto con tus piernas rotas",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Tragando puntadas mientras duerme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mientras ella robaba mi única vista, que nunca parpadee",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mientras estabas de pie sobre el pavimento, yo estaba mordiendo el bordillo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Entretenimiento enfermizo, pero apuesto a que se siente bien venir abajo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No soporto borrar el tiempo perdido",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Entre tus labios y los míos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Cero amigos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Seguí tus voces hacia un mar de cruces",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ella se mezcla con el oro de los zorros y se siente como en casa",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Bajo la superficie, mi amor",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero ten cuidado, ten cuidado, ten cuidado",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y tómalo con calma esta noche",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Estamos al otro lado del camino",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Creo que nos estamos desangrando",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mientras estabas de pie sobre el pavimento, yo estaba mordiendo el bordillo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Entretenimiento enfermizo, pero apuesto a que se siente bien venir abajo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No soporto borrar el tiempo perdido",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Entre nuestros labios",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Así que vamos y balancéate de atrás para adelante tal como",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mi corazón está en un péndulo esta noche",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Si tus pulmones son míos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Solo quiero ver tus nubes persistir en la oscuridad",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Oh, ¿no puedes sentirlo?",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te estás alimentando de mi alma inquieta",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Oh, ¿no puedes ver que",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Nunca es suficiente, nunca es suficiente",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Oh, ¿no puedes sentirlo?",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te alimentas de mi alma inquieta",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Oh, ¿puedes ver que",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Nunca es suficiente, nunca es suficiente",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Hoy vi el mundo entero",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pienso que el cielo tiene un plan para quitarme la vida",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Escucha, yo soy el que te hizo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Seré quien te derrumbe",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero esta será la última vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Muerde el bordillo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ah, tu entretenimiento enfermizo, pero apuesto a que se siente bien cuando estás bajando",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No soporto borrar el tiempo perdido",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Entre nuestros labios",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Así que vamos, balancéate de atrás para adelante tal como",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mi corazón está en un péndulo esta noche",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Si tus pulmones son míos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Solo quiero ver tus nubes persistir en la oscuridad",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Cántalo una vez más",
+            "lineType": "lyrics"
+          }
+        ]
+      ]
+    },
+    "pages": [
+      [
+        {
+          "text": "[Acordes Verificados]",
+          "lineType": "header"
+        },
+        {
+          "text": "Intro/Verso/Coro: Em - Em9 - Cmaj7 | Puente: Cmaj7 - Em - Em6 - Cmaj7 - Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "[Letra Completa]",
+          "lineType": "header"
+        },
+        {
+          "text": "Baby, pour over, tell me, are we concrete?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "What would you do without my perfect company to your undressed spine?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But I can hear you drag behind my car by your broken legs",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Swallowing stitches in her sleep",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "As she stole my only view, may I never blink",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "While you stood over the pavement, I was biting the curb",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sick entertainment, but I'll bet it feels good coming down",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Can't bear to wash out the wasted time",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Between your lips and mine",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Zero friends",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Followed your voices into a sea of crosses",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "She blends in with the foxes gold and feels like home",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Under the surface, my love",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But beware, beware, beware",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And take it slow tonight",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "We're on the other side of the road",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I think we're bleeding out",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "While you stood over the pavement, I was biting the curb",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sick entertainment, but I'll bet it feels good coming down",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Can't bear to wash out the wasted time",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Between our lips",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "So c'mon and swing it back and forth just like",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "My heart is on a pendulum tonight",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "If your lungs are mine",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I only wanna watch your clouds linger in the darkness",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh, can't you feel it?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You're feeding on my restless soul",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh, can't you see that",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's never enough, it's never enough",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh, can't you feel it?",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You feed on my restless soul",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh, can you see that",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's never enough, it's never enough",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Today I saw the whole world",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Think heaven has a plot to take my life",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Listen, I'm the one who made you",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'll be the one who brings you down",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But this will be the last time",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bite on the curb",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ah, your sick entertainment, but I'll bet it feels good when you're coming down",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Can't bear to wash out the wasted time",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Between our lips",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "So c'mon swing it back and forth just like",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "My heart is on a pendulum tonight",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "If your lungs are mine",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I only wanna watch your clouds linger in the darkness",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sing it one more time",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "sum_41_walking_disaster",
+    "order": 827,
+    "artist": "Sum 41",
+    "title": "Walking Disaster",
+    "tone": "C",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Rock / Punk",
+    "two_col": true,
+    "pdfPage": 200,
+    "pdfPages": [
+      200
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=PHx-xqs3hO8",
+    "youtubeTitle": "Sum 41 - Walking Disaster",
+    "youtubeVersions": [
+      {
+        "id": "PHx-xqs3hO8",
+        "index": 827,
+        "playlistIndex": 827,
+        "title": "Sum 41 - Walking Disaster",
+        "author": "Sum 41",
+        "channel": "Sum 41",
+        "url": "https://www.youtube.com/watch?v=PHx-xqs3hO8",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "PHx-xqs3hO8",
+      "index": 827,
+      "playlistIndex": 827,
+      "title": "Sum 41 - Walking Disaster",
+      "author": "Sum 41",
+      "channel": "Sum 41",
+      "url": "https://www.youtube.com/watch?v=PHx-xqs3hO8",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 827,
+    "playlistOrder": 920,
+    "hasTranslation": true,
+    "spanishVersion": {
+      "title": "Walking Disaster",
+      "subtitle": "[VERSIÓN EN ESPAÑOL — \"Desastre caminante\"]",
+      "tone": "C",
+      "capo": "0",
+      "pdfFile": "faltantes.pdf",
+      "pdfPage": 200,
+      "pdfPages": [
+        200
+      ],
+      "pages": [
+        [
+          {
+            "text": "[Acordes Verificados]",
+            "lineType": "header"
+          },
+          {
+            "text": "Intro/Verso/Puente/Outro: C - G - Am - F | Pre-Coro/Coro: Am - F - C - G",
+            "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "[Letra Completa en Español]",
+            "lineType": "header"
+          },
+          {
+            "text": "No he estado en casa por un tiempo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Estoy seguro de que todo sigue igual",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mamá y papá, ambos en negación",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Un hijo único para cargar con la culpa",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Lo siento mamá, pero no te extraño",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Padre no es un nombre que merezcas",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Solo soy un chico sin ambiciones",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No volvería a casa por nada del mundo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Nunca sabrás en lo que me he convertido",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El rey de todo lo dicho y hecho",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El hijo olvidado",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Esta ciudad está sepultada en la derrota",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Camino por estas calles sin nombre",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Digo adiós a todos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Mientras caigo...",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "En el callejón sin salida comienzo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "A quemar el puente de la inocencia",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Satisfacción garantizada",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Una pastilla de distancia de la catástrofe",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "En una misión, sin rumbo fijo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Inhibiciones bajo tierra",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Una tumba poco profunda que",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "He cavado yo solito",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y ahora me he ido por tanto tiempo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ya no recuerdo quién se equivocaba",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Toda la inocencia se ha ido hace mucho",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Juro lealtad a un mundo de incredulidad al que pertenezco",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Un desastre caminante",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El hijo de todos los bastardos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te arrepientes de haberme creado",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Es demasiado tarde para salvarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Te arrepientes de haberme creado)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Es demasiado tarde para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y él dijo: \"Hasta donde puedo notar, solo son voces en mi cabeza",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "¿Estoy hablando solo? Porque no sé lo que acabo de decir\"",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y ella dijo: \"Lejos es donde caí, tal vez esté mejor muerta",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "¿Estoy en el fin de la nada? ¿Es esto lo mejor que hay?\"",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y ahora me he ido por tanto tiempo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ya no recuerdo quién se equivocaba",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Toda la inocencia se ha ido hace mucho",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Juro lealtad a un mundo de incredulidad al que pertenezco",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Un desastre caminante",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El hijo de todos los bastardos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te arrepientes de haberme creado",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Es demasiado tarde para salvarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Es demasiado tarde para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, sálvame)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, sálvame)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "(Para salvarme, para salvarme, para salvarme)",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y ahora me he ido por tanto tiempo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ya no recuerdo quién se equivocaba",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Toda la inocencia se ha ido hace mucho",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Juro lealtad a un mundo de incredulidad al que pertenezco",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Un desastre caminante",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El hijo de todos los bastardos",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te arrepientes de haberme creado",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Es demasiado tarde para salvarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Estaré en casa en un rato",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No tienes que decir una sola palabra",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No veo la hora de verte sonreír",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No me lo perdería por nada del mundo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Estaré en casa en un rato",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No tienes que decir una sola palabra",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No veo la hora de verte sonreír",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "No me lo perdería por nada del mundo",
+            "lineType": "lyrics"
+          }
+        ]
+      ]
+    },
+    "pages": [
+      [
+        {
+          "text": "[Acordes Verificados]",
+          "lineType": "header"
+        },
+        {
+          "text": "Intro/Verso/Puente/Outro: C - G - Am - F | Pre-Coro/Coro: Am - F - C - G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "[Letra Completa]",
+          "lineType": "header"
+        },
+        {
+          "text": "I haven't been home for a while",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm sure everything's the same",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mom and Dad, both in denial",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "An only child to take the blame",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Sorry Mom, but I don't miss you",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Father's no name you deserve",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm just a kid with no ambitions",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Wouldn't come home for the world",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You'll never know what I've become",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "The king of all that's said and done",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "The forgotten son",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "This city's buried in defeat",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I walk along these no name streets",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Wave goodbye to all",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "As I fall...",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "At the dead end I begin",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "To burn the bridge of innocence",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Satisfaction guaranteed",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A pill away catastrophe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "On a mission, nowhere bound",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Inhibitions underground",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A shallow grave I",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Have dug all by myself",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And now I've been gone for so long",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I can't remember who was wrong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "All innocence is long gone",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I pledge allegiance to a world of disbelief where I belong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A walking disaster",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "The son of all bastards",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You regret you made me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's too late to save me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(You regret you made me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(It's too late to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And he said, \"Far as I can tell, it's just voices in my head",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Am I talking to myself? 'Cause I don't know what I just said\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And she said, \"Far is where I fell, maybe I'm better off dead",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Am I at the end of nowhere? Is this as good as it gets?\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And now I've been gone for so long",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I can't remember who was wrong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "All innocence is long gone",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I pledge allegiance to a world of disbelief where I belong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A walking disaster",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "The son of all bastards",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You regret you made me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's too late to save me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(It's too late to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(To save me, to save me, to save me)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And now I've been gone for so long",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I can't remember who was wrong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "All innocence is long gone",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I pledge allegiance to a world of disbelief where I belong",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A walking disaster",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "The son of all bastards",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You regret you made me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "It's too late to save me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I will be home in a while",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You don't have to say a word",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I can't wait to see you smile",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Wouldn't miss it for the world",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I will be home in a while",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You don't have to say a word",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I can't wait to see you smile",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Wouldn't miss it for the world",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_estoy_aqui",
+    "order": 829,
+    "artist": "Shakira",
+    "title": "Estoy Aquí",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 201,
+    "pdfPages": [
+      201
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=TrhScDaEd7g",
+    "youtubeTitle": "Shakira - Estoy Aquí",
+    "youtubeVersions": [
+      {
+        "id": "TrhScDaEd7g",
+        "index": 829,
+        "playlistIndex": 829,
+        "title": "Shakira - Estoy Aquí",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=TrhScDaEd7g",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "TrhScDaEd7g",
+      "index": 829,
+      "playlistIndex": 829,
+      "title": "Shakira - Estoy Aquí",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=TrhScDaEd7g",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 829,
+    "playlistOrder": 921,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "standard tuning (EADBGe)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ok everyone this is the tab for the unplugged version im not sure if it matches up with",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "the other Album or not but here it is anyways.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "There is just bass and some keyboard and such for a while and then you hear the guitar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "come in with these chords",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G---7-------7---------5-----4----3----5---------------7---------7-7-7-7-7-7-7-7-7-7--",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D---7---------7-------5-----4----3----5---------------7---------7-7-7-7-7-7-7-7-7-7--",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A---5-----------5-----3-----2----1----3---------------5---------5-5-5-5-5-5-5-5-5-5--",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "then you hold out this chord on the slow piano part before the chorus and then here is the",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "chorus",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B---------------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5--------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G----7-------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D----7-------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A----5-------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "then there is like this lil funky sounding bass and piano part and here is what the guitar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "is playin",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B-----6~~-------------------5~~------------------6~~------------------------5~~------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "then the chorus u play this six times at the regular speed",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "e------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B----------7-7-7-7-7-7-8-10-10-10-10-10-10-7-8-8-8-8-8-8-7-6-6-6-5-5-5-5-------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "D------------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E------------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "then you slow it down on the 7th time",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "slow it down and play it 4 more times and then your done",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Questions Comments Requests to: 242chris@citlink.net",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh and by the way ive been forgetting to put this but if you have ICQ my number is",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "# 78227549 this is probably the easiest way to contact me.",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_ciega_sordomuda",
+    "order": 830,
+    "artist": "Shakira",
+    "title": "Ciega, Sordomuda",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 202,
+    "pdfPages": [
+      202
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=bhM5Q0k7pBM",
+    "youtubeTitle": "Shakira - Ciega, Sordomuda",
+    "youtubeVersions": [
+      {
+        "id": "bhM5Q0k7pBM",
+        "index": 830,
+        "playlistIndex": 830,
+        "title": "Shakira - Ciega, Sordomuda",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=bhM5Q0k7pBM",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "bhM5Q0k7pBM",
+      "index": 830,
+      "playlistIndex": 830,
+      "title": "Shakira - Ciega, Sordomuda",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=bhM5Q0k7pBM",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 830,
+    "playlistOrder": 922,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Shakira: Ciega Sordomuda",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "INTRODUCCION:",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F         C                                                F         C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "e-------------------------3-3-3-----1-1-1-----0-0-0-----------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B-------------------------5-5-5-----3-3-3-----1-1-1-----3-----------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G-------------------------------------------------------4-----------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D-------------------------------------------------------------------------------",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A-------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E-------------------------------------------------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C                        F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Se me acaba el argumento",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y la metodologia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F              G           C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cada vez que se aparece frente a mi tu anatomia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Porque este amor ya no entiende",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "de consejos, ni razones",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "se alimenta de pretextos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G          C       Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y le faltan pantalones",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F             C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "este amor no me permite estar de pie",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G           Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "porque ya hasta me ha quebrado los talones",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F           G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "aunque me levante volvere a caer, si te acercas nada es util",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "para esta inutil",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Coro:",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "bruta, ciega, sordomuda, torpe, traste, testaruda",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "es todo lo que he sido, por ti me he convertido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "en una cosa que no hace otra cosa mas que amarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pienso en ti dia y noche y no se como olvidarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F     C (requinto de LA introduccion) F      C",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C                            F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cuantas veces he intentado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "enterrarte en mi memoria",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F          G                C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y aunque diga ya no mas es otra vez la misma historia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "porque este amor siempre sabe",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "hacerme respirar profundo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F             G            Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ya me trae por la izquierda y de pelea con el mundo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F           C                   G            Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si pudiera exorcizarme de tu voz, si pudiera escaparme de tu nombre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F             G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si pudiera arrancarme del corazon, y esconderme para no",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "sentirme nuevamente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Coro:",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "bruta, ciega sordomuda, torpe, traste, testaruda",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "es todo lo que he sido, por ti me he convertido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "en una cosa que no hace otra cosa mas que amarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pienso en ti dia y noche, y no se como olvidarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F    C (requinto de LA introduccion)  F    C",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ojerosa, flaca, fea, desgreñada, torpe, tonta, lenta, necia, desquiciada",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "completamente descontrolada, tu te das cuenta y no me dices nada",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ves que se me ha vuelto la cabeza un nido, donde solamente tu tienes asilo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y no me escuchas lo que te digo, mira bien lo que vas a hacer conmigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F    C    F     C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Coro:",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "bruta, ciega, sordomuda, torpe, traste, testaruda",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "es todo lo que he sido, por ti me he convertido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "en una cosa que no hace otra cosa mas que amarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pienso en ti dia y noche, y no se como olvidarte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Coro: se vuelve a repetir dos veces hasta que se termine la cancion",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Hay algunos requintos despues de algunos versos que se pueden",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "sacar del mismo requinto de la introduccion.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "******Es mi primera vez intentando esto.  Si hay algunas correciones me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "las pueden mandar a rdelamiyar@hotmail.com********",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ojala les guste!               Rodrigo De la Miyar",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_si_te_vas",
+    "order": 831,
+    "artist": "Shakira",
+    "title": "Si Te Vas",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 203,
+    "pdfPages": [
+      203
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=8U-udcHT_4w",
+    "youtubeTitle": "Shakira - Si Te Vas",
+    "youtubeVersions": [
+      {
+        "id": "8U-udcHT_4w",
+        "index": 831,
+        "playlistIndex": 831,
+        "title": "Shakira - Si Te Vas",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=8U-udcHT_4w",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "8U-udcHT_4w",
+      "index": 831,
+      "playlistIndex": 831,
+      "title": "Shakira - Si Te Vas",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=8U-udcHT_4w",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 831,
+    "playlistOrder": 923,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Correccion del Pre-Coro de la transcripcion enviada por:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Joaquin Leite (beatles@cantv.net     ICQ#21436749)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "**********************************************************************",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Intro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D-A-Em  x2",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "O si no el punteo como es",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "X quiere decir al aire, es decir, la tocas sin pisarla",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D       A       Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "E -----------------X---------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A ---------X-----------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D -X-------------------------------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G ---2---2---2---2---4---4---------------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B -----5-------5-------5----------3------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E --------------------------3-2-X--------",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                A              Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cuentame que harás después que estrenes su cuerpo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D           A           Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cuando muera tu traviesa curiosidad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D           A           Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cuando memorices todos sus recobecos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          A            Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y decidas otra vez regresar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ya no estaré aquí en el mismo lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si no tiene más que un par de dedos de frente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y descubres que no se lava bien los dientes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si te queta los pocos centavos que tienes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y luego te deja solo tal como quiere",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                     A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sé que volverás el día",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "en que ella te haga trizas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D             G       D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sin al mohadas para llorar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                        A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pero si te has decidido y no quieres más conmigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D         G         Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "nada ahora puede importar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G      A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "porque sin ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "el mundo ya me da igual",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          A            Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si te vas, si te vas, si te marchas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "mi cielo se hará gris",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          A            Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si te vas, si te vas, ya no tienes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que venir por mi",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          A            Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si te vas, si te vas, y me cambias",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "por esa bruja, pedazo de cuero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A              Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "no vuelvas nunca más",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "que no estaré aquí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "toda escoba nueva siempre barre bien",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "luego vas a ver desgastadas las cerdas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "cuando las arrugas le corten la piel",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "y la celulitis invada sus piernas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "volverás desde tu infierno",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "con el rabo entre los cuernos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "implorando una vez más",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pero para ese entonces",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo estaré un millón de noches",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "lejos de esta enorme ciudad",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "lejos de ti",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "el mundo ya me da igual",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "si te vas, si te vas, si te marcha...",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_inevitable",
+    "order": 832,
+    "artist": "Shakira",
+    "title": "Inevitable",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 204,
+    "pdfPages": [
+      204
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=jW5k2tMRcdE",
+    "youtubeTitle": "Shakira - Inevitable",
+    "youtubeVersions": [
+      {
+        "id": "jW5k2tMRcdE",
+        "index": 832,
+        "playlistIndex": 832,
+        "title": "Shakira - Inevitable",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=jW5k2tMRcdE",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "jW5k2tMRcdE",
+      "index": 832,
+      "playlistIndex": 832,
+      "title": "Shakira - Inevitable",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=jW5k2tMRcdE",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 832,
+    "playlistOrder": 924,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "F#           F#sus    B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si es cuestión de confesar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No sé preparar café",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y no entiendo de fútbol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#           F#sus    B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Creo que alguna vez fui infiel",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Juego mal hasta el parqués",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y jamás uso reloj",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#       C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y para ser más sincero nadie",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D#m C#           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Piensa en ti como lo hago yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F# F#sus F# F#sus",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Aunque te dé lo mismo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#           F#sus    B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si es cuestión de confesar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca duermo antes de diez",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ni me baño los domingos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#           F#sus    B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "La verdad es que también",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lloro una vez al mes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Sobre todo cuando hay frío",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#sus            F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Conmigo nada es fácil",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#        D#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya debes saber",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#          B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Me conoces bien",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y sin ti todo es tan aburrido",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                   F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "El cielo está cansado ya de ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#        B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "La lluvia caer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                   F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y cada día que pasa es uno más",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Parecido a ayer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#               F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No encuentro forma alguna de",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B        C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Olvidarte porque",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F# B   C#         F# F#sus F# F#sus F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Seguir amándote es inevitable.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#sus           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Siempre supe que es mejor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cuando hay que hablar de dos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#   C#sus",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Empezar por uno mismo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#      F#sus       B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya sabrás la situación",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Aquí todo está peor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pero al menos aún respiro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                  F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No tienes que decirlo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#          D#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No vas a volver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Te conozco bien",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Ya buscaré qué hacer conmigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                   F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "El cielo está cansado ya de ver",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#        B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "La lluvia caer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                   F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y cada día que pasa es uno más",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#           B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Parecido a ayer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#               F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No encuentro forma alguna de",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "B        C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Olvidarte porque",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F# B   C#         F# F#sus F# F#sus F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Seguir amándote es inevitable.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#                     B",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Siempre supe que es mejor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cuando hay que hablar de dos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Empezar por uno mismo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F# C# D#m C#  B",
+          "lineType": "chords",
+          "red": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_ojos_asi",
+    "order": 833,
+    "artist": "Shakira",
+    "title": "Ojos Así",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 205,
+    "pdfPages": [
+      205
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=XGmWU-Culb0",
+    "youtubeTitle": "Shakira - Ojos Así",
+    "youtubeVersions": [
+      {
+        "id": "XGmWU-Culb0",
+        "index": 833,
+        "playlistIndex": 833,
+        "title": "Shakira - Ojos Así",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=XGmWU-Culb0",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "XGmWU-Culb0",
+      "index": 833,
+      "playlistIndex": 833,
+      "title": "Shakira - Ojos Así",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=XGmWU-Culb0",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 833,
+    "playlistOrder": 925,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Intro:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "36-36-34-34-32-32-31",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                         D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ayer conocí un cielo sin sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y un hombre sin suelo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "un santo en prisión",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D              C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y una canción triste sin dueño",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya he ya la he",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y conocí tus ojos negros",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ya he ya la he",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y ahora sí que no",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "puedo vivir sin ellos yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Le pido al cielo sólo un deseo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                         F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que en tus ojos yo pueda vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "he recorrido ya el mundo entero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y una cosa te vengo a decir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E                 D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "viaje de Bahren hasta Beirut",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                             E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "fuí desde el norte hasta polo sur",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y no encontré ojos así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "como los que tienes tú",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "rabboussamai fikarrajaii",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                  F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "fi ainaiha aralhayati",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ati ilaika min haza lkaaouni",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                    F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "arjouka labbi labbi nidai",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E                 D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "viaje de Bahren hasta Beirut",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                             E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "fuí desde el norte hasta polo sur",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y no encontré ojos así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "como los que tienes tú",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#                   D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ayer vi pasar una mujer",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "debajo de su camello",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "un río de sal un barco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "abandonado en el desierto",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya he ya la he",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y vi pasar tus ojos negros",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ya he ya la he",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y ahora sí que no",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "puedo vivir sin ellos yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Le pido al cielo sólo un deseo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                         F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que en tus ojos yo pueda vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "he recorrido ya el mundo entero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y una cosa te vengo a decir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E                 D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "viaje de Bahren hasta Beirut",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                             E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "fuí desde el norte hasta polo sur",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y no encontré ojos así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "como los que tienes tú",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Le pido al cielo sólo un deseo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                         F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que en tus ojos yo pueda vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "he recorrido ya el mundo entero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y una cosa te vengo a decir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E                 D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "viaje de Bahren hasta Beirut",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                             E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "fuí desde el norte hasta polo sur",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y no encontré ojos así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "como los que tienes tú...",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Nota:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Aun no estoy totalmente seguro si",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "las notas del verso esta correctas.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cualquier sugerencia o correcion",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "haganmelo saber...",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_no_creo",
+    "order": 837,
+    "artist": "Shakira",
+    "title": "No Creo",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 206,
+    "pdfPages": [
+      206
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=AHWFee9n0es",
+    "youtubeTitle": "Shakira - No Creo",
+    "youtubeVersions": [
+      {
+        "id": "AHWFee9n0es",
+        "index": 837,
+        "playlistIndex": 837,
+        "title": "Shakira - No Creo",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=AHWFee9n0es",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "AHWFee9n0es",
+      "index": 837,
+      "playlistIndex": 837,
+      "title": "Shakira - No Creo",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=AHWFee9n0es",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 837,
+    "playlistOrder": 926,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "D             Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu sabes bien quien soy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso es tuyo mi corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D               Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu doblas mi razón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso a donde tu quieras voy.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D              Bm         G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo que el mar algún día",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A       D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pierda el sabor a sal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          Bm      G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en mi todavía",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A    D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en el azar.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A            F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo creo en tu sonrisa azul",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm            G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En tu mirada de cristal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                   D  G  D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En los besos que me das",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y en todo lo que digas.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D             Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu sabes bien quien soy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso es tuyo mi corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D               Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu doblas mi razón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso a donde tu quieras voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si hablo demasiado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No dejes de lado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que nadie mas te amara así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A        D  Bm  G  A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Como lo hago hoy.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          Bm            G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en Venus ni en Marte",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A      D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en Carlos Marx",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D           Bm        G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en Jean Paul Sartre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A     D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No creo en Brian Weiss.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A            F#m",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo creo en tu sonrisa azul",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm            G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En tu mirada de cristal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                   D  G  D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En los besos que me das",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y hablen lo que hablen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D             Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu sabes bien quien soy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso es tuyo mi corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D               Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu doblas mi razón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso a donde tu quieras voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si hablo demasiado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No dejes de lado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que nadie mas te amara así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Como lo hago hoy.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm        G          A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay yo quiero ser tu firmamento",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm           G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "De tu boca una canción",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "De tus alas siempre ser el viento.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu terrón de sal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Un rayo de sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que a donde que tu quieres que yo vaya voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que eres mi desliz, mi país feliz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "MI primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi escalera al cielo si",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                      Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Por eso sigo aquí y camino contigo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G   A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A ti nunca podría decirte que no.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D             Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu sabes bien quien soy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso es tuyo mi corazón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D               Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo tu doblas mi razón",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y por eso a donde tu quieras voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tu terrón de sal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Un rayo de sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Que a donde que tu quieres que yo vaya voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que eres mi desliz, mi país feliz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "MI primavera",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Mi escalera al cielo si.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si hablo demasiado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No dejes de lado",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que nadie mas te amara así",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Como lo hago hoy.",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_que_vuelvas",
+    "order": 839,
+    "artist": "Shakira",
+    "title": "Que Vuelvas",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 207,
+    "pdfPages": [
+      207
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=DArMVXIPMK4",
+    "youtubeTitle": "Shakira - Que Vuelvas",
+    "youtubeVersions": [
+      {
+        "id": "DArMVXIPMK4",
+        "index": 839,
+        "playlistIndex": 839,
+        "title": "Shakira - Que Vuelvas",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=DArMVXIPMK4",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "DArMVXIPMK4",
+      "index": 839,
+      "playlistIndex": 839,
+      "title": "Shakira - Que Vuelvas",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=DArMVXIPMK4",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 839,
+    "playlistOrder": 927,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "D               A                        G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y que voy a hacer con mi desviste selectivo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm            A         D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y con mi sueño frustrado de aprender a cocinar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                          G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y que voy a hacer con mis domingos y feriados",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm             A           Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "ningun plan es apropiado cuando intento no pensar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                  A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso a donde vas ahora que no estoy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                  A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso a donde voy ahora que no estas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D                A                          G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que me inventare para decirle al mundo entero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm              A          D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si me ven tumbado a suelo y sin mas ganas de volar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                      G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "como escondo este par de alas rotas si las suelas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm         A          Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "de mis botas cansadas de caminar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D          A                  E",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso adone vas ahora que no estoy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D           A                  D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso adonde voy ahora que no estas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo quiero, que vuelvas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que ya estan reclamando",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm              A         D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "mis labios que hace tiempo no besas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                 G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "yo quiero que regreses no ves que hasta mis manos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm         A         G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "de tanto no tocarte me duelen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "me duelen.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                            G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y que voy a hacer si  mi barbilla llega al piso",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm         A        D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y auque intente una sonrisa no me sale natural",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A                     G                        Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "si lla me han visto con la mirada perdida unas cuantas libras menos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A           Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y unas lagrimas de mas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D            A                  Em",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso a donde vas ahora que no estoy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D           A                  D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "dime acaso adonde voy ahora que no estas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo quiero que vuelvas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que ya estan reclamando",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm              A         D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "mis labios que hace tiempo no besas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo quiero que regreses",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                           Bm         A         D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "no ves que hasta mis manos  de tanto no tocarte me duelen",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo quiero que vuelvas,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                       Bm               A        D",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "que ya estan reclamando mis labios que hace tiempo no besas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo quiero que regreses",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                          Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sabias que eras para mi siempre quisistes estar aqui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F                             C                   G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "aun no me pregunto cuando y donde ni por te perdi",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F          C         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "yo no se   vivir asi",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "estribillo",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_tu",
+    "order": 840,
+    "artist": "Shakira",
+    "title": "Tú",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 208,
+    "pdfPages": [
+      208
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=34D7YSyKSDc",
+    "youtubeTitle": "Shakira - Tú",
+    "youtubeVersions": [
+      {
+        "id": "34D7YSyKSDc",
+        "index": 840,
+        "playlistIndex": 840,
+        "title": "Shakira - Tú",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=34D7YSyKSDc",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "34D7YSyKSDc",
+      "index": 840,
+      "playlistIndex": 840,
+      "title": "Shakira - Tú",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=34D7YSyKSDc",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 840,
+    "playlistOrder": 928,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "C     G         Am    F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Te regalo mi cintura",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C      G                     Am     F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y mis labios para cuando quieras besar,",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C     G         Am     F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Te regalo mi locura",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C      G              Am         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y las pocas neuronas que quedan ya.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm                F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Mis zapatos desteñidos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "el diario en el que escribo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "te doy hasta mis suspiros",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pero no te vayas mas.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Coro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Porque eres tu mi sol",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Gm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "la fe con que vivo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "la potencia de mi voz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Fm             G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "los pies con que camino",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eres tu amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Gm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "mis ganas de reir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "el adiós que no sabré decir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Fm          G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "porque nunca podré vivir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Am, F, C, G....(2 veces)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "sin ti.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C         G       Am      F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Si algún dia decidieras",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C   G         Am          F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "alejarte nuevamente de aqui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C     G        Am        F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "cerraría cada puerta",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C      G          Am       F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "para que nunca pudieras salir",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm               F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Te regalo mis silencios",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "te regalo mi nariz",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Dm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "yo te doy hasta mis huesos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "pero quédate aqui",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "CORO",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_objection_tango",
+    "order": 842,
+    "artist": "Shakira",
+    "title": "Objection (Tango)",
+    "tone": "Bm",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 209,
+    "pdfPages": [
+      209
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=UsyMHryJCLw",
+    "youtubeTitle": "Shakira - Objection (Tango)",
+    "youtubeVersions": [
+      {
+        "id": "UsyMHryJCLw",
+        "index": 842,
+        "playlistIndex": 842,
+        "title": "Shakira - Objection (Tango)",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=UsyMHryJCLw",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "UsyMHryJCLw",
+      "index": 842,
+      "playlistIndex": 842,
+      "title": "Shakira - Objection (Tango)",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=UsyMHryJCLw",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 842,
+    "playlistOrder": 929,
+    "hasTranslation": true,
+    "spanishVersion": {
+      "title": "Objection (Tango)",
+      "subtitle": "[VERSIÓN EN ESPAÑOL — \"Objeción (Tango)\"]",
+      "tone": "Bm",
+      "capo": "0",
+      "pdfFile": "faltantes.pdf",
+      "pdfPage": 209,
+      "pdfPages": [
+        209
+      ],
+      "pages": [
+        [
+          {
+            "text": "[Acordes Verificados]",
+            "lineType": "header"
+          },
+          {
+            "text": "Intro: F# - Bm | Verso: Bm - A - D - G - F# | Coro: Bm - A - G - F# | Puente: G - Bm - A - F#",
+            "lineType": "chords",
+            "red": true
+          },
+          {
+            "text": "[Letra Completa en Español]",
+            "lineType": "header"
+          },
+          {
+            "text": "No es su culpa que sea tan irresistible",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero todo el daño que ha causado no se puede arreglar",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Cada veinte segundos repites su nombre",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero cuando se trata de mí no te importa",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Si estoy viva o muerta",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Así que objeción, no quiero ser la excepción",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Para conseguir un poco de tu atención",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te amo gratis y no soy tu madre",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero ni siquiera te molestas",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Objeción, estoy cansada de este triángulo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me mareé bailando tango",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me estoy desmoronando en tus manos otra vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "De ninguna manera, tengo que alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Junto a su silicón barato me veo minimalista",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Por eso delante de tus ojos soy invisible",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero debes saber que las pequeñas cosas también cuentan",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Más te vale poner los pies sobre la tierra",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Y ver de qué se trata",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Así que objeción, no quiero ser la excepción",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Para conseguir un poco de tu atención",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te amo gratis y no soy tu madre",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero ni siquiera te molestas",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Estoy atada a los ángulos de este triángulo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me mareé bailando tango",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me estoy desmoronando en tus manos otra vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "De ninguna manera, no, no, no, no",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ojalá hubiera una oportunidad para ti y para mí",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Ojalá no pudieras encontrar un lugar",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Fuera de aquí",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Esto es patético y sardónico, es sádico y psicótico",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "El tango no es para tres, nunca estuvo destinado a serlo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero puedes intentarlo, ensayarlo, o entrenar como un caballo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero no cuentes conmigo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Oh, no cuentes conmigo, chico",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Objeción, no quiero ser la excepción",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Para conseguir un poco de tu atención",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Te amo gratis y no soy tu madre",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Pero ni siquiera te molestas",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Objeción, estoy cansada de este triángulo",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me mareé bailando tango",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me estoy desmoronando en tus manos otra vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "De ninguna manera, tengo que alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me estoy desmoronando en tus manos otra vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Me estoy desmoronando en tus manos otra vez",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          },
+          {
+            "text": "Alejarme",
+            "lineType": "lyrics"
+          }
+        ]
+      ]
+    },
+    "pages": [
+      [
+        {
+          "text": "[Acordes Verificados]",
+          "lineType": "header"
+        },
+        {
+          "text": "Intro: F# - Bm | Verso: Bm - A - D - G - F# | Coro: Bm - A - G - F# | Puente: G - Bm - A - F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "[Letra Completa]",
+          "lineType": "header"
+        },
+        {
+          "text": "It's not her fault that she's so irresistible",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But all the damage she's caused isn't fixable",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Every twenty seconds you repeat her name",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But when it comes to me you don't care",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "If I'm alive or dead",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "So objection, I don't wanna be the exception",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "To get a bit of your attention",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I love you for free and I'm not your mother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But you don't even bother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Objection, I'm tired of this triangle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Got dizzy dancing tango",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm falling apart in your hands again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No way, I've got to get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Next to her cheap silicon I look minimal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "That's why in front of your eyes I'm invisible",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But you gotta know small things also count",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "You better put your feet on the ground",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "And see what it's about",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "So objection, I don't wanna be the exception",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "To get a bit of your attention",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I love you for free and I'm not your mother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But you don't even bother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm tied to the angles of this triangle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Got dizzy dancing tango",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm falling apart in your hands again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No way, no, no, no, no",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I wish there was a chance for you and me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I wish you couldn't find a place to be",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Away from here",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "This is pathetic and sardonic, it's sadistic and psychotic",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tango is not for three, was never meant to be",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But you can try it, rehearse it, or train like a horse",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But don't you count on me",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Oh don't you count on me, boy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Objection, I don't wanna be the exception",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "To get a bit of your attention",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I love you for free and I'm not your mother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "But you don't even bother",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Objection, I'm tired of this triangle",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Got dizzy dancing tango",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm falling apart in your hands again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "No way, I've got to get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm falling apart in your hands again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "I'm falling apart in your hands again",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Get away",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_la_pared",
+    "order": 843,
+    "artist": "Shakira",
+    "title": "La Pared",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 210,
+    "pdfPages": [
+      210
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=gjm39I8gCJc",
+    "youtubeTitle": "Shakira - La Pared",
+    "youtubeVersions": [
+      {
+        "id": "gjm39I8gCJc",
+        "index": 843,
+        "playlistIndex": 843,
+        "title": "Shakira - La Pared",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=gjm39I8gCJc",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "gjm39I8gCJc",
+      "index": 843,
+      "playlistIndex": 843,
+      "title": "Shakira - La Pared",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=gjm39I8gCJc",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 843,
+    "playlistOrder": 930,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "LA PARED (Spotify Anniversary Version) – SHAKIRA",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(Compositor: Léster Méndez, Shakira)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A continuación, los acordes:",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m:      X13321 o 688666",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#:       466544",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#:       244322",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "C#:       X43121 o X46664",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Fm:       133111",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Cm:       X35543",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F:        133211",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D#:       X65343 o X68886",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m:      X13121 o 686696",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "INTRO: A#m – G# - A#m – G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A#m             G#                A#m        G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eres como una predicción de las buenas.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m            G#                A#m        G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eres como una dosis alta en las venas.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#        G#          C#              Fm              F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y el deseo gira en espiral, porque mi amor por ti es total",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "y es para siempre.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m        C#       Cm         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Después de ti, la pared. No me faltes nunca.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m       G#            D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Debajo el asfalto y, más abajo, estaría yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m        C#       Cm         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Después de ti, la pared. No me faltes nunca.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m       G#            D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Debajo el asfalto y, más abajo, estaría yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m – G# - A#m – G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sin ti.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m             G#            A#m        G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eres la enfermedad y el enfermero.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m                  G#              A#m        G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya me has convertido en tu perro faldero",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F#             G#           C#                Fm           F#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Sabes que, sin ti, ya yo no soy. Sabes que, a dónde vayas, voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "naturalmente.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m        C#       Cm         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Después de ti, la pared. No me faltes nunca.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m       C#            D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Debajo el asfalto y, más abajo, estaría yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m – C# - D#             A#m – C# - D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sin ti.            Na ra nou na",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m – C# - D#     A#m - D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Na ra eh eh eh eh               eh-eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m        C#       Cm         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Después de ti, la pared. No me faltes nunca.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m       G#            D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Debajo el asfalto y, más abajo, estaría yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m        C#       Cm         F",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Después de ti, la pared. No me faltes nunca.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m       A#m7         D#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Debajo el asfalto y, más abajo, estaría yo.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m – G# - A#m – G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sin ti.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A#m – G# - A#m – G#",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Sin ti.",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Transcripción hecha el 08.12.2025]",
+          "lineType": "header"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_las_de_la_intuicion",
+    "order": 844,
+    "artist": "Shakira",
+    "title": "Las de la Intuición",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 211,
+    "pdfPages": [
+      211
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=gPJBvUBQQMI",
+    "youtubeTitle": "Shakira - Las de la Intuición",
+    "youtubeVersions": [
+      {
+        "id": "gPJBvUBQQMI",
+        "index": 844,
+        "playlistIndex": 844,
+        "title": "Shakira - Las de la Intuición",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=gPJBvUBQQMI",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "gPJBvUBQQMI",
+      "index": 844,
+      "playlistIndex": 844,
+      "title": "Shakira - Las de la Intuición",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=gPJBvUBQQMI",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 844,
+    "playlistOrder": 931,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Aca esta toda la cancion",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "pero se repiten desde y el amor talvez hasta el final del coro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Intro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|----------|-3-3---3-|---------|------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--3-3---3-|-----1---|-5-5---5-|-3-5-5---5--|x2",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------1---|---------|-----3---|-------3----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|----------|---------|---------|------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No me preguntes",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-------------|-3-3--3--3--|------------|-------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--3-3--3--3--|------------|-5-5--5--5--|-1-1--1--1---|X4",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-------------|----5-----5-|------------|-------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|-----5-----5-|------------|----7-----7-|----3-----3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(creo que los bajos recien entran aca)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "\"pero arriba ta la intro pues me gusta\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y el amor talvez",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-------------|-------------|------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--1--1-1--1--|-1--1-1---1--|-5--5-5--5--|-5--5-5---5---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-------------|-------------|------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----3-3----3-|---3-3---3-3-|---7-7----7-|---7-7---7-7--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y asi como vez...........sera cuestion",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-33-33-|-11-11--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--33-33-33-33-|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|--------------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Creo que empiezo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1--1--1--1--|-------------|-3--3--3--3--|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-3--3--3--3--|-------------|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|---3--3--3--3-|-------------|--5--5--5--5-|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------------|--5--5--5--5-|-------------|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Los que",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-------------|-------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5--5--5--5--|-3--3--3--3--|-1--1--1--1--|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------------|-------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|---7--7--7--7-|--5--5--5--5-|--3--3--3--3-|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tengo el presentimiento",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1--1--1--1--|-------------|-3--3--3--3--|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-3--3--3--3--|-------------|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|---3--3--3--3-|-------------|--5--5--5--5-|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------------|--5--5--5--5-|-------------|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y las mujeres somos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-------------|-------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5--5--5--5--|-3--3--3--3--|-1--1--1--1--|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------------|-------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|---7--7--7--7-|--5--5--5--5-|--3--3--3--3-|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "..por",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-----|-----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-----|-----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-5-5-|-----|-8-8-|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--3/5555555/3-|-----|-7-7-|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo te propongo un",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|------|-----|-----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|------|-----|-----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------|-5-5-|-----|-8-8-|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--5-5-|-----|-7-7-|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo me propongo ser",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|------|-----|-----|-------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|------|-----|-----|-8-8---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------|-5-5-|-----|--8-8--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--5-5-|-----|-7-7-|-------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y el amor talvez",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-------------|-------------|------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--1--1-1--1--|-1--1-1---1--|-5--5-5--5--|-5--5-5---5---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-------------|-------------|------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----3-3----3-|---3-3---3-3-|---7-7----7-|---7-7---7-7--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y asi como vez...........sera cuestion",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-33-33-|-11-11--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--33-33-33-33-|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|--------------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Creo que empiezo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1--1--1--1--|-------------|-3--3--3--3--|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-3--3--3--3--|-------------|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|---3--3--3--3-|-------------|--5--5--5--5-|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------------|--5--5--5--5-|-------------|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Los que",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-------------|-------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5--5--5--5--|-3--3--3--3--|-1--1--1--1--|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------------|-------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|---7--7--7--7-|--5--5--5--5-|--3--3--3--3-|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Tengo el presentimiento",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1--1--1--1--|-------------|-3--3--3--3--|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-3--3--3--3--|-------------|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|---3--3--3--3-|-------------|--5--5--5--5-|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------------|--5--5--5--5-|-------------|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y las mujeres somos",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-------------|-------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5--5--5--5--|-3--3--3--3--|-1--1--1--1--|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------------|-------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|---7--7--7--7-|--5--5--5--5-|--3--3--3--3-|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Uhh (Es la mitad del coro)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1--1--1--1--|-------------|-3--3--3--3--|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--------------|-3--3--3--3--|-------------|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|---3--3--3--3-|-------------|--5--5--5--5-|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------------|--5--5--5--5-|-------------|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Uhhh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------------|-------------|-------------|--------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5--5--5--5--|-3--3--3--3--|-1--1--1--1--|-1--1--1--1---|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------------|-------------|-------------|--------------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|---7--7--7--7-|--5--5--5--5-|--3--3--3--3-|--3--3--3--3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "(Otra vez todo el coro) se repite",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "F C G A# F C G A# con sus respectivas octavas",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "ohh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--1-|---|---|----|------|---|----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|----|-3-|-1-|-1--|--1/5-|-3-|-1--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|----|---|---|----|------|---|----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----|---|---|----|------|---|----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "atte. miauricio gatolar",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_la_tortura",
+    "order": 847,
+    "artist": "Shakira",
+    "title": "La Tortura",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 212,
+    "pdfPages": [
+      212
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=gUGRHxlYA88",
+    "youtubeTitle": "Shakira - La Tortura",
+    "youtubeVersions": [
+      {
+        "id": "gUGRHxlYA88",
+        "index": 847,
+        "playlistIndex": 847,
+        "title": "Shakira - La Tortura",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=gUGRHxlYA88",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "gUGRHxlYA88",
+      "index": 847,
+      "playlistIndex": 847,
+      "title": "Shakira - La Tortura",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=gUGRHxlYA88",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 847,
+    "playlistOrder": 932,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Esta esta facil",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Intro",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--12/5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay payita mia",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--5---|-3---|-----|------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|----3-|---2-|-3---|-5----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------|-----|---2-|---3--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|------|-----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A G C D x2",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No pido que",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|------|-|-----|-|-------|-1-----|-0-3---|-------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-0-|-|-0-0-|-|-3-0-3-|---0-3-|-----2-|-33-2--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------|-|-----|-|-------|-------|-------|-------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|------|-|-----|-|-------|-------|-------|-------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Tampoco",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|----------|-|---------|-|-------|-1-----|-0-3---|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-3---0-|-|-0-3---0-|-|-3-0-3-|---0-3-|-----2-|-33-22--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------2---|-|-----2---|-|-------|-------|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|----------|-|---------|-|-------|-------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "x2       x2      x2               x2",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------|-------|-------|---------|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5-8---|-7-----|-------|---------|-5-8---|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------7-|---6-9-|-7-----|-7-9-----|-----7-|-5-5-5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------|-------|---5-9-|-----5-6-|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo se",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|----|-3-|---|---|----|-33-|----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-|---|-3-|-5-|-00-|----|-33-|-55--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|----|---|---|---|----|----|----|-----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----|---|---|---|----|----|----|-----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo de",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|-33-|----|----|----|-33-|-----|------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|----|-33-|-55-|-00-|----|-333-|-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "A G C D A G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "E|-|-|-|-|-|-|-----|------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|-|-|-|-|-|-|-333-|-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-|-|-|-|-|-|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-|-|-|-|-|-|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No puedo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----------|-|----------|-|-------|-1-----|-0-3---|-------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-3---00-|-|-0-3---00-|-|-3-0-3-|---0-3-|-----2-|-33-2--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------2----|-|-----2----|-|-------|-------|-------|-------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|-----------|-|----------|-|-------|-------|-------|-------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No puedo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----------|-|----------|-|-------|-1-----|-0-3---|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-3---00-|-|-0-3---00-|-|-3-0-3-|---0-3-|-----2-|-33-22--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------2----|-|-----2----|-|-------|-------|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|-----------|-|----------|-|-------|-------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay amor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "x2       x2     x2                x2",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------|-------|-------|---------|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--5-8---|-7-----|-------|---------|-5-8---|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|------7-|---6-9-|-7-----|-7-9-----|-----7-|-5-5-5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------|-------|---5-9-|-----5-6-|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo se",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|----|-3-|---|---|----|-33-|----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-|---|-3-|-5-|-00-|----|-33-|-55--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|----|---|---|---|----|----|----|-----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----|---|---|---|----|----|----|-----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Solo de",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|-33-|----|----|----|-33-|-----|------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|----|-33-|-55-|-00-|----|-333-|-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "E|-----|-33-|----|----|----|-33-|-----|------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|----|-33-|-55-|-00-|----|-333-|-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-----|----|----|----|----|----|-----|------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No te bajes esta en A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Yo se",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--|-|-----|-----|----|-33-|----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--|-|-3---|-5---|-00-|----|-33-|-55--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--|-|-----|-----|----|----|----|-----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|--|-|---5-|---7-|----|----|----|-----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Solo de",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|----|-3-|---|----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-|---|-3-|-5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|----|---|---|----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|----|---|---|----|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ay",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|---33-|-3----|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|-0----|---33-|-3-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|------|------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-----|------|------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "todo lo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|---33-3-3-|-------|------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|-0-----2--|-3-----|-5-------5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|----------|---2-5-|---4-7------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|-----|----------|-------|-------7----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "fue una tortura",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|---3-----3-|-------|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|-0---0-2---|-3---3-|-5---5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|-----------|---2---|---7----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|-----|-----------|-------|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "sigo llorando",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|--------|-33-3---3-|-------|------------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--0-3-0-|------2---|-3-----|-5-------5--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|--------|----------|---2-5-|---4-7------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G|--------|----------|-------|-------7----|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "yo no voy",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "E|-----|---33-|-3---|--------|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A|--00-|-0----|--33-|-3-555--|",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "D|-----|------|-----|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G|-----|------|-----|--------|",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "atte. miauricio gatolar",
+          "lineType": "lyrics"
+        }
+      ]
+    ]
+  },
+  {
+    "id": "shakira_lo_hecho_esta_hecho",
+    "order": 849,
+    "artist": "Shakira",
+    "title": "Lo Hecho Está Hecho",
+    "tone": "Estándar",
+    "capo": "0",
+    "album": "Playlist Oficial YT",
+    "genre": "Pop / Rock Latino",
+    "two_col": true,
+    "pdfPage": 213,
+    "pdfPages": [
+      213
+    ],
+    "totalPages": 1,
+    "matched": true,
+    "youtube": "https://www.youtube.com/watch?v=eFear74IzXY",
+    "youtubeTitle": "Shakira - Lo Hecho Está Hecho",
+    "youtubeVersions": [
+      {
+        "id": "eFear74IzXY",
+        "index": 849,
+        "playlistIndex": 849,
+        "title": "Shakira - Lo Hecho Está Hecho",
+        "author": "Shakira",
+        "channel": "Shakira",
+        "url": "https://www.youtube.com/watch?v=eFear74IzXY",
+        "isAvailable": true
+      }
+    ],
+    "matchedVideo": {
+      "id": "eFear74IzXY",
+      "index": 849,
+      "playlistIndex": 849,
+      "title": "Shakira - Lo Hecho Está Hecho",
+      "author": "Shakira",
+      "channel": "Shakira",
+      "url": "https://www.youtube.com/watch?v=eFear74IzXY",
+      "isAvailable": true
+    },
+    "book": "faltantes",
+    "pdfFile": "faltantes.pdf",
+    "playlistIndex": 849,
+    "playlistOrder": 933,
+    "hasTranslation": false,
+    "spanishVersion": null,
+    "pages": [
+      [
+        {
+          "text": "Cejilla en 1er traste / Capo on 1st fret",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Verso 1]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En la suite 16",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm             A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo que empieza no termina",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Del mini bar al eden",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm            A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y en muy mala compañía",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Pre-coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Era ese sabor en tu piel",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Azufre revuelto con miel",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Así que me llené de coraje y me fui a caminar por el lado salvaje",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pensé \"no me mires así\"",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ya sé lo que quieres de mí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que no hay que ser vidente aquí",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Para un mal como tú no hay cuerpo que aguante",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo hecho está hecho",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Volví a tropezar con la misma piedra que hubo siempre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                    Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Se siente tan bien todo lo que hace mal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y contigo nunca es suficiente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Post-coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Verso 2]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cómo fue (ah)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Qué paso (ah)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Esa noche (de los dos)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Impaciente (los dos)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Fueron a llamar (ah)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "De la recepción (ah)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cuando se quejaban (otra vez)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "De la 17 (hey)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Pre-coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No puedo hacer nada normal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Acabar eligiendo tan mal (hey)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                                    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "En materia de hombres soy toda una experta siempre en repetir mis errores",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "No hay ceguera peor",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Que no querer mirar (hey)",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                                A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Cuando te guardabas el anillo dentro del bolsillo y dejarlo pasar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo hecho está hecho",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Volví a tropezar con la misma piedra que hubo siempre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                    Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Se siente tan bien todo lo que hace mal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y contigo nunca es suficiente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Post-coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Puente]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca me sentí tan fuera de lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca tanto se escapó de mi control",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pero todo en este mundo es temporal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm         A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo eres tú y lo soy yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca me sentí tan fuera de lugar",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm                       A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Nunca tanto se escapó de mi control",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Pero todo en este mundo es temporal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm       A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Y en eso no decido yo",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Lo hecho está hecho",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm               A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Volví a tropezar con la misma piedra que hubo siempre",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G                                    Bm",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Se siente tan bien todo lo que hace mal",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "A",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Y contigo nunca es suficiente",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Post-coro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "G",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Eh eh eh eh",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "Bm    A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "Ah ah ah ah",
+          "lineType": "lyrics"
+        },
+        {
+          "text": "[Outro]",
+          "lineType": "header"
+        },
+        {
+          "text": "G G Bm A",
+          "lineType": "chords",
+          "red": true
+        },
+        {
+          "text": "G G Bm A",
+          "lineType": "chords",
+          "red": true
+        }
+      ]
+    ]
   }
 ];
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = window.STANDALONE_FALTANTES;
-}
