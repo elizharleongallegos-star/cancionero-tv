@@ -248,16 +248,28 @@ function buildTvSongs(bookKey) {
       })
     : [];
 
+  var m2kRaw = (window.STANDALONE_MIX2000 && Array.isArray(window.STANDALONE_MIX2000))
+    ? window.STANDALONE_MIX2000.map(function(s) {
+        return Object.assign({}, s, {
+          book: s.book || 'mix2000',
+          pdfFile: s.pdfFile || 'Cancionero_Mix_2000_Spotify.docx',
+          artist: normalizeArtist(s.artist)
+        });
+      })
+    : [];
+
   // Actualizar contadores
   var elAll = document.getElementById('tv-count-all');
   var elPrin = document.getElementById('tv-count-prin');
   var elReg = document.getElementById('tv-count-reg');
   var elFal = document.getElementById('tv-count-fal');
-  var totalCombined = prinRaw.length + regRaw.length + falRaw.length;
+  var elM2k = document.getElementById('tv-count-m2k');
+  var totalCombined = prinRaw.length + regRaw.length + falRaw.length + m2kRaw.length;
   if (elAll) elAll.textContent = totalCombined;
   if (elPrin) elPrin.textContent = prinRaw.length;
   if (elReg) elReg.textContent = regRaw.length;
   if (elFal) elFal.textContent = falRaw.length;
+  if (elM2k) elM2k.textContent = m2kRaw.length;
 
   var combined = [];
   if (bookKey === 'reggaeton') {
@@ -266,9 +278,11 @@ function buildTvSongs(bookKey) {
     combined = prinRaw;
   } else if (bookKey === 'faltantes') {
     combined = falRaw;
+  } else if (bookKey === 'mix2000') {
+    combined = m2kRaw;
   } else {
     // Unificado: todos los cancioneros ordenados estrictamente por el orden de la playlist oficial
-    combined = [].concat(prinRaw, regRaw, falRaw);
+    combined = [].concat(prinRaw, regRaw, falRaw, m2kRaw);
   }
 
   // Orden estricto de Playlist de YouTube Music ("el orden de la playlist es el que manda")
@@ -2272,7 +2286,8 @@ function initTvApp() {
     { id: 'tv-book-all', book: 'all' },
     { id: 'tv-book-principal', book: 'principal' },
     { id: 'tv-book-reggaeton', book: 'reggaeton' },
-    { id: 'tv-book-faltantes', book: 'faltantes' }
+    { id: 'tv-book-faltantes', book: 'faltantes' },
+    { id: 'tv-book-mix2000', book: 'mix2000' }
   ];
 
   bookBtns.forEach(item => {
@@ -3274,6 +3289,7 @@ function getTvUnifiedCatalogForReport() {
   pushArr(window.STANDALONE_SONGS, 'principal');
   pushArr(window.STANDALONE_REGGAETON, 'reggaeton');
   pushArr(window.STANDALONE_FALTANTES, 'faltantes');
+  pushArr(window.STANDALONE_MIX2000, 'mix2000');
   return out;
 }
 
